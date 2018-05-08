@@ -238,39 +238,59 @@ EmojiList *read_emojis_from_file(char *path) {
   return list;
 }
 
-int find_emoji_file(char **path) {
+typedef enum {
+  SUCCESS = 1,
+  NOT_A_FILE = 0,
+  CANNOT_DETERMINE_PATH = -1
+} find_emoji_file_result;
+
+find_emoji_file_result find_emoji_file(char **path) {
   const char *data_dir = g_get_user_data_dir();
   if (data_dir == NULL) {
-    return -1;
+    return CANNOT_DETERMINE_PATH;
   }
 
   *path = g_build_filename(data_dir, "rofi-emoji", "emoji-test.txt", NULL);
   if (*path == NULL) {
-    return -1;
+    return CANNOT_DETERMINE_PATH;
   }
 
   if (g_file_test(*path, (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
-    return 1;
+    return SUCCESS;
   } else {
-    return 0;
+    return NOT_A_FILE;
   }
 }
 
 int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
-  FILE *stream = popen("xsel --clipboard --input", "w");
-  if (stream != NULL) {
-    fwrite(emoji->bytes, strlen(emoji->bytes), 1, stream);
-    int status = pclose(stream);
-    if (status == -1) {
-      *error = "pclose failed";
-      return 0;
-    } else {
-      *error = "process failed";
-      return 1;
-    }
-  } else {
-    *error = "Failed to run process";
+  char *xsel = g_find_program_in_path("xsel");
+  if (xsel == NULL) {
+    *error = g_strdup("Failed to run xsel: Cannot find xsel in PATH. Have you installed xsel?");
+    return 0;
+  }
+
+  char *cmd = g_strdup_printf("\"%s\" --clipboard --input", xsel);
+  free(xsel);
+
+  FILE *stream = popen(cmd, "w");
+  free(cmd);
+
+  if (stream == NULL) {
+    *error = g_strdup_printf("Failed to start xsel process: %s", strerror(errno));
+    return 0;
+  }
+
+  fwrite(emoji->bytes, strlen(emoji->bytes), 1, stream);
+  int status = pclose(stream);
+  if (status == 0) {
+    *error = NULL;
     return 1;
+  } else if (status == -1) {
+    *error = g_strdup_printf("Failed to run xsel: %s", strerror(errno));
+    return 0;
+  } else {
+    *error = g_strdup_printf("xsel did not complete successfully (exit code %d)", status);
+    return 0;
   }
 }
 
@@ -280,8 +300,8 @@ static void get_emoji (  Mode *sw )
     EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data ( sw );
     char *path;
 
-    int result = find_emoji_file(&path);
-    if (result) {
+    find_emoji_file_result result = find_emoji_file(&path);
+    if (result == SUCCESS) {
       pd->emojis = read_emojis_from_file(path);
       pd->matcher_strings = malloc(sizeof(char*) * pd->emojis->length);
       for (int i = 0; i < pd->emojis->length; ++i) {
@@ -292,7 +312,11 @@ static void get_emoji (  Mode *sw )
         );
       }
     } else {
-      pd->message = "Failed to load emoji file";
+      if (result == CANNOT_DETERMINE_PATH) {
+        pd->message = g_strdup("Failed to load emoji file: The path could not be determined");
+      } else if (result == NOT_A_FILE) {
+        pd->message = g_markup_printf_escaped("Failed to load emoji file: <tt>%s</tt> is not a file\nThis will be fixed automatically in the future.", path);
+      }
       pd->emojis = emoji_list_new(0);
       pd->matcher_strings = NULL;
     }
@@ -329,11 +353,11 @@ static ModeMode emoji_mode_result ( Mode *sw, int mretv, char **input, unsigned 
     } else if ( mretv & MENU_QUICK_SWITCH ) {
         retv = ( mretv & MENU_LOWER_MASK );
     } else if ( ( mretv & MENU_OK ) ) {
-        char *error = NULL;
-        int result = copy_emoji_to_clipboard(emoji_list_get(pd->emojis, selected_line), &error);
-        if (!result) {
+        int result = copy_emoji_to_clipboard(emoji_list_get(pd->emojis, selected_line), &(pd->message));
+        if (result) {
+          retv = MODE_EXIT;
+        } else {
           retv = RELOAD_DIALOG;
-          pd->message = error;
         }
     } else if ( ( mretv & MENU_ENTRY_DELETE ) == MENU_ENTRY_DELETE ) {
         retv = RELOAD_DIALOG;
@@ -349,7 +373,8 @@ static void emoji_mode_destroy ( Mode *sw )
           g_free(pd->matcher_strings[i]);
         }
         emoji_list_free(pd->emojis);
-        g_free ( pd );
+        g_free(pd->message);
+        g_free(pd);
         mode_set_private_data ( sw, NULL );
     }
 }
