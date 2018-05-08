@@ -32,9 +32,10 @@ emoji for "Unicorn face" being selected](screenshot.png)
 |------------|-----------------|
 | rofi 	     | 1.4 (or git)	   |
 
-### Installation
+### Initial building
 
-**rofi-emoji** uses autotools as build system. If installing from git, the following steps should install it:
+**rofi-emoji** uses autotools as build system. If installing from git, the
+following steps should install it:
 
 ```bash
 $ autoreconf -i
@@ -42,6 +43,22 @@ $ mkdir build
 $ cd build/
 $ ../configure
 $ make
+```
+
+Now you can run `make` inside the `build/` directory to build again, or follow
+the **Installation** instructions below to install the plugin.
+
+### Running tests
+
+Run tests with `make check`. You can also call `../configure` with the
+`--enable-always-buil-tests` to get tests to run automatically on `make all`.
+
+### Installation
+
+Install the plugin to try it out with Rofi:
+
+```bash
+# in build dir
 $ sudo make install
 $ mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji"
 $ cp ../emoji-test.txt "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji/emoji-test.txt"

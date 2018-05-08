@@ -1,4 +1,4 @@
-AC_INIT([rofi-emoji], [0.0.1], [https://my-neat-plugin.org//],[],[https://support.my-neat-plugin.org/])
+AC_INIT([rofi-emoji], [0.0.1], [https://github.com/Mange/rofi-emoji],[],[magnus.bergmark@gmail.com])
 
 AC_CONFIG_HEADER([config.h])
 
@@ -8,7 +8,7 @@ dnl ---------------------------------------------------------------------
 dnl Setup automake to be silent and in foreign mode.
 dnl We want xz distribution
 dnl ---------------------------------------------------------------------
-AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects dist-xz])
+AM_INIT_AUTOMAKE([-Wall -Werror -Wno-portability foreign subdir-objects dist-xz])
 AM_SILENT_RULES([yes])
 
 dnl ---------------------------------------------------------------------
@@ -60,6 +60,11 @@ dnl ---------------------------------------------------------------------
 dnl Add extra compiler flags
 dnl ---------------------------------------------------------------------
 AC_SUBST([AM_CFLAGS])
+
+dnl ----
+dnl Enable tests
+dnl ----
+GLIB_TESTS
 
 AC_CONFIG_FILES([Makefile ])
 AC_OUTPUT
