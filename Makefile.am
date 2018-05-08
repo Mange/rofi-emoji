@@ -6,6 +6,7 @@ plugin_LTLIBRARIES = emoji.la
 emoji_la_SOURCES=\
 		 src/emoji.c \
 		 src/emoji_list.c \
+		 src/loader.c \
 		 src/plugin.c
 
 emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@
