@@ -19,6 +19,11 @@ You may need to manually specify the `-plugin-path` option:
     rofi -show emoji -modi emoji -plugin-path /usr/local/lib/rofi
 ```
 
+## Screenshot
+
+![Screenshot showing a Rofi window searching for emojis containing "uni", the
+emoji for "Unicorn face" being selected](screenshot.png)
+
 ## Compilation
 
 ### Dependencies
