@@ -1,4 +1,5 @@
 #include <errno.h>
+#include <glib.h>
 #include <gmodule.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -226,6 +227,24 @@ EmojiList *read_emojis_from_file(char *path) {
   return list;
 }
 
+int find_emoji_file(char **path) {
+  const char *data_dir = g_get_user_data_dir();
+  if (data_dir == NULL) {
+    return -1;
+  }
+
+  *path = g_build_filename(data_dir, "rofi-emoji", "emoji-test.txt", NULL);
+  if (*path == NULL) {
+    return -1;
+  }
+
+  if (g_file_test(*path, (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
 int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
   FILE *stream = popen("xsel --clipboard --input", "w");
   if (stream != NULL) {
@@ -248,7 +267,15 @@ int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
 static void get_emoji (  Mode *sw )
 {
     EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data ( sw );
-    pd->emojis = read_emojis_from_file("../emoji-test.txt");
+    char *path;
+
+    int result = find_emoji_file(&path);
+    if (result) {
+      pd->emojis = read_emojis_from_file(path);
+    } else {
+      pd->message = "Failed to load emoji file";
+      pd->emojis = emoji_list_new(0);
+    }
 
     pd->matcher_strings = malloc(sizeof(char*) * pd->emojis->length);
     for (int i = 0; i < pd->emojis->length; ++i) {

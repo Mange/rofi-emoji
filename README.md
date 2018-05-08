@@ -1,7 +1,6 @@
 # Rofi emoji plugin
 
-**NOTE:** This is a work-in-progress. It won't work unless you run rofi from
-the `build` directory currently.
+**NOTE:** This is a work-in-progress. C code needs to be audited for bugs, etc.
 
 An emoji selector plugin for Rofi that copies the selected emoji to the X11
 CLIPBOARD on selection.
@@ -39,6 +38,8 @@ $ cd build/
 $ ../configure
 $ make
 $ sudo make install
+$ mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji"
+$ cp ../emoji-test.txt "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji/emoji-test.txt"
 ```
 
 ## Refreshing the list of emojis
