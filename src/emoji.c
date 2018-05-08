@@ -51,16 +51,26 @@ void emoji_free(Emoji *emoji) {
 }
 
 EmojiList *emoji_list_new(int capacity) {
-  Emoji *buf = malloc(sizeof(Emoji) * capacity);
-  if (buf == NULL) {
+  EmojiList *list = malloc(sizeof(EmojiList));
+  if (list == NULL) {
     return NULL;
-  } else {
-    EmojiList *list = malloc(sizeof(EmojiList));
-    list->capacity = capacity;
-    list->length = 0;
-    list->emojis = buf;
-    return list;
   }
+
+  list->capacity = capacity;
+  list->length = 0;
+  list->emojis = NULL;
+
+  if (capacity > 0) {
+    Emoji *buf = malloc(sizeof(Emoji) * capacity);
+    if (buf == NULL) {
+      free(list);
+      return NULL;
+    } else {
+      list->emojis = buf;
+    }
+  }
+
+  return list;
 }
 
 int emoji_list_resize(EmojiList *self, int capacity) {
@@ -108,6 +118,7 @@ void emoji_list_free(EmojiList *self) {
   for (int i = 0; i < self->length; ++i) {
     emoji_free(&self->emojis[i]);
   }
+
   free(self->emojis);
   self->emojis = NULL;
   self->length = 0;
