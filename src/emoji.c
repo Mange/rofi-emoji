@@ -258,7 +258,7 @@ int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
       return 1;
     }
   } else {
-    printf("Failed to run process\n");
+    *error = "Failed to run process";
     return 1;
   }
 }
@@ -272,18 +272,18 @@ static void get_emoji (  Mode *sw )
     int result = find_emoji_file(&path);
     if (result) {
       pd->emojis = read_emojis_from_file(path);
+      pd->matcher_strings = malloc(sizeof(char*) * pd->emojis->length);
+      for (int i = 0; i < pd->emojis->length; ++i) {
+        Emoji *emoji = emoji_list_get(pd->emojis, i);
+        pd->matcher_strings[i] = g_strdup_printf(
+            "%s %s %s / %s",
+            emoji->bytes, emoji->name, emoji->group, emoji->subgroup
+        );
+      }
     } else {
       pd->message = "Failed to load emoji file";
       pd->emojis = emoji_list_new(0);
-    }
-
-    pd->matcher_strings = malloc(sizeof(char*) * pd->emojis->length);
-    for (int i = 0; i < pd->emojis->length; ++i) {
-      Emoji *emoji = emoji_list_get(pd->emojis, i);
-      pd->matcher_strings[i] = g_strdup_printf(
-          "%s %s %s / %s",
-          emoji->bytes, emoji->name, emoji->group, emoji->subgroup
-      );
+      pd->matcher_strings = NULL;
     }
 }
 
@@ -345,7 +345,7 @@ static void emoji_mode_destroy ( Mode *sw )
 
 static char *emoji_get_message (const Mode *sw) {
     EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data ( sw );
-    return pd->message;
+    return g_strdup(pd->message);
 }
 
 static char *_get_display_value ( const Mode *sw, unsigned int selected_line, G_GNUC_UNUSED int *state, G_GNUC_UNUSED GList **attr_list, int get_entry )
