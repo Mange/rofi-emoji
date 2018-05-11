@@ -76,7 +76,7 @@ static void get_emoji( Mode *sw) {
       pd->message = g_strdup("Failed to load emoji file: The path could not be determined");
     } else if (result == NOT_A_FILE) {
       pd->message = g_markup_printf_escaped(
-        "Failed to load emoji file: <tt>%s</tt> is not a file\nThis will be fixed automatically in the future.",
+        "Failed to load emoji file: <tt>%s</tt> is not a file\nAlso searched in every path in $XDG_DATA_DIRS.",
         path
       );
     }

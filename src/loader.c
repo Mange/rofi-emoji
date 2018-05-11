@@ -22,23 +22,45 @@ char *skip_to_after(char *haystack, char* needle) {
 }
 
 FindEmojiFileResult find_emoji_file(char **path) {
-  const char *data_dir = g_get_user_data_dir();
-  if (data_dir == NULL) {
+  const char * const *data_dirs = g_get_system_data_dirs();
+  if (data_dirs == NULL) {
     return CANNOT_DETERMINE_PATH;
   }
 
-  *path = g_build_filename(data_dir, "rofi-emoji", "emoji-test.txt", NULL);
-  if (*path == NULL) {
-    return CANNOT_DETERMINE_PATH;
+  // Store first path in case file cannot be found; this path will then be the
+  // path reported to the user in the error message.
+  char *first_path = NULL;
+
+  int index = 0;
+  char const *data_dir = data_dirs[index];
+  while (1) {
+    char *current_path = g_build_filename(data_dir, "rofi-emoji", "emoji-test.txt", NULL);
+    if (current_path == NULL) {
+      return CANNOT_DETERMINE_PATH;
+    }
+
+    if (g_file_test(current_path, (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
+      *path = current_path;
+      g_free(first_path);
+      return SUCCESS;
+    }
+
+    if (first_path == NULL) {
+      first_path = current_path;
+    } else {
+      g_free(current_path);
+    }
+
+    index += 1;
+    data_dir = data_dirs[index];
+    if (data_dir == NULL) {
+      break;
+    }
   }
 
-  if (g_file_test(*path, (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
-    return SUCCESS;
-  } else {
-    return NOT_A_FILE;
-  }
+  *path = first_path;
+  return NOT_A_FILE;
 }
-
 
 EmojiList *read_emojis_from_file(char *path) {
   FILE *file = fopen(path, "r");

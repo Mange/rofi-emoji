@@ -1,22 +1,14 @@
 # Rofi emoji plugin
 
-**NOTE:** This is a work-in-progress. C code needs to be audited for bugs, etc.
-
 An emoji selector plugin for Rofi that copies the selected emoji to the X11
 CLIPBOARD on selection.
 
-To run this you need rofi 1.4+ and xsel installed.
+## Usage
 
 Run rofi like:
 
 ```bash
-    rofi -show emoji -modi emoji
-```
-
-You may need to manually specify the `-plugin-path` option:
-
-```bash
-    rofi -show emoji -modi emoji -plugin-path /usr/local/lib/rofi
+rofi -show emoji -modi emoji
 ```
 
 ## Screenshot
@@ -24,32 +16,70 @@ You may need to manually specify the `-plugin-path` option:
 ![Screenshot showing a Rofi window searching for emojis containing "uni", the
 emoji for "Unicorn face" being selected](screenshot.png)
 
-## Compilation
+## Installation
 
-### Dependencies
+**Dependencies**
 
-| Dependency | Version         |
-|------------|-----------------|
-| rofi 	     | 1.4 (or git)	   |
+| Dependency | Version      |
+|------------|--------------|
+| rofi       | 1.4 (or git) |
+| xsel       |              |
 
-### Installation
+### Arch Linux
 
-**rofi-emoji** uses autotools as build system. If installing from git, the following steps should install it:
+`rofi-emoji` can be installed via [AUR](https://aur.archlinux.org/):
+[rofi-emoji](https://aur.archlinux.org/packages/rofi-emoji/)
+
+### Compile from source
+
+`rofi-emoji` uses autotools as build system. Download the source and run the following to install it:
 
 ```bash
 $ autoreconf -i
 $ mkdir build
 $ cd build/
-$ ../configure
+$ ../configure --prefix=/usr/local # use same prefix as rofi
 $ make
 $ sudo make install
-$ mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji"
-$ cp ../emoji-test.txt "${XDG_DATA_HOME:-$HOME/.local/share}/rofi-emoji/emoji-test.txt"
 ```
 
-## Refreshing the list of emojis
+#### Rofi prefix
 
-The emoji list is based on this URL:
-https://www.unicode.org/Public/emoji/11.0/emoji-test.txt
+You should be able to find rofi's prefix using these commands:
 
-You should be able to find the latest version and download it to refresh them.
+```bash
+# Simplest to understand; resolve "which rofi" to the real path (in case it is a symlink),
+# then resolve its grandparent (/usr/local/bin/rofi -> /usr/local/bin -> /usr/local)
+realpath -mL "$(realpath -L "$(which rofi)")/../.."
+
+# This might work if you don't have realpath(1) installed. It uses dirname
+twice instead of realpath -Lm to go up two steps.
+dirname "$(dirname "$(readlink -f "$(which rofi)")")"
+
+# Still didn't work? That leaves you with your human intuition.
+ls -l "$(which rofi)"
+```
+
+## Emoji database
+
+When installing the emoji database (`emoji-test.txt` file) is installed in
+`$PREFIX/share/rofi-emoji`. The plugin will search `$XDG_DATA_DIRS` for a
+directory where `share/rofi-emoji.txt` exists in. If the plugin cannot find the
+data, make sure `$XDG_DATA_DIRS` is set correctly.
+
+If it is unset it should default to `/usr/local/share:/usr/share`, which works
+with the most common prefixes.
+
+### Updating to a newer version
+
+The list was downloaded using
+
+```bash
+curl -o emoji-test.txt "https://www.unicode.org/Public/emoji/11.0/emoji-test.txt"
+```
+
+Try downloading it again. Maybe bumping the version in the URL first.
+
+## License
+
+This plugin is released under the MIT license.
