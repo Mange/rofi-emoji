@@ -11,6 +11,9 @@
 #include "emoji_list.h"
 #include "loader.h"
 
+// From rofi
+void rofi_view_hide();
+
 G_MODULE_EXPORT Mode mode;
 
 typedef struct {
@@ -19,14 +22,14 @@ typedef struct {
   char *message;
 } EmojiModePrivateData;
 
-int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
+int store_emoji_in_selection(char *selection, Emoji *emoji, char **error) {
   char *xsel = g_find_program_in_path("xsel");
   if (xsel == NULL) {
     *error = g_strdup("Failed to run xsel: Cannot find xsel in PATH. Have you installed xsel?");
     return FALSE;
   }
 
-  char *cmd = g_strdup_printf("\"%s\" --clipboard --input", xsel);
+  char *cmd = g_strdup_printf("\"%s\" --%s --input", xsel, selection);
   free(xsel);
 
   FILE *stream = popen(cmd, "w");
@@ -47,6 +50,54 @@ int copy_emoji_to_clipboard(Emoji *emoji, char **error) {
     return FALSE;
   } else {
     *error = g_strdup_printf("xsel did not complete successfully (exit code %d)", status);
+    return FALSE;
+  }
+}
+
+int insert_selection_via_xdotool(char **error) {
+  char *xdotool = g_find_program_in_path("xdotool");
+  if (xdotool == NULL) {
+    *error = g_strdup("Failed to run xdotool: Cannot find xdotool in PATH. Have you installed xdotool?");
+    return FALSE;
+  }
+
+  char *cmd = g_strdup_printf("\"%s\" key Shift+Insert", xdotool);
+  free(xdotool);
+
+  int result = system(cmd);
+  free(cmd);
+
+  if (result == -1) {
+    *error = g_strdup_printf("xdotool failed to start: Forking failed");
+    return FALSE;
+  } else if (result != 0) {
+    *error = g_strdup_printf("xdotool failed: Exited with %i", result);
+    return FALSE;
+  }
+
+  *error = NULL;
+  return TRUE;
+}
+
+int insert_emoji(Emoji *emoji, char **error) {
+  // Inserting emojis happens through three steps:
+  //
+  //  0. Hide Rofi window, restoring focus to the previous app. (Happens before
+  //     calling this function)
+  //  1. Copy the emoji to the X selection. (Using xsel)
+  //  2. Call xdotool to type Shift+Insert in the focused window.
+  //
+  // xdotool does not support typing unicode characters like emoji, so we have
+  // to rely on the clipboard instead.
+
+  int result = store_emoji_in_selection("primary", emoji, error);
+  if (result == TRUE) {
+    //
+    // Call xdotool to insert selection in other window
+    //
+    result = insert_selection_via_xdotool(error);
+    return result;
+  } else {
     return FALSE;
   }
 }
@@ -134,7 +185,16 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input, unsigned in
   } else if (mretv & MENU_QUICK_SWITCH) {
     retv = (mretv & MENU_LOWER_MASK);
   } else if ((mretv & MENU_OK) ) {
-    int result = copy_emoji_to_clipboard(emoji_list_get(pd->emojis, selected_line), &(pd->message));
+    int result;
+
+    if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
+      // Custom action (Shift+Enter) should copy to clipboard
+      result = store_emoji_in_selection("clipboard", emoji_list_get(pd->emojis, selected_line), &(pd->message));
+    } else {
+      // Normal action (Enter) should insert directly
+      rofi_view_hide(); // Step 0: Hide Rofi window first
+      result = insert_emoji(emoji_list_get(pd->emojis, selected_line), &(pd->message));
+    }
     if (result) {
       retv = MODE_EXIT;
     } else {

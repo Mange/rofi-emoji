@@ -1,7 +1,6 @@
 # Rofi emoji plugin
 
-An emoji selector plugin for Rofi that copies the selected emoji to the X11
-CLIPBOARD on selection.
+An emoji selector plugin for Rofi that can either insert the emoji directly or copy it to the clipboard.
 
 ## Usage
 
@@ -10,6 +9,14 @@ Run rofi like:
 ```bash
 rofi -show emoji -modi emoji
 ```
+
+| Key                               | Effect                  |
+|-----------------------------------|-------------------------|
+| <kbd>Enter</kbd>                  | Insert emoji            |
+| <kbd>Shift</kbd>+<kbd>Enter</kbd> | Copy emoji to clipboard |
+
+**Note:** If you change your keybinds for `kb-accept` or `kb-accept-alt`, then
+your changes will also apply here.
 
 ## Screenshot
 
@@ -24,6 +31,7 @@ emoji for "Unicorn face" being selected](screenshot.png)
 |------------|--------------|
 | rofi       | 1.4 (or git) |
 | xsel       |              |
+| xdotool    |              |
 
 ### Arch Linux
 
