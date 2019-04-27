@@ -9,6 +9,7 @@ emoji_la_SOURCES=\
 		 src/emoji.c \
 		 src/emoji_list.c \
 		 src/loader.c \
+		 src/utils.c \
 		 src/plugin.c
 
 emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@

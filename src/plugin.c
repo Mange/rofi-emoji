@@ -118,7 +118,7 @@ static void get_emoji( Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data(sw);
   char *path;
 
-  FindEmojiFileResult result = find_emoji_file(&path);
+  FindDataFileResult result = find_emoji_file(&path);
   if (result == SUCCESS) {
     pd->emojis = read_emojis_from_file(path);
     pd->matcher_strings = generate_matcher_strings(pd->emojis);
