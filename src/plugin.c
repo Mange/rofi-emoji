@@ -1,7 +1,4 @@
-#include <errno.h>
 #include <glib.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 #include <rofi/mode.h>
 #include <rofi/helper.h>
@@ -22,84 +19,26 @@ typedef struct {
   char *message;
 } EmojiModePrivateData;
 
-int store_emoji_in_selection(char *selection, Emoji *emoji, char **error) {
-  char *xsel = g_find_program_in_path("xsel");
-  if (xsel == NULL) {
-    *error = g_strdup("Failed to run xsel: Cannot find xsel in PATH. Have you installed xsel?");
-    return FALSE;
-  }
-
-  char *cmd = g_strdup_printf("\"%s\" --%s --input", xsel, selection);
-  free(xsel);
-
-  FILE *stream = popen(cmd, "w");
-  free(cmd);
-
-  if (stream == NULL) {
-    *error = g_strdup_printf("Failed to start xsel process: %s", strerror(errno));
-    return FALSE;
-  }
-
-  fwrite(emoji->bytes, strlen(emoji->bytes), 1, stream);
-  int status = pclose(stream);
-  if (status == 0) {
-    *error = NULL;
-    return TRUE;
-  } else if (status == -1) {
-    *error = g_strdup_printf("Failed to run xsel: %s", strerror(errno));
-    return FALSE;
-  } else {
-    *error = g_strdup_printf("xsel did not complete successfully (exit code %d)", status);
-    return FALSE;
-  }
+// Execute the clipboard adapter with the "copy" action so the selected emoji
+// is copied to the users' clipboard.
+//
+// Returns TRUE on success, or return FALSE on error after setting the provided
+// error buffer to a user error message.
+int copy_emoji(Emoji *emoji, char **error) {
+  return run_clipboard_adapter("copy", emoji, error, TRUE);
 }
 
-int insert_selection_via_xdotool(char **error) {
-  char *xdotool = g_find_program_in_path("xdotool");
-  if (xdotool == NULL) {
-    *error = g_strdup("Failed to run xdotool: Cannot find xdotool in PATH. Have you installed xdotool?");
-    return FALSE;
-  }
+// Execute the clipboard adapter with the "insert" action to let the selected
+// emoji be inserted into the foreground window.
+// This requires Rofi to disappear/terminate so it's a terminal mode so void
+// is the used return type.
+void insert_emoji(Emoji *emoji, char **error) {
+  // Hide rofi window before triggering the insert action so the correct window
+  // get the emoji.
+  rofi_view_hide();
 
-  char *cmd = g_strdup_printf("\"%s\" key Shift+Insert", xdotool);
-  free(xdotool);
-
-  int result = system(cmd);
-  free(cmd);
-
-  if (result == -1) {
-    *error = g_strdup_printf("xdotool failed to start: Forking failed");
-    return FALSE;
-  } else if (result != 0) {
-    *error = g_strdup_printf("xdotool failed: Exited with %i", result);
-    return FALSE;
-  }
-
-  *error = NULL;
-  return TRUE;
-}
-
-int insert_emoji(Emoji *emoji, char **error) {
-  // Inserting emojis happens through three steps:
-  //
-  //  0. Hide Rofi window, restoring focus to the previous app. (Happens before
-  //     calling this function)
-  //  1. Copy the emoji to the X selection. (Using xsel)
-  //  2. Call xdotool to type Shift+Insert in the focused window.
-  //
-  // xdotool does not support typing unicode characters like emoji, so we have
-  // to rely on the clipboard instead.
-
-  int result = store_emoji_in_selection("primary", emoji, error);
-  if (result == TRUE) {
-    //
-    // Call xdotool to insert selection in other window
-    //
-    result = insert_selection_via_xdotool(error);
-    return result;
-  } else {
-    return FALSE;
-  }
+  // Since rofi is hidden, we cannot show any errors so don't collect stderr.
+  run_clipboard_adapter("insert", emoji, error, FALSE);
 }
 
 char **generate_matcher_strings(EmojiList *list) {
@@ -114,7 +53,7 @@ char **generate_matcher_strings(EmojiList *list) {
   return strings;
 }
 
-static void get_emoji( Mode *sw) {
+static void get_emoji(Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data(sw);
   char *path;
 
@@ -124,10 +63,13 @@ static void get_emoji( Mode *sw) {
     pd->matcher_strings = generate_matcher_strings(pd->emojis);
   } else {
     if (result == CANNOT_DETERMINE_PATH) {
-      pd->message = g_strdup("Failed to load emoji file: The path could not be determined");
+      pd->message = g_strdup(
+        "Failed to load emoji file: The path could not be determined"
+      );
     } else if (result == NOT_A_FILE) {
       pd->message = g_markup_printf_escaped(
-        "Failed to load emoji file: <tt>%s</tt> is not a file\nAlso searched in every path in $XDG_DATA_DIRS.",
+        "Failed to load emoji file: <tt>%s</tt> is not a file\nAlso searched "\
+        "in every path in $XDG_DATA_DIRS.",
         path
       );
     }
@@ -160,7 +102,8 @@ static int emoji_mode_init(Mode *sw) {
  * @returns an unsigned in with the number of entries.
  */
 static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
-  const EmojiModePrivateData *pd = (const EmojiModePrivateData *) mode_get_private_data(sw);
+  const EmojiModePrivateData *pd =
+    (const EmojiModePrivateData *) mode_get_private_data(sw);
   return pd->emojis->length;
 }
 
@@ -174,7 +117,12 @@ static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
  *
  * @returns the next #ModeMode.
  */
-static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input, unsigned int selected_line) {
+static ModeMode emoji_mode_result(
+  Mode *sw,
+  int mretv,
+  char **input,
+  unsigned int selected_line
+) {
   ModeMode retv = MODE_EXIT;
   EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data(sw);
 
@@ -185,20 +133,22 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input, unsigned in
   } else if (mretv & MENU_QUICK_SWITCH) {
     retv = (mretv & MENU_LOWER_MASK);
   } else if ((mretv & MENU_OK) ) {
-    int result;
+    Emoji *emoji = emoji_list_get(pd->emojis, selected_line);
 
     if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
       // Custom action (Shift+Enter) should copy to clipboard
-      result = store_emoji_in_selection("clipboard", emoji_list_get(pd->emojis, selected_line), &(pd->message));
+      if (copy_emoji(emoji, &(pd->message))) {
+        retv = MODE_EXIT;
+      } else {
+        // Copying failed, reload dialog to show error message in pd->message.
+        retv = RELOAD_DIALOG;
+      }
     } else {
       // Normal action (Enter) should insert directly
-      rofi_view_hide(); // Step 0: Hide Rofi window first
-      result = insert_emoji(emoji_list_get(pd->emojis, selected_line), &(pd->message));
-    }
-    if (result) {
+      insert_emoji(emoji, &(pd->message));
+      // Always exit rofi after this action completes as the window is gone
+      // anyway.
       retv = MODE_EXIT;
-    } else {
-      retv = RELOAD_DIALOG;
     }
   } else if ((mretv & MENU_ENTRY_DELETE) == MENU_ENTRY_DELETE) {
     retv = RELOAD_DIALOG;
@@ -230,7 +180,8 @@ static void emoji_mode_destroy(Mode *sw) {
  *
  * Query the mode for a user display.
  *
- * @return a new allocated (valid pango markup) message to display (user should free).
+ * @return a new allocated (valid pango markup) message to display (user should
+ * free).
  */
 static char *emoji_get_message(const Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data(sw);
@@ -248,7 +199,13 @@ static char *emoji_get_message(const Mode *sw) {
  *
  * @returns allocated new string and state when get_entry is TRUE otherwise just the state.
  */
-static char *get_display_value(const Mode *sw, unsigned int selected_line, G_GNUC_UNUSED int *state, G_GNUC_UNUSED GList **attr_list, int get_entry) {
+static char *get_display_value(
+  const Mode *sw,
+  unsigned int selected_line,
+  G_GNUC_UNUSED int *state,
+  G_GNUC_UNUSED GList **attr_list,
+  int get_entry
+) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *) mode_get_private_data(sw);
 
   // Rofi is not yet exporting these constants in their headers

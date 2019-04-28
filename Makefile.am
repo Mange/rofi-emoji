@@ -3,7 +3,7 @@ plugindir=${rofi_PLUGIN_INSTALL_DIR}/
 
 plugin_LTLIBRARIES = emoji.la
 
-dist_pkgdata_DATA = all_emojis.txt README.md screenshot.png
+dist_pkgdata_DATA = all_emojis.txt clipboard-adapter.sh README.md screenshot.png
 
 emoji_la_SOURCES=\
 		 src/emoji.c \
