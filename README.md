@@ -30,8 +30,20 @@ emoji for "Unicorn face" being selected](screenshot.png)
 | Dependency | Version      |
 |------------|--------------|
 | rofi       | 1.4 (or git) |
-| xsel       |              |
-| xdotool    |              |
+
+**Optional dependencies**
+
+In order to actually use rofi-emoji some "adapters" need to be installed. A
+"copy adapter" is needed for the "Copy" action
+(<kbd>Shift</kbd>+<kbd>Enter</kbd>) and an "insert adapter" is needed for the
+"Insert" action (<kbd>Enter</kbd>).
+
+| Dependency   | Type           | Notes                                  |
+|--------------|----------------|----------------------------------------|
+| xsel         | Copy adapter   | For X11.                               |
+| xclip        | Copy adapter   | For X11.                               |
+| xdotool      | Insert adapter | For X11. Also a Copy adapter for X11.  |
+| wl-clipboard | Copy adapter   | For Wayland. (**Untested!**)           |
 
 ### Arch Linux
 
