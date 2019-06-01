@@ -46,26 +46,9 @@ emoji for "Unicorn face" being selected](screenshot.png)
 $ autoreconf -i
 $ mkdir build
 $ cd build/
-$ ../configure --prefix=/usr/local # use same prefix as rofi
+$ ../configure
 $ make
 $ sudo make install
-```
-
-#### Rofi prefix
-
-You should be able to find rofi's prefix using these commands:
-
-```bash
-# Simplest to understand; resolve "which rofi" to the real path (in case it is a symlink),
-# then resolve its grandparent (/usr/local/bin/rofi -> /usr/local/bin -> /usr/local)
-realpath -mL "$(realpath -L "$(which rofi)")/../.."
-
-# This might work if you don't have realpath(1) installed. It uses dirname
-twice instead of realpath -Lm to go up two steps.
-dirname "$(dirname "$(readlink -f "$(which rofi)")")"
-
-# Still didn't work? That leaves you with your human intuition.
-ls -l "$(which rofi)"
 ```
 
 ## Emoji database
