@@ -1,4 +1,4 @@
-AC_INIT([rofi-emoji], [0.0.1], [https://my-neat-plugin.org//],[],[https://support.my-neat-plugin.org/])
+AC_INIT([rofi-emoji], [1.1.0], [https://github.com/Mange/rofi-emoji],[],[https://github.com/Mange/rofi-emoji/issues])
 
 AC_CONFIG_HEADER([config.h])
 

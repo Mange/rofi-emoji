@@ -1,6 +1,7 @@
 # Rofi emoji plugin
 
-An emoji selector plugin for Rofi that can either insert the emoji directly or copy it to the clipboard.
+An emoji selector plugin for Rofi that can either insert the emoji directly or
+copy it to the clipboard.
 
 ## Usage
 
