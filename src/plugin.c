@@ -108,7 +108,7 @@ char **generate_matcher_strings(EmojiList *list) {
     Emoji *emoji = emoji_list_get(list, i);
     strings[i] = g_strdup_printf(
       "%s %s %s / %s",
-      emoji->bytes, emoji->name, emoji->group, emoji->subgroup
+      emoji->bytes, emoji->keywords, emoji->group, emoji->subgroup
     );
   }
   return strings;
@@ -268,7 +268,7 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line, G_GNU
   } else {
     return g_markup_printf_escaped(
       "%s %s <span size='small'>(%s / %s)</span>",
-      emoji->bytes, emoji->name, emoji->group, emoji->subgroup
+      emoji->bytes, emoji->keywords, emoji->group, emoji->subgroup
     );
   }
 }

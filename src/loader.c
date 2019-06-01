@@ -1,24 +1,42 @@
 #include <glib.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "loader.h"
 
 #define MAX_LINE_LENGTH 1024
-#define GROUP_PREFIX "# group: "
-#define SUBGROUP_PREFIX "# subgroup: "
 
-char *skip_to_after(char *haystack, char* needle) {
-  if (haystack != NULL) {
-    char *offset = strstr(haystack, needle);
-    if (offset != NULL) {
-      // Offset is now at start of needle, so skip past it before returning.
-      offset += strlen(needle);
-      return offset;
-    }
+// Copies the text from the `input` string up until (but not including) the
+// next `until` character into a newly allocated buffer at `result`. You need
+// to free `result` when you are done with it.
+//
+// Returns the position in the input string after the `until` character.
+//
+// If `until` could not be found in `string`, it will not advance and `result`
+// will be set to `NULL`.
+char *scan_until(const char until, char *input, char **result) {
+  char *index = strchr(input, until);
+
+  if (index == NULL) {
+    *result = NULL;
+    return input;
   }
 
-  return NULL;
+  // Allocate result buffer. They need to equal the length of the matching
+  // input, plus 1 for the NUL byte.
+  int length = (index - input);
+  *result = malloc(length + 1);
+  if (result == NULL) {
+    return input;
+  }
+
+  // Copy input into result
+  strncpy(*result, input, length);
+  (*result)[length] = '\0';
+
+  // Advance input to character after the `until` character.
+  return index + 1;
 }
 
 FindEmojiFileResult find_emoji_file(char **path) {
@@ -34,7 +52,7 @@ FindEmojiFileResult find_emoji_file(char **path) {
   int index = 0;
   char const *data_dir = data_dirs[index];
   while (1) {
-    char *current_path = g_build_filename(data_dir, "rofi-emoji", "emoji-test.txt", NULL);
+    char *current_path = g_build_filename(data_dir, "rofi-emoji", "all_emojis.txt", NULL);
     if (current_path == NULL) {
       return CANNOT_DETERMINE_PATH;
     }
@@ -70,72 +88,46 @@ EmojiList *read_emojis_from_file(char *path) {
 
   char line[MAX_LINE_LENGTH];
 
-  char *current_group = NULL;
-  char *current_subgroup = NULL;
-
   EmojiList *list = emoji_list_new(512);
 
   while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
-    g_strchomp(line);
+    char *cursor = line;
 
-    if (g_str_has_prefix(line, GROUP_PREFIX)) {
-      char *group_name = line + strlen(GROUP_PREFIX);
-      g_free(current_group);
-      current_group = g_strdup(group_name);
-    } else if (g_str_has_prefix(line, SUBGROUP_PREFIX)) {
-      char *subgroup_name = line + strlen(SUBGROUP_PREFIX);
-      g_free(current_subgroup);
-      current_subgroup = g_strdup(subgroup_name);
-    } else if (current_group != NULL && current_subgroup != NULL) {
+    char *bytes = NULL;
+    char *group = NULL;
+    char *subgroup = NULL;
+    char *keywords = NULL;
 
-      // Each emoji lines looks like this, but with variable content in some of
-      // the sections:
-      //
-      //
-      // 1F923    ; fully-qualified     # 🤣 rolling on the floor laughing
-      // ──[skip]───────────────────^─────^
-      // [human-readable bytes] ; [qualification] # [bytes] [name]
-      //
-      // Skipping ahead to the "fully-qualified" bit, then skip all the spaces
-      // until where the actual emoji bytes start. Only fully-qualified emojis
-      // should be found so it is an excellent marker to use.
-      char *emoji_str = skip_to_after(line, "; fully-qualified ");
-      emoji_str = skip_to_after(emoji_str, "# ");
-      // If NULL, then the line did not match this format. Skip to next line.
-      if (emoji_str == NULL) { continue; }
+    // Each line in the file has this format:
+    // [bytes]\t[group]\t[subgroup]\t[keywords]
 
-      // Just some basic sanity checking; if the remaning bytes are too short
-      // then something is wrong. Skip line.
-      if (strlen(emoji_str) < 5) { continue; }
-
-      // Find the location of the space between the emoji bytes and the name.
-      char *space = strchr(emoji_str, ' ');
-      if (space == NULL) { continue; }
-
-      // Length of emoji bytes
-      size_t bytes_len = (space - emoji_str);
-      char *bytes = g_strndup(emoji_str, bytes_len); // freed by emoji_free_inside
-
-      // Remaining text on this line is the name, prefixed with the space. Make
-      // sure that we don't skip past the end of the string when we skip past
-      // the space.
-      if (strlen(space) < 2) {
-        g_free(bytes);
-        continue;
-      }
-      char *name = g_strdup(space + 1); // freed by emoji_free_inside
-
-      char *group = g_strdup(current_group); // freed by emoji_free_inside
-      char *subgroup = g_strdup(current_subgroup); // freed by emoji_free_inside
-
-      Emoji *emoji = emoji_new(bytes, name, group, subgroup); // freed by emoji_free_inside, in emoji_list_free
-      emoji_list_push(list, emoji);
+    cursor = scan_until('\t', cursor, &bytes);
+    if (bytes == NULL) {
+      break;
     }
+    cursor = scan_until('\t', cursor, &group);
+    if (group == NULL) {
+      free(bytes);
+      break;
+    }
+    cursor = scan_until('\t', cursor, &subgroup);
+    if (subgroup == NULL) {
+      free(bytes);
+      free(group);
+      break;
+    }
+    cursor = scan_until('\n', cursor, &keywords);
+    if (keywords == NULL) {
+      free(bytes);
+      free(group);
+      free(subgroup);
+      break;
+    }
+
+    Emoji *emoji = emoji_new(bytes, keywords, group, subgroup); // freed by emoji_free_inside, in emoji_list_free
+    emoji_list_push(list, emoji);
   }
 
-
-  g_free(current_group);
-  g_free(current_subgroup);
   fclose(file);
 
   return list;
