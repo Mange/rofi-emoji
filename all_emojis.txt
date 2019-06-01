@@ -1,0 +1,1800 @@
+☺	Smileys & People	face-positive	face | outlined | relaxed | smile | smiling face
+😀	Smileys & People	face-positive	face | grin | grinning face
+😁	Smileys & People	face-positive	beaming face with smiling eyes | eye | face | grin | smile
+😂	Smileys & People	face-positive	face | face with tears of joy | joy | laugh | tear
+😃	Smileys & People	face-positive	face | grinning face with big eyes | mouth | open | smile
+😄	Smileys & People	face-positive	eye | face | grinning face with smiling eyes | mouth | open | smile
+😅	Smileys & People	face-positive	cold | face | grinning face with sweat | open | smile | sweat
+😆	Smileys & People	face-positive	face | grinning squinting face | laugh | mouth | satisfied | smile
+😉	Smileys & People	face-positive	face | wink | winking face
+😊	Smileys & People	face-positive	blush | eye | face | smile | smiling face with smiling eyes
+😋	Smileys & People	face-positive	delicious | face | savoring | savouring | smile | yum | face savouring food | um | face savoring food
+😍	Smileys & People	face-positive	smiling face with heart eyes | eye | face | love | smile | smiling face with heart-eyes
+😎	Smileys & People	face-positive	bright | cool | face | smiling face with sunglasses | sun | sunglasses
+😗	Smileys & People	face-positive	face | kiss | kissing face
+😘	Smileys & People	face-positive	face | face blowing a kiss | kiss
+😙	Smileys & People	face-positive	eye | face | kiss | kissing face with smiling eyes | smile
+😚	Smileys & People	face-positive	closed | eye | face | kiss | kissing face with closed eyes
+🙂	Smileys & People	face-positive	face | slightly smiling face | smile
+🤗	Smileys & People	face-positive	face | hug | hugging
+🤣	Smileys & People	face-positive	face | floor | laugh | rolling | rolling on the floor laughing
+🤩	Smileys & People	face-positive	eyes | face | grinning | star | star-struck
+🥰	Smileys & People	face-positive	adore | crush | hearts | in love | smiling face with hearts
+😌	Smileys & People	face-neutral	face | relieved
+😏	Smileys & People	face-neutral	face | smirk | smirking face
+😐	Smileys & People	face-neutral	deadpan | face | meh | neutral
+😑	Smileys & People	face-neutral	expressionless | face | inexpressive | meh | unexpressive
+😒	Smileys & People	face-neutral	face | unamused | unhappy
+😓	Smileys & People	face-neutral	cold | downcast face with sweat | face | sweat
+😔	Smileys & People	face-neutral	dejected | face | pensive
+😕	Smileys & People	face-neutral	confused | face | meh
+😛	Smileys & People	face-neutral	face | face with tongue | tongue
+😜	Smileys & People	face-neutral	eye | face | joke | tongue | wink | winking face with tongue
+😝	Smileys & People	face-neutral	eye | face | horrible | squinting face with tongue | taste | tongue
+😣	Smileys & People	face-neutral	face | persevere | persevering face
+😥	Smileys & People	face-neutral	disappointed | face | relieved | sad but relieved face | whew
+😪	Smileys & People	face-neutral	face | sleep | sleepy face
+😫	Smileys & People	face-neutral	face | tired
+😮	Smileys & People	face-neutral	face | face with open mouth | mouth | open | sympathy
+😯	Smileys & People	face-neutral	face | hushed | stunned | surprised
+😲	Smileys & People	face-neutral	astonished | face | shocked | totally
+😴	Smileys & People	face-neutral	face | sleep | sleeping face | zzz
+😶	Smileys & People	face-neutral	face | face without mouth | mouth | quiet | silent
+🙃	Smileys & People	face-neutral	face | upside down | upside-down
+🙄	Smileys & People	face-neutral	eyeroll | eyes | face | face with rolling eyes | rolling
+🤐	Smileys & People	face-neutral	face | mouth | zip | zipper | zipper-mouth face
+🤑	Smileys & People	face-neutral	face | money | money-mouth face | mouth
+🤔	Smileys & People	face-neutral	face | thinking
+🤤	Smileys & People	face-neutral	drooling | face
+🤨	Smileys & People	face-neutral	distrust | face with raised eyebrow | sceptic | skeptic
+☹	Smileys & People	face-negative	face | frown | frowning face
+😖	Smileys & People	face-negative	confounded | face
+😞	Smileys & People	face-negative	disappointed | face
+😟	Smileys & People	face-negative	face | worried
+😠	Smileys & People	face-negative	angry | face | mad
+😡	Smileys & People	face-negative	angry | face | mad | pouting | rage | red
+😢	Smileys & People	face-negative	cry | crying face | face | sad | tear
+😤	Smileys & People	face-negative	face | face with steam from nose | triumph | won
+😦	Smileys & People	face-negative	face | frown | frowning face with open mouth | mouth | open
+😧	Smileys & People	face-negative	anguished | face
+😨	Smileys & People	face-negative	face | fear | fearful | scared
+😩	Smileys & People	face-negative	face | tired | weary
+😬	Smileys & People	face-negative	face | grimace | grimacing face
+😭	Smileys & People	face-negative	cry | face | loudly crying face | sad | sob | tear
+😰	Smileys & People	face-negative	anxious face with sweat | blue | cold | face | rushed | sweat
+😱	Smileys & People	face-negative	face | face screaming in fear | fear | Munch | scared | scream | munch
+😳	Smileys & People	face-negative	dazed | face | flushed
+😵	Smileys & People	face-negative	dizzy | face
+🙁	Smileys & People	face-negative	face | frown | slightly frowning face
+🤪	Smileys & People	face-negative	eye | goofy | large | small | zany face
+🤬	Smileys & People	face-negative	cursing | expletive | face with symbols on mouth | swearing
+🤯	Smileys & People	face-negative	exploding head | mind blown | shocked
+🥵	Smileys & People	face-negative	feverish | flushed | heat stroke | hot | hot face | red-faced | sweating
+🥶	Smileys & People	face-negative	blue-faced | cold | cold face | freezing | frostbite | icicles
+😷	Smileys & People	face-sick	cold | doctor | face | face with medical mask | ill | mask | sick | medicine | poorly
+🤒	Smileys & People	face-sick	face | face with thermometer | ill | sick | thermometer | poorly
+🤕	Smileys & People	face-sick	bandage | face | face with head bandage | hurt | injury | face with head-bandage
+🤢	Smileys & People	face-sick	face | nauseated | vomit
+🤧	Smileys & People	face-sick	bless you | face | gesundheit | sneeze | sneezing face
+🤮	Smileys & People	face-sick	face vomiting | sick | vomit
+😇	Smileys & People	face-role	angel | face | fantasy | halo | innocent | smiling face with halo
+🤓	Smileys & People	face-role	face | geek | nerd
+🤠	Smileys & People	face-role	cowboy | cowgirl | face | hat
+🤥	Smileys & People	face-role	face | lie | lying face | pinocchio
+🤫	Smileys & People	face-role	quiet | shush | shushing face
+🤭	Smileys & People	face-role	face with hand over mouth | whoops | oops
+🥳	Smileys & People	face-role	celebration | hat | horn | party | partying face
+🥴	Smileys & People	face-role	dizzy | intoxicated | tipsy | uneven eyes | wavy mouth | woozy face
+🥺	Smileys & People	face-role	begging | mercy | pleading face | puppy eyes
+🧐	Smileys & People	face-role	face with monocle | stuffy
+☠	Smileys & People	face-fantasy	crossbones | death | face | monster | skull | skull and crossbones
+👹	Smileys & People	face-fantasy	creature | face | fairy tale | fantasy | monster | ogre
+👺	Smileys & People	face-fantasy	creature | face | fairy tale | fantasy | goblin | monster
+👻	Smileys & People	face-fantasy	creature | face | fairy tale | fantasy | ghost | monster | spectre
+👽	Smileys & People	face-fantasy	alien | creature | extraterrestrial | face | fantasy | ufo
+👾	Smileys & People	face-fantasy	alien | creature | extraterrestrial | face | monster | ufo
+👿	Smileys & People	face-fantasy	angry face with horns | demon | devil | face | fantasy | imp
+💀	Smileys & People	face-fantasy	death | face | fairy tale | monster | skull
+💩	Smileys & People	face-fantasy	dung | face | monster | pile of poo | poo | poop
+😈	Smileys & People	face-fantasy	devil | face | fantasy | horns | smile | fairy tale | smiling face with horns
+🤖	Smileys & People	face-fantasy	face | monster | robot
+🤡	Smileys & People	face-fantasy	clown | face
+😸	Smileys & People	cat-face	cat | eye | face | grin | grinning cat with smiling eyes | smile
+😹	Smileys & People	cat-face	cat | cat with tears of joy | face | joy | tear
+😺	Smileys & People	cat-face	cat | face | grinning | mouth | open | smile
+😻	Smileys & People	cat-face	smiling cat face with heart eyes | cat | eye | face | heart | love | smile | smiling cat with heart-eyes
+😼	Smileys & People	cat-face	cat | face | ironic | smile | wry | cat face with wry smile | smirk | cat with wry smile
+😽	Smileys & People	cat-face	cat | eye | face | kiss | kissing cat
+😾	Smileys & People	cat-face	cat | face | pouting
+😿	Smileys & People	cat-face	cat | cry | crying cat | face | sad | tear
+🙀	Smileys & People	cat-face	cat | face | oh | surprised | weary
+🙈	Smileys & People	monkey-face	evil | face | forbidden | monkey | see | see-no-evil monkey
+🙉	Smileys & People	monkey-face	evil | face | forbidden | hear | hear-no-evil monkey | monkey
+🙊	Smileys & People	monkey-face	evil | face | forbidden | monkey | speak | speak-no-evil monkey
+🏻	Smileys & People	skin-tone	light skin tone | skin tone | type 1–2
+🏼	Smileys & People	skin-tone	medium-light skin tone | skin tone | type 3
+🏽	Smileys & People	skin-tone	medium skin tone | skin tone | type 4
+🏾	Smileys & People	skin-tone	medium-dark skin tone | skin tone | type 5
+🏿	Smileys & People	skin-tone	dark skin tone | skin tone | type 6
+👦	Smileys & People	person	boy | young | young person
+👧	Smileys & People	person	girl | Virgo | young person | zodiac | young
+👨	Smileys & People	person	adult | man
+👩	Smileys & People	person	adult | woman
+👴	Smileys & People	person	adult | man | old
+👵	Smileys & People	person	adult | old | woman
+👶	Smileys & People	person	baby | young
+🧑	Smileys & People	person	adult | gender-neutral | person | unspecified gender
+🧒	Smileys & People	person	child | gender-neutral | toddler | unspecified gender | young
+🧓	Smileys & People	person	adult | gender-neutral | old | older person | unspecified gender
+👮	Smileys & People	person-role	cop | officer | police
+👰	Smileys & People	person-role	bride | bride with veil | veil | wedding
+👱	Smileys & People	person-role	blond | blond-haired person | hair | person: blond hair
+👲	Smileys & People	person-role	gua pi mao | hat | man | man with Chinese cap | skullcap
+👳	Smileys & People	person-role	person wearing turban | turban
+👷	Smileys & People	person-role	builder | construction | hat | worker
+👸	Smileys & People	person-role	fairy tale | fantasy | princess
+💂	Smileys & People	person-role	guard
+🕵	Smileys & People	person-role	detective | investigator | sleuth | spy
+🤰	Smileys & People	person-role	pregnant | woman
+🤱	Smileys & People	person-role	baby | breast | breastfeeding | nursing | breast-feeding
+🤴	Smileys & People	person-role	prince
+🤵	Smileys & People	person-role	groom | man | man in tuxedo | tuxedo
+🧔	Smileys & People	person-role	beard | man | man: beard | person
+🧕	Smileys & People	person-role	headscarf | hijab | mantilla | tichel | woman with headscarf
+👨‍⚕️	Smileys & People	person-role	doctor | health care | man | man health worker | nurse | therapist | healthcare
+👨‍⚖️	Smileys & People	person-role	justice | man | man judge | scales
+👨‍✈️	Smileys & People	person-role	man | pilot | plane
+👨‍🌾	Smileys & People	person-role	farmer | gardener | man | rancher
+👨‍🍳	Smileys & People	person-role	chef | cook | man
+👨‍🎓	Smileys & People	person-role	graduate | man | student
+👨‍🎤	Smileys & People	person-role	entertainer | man | performer | rock singer | star | actor | rock | singer
+👨‍🎨	Smileys & People	person-role	artist | man | painter | palette
+👨‍🏫	Smileys & People	person-role	instructor | man | professor | teacher
+👨‍🏭	Smileys & People	person-role	assembly | factory | industrial | man | worker
+👨‍💻	Smileys & People	person-role	coder | developer | inventor | man | software | technologist
+👨‍💼	Smileys & People	person-role	business man | manager | office worker | white collar | architect | business | man | man office worker | white-collar
+👨‍🔧	Smileys & People	person-role	electrician | man | mechanic | plumber | tradesman | tradesperson
+👨‍🔬	Smileys & People	person-role	biologist | chemist | engineer | man | physicist | scientist
+👨‍🚀	Smileys & People	person-role	astronaut | man | rocket
+👨‍🚒	Smileys & People	person-role	fire truck | firefighter | man | fireman | fire engine | firetruck
+👨‍🦰	Smileys & People	person-role	
+👨‍🦱	Smileys & People	person-role	
+👨‍🦲	Smileys & People	person-role	
+👨‍🦳	Smileys & People	person-role	
+👩‍⚕️	Smileys & People	person-role	doctor | health care | nurse | therapist | woman | woman health worker | healthcare
+👩‍⚖️	Smileys & People	person-role	judge | scales | woman
+👩‍✈️	Smileys & People	person-role	pilot | plane | woman
+👩‍🌾	Smileys & People	person-role	farmer | gardener | woman | rancher
+👩‍🍳	Smileys & People	person-role	chef | cook | woman
+👩‍🎓	Smileys & People	person-role	graduate | student | woman
+👩‍🎤	Smileys & People	person-role	entertainer | performer | rock singer | star | woman | actor | rock | singer
+👩‍🎨	Smileys & People	person-role	artist | painter | palette | woman
+👩‍🏫	Smileys & People	person-role	instructor | professor | teacher | woman
+👩‍🏭	Smileys & People	person-role	assembly | factory | industrial | woman | worker
+👩‍💻	Smileys & People	person-role	coder | developer | inventor | software | technologist | woman
+👩‍💼	Smileys & People	person-role	business woman | manager | office worker | white collar | architect | business | white-collar | woman | woman office worker
+👩‍🔧	Smileys & People	person-role	electrician | mechanic | plumber | tradesperson | tradeswoman | woman
+👩‍🔬	Smileys & People	person-role	biologist | chemist | engineer | physicist | scientist | woman
+👩‍🚀	Smileys & People	person-role	astronaut | rocket | woman
+👩‍🚒	Smileys & People	person-role	fire truck | firefighter | woman | firewoman | fire engine | firetruck
+👩‍🦰	Smileys & People	person-role	
+👩‍🦱	Smileys & People	person-role	
+👩‍🦲	Smileys & People	person-role	
+👩‍🦳	Smileys & People	person-role	
+👮‍♀️	Smileys & People	person-role	cop | officer | police | policewoman | woman
+👮‍♂️	Smileys & People	person-role	cop | man | officer | police | policeman
+👱‍♀️	Smileys & People	person-role	blond-haired woman | blonde | hair | woman | woman: blond hair
+👱‍♂️	Smileys & People	person-role	blond | blond-haired man | hair | man | man: blond hair
+👳‍♀️	Smileys & People	person-role	turban | woman | woman wearing turban
+👳‍♂️	Smileys & People	person-role	man | man wearing turban | turban
+👷‍♀️	Smileys & People	person-role	builder | construction | woman | worker
+👷‍♂️	Smileys & People	person-role	builder | construction | man | worker
+💂‍♀️	Smileys & People	person-role	guard | guardswoman | woman
+💂‍♂️	Smileys & People	person-role	guard | guardsman | man
+🕵️‍♀️	Smileys & People	person-role	detective | investigator | sleuth | spy | woman
+🕵️‍♂️	Smileys & People	person-role	detective | investigator | man | sleuth | spy
+🎅	Smileys & People	person-fantasy	celebration | Christmas | Father Christmas | Santa | Santa Claus | Claus | Father | claus | father | santa
+👼	Smileys & People	person-fantasy	angel | baby | face | fairy tale | fantasy
+🤶	Smileys & People	person-fantasy	celebration | Christmas | Mrs Claus | Mrs Santa Claus | Mrs. Claus | claus | mother | Mrs | Mrs.
+🦸	Smileys & People	person-fantasy	good | hero | heroine | superhero | superpower
+🦹	Smileys & People	person-fantasy	criminal | evil | superpower | supervillain | villain
+🧙	Smileys & People	person-fantasy	mage | sorcerer | sorceress | witch | wizard
+🧚	Smileys & People	person-fantasy	fairy | Oberon | Puck | Titania
+🧛	Smileys & People	person-fantasy	Dracula | undead | vampire
+🧜	Smileys & People	person-fantasy	mermaid | merman | merperson | merwoman
+🧝	Smileys & People	person-fantasy	elf | magical
+🧞	Smileys & People	person-fantasy	djinn | genie
+🧟	Smileys & People	person-fantasy	undead | walking dead | zombie
+🦸‍♀️	Smileys & People	person-fantasy	good | hero | heroine | superpower | woman | woman superhero
+🦸‍♂️	Smileys & People	person-fantasy	good | hero | man | man superhero | superpower
+🦹‍♀️	Smileys & People	person-fantasy	criminal | evil | superpower | villain | woman | woman supervillain
+🦹‍♂️	Smileys & People	person-fantasy	criminal | evil | man | man supervillain | superpower | villain
+🧙‍♀️	Smileys & People	person-fantasy	sorceress | witch | woman mage
+🧙‍♂️	Smileys & People	person-fantasy	man mage | sorcerer | wizard
+🧚‍♀️	Smileys & People	person-fantasy	Titania | woman fairy
+🧚‍♂️	Smileys & People	person-fantasy	man fairy | Oberon | Puck
+🧛‍♀️	Smileys & People	person-fantasy	undead | woman vampire
+🧛‍♂️	Smileys & People	person-fantasy	Dracula | man vampire | undead
+🧜‍♀️	Smileys & People	person-fantasy	mermaid | merwoman
+🧜‍♂️	Smileys & People	person-fantasy	merman | Triton
+🧝‍♀️	Smileys & People	person-fantasy	magical | woman elf
+🧝‍♂️	Smileys & People	person-fantasy	magical | man elf
+🧞‍♀️	Smileys & People	person-fantasy	djinn | woman genie
+🧞‍♂️	Smileys & People	person-fantasy	djinn | man genie
+🧟‍♀️	Smileys & People	person-fantasy	undead | walking dead | woman zombie
+🧟‍♂️	Smileys & People	person-fantasy	man zombie | undead | walking dead
+💁	Smileys & People	person-gesture	hand | help | information | person tipping hand | sassy | tipping
+🙅	Smileys & People	person-gesture	forbidden | gesture | hand | person gesturing NO | prohibited
+🙆	Smileys & People	person-gesture	gesture | hand | OK | person gesturing OK
+🙇	Smileys & People	person-gesture	apology | bow | gesture | person bowing | sorry
+🙋	Smileys & People	person-gesture	gesture | hand | happy | person raising hand | raised
+🙍	Smileys & People	person-gesture	frown | gesture | person frowning
+🙎	Smileys & People	person-gesture	gesture | person pouting | pouting
+🤦	Smileys & People	person-gesture	disbelief | exasperation | face | palm | person facepalming
+🤷	Smileys & People	person-gesture	doubt | ignorance | indifference | person shrugging | shrug
+💁‍♀️	Smileys & People	person-gesture	sassy | tipping hand | woman | woman tipping hand
+💁‍♂️	Smileys & People	person-gesture	man | man tipping hand | sassy | tipping hand
+🙅‍♀️	Smileys & People	person-gesture	forbidden | gesture | hand | prohibited | woman | woman gesturing NO
+🙅‍♂️	Smileys & People	person-gesture	forbidden | gesture | hand | man | man gesturing NO | prohibited
+🙆‍♀️	Smileys & People	person-gesture	gesture | hand | OK | woman | woman gesturing OK
+🙆‍♂️	Smileys & People	person-gesture	gesture | hand | man | man gesturing OK | OK
+🙇‍♀️	Smileys & People	person-gesture	apology | bowing | favour | gesture | sorry | woman | favor
+🙇‍♂️	Smileys & People	person-gesture	apology | bowing | favour | gesture | man | sorry | favor
+🙋‍♀️	Smileys & People	person-gesture	gesture | raising hand | woman | woman raising hand
+🙋‍♂️	Smileys & People	person-gesture	gesture | man | man raising hand | raising hand
+🙍‍♀️	Smileys & People	person-gesture	frowning | gesture | woman
+🙍‍♂️	Smileys & People	person-gesture	frowning | gesture | man
+🙎‍♀️	Smileys & People	person-gesture	gesture | pouting | woman
+🙎‍♂️	Smileys & People	person-gesture	gesture | man | pouting
+🤦‍♀️	Smileys & People	person-gesture	disbelief | exasperation | facepalm | woman | woman facepalming
+🤦‍♂️	Smileys & People	person-gesture	disbelief | exasperation | facepalm | man | man facepalming
+🤷‍♀️	Smileys & People	person-gesture	doubt | ignorance | indifference | shrug | woman | woman shrugging
+🤷‍♂️	Smileys & People	person-gesture	doubt | ignorance | indifference | man | man shrugging | shrug
+🏃	Smileys & People	person-activity	marathon | person running | running
+👤	Smileys & People	person-activity	bust | bust in silhouette | silhouette
+👥	Smileys & People	person-activity	bust | busts in silhouette | silhouette
+👯	Smileys & People	person-activity	bunny ear | dancer | partying | people with bunny ears
+💃	Smileys & People	person-activity	dancing | woman
+💆	Smileys & People	person-activity	face | massage | person getting massage | salon
+💇	Smileys & People	person-activity	barber | beauty | haircut | parlour | hairdresser | parlor | person getting haircut
+🕴	Smileys & People	person-activity	business | man | man in suit levitating | suit
+🕺	Smileys & People	person-activity	dance | man | man dancing
+🗣	Smileys & People	person-activity	face | head | silhouette | speak | speaking | talk | talking
+🚶	Smileys & People	person-activity	hike | person walking | walk | walking
+🛀	Smileys & People	person-activity	bath | bathtub | person taking bath | tub
+🛌	Smileys & People	person-activity	hotel | person in bed | sleep | sleeping
+🧖	Smileys & People	person-activity	person in steamy room | sauna | steam room
+🧗	Smileys & People	person-activity	climber | person climbing
+🧘	Smileys & People	person-activity	meditation | person in lotus position | yoga
+🏃‍♀️	Smileys & People	person-activity	marathon | racing | running | woman
+🏃‍♂️	Smileys & People	person-activity	man | marathon | racing | running
+👯‍♀️	Smileys & People	person-activity	bunny ear | dancer | partying | women | women with bunny ears
+👯‍♂️	Smileys & People	person-activity	bunny ear | dancer | men | men with bunny ears | partying
+💆‍♀️	Smileys & People	person-activity	face | massage | woman | woman getting massage
+💆‍♂️	Smileys & People	person-activity	face | man | man getting massage | massage
+💇‍♀️	Smileys & People	person-activity	haircut | hairdresser | woman | woman getting haircut
+💇‍♂️	Smileys & People	person-activity	haircut | hairdresser | man | man getting haircut
+🚶‍♀️	Smileys & People	person-activity	hike | walk | woman | woman walking
+🚶‍♂️	Smileys & People	person-activity	hike | man | man walking | walk
+🧖‍♀️	Smileys & People	person-activity	sauna | steam room | woman in steam room | woman in steamy room
+🧖‍♂️	Smileys & People	person-activity	man in steam room | man in steamy room | sauna | steam room
+🧗‍♀️	Smileys & People	person-activity	climber | woman climbing
+🧗‍♂️	Smileys & People	person-activity	climber | man climbing
+🧘‍♀️	Smileys & People	person-activity	meditation | woman in lotus position | yoga
+🧘‍♂️	Smileys & People	person-activity	man in lotus position | meditation | yoga
+⛷	Smileys & People	person-sport	ski | skier | snow
+⛹	Smileys & People	person-sport	ball | person bouncing ball
+🏂	Smileys & People	person-sport	ski | snow | snowboard | snowboarder
+🏄	Smileys & People	person-sport	person surfing | surfer | surfing
+🏇	Smileys & People	person-sport	horse | jockey | racehorse | racing
+🏊	Smileys & People	person-sport	person swimming | swim | swimmer
+🏋	Smileys & People	person-sport	lifter | person lifting weights | weight | weightlifter
+🏌	Smileys & People	person-sport	ball | golf | golfer | person golfing
+🏍	Smileys & People	person-sport	motorbike | racing | motorcycle
+🏎	Smileys & People	person-sport	car | motor racing | racing
+🚣	Smileys & People	person-sport	boat | person | person rowing boat | rowboat | rowing boat
+🚴	Smileys & People	person-sport	bicycle | biking | cyclist | person biking | person riding a bike | person cycling
+🚵	Smileys & People	person-sport	bicycle | bicyclist | bike | cyclist | mountain | person mountain biking
+🤸	Smileys & People	person-sport	cartwheel | gymnastics | person cartwheeling
+🤹	Smileys & People	person-sport	balance | juggle | multi-task | skill | multitask | person juggling
+🤺	Smileys & People	person-sport	fencer | fencing | person fencing | sword
+🤼	Smileys & People	person-sport	people wrestling | wrestle | wrestler
+🤽	Smileys & People	person-sport	person playing water polo | polo | water
+🤾	Smileys & People	person-sport	ball | handball | person playing handball
+⛹️‍♀️	Smileys & People	person-sport	ball | woman | woman bouncing ball
+⛹️‍♂️	Smileys & People	person-sport	ball | man | man bouncing ball
+🏄‍♀️	Smileys & People	person-sport	surfer | surfing | woman
+🏄‍♂️	Smileys & People	person-sport	man | surfer | surfing
+🏊‍♀️	Smileys & People	person-sport	swim | swimmer | woman | woman swimming
+🏊‍♂️	Smileys & People	person-sport	man | man swimming | swim | swimmer
+🏋️‍♀️	Smileys & People	person-sport	weightlifter | woman | weight lifter | woman lifting weights
+🏋️‍♂️	Smileys & People	person-sport	man | weightlifter | man lifting weights | weight lifter
+🏌️‍♀️	Smileys & People	person-sport	golf | golfer | woman | woman golfing
+🏌️‍♂️	Smileys & People	person-sport	golf | golfer | man | man golfing
+🚣‍♀️	Smileys & People	person-sport	boat | rowboat | rowing boat | woman | woman rowing boat
+🚣‍♂️	Smileys & People	person-sport	boat | man | rowboat | rowing boat | man rowing boat
+🚴‍♀️	Smileys & People	person-sport	bicycle | biking | cyclist | woman | woman riding a bike | woman cycling
+🚴‍♂️	Smileys & People	person-sport	bicycle | biking | cyclist | man | man riding a bike | man cycling
+🚵‍♀️	Smileys & People	person-sport	bicycle | bike | biking | cyclist | mountain | woman
+🚵‍♂️	Smileys & People	person-sport	bicycle | bike | cyclist | man | man mountain biking | mountain
+🤸‍♀️	Smileys & People	person-sport	cartwheel | gymnastics | woman | woman cartwheeling
+🤸‍♂️	Smileys & People	person-sport	cartwheel | gymnastics | man | man cartwheeling
+🤹‍♀️	Smileys & People	person-sport	juggling | multi-task | woman | multitask
+🤹‍♂️	Smileys & People	person-sport	juggling | man | multi-task | multitask
+🤼‍♀️	Smileys & People	person-sport	women | women wrestling | wrestle
+🤼‍♂️	Smileys & People	person-sport	men | men wrestling | wrestle
+🤽‍♀️	Smileys & People	person-sport	water polo | woman | woman playing water polo
+🤽‍♂️	Smileys & People	person-sport	man | man playing water polo | water polo
+🤾‍♀️	Smileys & People	person-sport	handball | woman | woman playing handball
+🤾‍♂️	Smileys & People	person-sport	handball | man | man playing handball
+👪	Smileys & People	family	family
+👫	Smileys & People	family	couple | hand | hold | man | man and woman holding hands | woman | holding hands | woman and man holding hands
+👬	Smileys & People	family	couple | Gemini | man | men | twins | two men holding hands | zodiac | holding hands | men holding hands
+👭	Smileys & People	family	couple | hand | two women holding hands | woman | women | holding hands | women holding hands
+💏	Smileys & People	family	couple | kiss
+💑	Smileys & People	family	couple | couple with heart | love
+👨‍❤️‍👨	Smileys & People	family	
+👨‍❤️‍💋‍👨	Smileys & People	family	
+👨‍👦	Smileys & People	family	
+👨‍👦‍👦	Smileys & People	family	
+👨‍👧	Smileys & People	family	
+👨‍👧‍👦	Smileys & People	family	
+👨‍👧‍👧	Smileys & People	family	
+👨‍👨‍👦	Smileys & People	family	
+👨‍👨‍👦‍👦	Smileys & People	family	
+👨‍👨‍👧	Smileys & People	family	
+👨‍👨‍👧‍👦	Smileys & People	family	
+👨‍👨‍👧‍👧	Smileys & People	family	
+👨‍👩‍👦	Smileys & People	family	
+👨‍👩‍👦‍👦	Smileys & People	family	
+👨‍👩‍👧	Smileys & People	family	
+👨‍👩‍👧‍👦	Smileys & People	family	
+👨‍👩‍👧‍👧	Smileys & People	family	
+👩‍❤️‍👨	Smileys & People	family	
+👩‍❤️‍👩	Smileys & People	family	
+👩‍❤️‍💋‍👨	Smileys & People	family	
+👩‍❤️‍💋‍👩	Smileys & People	family	
+👩‍👦	Smileys & People	family	
+👩‍👦‍👦	Smileys & People	family	
+👩‍👧	Smileys & People	family	
+👩‍👧‍👦	Smileys & People	family	
+👩‍👧‍👧	Smileys & People	family	
+👩‍👩‍👦	Smileys & People	family	
+👩‍👩‍👦‍👦	Smileys & People	family	
+👩‍👩‍👧	Smileys & People	family	
+👩‍👩‍👧‍👦	Smileys & People	family	
+👩‍👩‍👧‍👧	Smileys & People	family	
+☝	Smileys & People	body	finger | hand | index | index pointing up | point | up
+✊	Smileys & People	body	clenched | fist | hand | punch | raised fist
+✋	Smileys & People	body	hand | raised hand
+✌	Smileys & People	body	hand | peace hand | peace sign | v | v sign | victory
+✍	Smileys & People	body	hand | write | writing hand
+👀	Smileys & People	body	eye | eyes | face
+👁	Smileys & People	body	body | eye
+👂	Smileys & People	body	body | ear
+👃	Smileys & People	body	body | nose
+👄	Smileys & People	body	lips | mouth
+👅	Smileys & People	body	body | tongue
+👆	Smileys & People	body	backhand | backhand index pointing up | finger | hand | point | up
+👇	Smileys & People	body	backhand | backhand index pointing down | down | finger | hand | point
+👈	Smileys & People	body	backhand | backhand index pointing left | finger | hand | index | point
+👉	Smileys & People	body	backhand | backhand index pointing right | finger | hand | index | point
+👊	Smileys & People	body	clenched | fist | hand | oncoming fist | punch
+👋	Smileys & People	body	hand | wave | waving
+👌	Smileys & People	body	hand | OK | perfect
+👍	Smileys & People	body	+1 | hand | thumb | thumbs up | up
+👎	Smileys & People	body	-1 | down | hand | thumb | thumbs down
+👏	Smileys & People	body	clap | clapping hands | hand
+👐	Smileys & People	body	hand | open | open hands
+👣	Smileys & People	body	clothing | footprint | footprints | print
+💅	Smileys & People	body	care | cosmetics | manicure | nail | polish
+💪	Smileys & People	body	flexed bicep | biceps | comic | flex | flexed biceps | muscle
+🖐	Smileys & People	body	finger | hand | hand with fingers splayed | splayed
+🖕	Smileys & People	body	finger | hand | middle finger
+🖖	Smileys & People	body	finger | hand | spock | vulcan | Vulcan salute | vulcan salute
+🙌	Smileys & People	body	celebration | gesture | hand | hooray | raised | raising hands | woo hoo | yay
+🙏	Smileys & People	body	ask | folded hands | hand | please | pray | thanks
+🤘	Smileys & People	body	finger | hand | horns | rock on | sign of the horns | rock-on
+🤙	Smileys & People	body	call me hand | call | call-me hand | hand
+🤚	Smileys & People	body	backhand | raised | raised back of hand
+🤛	Smileys & People	body	fist | left-facing fist | leftward | leftwards
+🤜	Smileys & People	body	fist | right-facing fist | rightward | rightwards
+🤝	Smileys & People	body	agreement | hand | handshake | meeting | shake
+🤞	Smileys & People	body	cross | crossed fingers | finger | hand | luck
+🤟	Smileys & People	body	love you gesture | hand | ILY | love-you gesture
+🤲	Smileys & People	body	palms up together | prayer
+🤳	Smileys & People	body	camera | phone | selfie
+🦰	Smileys & People	body	ginger | red hair | redhead
+🦱	Smileys & People	body	afro | curly | curly hair | ringlets
+🦲	Smileys & People	body	bald | chemotherapy | hairless | no hair | shaven
+🦳	Smileys & People	body	gray | grey | hair | old | white
+🦴	Smileys & People	body	bone | skeleton
+🦵	Smileys & People	body	kick | leg | limb
+🦶	Smileys & People	body	foot | kick | stomp
+🦷	Smileys & People	body	dentist | tooth
+🧠	Smileys & People	body	brain | intelligent
+👁️‍🗨️	Smileys & People	body	eye | eye in speech bubble | speech bubble | witness
+❣	Smileys & People	emotion	exclamation | heart exclamation | mark | punctuation
+❤	Smileys & People	emotion	heart | red heart
+💋	Smileys & People	emotion	kiss | kiss mark | lips
+💌	Smileys & People	emotion	heart | letter | love | mail
+💓	Smileys & People	emotion	beating | beating heart | heartbeat | pulsating
+💔	Smileys & People	emotion	break | broken | broken heart
+💕	Smileys & People	emotion	love | two hearts
+💖	Smileys & People	emotion	excited | sparkle | sparkling heart
+💗	Smileys & People	emotion	excited | growing | growing heart | nervous | pulse
+💘	Smileys & People	emotion	arrow | cupid | heart with arrow
+💙	Smileys & People	emotion	blue | blue heart
+💚	Smileys & People	emotion	green | green heart
+💛	Smileys & People	emotion	yellow | yellow heart
+💜	Smileys & People	emotion	purple | purple heart
+💝	Smileys & People	emotion	heart with ribbon | ribbon | valentine
+💞	Smileys & People	emotion	revolving | revolving hearts
+💟	Smileys & People	emotion	heart | heart decoration
+💢	Smileys & People	emotion	anger symbol | angry | comic | mad
+💣	Smileys & People	emotion	bomb | comic
+💤	Smileys & People	emotion	comic | sleep | sleeping | sleepy | zzz
+💥	Smileys & People	emotion	boom | collision | comic
+💦	Smileys & People	emotion	comic | splashing | sweat | sweat droplets
+💨	Smileys & People	emotion	comic | dash | dashing away | running
+💫	Smileys & People	emotion	comic | dizzy | spinning | spinning stars | star
+💬	Smileys & People	emotion	balloon | bubble | comic | dialogue | speech | dialog
+💭	Smileys & People	emotion	balloon | bubble | comic | thought
+🕳	Smileys & People	emotion	hole
+🖤	Smileys & People	emotion	black | black heart | evil | wicked
+🗨	Smileys & People	emotion	dialogue | left speech bubble | speech | dialog
+🗯	Smileys & People	emotion	angry | balloon | bubble | mad | right anger bubble
+🧡	Smileys & People	emotion	orange | orange heart
+⛑	Smileys & People	clothing	aid | cross | face | hat | helmet | rescue worker’s helmet
+🎒	Smileys & People	clothing	backpack | bag | rucksack | satchel | school
+🎓	Smileys & People	clothing	cap | celebration | clothing | graduation | hat | mortarboard
+🎩	Smileys & People	clothing	clothing | hat | top | tophat
+👑	Smileys & People	clothing	clothing | crown | king | queen
+👒	Smileys & People	clothing	clothing | hat | woman | woman’s hat
+👓	Smileys & People	clothing	clothing | eye | eyeglasses | eyewear | specs | spectacles | glasses
+👔	Smileys & People	clothing	clothing | necktie | tie
+👕	Smileys & People	clothing	clothing | shirt | t-shirt | tee | tshirt | T-shirt | tee-shirt
+👖	Smileys & People	clothing	clothing | jeans | pants | trousers
+👗	Smileys & People	clothing	clothing | dress | woman’s clothes
+👘	Smileys & People	clothing	clothing | kimono
+👙	Smileys & People	clothing	bikini | clothing | swim suit | two-piece | swim
+👚	Smileys & People	clothing	blouse | clothing | top | woman | woman’s clothes
+👛	Smileys & People	clothing	accessories | coin | purse | clothing
+👜	Smileys & People	clothing	accessories | bag | handbag | tote | clothing | purse
+👝	Smileys & People	clothing	accessories | bag | clutch bag | pouch | clothing
+👞	Smileys & People	clothing	clothing | man | man’s shoe | shoe
+👟	Smileys & People	clothing	athletic | clothing | running shoe | shoe | sneaker | trainer
+👠	Smileys & People	clothing	clothing | heel | shoe | stiletto | woman | high-heeled shoe
+👡	Smileys & People	clothing	clothing | sandal | shoe | woman | woman’s sandal
+👢	Smileys & People	clothing	boot | clothing | shoe | woman | woman’s boot
+💄	Smileys & People	clothing	cosmetics | lipstick | makeup
+💍	Smileys & People	clothing	diamond | ring
+💎	Smileys & People	clothing	gemstone | diamond | gem | gem stone | jewel
+📿	Smileys & People	clothing	beads | clothing | necklace | prayer | religion
+🕶	Smileys & People	clothing	dark | eye | eyewear | glasses | sunglasses
+🛍	Smileys & People	clothing	bag | hotel | shopping | shopping bags
+🥼	Smileys & People	clothing	doctor | experiment | lab coat | scientist
+🥽	Smileys & People	clothing	eye protection | goggles | swimming | welding
+🥾	Smileys & People	clothing	backpacking | boot | camping | hiking
+🥿	Smileys & People	clothing	ballet flat | flat shoe | slip-on | slipper
+🧢	Smileys & People	clothing	baseball cap | billed cap
+🧣	Smileys & People	clothing	neck | scarf
+🧤	Smileys & People	clothing	gloves | hand
+🧥	Smileys & People	clothing	coat | jacket
+🧦	Smileys & People	clothing	socks | stocking
+🐀	Animals & Nature	animal-mammal	pet | rat | rodent
+🐁	Animals & Nature	animal-mammal	mouse | pet | rodent
+🐂	Animals & Nature	animal-mammal	bull | ox | Taurus | zodiac
+🐃	Animals & Nature	animal-mammal	buffalo | water
+🐄	Animals & Nature	animal-mammal	cow
+🐅	Animals & Nature	animal-mammal	tiger
+🐆	Animals & Nature	animal-mammal	leopard
+🐇	Animals & Nature	animal-mammal	bunny | pet | rabbit
+🐈	Animals & Nature	animal-mammal	cat | pet
+🐎	Animals & Nature	animal-mammal	equestrian | horse | racehorse | racing
+🐏	Animals & Nature	animal-mammal	Aries | male | ram | sheep | zodiac
+🐐	Animals & Nature	animal-mammal	Capricorn | goat | zodiac
+🐑	Animals & Nature	animal-mammal	ewe | female | sheep
+🐒	Animals & Nature	animal-mammal	monkey
+🐕	Animals & Nature	animal-mammal	dog | pet
+🐖	Animals & Nature	animal-mammal	pig | sow
+🐗	Animals & Nature	animal-mammal	boar | pig
+🐘	Animals & Nature	animal-mammal	elephant
+🐨	Animals & Nature	animal-mammal	bear | koala | marsupial
+🐩	Animals & Nature	animal-mammal	dog | poodle
+🐪	Animals & Nature	animal-mammal	camel | dromedary | hump | one hump | single hump
+🐫	Animals & Nature	animal-mammal	Bactrian | camel | hump | two-hump camel | bactrian | two humps
+🐭	Animals & Nature	animal-mammal	face | mouse | pet
+🐮	Animals & Nature	animal-mammal	cow | face
+🐯	Animals & Nature	animal-mammal	face | tiger
+🐰	Animals & Nature	animal-mammal	bunny | face | pet | rabbit
+🐱	Animals & Nature	animal-mammal	cat | face | pet
+🐴	Animals & Nature	animal-mammal	face | horse
+🐵	Animals & Nature	animal-mammal	face | monkey
+🐶	Animals & Nature	animal-mammal	dog | face | pet
+🐷	Animals & Nature	animal-mammal	face | pig
+🐹	Animals & Nature	animal-mammal	face | hamster | pet
+🐺	Animals & Nature	animal-mammal	face | wolf
+🐻	Animals & Nature	animal-mammal	bear | face
+🐼	Animals & Nature	animal-mammal	face | panda
+🐽	Animals & Nature	animal-mammal	face | nose | pig | snout
+🐾	Animals & Nature	animal-mammal	feet | paw | paw prints | print
+🐿	Animals & Nature	animal-mammal	chipmunk | squirrel
+🦁	Animals & Nature	animal-mammal	face | Leo | lion | zodiac
+🦄	Animals & Nature	animal-mammal	face | unicorn
+🦇	Animals & Nature	animal-mammal	bat | vampire
+🦊	Animals & Nature	animal-mammal	face | fox
+🦌	Animals & Nature	animal-mammal	deer | stag
+🦍	Animals & Nature	animal-mammal	gorilla
+🦏	Animals & Nature	animal-mammal	rhino | rhinoceros
+🦒	Animals & Nature	animal-mammal	giraffe | spots
+🦓	Animals & Nature	animal-mammal	stripe | zebra
+🦔	Animals & Nature	animal-mammal	hedgehog | spiny
+🦘	Animals & Nature	animal-mammal	Australia | joey | jump | kangaroo | marsupial
+🦙	Animals & Nature	animal-mammal	alpaca | guanaco | llama | vicuña | wool
+🦛	Animals & Nature	animal-mammal	hippo | hippopotamus
+🦝	Animals & Nature	animal-mammal	curious | raccoon | sly
+🦡	Animals & Nature	animal-mammal	badger | honey badger | pester
+🐓	Animals & Nature	animal-bird	bird | cockerel | rooster
+🐔	Animals & Nature	animal-bird	bird | chicken | poultry
+🐣	Animals & Nature	animal-bird	baby | bird | chick | hatching
+🐤	Animals & Nature	animal-bird	baby | bird | chick
+🐥	Animals & Nature	animal-bird	baby | bird | chick | front-facing baby chick
+🐦	Animals & Nature	animal-bird	bird
+🐧	Animals & Nature	animal-bird	bird | penguin
+🕊	Animals & Nature	animal-bird	bird | dove | fly | peace
+🦃	Animals & Nature	animal-bird	bird | poultry | turkey
+🦅	Animals & Nature	animal-bird	bird of prey | eagle | bird
+🦆	Animals & Nature	animal-bird	bird | duck
+🦉	Animals & Nature	animal-bird	bird of prey | owl | wise | bird
+🦚	Animals & Nature	animal-bird	bird | ostentatious | peacock | peahen | proud
+🦜	Animals & Nature	animal-bird	bird | pirate | talk | parrot
+🦢	Animals & Nature	animal-bird	bird | cygnet | swan | ugly duckling
+🐸	Animals & Nature	animal-amphibian	face | frog
+🐉	Animals & Nature	animal-reptile	dragon | fairy tale
+🐊	Animals & Nature	animal-reptile	alligator | croc | crocodile
+🐍	Animals & Nature	animal-reptile	bearer | Ophiuchus | serpent | snake | zodiac
+🐢	Animals & Nature	animal-reptile	terrapin | tortoise | turtle
+🐲	Animals & Nature	animal-reptile	dragon | face | fairy tale
+🦎	Animals & Nature	animal-reptile	lizard | reptile
+🦕	Animals & Nature	animal-reptile	brachiosaurus | brontosaurus | diplodocus | sauropod
+🦖	Animals & Nature	animal-reptile	T-Rex | T. rex | T. Rex | Tyrannosaurus Rex
+🐋	Animals & Nature	animal-marine	whale
+🐙	Animals & Nature	animal-marine	octopus
+🐚	Animals & Nature	animal-marine	shell | spiral
+🐟	Animals & Nature	animal-marine	fish | Pisces | zodiac
+🐠	Animals & Nature	animal-marine	fish | reef fish | tropical
+🐡	Animals & Nature	animal-marine	blowfish | fish
+🐬	Animals & Nature	animal-marine	dolphin | porpoise | flipper
+🐳	Animals & Nature	animal-marine	face | spouting | whale
+🦀	Animals & Nature	animal-marine	crab | crustacean | seafood | shellfish | Cancer | zodiac
+🦈	Animals & Nature	animal-marine	fish | shark
+🦐	Animals & Nature	animal-marine	prawn | seafood | shellfish | shrimp | food | small
+🦑	Animals & Nature	animal-marine	decapod | seafood | squid | food | mollusc | molusc
+🦞	Animals & Nature	animal-marine	bisque | claws | lobster | seafood | shellfish
+🐌	Animals & Nature	animal-bug	mollusc | snail
+🐛	Animals & Nature	animal-bug	bug | caterpillar | insect | worm
+🐜	Animals & Nature	animal-bug	ant | insect
+🐝	Animals & Nature	animal-bug	bee | honeybee | insect
+🐞	Animals & Nature	animal-bug	ladybug | beetle | insect | ladybeetle | ladybird | lady beetle
+🕷	Animals & Nature	animal-bug	arachnid | spider | insect
+🕸	Animals & Nature	animal-bug	spider web | spider | spider’s web | web
+🦂	Animals & Nature	animal-bug	scorpio | Scorpio | scorpion | zodiac
+🦋	Animals & Nature	animal-bug	butterfly | insect | moth | pretty
+🦗	Animals & Nature	animal-bug	cricket | grasshopper
+🦟	Animals & Nature	animal-bug	dengue | fever | insect | malaria | virus | disease | mosquito
+🦠	Animals & Nature	animal-bug	amoeba | bacteria | microbe | virus
+🌷	Animals & Nature	plant-flower	flower | tulip
+🌸	Animals & Nature	plant-flower	blossom | cherry | flower
+🌹	Animals & Nature	plant-flower	flower | rose
+🌺	Animals & Nature	plant-flower	flower | hibiscus
+🌻	Animals & Nature	plant-flower	flower | sun | sunflower
+🌼	Animals & Nature	plant-flower	blossom | daisy | flower
+🏵	Animals & Nature	plant-flower	plant | rosette
+💐	Animals & Nature	plant-flower	bouquet | flower
+💮	Animals & Nature	plant-flower	flower | white flower
+🥀	Animals & Nature	plant-flower	flower | wilted
+☘	Animals & Nature	plant-other	plant | shamrock
+🌱	Animals & Nature	plant-other	seedling | young
+🌲	Animals & Nature	plant-other	evergreen tree | tree
+🌳	Animals & Nature	plant-other	deciduous | shedding | tree
+🌴	Animals & Nature	plant-other	palm | tree
+🌵	Animals & Nature	plant-other	cactus | plant
+🌾	Animals & Nature	plant-other	sheaf of rice | ear of rice | grain | rice | sheaf | ear
+🌿	Animals & Nature	plant-other	herb | leaf
+🍀	Animals & Nature	plant-other	4 | clover | four | four-leaf clover | leaf
+🍁	Animals & Nature	plant-other	falling | leaf | maple
+🍂	Animals & Nature	plant-other	fallen leaf | falling | leaf
+🍃	Animals & Nature	plant-other	blow | flutter | leaf | leaf fluttering in wind | wind
+🍅	Food & Drink	food-fruit	fruit | tomato | vegetable
+🍇	Food & Drink	food-fruit	fruit | grape | grapes
+🍈	Food & Drink	food-fruit	fruit | melon
+🍉	Food & Drink	food-fruit	fruit | watermelon
+🍊	Food & Drink	food-fruit	fruit | mandarin | orange | tangerine
+🍋	Food & Drink	food-fruit	citrus | fruit | lemon
+🍌	Food & Drink	food-fruit	banana | fruit
+🍍	Food & Drink	food-fruit	fruit | pineapple
+🍎	Food & Drink	food-fruit	apple | fruit | red
+🍏	Food & Drink	food-fruit	apple | fruit | green
+🍐	Food & Drink	food-fruit	fruit | pear
+🍑	Food & Drink	food-fruit	fruit | peach
+🍒	Food & Drink	food-fruit	berries | cherries | cherry | fruit | red
+🍓	Food & Drink	food-fruit	berry | fruit | strawberry
+🥝	Food & Drink	food-fruit	food | fruit | kiwi
+🥥	Food & Drink	food-fruit	coconut | palm | piña colada
+🥭	Food & Drink	food-fruit	fruit | mango | tropical
+🌰	Food & Drink	food-vegetable	nut | chestnut | plant
+🌶	Food & Drink	food-vegetable	chilli | pepper | hot
+🌽	Food & Drink	food-vegetable	corn | ear | ear of corn | maize | maze
+🍄	Food & Drink	food-vegetable	mushroom | toadstool
+🍆	Food & Drink	food-vegetable	aubergine | eggplant | vegetable
+🥑	Food & Drink	food-vegetable	avocado | food | fruit
+🥒	Food & Drink	food-vegetable	cucumber | food | pickle | vegetable
+🥔	Food & Drink	food-vegetable	food | potato | vegetable
+🥕	Food & Drink	food-vegetable	carrot | food | vegetable
+🥜	Food & Drink	food-vegetable	food | nut | peanut | peanuts | vegetable | monkey nut | nuts
+🥦	Food & Drink	food-vegetable	broccoli | wild cabbage
+🥬	Food & Drink	food-vegetable	bok choy | cabbage | kale | lettuce | pak choi | leafy green
+🌭	Food & Drink	food-prepared	frankfurter | hot dog | hotdog | sausage
+🌮	Food & Drink	food-prepared	Mexican | mexican | taco
+🌯	Food & Drink	food-prepared	Mexican | wrap | burrito | mexican
+🍔	Food & Drink	food-prepared	hamburger | beefburger | burger
+🍕	Food & Drink	food-prepared	cheese | pizza | slice
+🍖	Food & Drink	food-prepared	bone | meat | meat on bone
+🍗	Food & Drink	food-prepared	bone | chicken | drumstick | leg | poultry
+🍞	Food & Drink	food-prepared	bread | loaf
+🍟	Food & Drink	food-prepared	chips | fries | French fries | french fries | french
+🍲	Food & Drink	food-prepared	pot | pot of food | stew
+🍳	Food & Drink	food-prepared	cooking | egg | frying | pan
+🍿	Food & Drink	food-prepared	popcorn
+🥐	Food & Drink	food-prepared	bread | crescent roll | croissant | food | French | french
+🥓	Food & Drink	food-prepared	bacon | food | meat
+🥖	Food & Drink	food-prepared	baguette | bread | food | french | French stick | French | french stick
+🥗	Food & Drink	food-prepared	food | garden | salad | green
+🥘	Food & Drink	food-prepared	casserole | food | paella | pan | shallow | shallow pan of food
+🥙	Food & Drink	food-prepared	falafel | flatbread | food | gyro | kebab | pita | pita roll | stuffed
+🥚	Food & Drink	food-prepared	egg | food
+🥞	Food & Drink	food-prepared	crêpe | food | hotcake | pancake | pancakes
+🥣	Food & Drink	food-prepared	bowl with spoon | breakfast | cereal | congee
+🥨	Food & Drink	food-prepared	pretzel | twisted
+🥩	Food & Drink	food-prepared	chop | cut of meat | lambchop | porkchop | steak
+🥪	Food & Drink	food-prepared	bread | sandwich
+🥫	Food & Drink	food-prepared	canned food | can | tin | tinned food
+🥯	Food & Drink	food-prepared	bagel | bakery | schmear
+🧀	Food & Drink	food-prepared	cheese | cheese wedge
+🧂	Food & Drink	food-prepared	condiment | salt | shaker
+🍘	Food & Drink	food-asian	cracker | rice
+🍙	Food & Drink	food-asian	ball | Japanese | rice
+🍚	Food & Drink	food-asian	cooked | rice
+🍛	Food & Drink	food-asian	curry | rice
+🍜	Food & Drink	food-asian	bowl | noodle | ramen | steaming
+🍝	Food & Drink	food-asian	pasta | spaghetti
+🍠	Food & Drink	food-asian	potato | roasted | sweet
+🍡	Food & Drink	food-asian	dango | dessert | Japanese | skewer | stick | sweet
+🍢	Food & Drink	food-asian	kebab | oden | seafood | skewer | stick
+🍣	Food & Drink	food-asian	sushi
+🍤	Food & Drink	food-asian	battered | fried | prawn | shrimp | tempura
+🍥	Food & Drink	food-asian	cake | fish | fish cake with swirl | pastry | swirl
+🍱	Food & Drink	food-asian	bento | box
+🥟	Food & Drink	food-asian	dumpling | empanada | gyōza | pastie | samosa | jiaozi | pierogi | potsticker
+🥠	Food & Drink	food-asian	fortune cookie | prophecy
+🥡	Food & Drink	food-asian	takeaway container | takeout | takeout box | oyster pail | takeaway box
+🥮	Food & Drink	food-asian	autumn | festival | moon cake | yuèbǐng
+🍦	Food & Drink	food-sweet	cream | dessert | ice cream | soft serve | sweet | ice | soft | icecream
+🍧	Food & Drink	food-sweet	dessert | granita | ice | sweet | shaved
+🍨	Food & Drink	food-sweet	cream | dessert | ice cream | sweet | ice
+🍩	Food & Drink	food-sweet	dessert | donut | doughnut | sweet
+🍪	Food & Drink	food-sweet	cookie | biscuit | dessert | sweet
+🍫	Food & Drink	food-sweet	bar | chocolate | dessert | sweet
+🍬	Food & Drink	food-sweet	candy | dessert | sweet | sweets
+🍭	Food & Drink	food-sweet	candy | dessert | lollipop | sweet | lolly
+🍮	Food & Drink	food-sweet	baked custard | dessert | pudding | sweet | crème caramel | custard | egg custard
+🍯	Food & Drink	food-sweet	honey | honeypot | pot | sweet
+🍰	Food & Drink	food-sweet	cake | dessert | pastry | slice | sweet | shortcake
+🎂	Food & Drink	food-sweet	birthday | cake | celebration | dessert | pastry | sweet
+🥧	Food & Drink	food-sweet	filling | pastry | pie | slice | tart
+🧁	Food & Drink	food-sweet	bakery | cupcake | sweet
+☕	Food & Drink	drink	beverage | coffee | drink | hot | steaming | tea
+🍵	Food & Drink	drink	beverage | cup | drink | tea | teacup | teacup without handle
+🍶	Food & Drink	drink	bar | beverage | bottle | cup | drink | sake | saké
+🍷	Food & Drink	drink	bar | beverage | drink | glass | wine
+🍸	Food & Drink	drink	bar | cocktail | drink | glass
+🍹	Food & Drink	drink	bar | drink | tropical
+🍺	Food & Drink	drink	bar | beer | drink | mug | stein
+🍻	Food & Drink	drink	bar | beer | clink | clinking beer mugs | drink | mug | steins
+🍼	Food & Drink	drink	baby | baby’s bottle | bottle | drink | milk
+🍾	Food & Drink	drink	bar | bottle | bottle with popping cork | champagne | cork | drink | popping
+🥂	Food & Drink	drink	celebrate | clink | clinking glasses | drink | glass
+🥃	Food & Drink	drink	glass | liquor | shot | tumbler | whisky
+🥛	Food & Drink	drink	drink | glass | glass of milk | milk
+🥤	Food & Drink	drink	cup with straw | fizzy drink | juice | soft drink | soda
+🍴	Food & Drink	dishware	fork and knife | cooking | cutlery | fork | knife | knife and fork
+🍽	Food & Drink	dishware	cooking | fork | knife | knife and fork with plate | plate | fork and knife with plate
+🏺	Food & Drink	dishware	amphora | Aquarius | cooking | drink | jar | jug | tool | weapon | zodiac
+🔪	Food & Drink	dishware	cooking | cutlery | hocho | kitchen knife | knife | tool | weapon
+🥄	Food & Drink	dishware	cutlery | spoon | tableware
+🥢	Food & Drink	dishware	chopsticks | pair of chopsticks | hashi
+🌍	Travel & Places	place-map	Africa | earth | Europe | globe | globe showing Europe-Africa | world
+🌎	Travel & Places	place-map	Americas | earth | globe | globe showing Americas | world
+🌏	Travel & Places	place-map	Asia | Australia | earth | globe | globe showing Asia-Australia | world
+🌐	Travel & Places	place-map	earth | globe | globe with meridians | meridians | world
+🗺	Travel & Places	place-map	map | world
+🗾	Travel & Places	place-map	Japan | map | map of Japan
+🧭	Travel & Places	place-map	compass | magnetic | navigation | orienteering
+⛰	Travel & Places	place-geographic	mountain
+🌋	Travel & Places	place-geographic	eruption | mountain | volcano
+🏔	Travel & Places	place-geographic	cold | mountain | snow | snow-capped mountain
+🏕	Travel & Places	place-geographic	camping | tent
+🏖	Travel & Places	place-geographic	beach | beach with umbrella | parasol | umbrella
+🏜	Travel & Places	place-geographic	desert
+🏝	Travel & Places	place-geographic	desert | island
+🏞	Travel & Places	place-geographic	national park | park
+🗻	Travel & Places	place-geographic	Fuji | mount Fuji | mountain | fuji | mount fuji
+🏗	Travel & Places	place-building	building construction | construction
+🏘	Travel & Places	place-building	houses
+🏚	Travel & Places	place-building	derelict | dilapidated | house
+🏛	Travel & Places	place-building	classical | classical building
+🏟	Travel & Places	place-building	arena | stadium
+🏠	Travel & Places	place-building	home | house
+🏡	Travel & Places	place-building	garden | home | house | house with garden
+🏢	Travel & Places	place-building	building | office building
+🏣	Travel & Places	place-building	Japanese | Japanese post office | post
+🏤	Travel & Places	place-building	European | post | post office
+🏥	Travel & Places	place-building	doctor | hospital | medicine
+🏦	Travel & Places	place-building	bank | building
+🏨	Travel & Places	place-building	building | hotel
+🏩	Travel & Places	place-building	hotel | love
+🏪	Travel & Places	place-building	convenience | shop | store
+🏫	Travel & Places	place-building	building | school
+🏬	Travel & Places	place-building	department | store
+🏭	Travel & Places	place-building	building | factory
+🏯	Travel & Places	place-building	castle | Japanese
+🏰	Travel & Places	place-building	castle | European
+💒	Travel & Places	place-building	chapel | romance | wedding
+🗼	Travel & Places	place-building	Tokyo Tower | Tokyo | tower
+🗽	Travel & Places	place-building	Liberty | Statue | liberty | statue | Statue of Liberty
+🧱	Travel & Places	place-building	brick | bricks | clay | mortar | wall
+⛩	Travel & Places	place-religious	religion | Shinto | shrine | Shinto shrine | shinto
+⛪	Travel & Places	place-religious	Christian | church | cross | religion
+🕋	Travel & Places	place-religious	Islam | Kaaba | Muslim | religion | islam | kaaba
+🕌	Travel & Places	place-religious	Islam | mosque | Muslim | religion | islam
+🕍	Travel & Places	place-religious	Jew | Jewish | religion | synagogue | temple
+♨	Travel & Places	place-other	hot | hotsprings | springs | steaming
+⛲	Travel & Places	place-other	fountain
+⛺	Travel & Places	place-other	camping | tent
+🌁	Travel & Places	place-other	fog | foggy
+🌃	Travel & Places	place-other	night | night with stars | star
+🌄	Travel & Places	place-other	morning | mountain | sun | sunrise | sunrise over mountains
+🌅	Travel & Places	place-other	morning | sun | sunrise
+🌆	Travel & Places	place-other	city | cityscape at dusk | dusk | evening | landscape | sunset
+🌇	Travel & Places	place-other	dusk | sun | sunset
+🌉	Travel & Places	place-other	bridge | bridge at night | night
+🌌	Travel & Places	place-other	Milky Way | space | galaxy | milky way
+🎠	Travel & Places	place-other	carousel | horse | merry-go-round
+🎡	Travel & Places	place-other	Ferris wheel | amusement park | ferris | theme park | wheel
+🎢	Travel & Places	place-other	amusement park | coaster | roller | rollercoaster | theme park
+🎪	Travel & Places	place-other	big top | circus | tent
+🏙	Travel & Places	place-other	city | cityscape
+💈	Travel & Places	place-other	barber pole | barber | barber’s pole | haircut | pole
+⛽	Travel & Places	transport-ground	diesel | fuel | gas | petrol pump | pump | station | gas pump | fuelpump | petrol
+🚂	Travel & Places	transport-ground	engine | locomotive | railway | steam | train
+🚃	Travel & Places	transport-ground	car | electric | railway | train | tram | trolley bus | trolleybus | railway carriage
+🚄	Travel & Places	transport-ground	railway | Shinkansen | speed | train | high-speed train | shinkansen | TGV
+🚅	Travel & Places	transport-ground	bullet | railway | Shinkansen | speed | train | shinkansen
+🚆	Travel & Places	transport-ground	railway | train
+🚇	Travel & Places	transport-ground	metro | subway | tube | underground
+🚈	Travel & Places	transport-ground	light rail | railway
+🚉	Travel & Places	transport-ground	railway | station | train
+🚊	Travel & Places	transport-ground	light rail | oncoming | oncoming light rail | tram | trolleybus | trolley bus
+🚋	Travel & Places	transport-ground	car | tram | trolley bus | tramcar | trolleybus
+🚌	Travel & Places	transport-ground	bus | vehicle
+🚍	Travel & Places	transport-ground	bus | oncoming
+🚎	Travel & Places	transport-ground	bus | tram | trolley | trolley bus | trolleybus
+🚏	Travel & Places	transport-ground	bus | busstop | stop
+🚐	Travel & Places	transport-ground	bus | minibus
+🚑	Travel & Places	transport-ground	ambulance | vehicle
+🚒	Travel & Places	transport-ground	fire truck | engine | fire | truck
+🚓	Travel & Places	transport-ground	car | patrol | police
+🚔	Travel & Places	transport-ground	car | oncoming | police
+🚕	Travel & Places	transport-ground	cab | taxi | vehicle
+🚖	Travel & Places	transport-ground	cab | oncoming | taxi
+🚗	Travel & Places	transport-ground	automobile | car
+🚘	Travel & Places	transport-ground	automobile | car | oncoming
+🚙	Travel & Places	transport-ground	4WD | four-wheel drive | recreational | sport utility | sport utility vehicle | SUV | camper van | motorhome | RV
+🚚	Travel & Places	transport-ground	delivery | delivery van | truck
+🚛	Travel & Places	transport-ground	articulated truck | lorry | semi | truck | articulated lorry
+🚜	Travel & Places	transport-ground	tractor | vehicle
+🚝	Travel & Places	transport-ground	monorail | vehicle
+🚞	Travel & Places	transport-ground	car | mountain | railway
+🚥	Travel & Places	transport-ground	horizontal traffic lights | lights | signal | traffic | horizontal traffic light | light
+🚦	Travel & Places	transport-ground	lights | signal | traffic | vertical traffic lights | light | vertical traffic light
+🚧	Travel & Places	transport-ground	barrier | construction
+🚨	Travel & Places	transport-ground	beacon | car | light | police | revolving
+🚲	Travel & Places	transport-ground	bicycle | bike | cycle
+🛑	Travel & Places	transport-ground	octagonal | sign | stop
+🛢	Travel & Places	transport-ground	drum | oil
+🛣	Travel & Places	transport-ground	freeway | highway | road | motorway
+🛤	Travel & Places	transport-ground	railway | railway track | train
+🛴	Travel & Places	transport-ground	kick | scooter
+🛵	Travel & Places	transport-ground	motor | scooter
+🛹	Travel & Places	transport-ground	board | skateboard
+⚓	Travel & Places	transport-water	anchor | ship | tool
+⛴	Travel & Places	transport-water	boat | ferry | passenger
+⛵	Travel & Places	transport-water	boat | resort | sailboat | sailing | sea | yacht
+🚢	Travel & Places	transport-water	boat | passenger | ship
+🚤	Travel & Places	transport-water	boat | speedboat
+🛥	Travel & Places	transport-water	motorboat | boat | motor boat
+🛳	Travel & Places	transport-water	cruise | liner | passenger | ship
+🛶	Travel & Places	transport-water	boat | canoe
+✈	Travel & Places	transport-air	aeroplane | airplane
+💺	Travel & Places	transport-air	chair | seat
+🚀	Travel & Places	transport-air	rocket | space
+🚁	Travel & Places	transport-air	chopper | helicopter | vehicle
+🚟	Travel & Places	transport-air	cable | railway | suspension
+🚠	Travel & Places	transport-air	cable | cableway | gondola | mountain | mountain cablecar | mountain cableway
+🚡	Travel & Places	transport-air	aerial | cable | car | gondola | tramway
+🛩	Travel & Places	transport-air	aeroplane | airplane | small aeroplane | small airplane
+🛫	Travel & Places	transport-air	aeroplane | airplane | check-in | departure | departures | take-off
+🛬	Travel & Places	transport-air	aeroplane | aeroplane arrival | airplane | airplane arrival | arrivals | arriving | landing
+🛰	Travel & Places	transport-air	satellite | space
+🛸	Travel & Places	transport-air	flying saucer | UFO
+🛎	Travel & Places	hotel	bell | hotel | porter | bellhop
+🧳	Travel & Places	hotel	luggage | packing | travel
+⌚	Travel & Places	time	clock | watch
+⌛	Travel & Places	time	hourglass | sand | timer | hourglass done
+⏰	Travel & Places	time	alarm | clock
+⏱	Travel & Places	time	clock | stopwatch
+⏲	Travel & Places	time	clock | timer
+⏳	Travel & Places	time	hourglass | hourglass not done | sand | timer
+🕐	Travel & Places	time	00 | 1 | 1:00 | clock | o’clock | one
+🕑	Travel & Places	time	00 | 2 | 2:00 | clock | o’clock | two
+🕒	Travel & Places	time	00 | 3 | 3:00 | clock | o’clock | three
+🕓	Travel & Places	time	00 | 4 | 4:00 | clock | four | o’clock
+🕔	Travel & Places	time	00 | 5 | 5:00 | clock | five | o’clock
+🕕	Travel & Places	time	00 | 6 | 6:00 | clock | o’clock | six
+🕖	Travel & Places	time	00 | 7 | 7:00 | clock | o’clock | seven
+🕗	Travel & Places	time	00 | 8 | 8:00 | clock | eight | o’clock
+🕘	Travel & Places	time	00 | 9 | 9:00 | clock | nine | o’clock
+🕙	Travel & Places	time	00 | 10 | 10:00 | clock | o’clock | ten
+🕚	Travel & Places	time	00 | 11 | 11:00 | clock | eleven | o’clock
+🕛	Travel & Places	time	00 | 12 | 12:00 | clock | o’clock | twelve
+🕜	Travel & Places	time	one thirty | 1 | 1:30 | 1.30 | 30 | clock | half past one | one | one-thirty | thirty
+🕝	Travel & Places	time	two thirty | 2 | 2:30 | 2.30 | 30 | clock | half past two | thirty | two | two-thirty
+🕞	Travel & Places	time	three thirty | 3 | 3:30 | 3.30 | 30 | clock | half past three | thirty | three | three-thirty
+🕟	Travel & Places	time	four thirty | 30 | 4 | 4:30 | 4.30 | clock | four | four-thirty | half past four | thirty
+🕠	Travel & Places	time	five thirty | 30 | 5 | 5:30 | 5.30 | clock | five | five-thirty | half past five | thirty
+🕡	Travel & Places	time	six thirty | 30 | 6 | 6:30 | 6.30 | clock | half past six | six | six-thirty | thirty
+🕢	Travel & Places	time	seven thirty | 30 | 7 | 7:30 | 7.30 | clock | half past seven | seven | seven-thirty | thirty
+🕣	Travel & Places	time	eight thirty | 30 | 8 | 8:30 | 8.30 | clock | eight | eight-thirty | half past eight | thirty
+🕤	Travel & Places	time	nine thirty | 30 | 9 | 9:30 | 9.30 | clock | half past nine | nine | nine-thirty | thirty
+🕥	Travel & Places	time	ten thirty | 10 | 10:30 | 10.30 | 30 | clock | half past ten | ten | ten-thirty | thirty
+🕦	Travel & Places	time	eleven thirty | 11 | 11:30 | 11.30 | 30 | clock | eleven | eleven-thirty | half past eleven | thirty
+🕧	Travel & Places	time	twelve thirty | 12 | 12:30 | 12.30 | 30 | clock | half past twelve | thirty | twelve | twelve-thirty
+🕰	Travel & Places	time	clock | mantel clock | mantelpiece clock
+☀	Travel & Places	sky & weather	bright | rays | sun | sunny
+☁	Travel & Places	sky & weather	cloud | weather
+☂	Travel & Places	sky & weather	clothing | rain | umbrella
+☃	Travel & Places	sky & weather	cold | snow | snowman
+☄	Travel & Places	sky & weather	comet | space
+☔	Travel & Places	sky & weather	clothing | drop | rain | umbrella | umbrella with rain drops
+⚡	Travel & Places	sky & weather	danger | electric | high voltage | lightning | voltage | zap
+⛄	Travel & Places	sky & weather	cold | snow | snowman | snowman without snow
+⛅	Travel & Places	sky & weather	cloud | sun | sun behind cloud
+⛈	Travel & Places	sky & weather	cloud | cloud with lightning and rain | rain | thunder
+⛱	Travel & Places	sky & weather	beach | sand | sun | umbrella | rain | umbrella on ground
+❄	Travel & Places	sky & weather	cold | snow | snowflake
+⭐	Travel & Places	sky & weather	yellow medium star | star
+🌀	Travel & Places	sky & weather	cyclone | dizzy | hurricane | typhoon | twister
+🌂	Travel & Places	sky & weather	closed umbrella | clothing | rain | umbrella
+🌈	Travel & Places	sky & weather	pride | rain | rainbow
+🌊	Travel & Places	sky & weather	ocean | sea | swell | water | wave
+🌑	Travel & Places	sky & weather	dark | moon | new moon
+🌒	Travel & Places	sky & weather	crescent | moon | waxing
+🌓	Travel & Places	sky & weather	first-quarter moon | first quarter moon | moon | quarter
+🌔	Travel & Places	sky & weather	gibbous | moon | waxing
+🌕	Travel & Places	sky & weather	full | moon
+🌖	Travel & Places	sky & weather	gibbous | moon | waning
+🌗	Travel & Places	sky & weather	last-quarter moon | last quarter moon | moon | quarter
+🌘	Travel & Places	sky & weather	crescent | moon | waning
+🌙	Travel & Places	sky & weather	crescent | moon
+🌚	Travel & Places	sky & weather	face | moon | new moon face
+🌛	Travel & Places	sky & weather	first-quarter moon face | face | first quarter moon face | moon | quarter
+🌜	Travel & Places	sky & weather	last-quarter moon face | face | last quarter moon face | moon | quarter
+🌝	Travel & Places	sky & weather	full-moon face | bright | face | full | moon
+🌞	Travel & Places	sky & weather	bright | face | sun | sun with face
+🌟	Travel & Places	sky & weather	glittery | glow | glowing star | shining | sparkle | star
+🌠	Travel & Places	sky & weather	falling | shooting | star
+🌡	Travel & Places	sky & weather	thermometer | weather
+🌤	Travel & Places	sky & weather	cloud | sun | sun behind small cloud
+🌥	Travel & Places	sky & weather	cloud | sun | sun behind large cloud
+🌦	Travel & Places	sky & weather	cloud | rain | sun | sun behind rain cloud
+🌧	Travel & Places	sky & weather	cloud | cloud with rain | rain
+🌨	Travel & Places	sky & weather	cloud | cloud with snow | cold | snow
+🌩	Travel & Places	sky & weather	cloud | cloud with lightning | lightning
+🌪	Travel & Places	sky & weather	cloud | tornado | twister | whirlwind
+🌫	Travel & Places	sky & weather	cloud | fog
+🌬	Travel & Places	sky & weather	blow | cloud | face | wind
+💧	Travel & Places	sky & weather	cold | drop | droplet | sweat | comic
+🔥	Travel & Places	sky & weather	fire | flame | tool
+✨	Activities	event	* | sparkle | sparkles | star
+🎀	Activities	event	celebration | ribbon
+🎁	Activities	event	box | celebration | gift | present | wrapped
+🎃	Activities	event	celebration | Halloween | jack | jack-o-lantern | lantern | halloween | jack-o’-lantern | pumpkin
+🎄	Activities	event	celebration | Christmas | tree
+🎆	Activities	event	celebration | fireworks
+🎇	Activities	event	celebration | fireworks | sparkle | sparkler
+🎈	Activities	event	balloon | celebration
+🎉	Activities	event	celebration | party | popper | ta-da | tada
+🎊	Activities	event	ball | celebration | confetti
+🎋	Activities	event	Tanabata tree | banner | celebration | Japanese | star festival | tanabata | tree | tanabata tree
+🎍	Activities	event	bamboo | celebration | decoration | Japanese | pine | pine decoration
+🎎	Activities	event	celebration | doll | festival | Japanese | Japanese dolls
+🎏	Activities	event	carp | carp wind sock | carp wind socks | celebration | Japanese wind socks | koinobori | streamer
+🎐	Activities	event	bell | celebration | chime | wind
+🎑	Activities	event	moon-viewing ceremony | celebration | ceremony | jugoya | moon | otsukimi | tsukimi | moon viewing ceremony
+🎗	Activities	event	awareness ribbon | celebration | reminder | ribbon
+🎟	Activities	event	admission | entry | ticket | admission tickets
+🎫	Activities	event	admission | ticket
+🧧	Activities	event	gift | good luck | hóngbāo | lai see | money | red envelope
+🧨	Activities	event	dynamite | explosive | firecracker | fireworks
+🎖	Activities	award-medal	celebration | medal | military
+🏅	Activities	award-medal	celebration | medal | sports | sports medal
+🏆	Activities	award-medal	celebration | prize | trophy
+🥇	Activities	award-medal	1st place medal | first | gold | medal
+🥈	Activities	award-medal	2nd place medal | medal | second | silver
+🥉	Activities	award-medal	3rd place medal | bronze | medal | third
+⚽	Activities	sport	football | ball | soccer
+⚾	Activities	sport	ball | baseball
+⛳	Activities	sport	flag | golf | hole | flag in hole
+⛸	Activities	sport	ice | ice skating | skate
+🎣	Activities	sport	fish | fishing | pole | rod | angling | fishing pole
+🎳	Activities	sport	ball | game | tenpin bowling | bowling | pins
+🎽	Activities	sport	athletics | running | sash | shirt
+🎾	Activities	sport	ball | racket | racquet | tennis
+🎿	Activities	sport	ski | skiing | snow | skis
+🏀	Activities	sport	ball | basketball | hoop
+🏈	Activities	sport	american | ball | football
+🏉	Activities	sport	rugby | ball | football
+🏏	Activities	sport	cricket game | ball | bat | cricket | game | cricket ball | cricket bat | cricket match
+🏐	Activities	sport	ball | game | volleyball
+🏑	Activities	sport	hockey | ball | field | game | stick
+🏒	Activities	sport	game | hockey | ice | puck | stick
+🏓	Activities	sport	table tennis | ball | bat | game | paddle | ping pong
+🏸	Activities	sport	badminton | birdie | game | racquet | shuttlecock
+🛷	Activities	sport	sled | sledge | sleigh
+🥅	Activities	sport	goal cage | goal | net
+🥊	Activities	sport	boxing | glove
+🥋	Activities	sport	judo | karate | martial arts | martial arts uniform | taekwondo | uniform
+🥌	Activities	sport	curling | game | rock | stone | curling stone
+🥍	Activities	sport	ball | goal | lacrosse | stick
+🥎	Activities	sport	ball | glove | softball | underarm
+🥏	Activities	sport	flying disc | ultimate
+♟	Activities	game	chess | chess pawn | dupe | expendable
+♠	Activities	game	card | game | spade suit
+♣	Activities	game	card | clubs | game | club suit
+♥	Activities	game	card | game | heart suit
+♦	Activities	game	card | diamonds | game | diamond suit
+🀄	Activities	game	Mahjong red dragon | game | mahjong | mahjong red dragon | red
+🃏	Activities	game	card | game | joker | wildcard
+🎮	Activities	game	controller | game | video game
+🎯	Activities	game	bull | bullseye | dart | eye | game | hit | target | direct hit
+🎰	Activities	game	game | pokie | pokies | fruit machine | one-armed bandit | slot | slot machine
+🎱	Activities	game	8 | ball | billiard | eight | game | pool 8 ball
+🎲	Activities	game	dice | die | game
+🎴	Activities	game	card | flower | flower playing cards | game | hanafuda | Japanese | playing
+🔮	Activities	game	ball | crystal | fairy tale | fantasy | fortune | tool
+🕹	Activities	game	game | joystick | video game
+🧩	Activities	game	clue | interlocking | jigsaw | piece | puzzle
+🧸	Activities	game	plaything | plush | stuffed | teddy bear | toy
+🧿	Activities	game	amulet | charm | evil-eye | nazar | talisman | bead | evil eye | nazar amulet
+🎨	Activities	arts & crafts	art | artist palette | museum | painting | palette
+🎭	Activities	arts & crafts	art | mask | performing | performing arts | theater | theatre
+🖼	Activities	arts & crafts	art | frame | framed picture | museum | painting | picture
+🧵	Activities	arts & crafts	needle | sewing | spool | string | thread
+🧶	Activities	arts & crafts	ball | crochet | knit | yarn
+📢	Objects	sound	loud | loudhailer | public address | loudspeaker
+📣	Objects	sound	cheering | megaphone
+📯	Objects	sound	horn | post | postal
+🔇	Objects	sound	mute | muted speaker | quiet | silent | speaker
+🔈	Objects	sound	low | quiet | soft | speaker | volume | speaker low volume
+🔉	Objects	sound	medium | speaker medium volume
+🔊	Objects	sound	loud | speaker high volume
+🔔	Objects	sound	bell
+🔕	Objects	sound	bell | bell with slash | forbidden | mute | quiet | silent
+🎙	Objects	music	mic | microphone | music | studio
+🎚	Objects	music	level | music | slider
+🎛	Objects	music	control | knobs | music
+🎤	Objects	music	karaoke | mic | microphone
+🎧	Objects	music	headphone | headphones | earbud
+🎵	Objects	music	music | musical note | note
+🎶	Objects	music	music | musical notes | note | notes
+🎼	Objects	music	music | musical score | score
+📻	Objects	music	AM | FM | radio | wireless | video
+🎷	Objects	musical-instrument	instrument | music | sax | saxophone
+🎸	Objects	musical-instrument	guitar | instrument | music
+🎹	Objects	musical-instrument	instrument | keyboard | music | organ | piano | musical keyboard
+🎺	Objects	musical-instrument	instrument | music | trumpet
+🎻	Objects	musical-instrument	instrument | music | violin
+🥁	Objects	musical-instrument	drum | drumsticks | music | percussions
+☎	Objects	phone	land line | phone | telephone
+📞	Objects	phone	phone | receiver | telephone
+📟	Objects	phone	pager
+📠	Objects	phone	facsimile | fax | fax machine
+📱	Objects	phone	cell | mobile | phone | telephone
+📲	Objects	phone	arrow | cell | mobile | mobile phone with arrow | phone | receive
+⌨	Objects	computer	computer | keyboard
+💻	Objects	computer	computer | laptop | PC | personal | pc | laptop computer
+💽	Objects	computer	computer | disk | minidisk | optical
+💾	Objects	computer	computer | disk | diskette | floppy
+💿	Objects	computer	CD | computer | disk | optical | cd
+📀	Objects	computer	blu-ray | computer | disk | dvd | DVD | optical
+🔋	Objects	computer	battery
+🔌	Objects	computer	electric | electricity | plug
+🖥	Objects	computer	computer | desktop
+🖨	Objects	computer	computer | printer
+🖱	Objects	computer	computer | computer mouse
+🖲	Objects	computer	computer | trackball
+🧮	Objects	computer	abacus | calculation
+🎞	Objects	light & video	cinema | film | frames | movie
+🎥	Objects	light & video	camera | cinema | movie | movie camera | film
+🎬	Objects	light & video	clapper | film | clapperboard | movie | clapper board
+🏮	Objects	light & video	bar | lantern | light | red | red paper lantern
+💡	Objects	light & video	bulb | comic | electric | globe | idea | light
+📷	Objects	light & video	camera | video
+📸	Objects	light & video	camera | camera with flash | flash | video
+📹	Objects	light & video	camcorder | camera | video
+📺	Objects	light & video	television | TV | video | tv | tele | telly
+📼	Objects	light & video	tape | VHS | video | videocassette | vhs
+📽	Objects	light & video	cinema | film | movie | projector | video
+🔍	Objects	light & video	glass | magnifying | magnifying glass tilted left | search | tool
+🔎	Objects	light & video	glass | magnifying | magnifying glass tilted right | search | tool
+🔦	Objects	light & video	flashlight | electric | light | tool | torch
+🕯	Objects	light & video	candle | light
+🏷	Objects	book-paper	label | tag
+📃	Objects	book-paper	curl | document | page | page with curl
+📄	Objects	book-paper	document | page | page facing up
+📑	Objects	book-paper	bookmark | mark | marker | tabs
+📒	Objects	book-paper	ledger | notebook
+📓	Objects	book-paper	notebook
+📔	Objects	book-paper	book | cover | decorated | notebook | notebook with decorative cover
+📕	Objects	book-paper	book | closed
+📖	Objects	book-paper	book | open
+📗	Objects	book-paper	book | green
+📘	Objects	book-paper	blue | book
+📙	Objects	book-paper	book | orange
+📚	Objects	book-paper	book | books
+📜	Objects	book-paper	paper | scroll
+📰	Objects	book-paper	news | newspaper | paper
+🔖	Objects	book-paper	bookmark | mark
+🗞	Objects	book-paper	news | newspaper | paper | rolled | rolled-up newspaper
+💰	Objects	money	bag | dollar | money | moneybag
+💱	Objects	money	bank | currency | exchange | money
+💲	Objects	money	currency | dollar | heavy dollar sign | money
+💳	Objects	money	card | credit | money
+💴	Objects	money	banknote | bill | currency | money | note | yen
+💵	Objects	money	banknote | bill | currency | dollar | money | note
+💶	Objects	money	banknote | bill | currency | euro | money | note
+💷	Objects	money	bank | banknote | bill | currency | money | note | pound | sterling
+💸	Objects	money	banknote | bill | fly | money | money with wings | wings
+💹	Objects	money	chart | chart increasing with yen | graph | graph increasing with yen | growth | money | yen
+🧾	Objects	money	accounting | bookkeeping | evidence | proof | receipt
+✉	Objects	mail	e-mail | email | envelope | letter
+📤	Objects	mail	box | letter | mail | out tray | outbox | sent | tray
+📥	Objects	mail	box | in tray | inbox | letter | mail | receive | tray
+📦	Objects	mail	box | package | parcel
+📧	Objects	mail	e-mail | letter | mail | email
+📨	Objects	mail	e-mail | email | envelope | incoming | letter | receive
+📩	Objects	mail	arrow | e-mail | email | envelope | envelope with arrow | outgoing
+📪	Objects	mail	closed | closed letterbox with lowered flag | lowered | mail | mailbox | postbox | closed mailbox with lowered flag | closed postbox with lowered flag | letterbox | post | post box
+📫	Objects	mail	closed | closed letterbox with raised flag | mail | mailbox | postbox | closed mailbox with raised flag | closed postbox with raised flag | letterbox | post | post box
+📬	Objects	mail	mail | mailbox | open | open letterbox with raised flag | postbox | open mailbox with raised flag | open postbox with raised flag | post | post box
+📭	Objects	mail	lowered | mail | mailbox | open | open letterbox with lowered flag | postbox | open mailbox with lowered flag | open postbox with lowered flag | post | post box
+📮	Objects	mail	mailbox | mail | postbox
+🗳	Objects	mail	ballot | ballot box with ballot | box
+✏	Objects	writing	pencil
+✒	Objects	writing	black nib | nib | pen
+📝	Objects	writing	memo | pencil
+🖊	Objects	writing	ballpoint | pen
+🖋	Objects	writing	fountain | pen
+🖌	Objects	writing	paintbrush | painting
+🖍	Objects	writing	crayon
+✂	Objects	office	cutting | scissors | tool
+💼	Objects	office	briefcase
+📁	Objects	office	file | folder
+📂	Objects	office	file | folder | open
+📅	Objects	office	calendar | date
+📆	Objects	office	calendar | tear-off calendar
+📇	Objects	office	card | index | rolodex
+📈	Objects	office	chart | chart increasing | graph | graph increasing | growth | trend | upward
+📉	Objects	office	chart | chart decreasing | down | graph | graph decreasing | trend
+📊	Objects	office	bar | chart | graph
+📋	Objects	office	clipboard
+📌	Objects	office	drawing-pin | pin | map pin | pushpin
+📍	Objects	office	pin | pushpin | round drawing-pin | round pushpin
+📎	Objects	office	paperclip
+📏	Objects	office	ruler | straight edge | straight ruler
+📐	Objects	office	triangular ruler | ruler | set | set square | triangle
+🖇	Objects	office	link | linked paperclips | paperclip
+🗂	Objects	office	card | dividers | index
+🗃	Objects	office	box | card | file
+🗄	Objects	office	cabinet | file | filing
+🗑	Objects	office	wastebasket | paper bin | wastepaper basket
+🗒	Objects	office	note | pad | spiral | spiral notepad
+🗓	Objects	office	calendar | pad | spiral
+🔏	Objects	lock	ink | lock | locked with pen | nib | pen | privacy
+🔐	Objects	lock	closed | key | lock | locked with key | secure
+🔑	Objects	lock	key | lock | password
+🔒	Objects	lock	closed | locked
+🔓	Objects	lock	lock | open | unlock | unlocked
+🗝	Objects	lock	clue | key | lock | old
+⚒	Objects	tool	hammer | hammer and pick | hammer and pickaxe | pick | tool
+⚔	Objects	tool	crossed | swords | weapon
+⚖	Objects	tool	balance | justice | Libra | scale | zodiac
+⚙	Objects	tool	cog | cogwheel | gear | tool
+⛏	Objects	tool	mining | pick | pickaxe | tool
+⛓	Objects	tool	chain | chains
+🏹	Objects	tool	archer | arrow | bow | bow and arrow | Sagittarius | zodiac
+🔗	Objects	tool	link
+🔧	Objects	tool	wrench | spanner | tool
+🔨	Objects	tool	hammer | tool
+🔩	Objects	tool	bolt | nut | nut and bolt | tool
+🔫	Objects	tool	gun | handgun | pistol | revolver | tool | weapon
+🗜	Objects	tool	clamp | compress | tool | vice
+🗡	Objects	tool	dagger | knife | weapon
+🛠	Objects	tool	hammer | hammer and spanner | spanner | tool | wrench | hammer and wrench
+🛡	Objects	tool	shield | weapon
+🧰	Objects	tool	chest | mechanic | tool | toolbox
+🧲	Objects	tool	attraction | horseshoe | magnet | magnetic
+⚗	Objects	science	alembic | chemistry | tool
+📡	Objects	science	antenna | dish | satellite
+🔬	Objects	science	microscope | science | tool
+🔭	Objects	science	science | telescope | tool
+🧪	Objects	science	chemist | chemistry | experiment | lab | science | test tube
+🧫	Objects	science	bacteria | biologist | biology | culture | lab | petri dish
+🧬	Objects	science	biologist | dna | DNA | evolution | gene | genetics | life
+💉	Objects	medical	medicine | needle | shot | sick | syringe
+💊	Objects	medical	capsule | doctor | medicine | pill | sick | tablet
+🚪	Objects	household	door
+🚽	Objects	household	facilities | loo | toilet | WC | lavatory
+🚿	Objects	household	shower | water
+🛁	Objects	household	bath | bathtub | tub
+🛋	Objects	household	couch | couch and lamp | hotel | lamp | sofa | sofa and lamp
+🛏	Objects	household	bed | hotel | sleep
+🛒	Objects	household	shopping cart | shopping trolley | cart | shopping | trolley
+🧯	Objects	household	extinguish | fire | fire extinguisher | quench
+🧴	Objects	household	lotion | moisturiser | shampoo | sunscreen | lotion bottle | moisturizer
+🧷	Objects	household	nappy | punk rock | diaper | safety pin
+🧹	Objects	household	broom | cleaning | sweeping | witch
+🧺	Objects	household	basket | farming | laundry | picnic
+🧻	Objects	household	paper towels | toilet paper | toilet roll | roll of paper
+🧼	Objects	household	bar | bathing | cleaning | lather | soap | soapdish
+🧽	Objects	household	absorbing | cleaning | porous | sponge
+⚰	Objects	other-object	coffin | death
+⚱	Objects	other-object	ashes | death | funeral | urn
+🗿	Objects	other-object	face | moai | moyai | statue
+🚬	Objects	other-object	cigarette | smoking
+♿	Symbols	transport-sign	access | disabled access | wheelchair symbol
+🏧	Symbols	transport-sign	atm | ATM sign | automated | bank | cashpoint | teller
+🚮	Symbols	transport-sign	garbage | litter | litter bin | litter in bin sign | trash | rubbish
+🚰	Symbols	transport-sign	drinking water | drinking | potable | water
+🚹	Symbols	transport-sign	men’s room | lavatory | man | men’s toilet | restroom | wc
+🚺	Symbols	transport-sign	women’s room | lavatory | restroom | wc | woman | women’s toilet
+🚻	Symbols	transport-sign	washroom | lavatory | restroom | toilets | WC
+🚼	Symbols	transport-sign	baby | baby symbol | change room | changing
+🚾	Symbols	transport-sign	amenities | bathroom | restroom | toilet | water closet | wc | WC | closet | lavatory | water
+🛂	Symbols	transport-sign	control | passport
+🛃	Symbols	transport-sign	customs
+🛄	Symbols	transport-sign	baggage | claim
+🛅	Symbols	transport-sign	baggage | left luggage | locker | luggage
+☢	Symbols	warning	radioactive | sign
+☣	Symbols	warning	biohazard | sign
+⚠	Symbols	warning	warning
+⛔	Symbols	warning	denied | entry | forbidden | no | prohibited | traffic | not
+📵	Symbols	warning	cell | forbidden | mobile | no | no mobile phones | phone
+🔞	Symbols	warning	18 | age restriction | eighteen | no one under eighteen | prohibited | underage
+🚫	Symbols	warning	denied | entry | forbidden | no | prohibited | not
+🚭	Symbols	warning	denied | forbidden | no | prohibited | smoking | not
+🚯	Symbols	warning	denied | forbidden | litter | no | no littering | prohibited | not
+🚱	Symbols	warning	non-drinkable water | non-drinking | non-potable | water | non-drinking water
+🚳	Symbols	warning	bicycle | bike | forbidden | no | no bicycles | prohibited
+🚷	Symbols	warning	denied | forbidden | no | no pedestrians | pedestrian | prohibited | not
+🚸	Symbols	warning	child | children crossing | crossing | pedestrian | traffic
+↔	Symbols	arrow	arrow | left-right arrow
+↕	Symbols	arrow	arrow | up-down arrow
+↖	Symbols	arrow	arrow | direction | intercardinal | northwest | up-left arrow
+↗	Symbols	arrow	arrow | direction | intercardinal | northeast | up-right arrow
+↘	Symbols	arrow	arrow | direction | down-right arrow | intercardinal | southeast
+↙	Symbols	arrow	arrow | direction | down-left arrow | intercardinal | southwest
+↩	Symbols	arrow	arrow | right arrow curving left
+↪	Symbols	arrow	arrow | left arrow curving right
+➡	Symbols	arrow	arrow | cardinal | direction | east | right arrow
+⤴	Symbols	arrow	arrow | right arrow curving up
+⤵	Symbols	arrow	arrow | down | right arrow curving down
+⬅	Symbols	arrow	arrow | cardinal | direction | left arrow | west
+⬆	Symbols	arrow	arrow | cardinal | direction | north | up arrow
+⬇	Symbols	arrow	arrow | cardinal | direction | down | south
+🔃	Symbols	arrow	arrow | clockwise | clockwise vertical arrows | reload
+🔄	Symbols	arrow	anticlockwise arrows button | anticlockwise | arrow | counterclockwise | counterclockwise arrows button | withershins
+🔙	Symbols	arrow	arrow | back | BACK arrow
+🔚	Symbols	arrow	arrow | end | END arrow
+🔛	Symbols	arrow	arrow | mark | on | ON! arrow
+🔜	Symbols	arrow	arrow | soon | SOON arrow
+🔝	Symbols	arrow	arrow | top | TOP arrow | up
+☦	Symbols	religion	Orthodox cross | Christian | cross | orthodox cross | religion
+☪	Symbols	religion	Islam | Muslim | religion | star and crescent | islam
+☮	Symbols	religion	peace | peace symbol
+☯	Symbols	religion	religion | Tao | Taoist | yang | yin | tao | taoist
+☸	Symbols	religion	Buddhist | dharma | dharmachakra | religion | wheel | wheel of dharma
+⚛	Symbols	religion	atheist | atom | atom symbol
+✝	Symbols	religion	Christian | cross | religion | Latin cross | latin cross
+✡	Symbols	religion	David | Jew | Jewish | religion | star | star of David
+🔯	Symbols	religion	dotted six-pointed star | fortune | star
+🕉	Symbols	religion	aum | Hindu | om | religion
+🕎	Symbols	religion	candelabrum | candlestick | menorah | religion
+🛐	Symbols	religion	place of worship | religion | worship
+♈	Symbols	zodiac	Aries | ram | zodiac
+♉	Symbols	zodiac	bull | ox | Taurus | zodiac
+♊	Symbols	zodiac	Gemini | twins | zodiac
+♋	Symbols	zodiac	Cancer | crab | zodiac
+♌	Symbols	zodiac	Leo | lion | zodiac
+♍	Symbols	zodiac	virgin | Virgo | zodiac
+♎	Symbols	zodiac	balance | justice | Libra | scales | zodiac
+♏	Symbols	zodiac	Scorpio | scorpion | scorpius | zodiac
+♐	Symbols	zodiac	archer | centaur | Sagittarius | zodiac
+♑	Symbols	zodiac	Capricorn | goat | zodiac
+♒	Symbols	zodiac	Aquarius | water bearer | zodiac | bearer | water
+♓	Symbols	zodiac	fish | Pisces | zodiac
+⛎	Symbols	zodiac	bearer | Ophiuchus | serpent | snake | zodiac
+⏏	Symbols	av-symbol	eject | eject button
+⏩	Symbols	av-symbol	fast forward button | arrow | double | fast | fast-forward button | forward
+⏪	Symbols	av-symbol	fast-reverse button | arrow | double | fast reverse button | rewind
+⏫	Symbols	av-symbol	arrow | double | fast up button
+⏬	Symbols	av-symbol	arrow | double | down | fast down button
+⏭	Symbols	av-symbol	arrow | next scene | next track | next track button | triangle
+⏮	Symbols	av-symbol	arrow | last track button | previous scene | previous track | triangle
+⏯	Symbols	av-symbol	arrow | pause | play | play or pause button | right | triangle
+⏸	Symbols	av-symbol	bar | double | pause | pause button | vertical
+⏹	Symbols	av-symbol	square | stop | stop button
+⏺	Symbols	av-symbol	circle | record | record button
+▶	Symbols	av-symbol	arrow | play | play button | right | triangle
+◀	Symbols	av-symbol	arrow | left | reverse | reverse button | triangle
+🎦	Symbols	av-symbol	camera | cinema | film | movie
+📳	Symbols	av-symbol	cell | mobile | mode | phone | telephone | vibrate | vibration
+📴	Symbols	av-symbol	cell | mobile | off | phone | telephone
+📶	Symbols	av-symbol	antenna | antenna bars | bar | cell | mobile | phone
+🔀	Symbols	av-symbol	arrow | crossed | shuffle tracks button
+🔁	Symbols	av-symbol	arrow | clockwise | repeat | repeat button
+🔂	Symbols	av-symbol	arrow | clockwise | once | repeat single button
+🔅	Symbols	av-symbol	brightness | dim | dim button | low
+🔆	Symbols	av-symbol	bright button | brightness | brightness button | bright
+🔼	Symbols	av-symbol	upward button | arrow | button | red | upwards button
+🔽	Symbols	av-symbol	downward button | arrow | button | down | downwards button | red
+©	Symbols	other-symbol	c | copyright
+®	Symbols	other-symbol	r | registered
+‼	Symbols	other-symbol	double exclamation mark | exclamation | mark | punctuation | ! | !! | bangbang
+⁉	Symbols	other-symbol	exclamation | mark | punctuation | question | ! | !? | ? | interrobang
+™	Symbols	other-symbol	mark | tm | trade mark | trademark
+☑	Symbols	other-symbol	ballot | ballot box with check | box | tick | ✓ | tick box with tick | ballot box with tick | check | check box with check
+♀	Symbols	other-symbol	female sign | woman
+♂	Symbols	other-symbol	male sign | man
+♻	Symbols	other-symbol	recycle | recycling symbol
+♾	Symbols	other-symbol	eternal | forever | unbound | universal | infinity | unbounded
+⚕	Symbols	other-symbol	aesculapius | medical symbol | medicine | staff
+⚜	Symbols	other-symbol	fleur-de-lis
+✅	Symbols	other-symbol	✓ | button | mark | tick | white heavy check mark | check | white heavy tick
+✔	Symbols	other-symbol	heavy tick mark | mark | tick | ✓ | heavy check mark | check | heavy tick
+✖	Symbols	other-symbol	× | cancel | multiplication | multiply | sign | x | heavy multiplication x | math | maths
+✳	Symbols	other-symbol	* | asterisk | eight-spoked asterisk
+✴	Symbols	other-symbol	* | eight-pointed star | star
+❇	Symbols	other-symbol	* | sparkle
+❌	Symbols	other-symbol	× | cancel | cross | mark | multiplication | multiply | x
+❎	Symbols	other-symbol	× | cross mark button | mark | square | x
+❓	Symbols	other-symbol	? | mark | punctuation | question
+❔	Symbols	other-symbol	? | mark | outlined | punctuation | question | white question mark
+❕	Symbols	other-symbol	! | exclamation | mark | outlined | punctuation | white exclamation mark
+❗	Symbols	other-symbol	! | exclamation | mark | punctuation
+➕	Symbols	other-symbol	+ | math | maths | plus | sign | heavy plus sign
+➖	Symbols	other-symbol	- | − | math | maths | minus | sign | heavy minus sign
+➗	Symbols	other-symbol	÷ | division | math | sign | heavy division sign | maths
+➰	Symbols	other-symbol	curl | curly loop | loop
+➿	Symbols	other-symbol	curl | double | double curly loop | loop
+⭕	Symbols	other-symbol	circle | hollow red circle | large | o | red
+〰	Symbols	other-symbol	dash | punctuation | wavy
+〽	Symbols	other-symbol	mark | part | part alternation mark
+📛	Symbols	other-symbol	badge | name
+🔰	Symbols	other-symbol	beginner | chevron | Japanese | Japanese symbol for beginner | leaf
+🔱	Symbols	other-symbol	anchor | emblem | ship | tool | trident
+🔟	Symbols	keycap	
+#️⃣	Symbols	keycap	
+*️⃣	Symbols	keycap	
+0️⃣	Symbols	keycap	
+1️⃣	Symbols	keycap	
+2️⃣	Symbols	keycap	
+3️⃣	Symbols	keycap	
+4️⃣	Symbols	keycap	
+5️⃣	Symbols	keycap	
+6️⃣	Symbols	keycap	
+7️⃣	Symbols	keycap	
+8️⃣	Symbols	keycap	
+9️⃣	Symbols	keycap	
+ℹ	Symbols	alphanum	i | information
+Ⓜ	Symbols	alphanum	circle | circled M | m
+㊗	Symbols	alphanum	“congratulations” | ideograph | Japanese | Japanese “congratulations” button | 祝
+㊙	Symbols	alphanum	“secret” | ideograph | Japanese | Japanese “secret” button | 秘
+🅰	Symbols	alphanum	a | A button (blood type) | blood type
+🅱	Symbols	alphanum	b | B button (blood type) | blood type
+🅾	Symbols	alphanum	blood type | o | O button (blood type)
+🅿	Symbols	alphanum	P button | parking
+🆎	Symbols	alphanum	ab | AB button (blood type) | blood type
+🆑	Symbols	alphanum	cl | CL button
+🆒	Symbols	alphanum	cool | COOL button
+🆓	Symbols	alphanum	free | FREE button
+🆔	Symbols	alphanum	id | ID button | identity
+🆕	Symbols	alphanum	new | NEW button
+🆖	Symbols	alphanum	ng | NG button
+🆗	Symbols	alphanum	OK | OK button
+🆘	Symbols	alphanum	help | sos | SOS button
+🆙	Symbols	alphanum	mark | up | UP! button
+🆚	Symbols	alphanum	versus | vs | VS button
+🈁	Symbols	alphanum	“here” | Japanese | Japanese “here” button | katakana | ココ
+🈂	Symbols	alphanum	“service charge” | Japanese | Japanese “service charge” button | katakana | サ
+🈚	Symbols	alphanum	“free of charge” | ideograph | Japanese | Japanese “free of charge” button | 無
+🈯	Symbols	alphanum	“reserved” | ideograph | Japanese | Japanese “reserved” button | 指
+🈲	Symbols	alphanum	“prohibited” | ideograph | Japanese | Japanese “prohibited” button | 禁
+🈳	Symbols	alphanum	“vacancy” | ideograph | Japanese | Japanese “vacancy” button | 空
+🈴	Symbols	alphanum	“passing grade” | ideograph | Japanese | Japanese “passing grade” button | 合
+🈵	Symbols	alphanum	“no vacancy” | ideograph | Japanese | Japanese “no vacancy” button | 満
+🈶	Symbols	alphanum	“not free of charge” | ideograph | Japanese | Japanese “not free of charge” button | 有
+🈷	Symbols	alphanum	“monthly amount” | ideograph | Japanese | Japanese “monthly amount” button | 月
+🈸	Symbols	alphanum	“application” | ideograph | Japanese | Japanese “application” button | 申
+🈹	Symbols	alphanum	“discount” | ideograph | Japanese | Japanese “discount” button | 割
+🈺	Symbols	alphanum	“open for business” | ideograph | Japanese | Japanese “open for business” button | 営
+🉐	Symbols	alphanum	“bargain” | ideograph | Japanese | Japanese “bargain” button | 得
+🉑	Symbols	alphanum	“acceptable” | ideograph | Japanese | Japanese “acceptable” button | 可
+💯	Symbols	alphanum	100 | full | hundred | hundred points | score
+🔠	Symbols	alphanum	input Latin uppercase | ABCD | input | latin | letters | uppercase
+🔡	Symbols	alphanum	input Latin lowercase | abcd | input | latin | letters | lowercase
+🔢	Symbols	alphanum	1234 | input | numbers
+🔣	Symbols	alphanum	〒♪&% | input | input symbols
+🔤	Symbols	alphanum	input Latin letters | abc | alphabet | input | latin | letters
+▪	Symbols	geometric	black small square | geometric | square
+▫	Symbols	geometric	geometric | square | white small square
+◻	Symbols	geometric	geometric | square | white medium square
+◼	Symbols	geometric	black medium square | geometric | square
+◽	Symbols	geometric	geometric | square | white medium-small square
+◾	Symbols	geometric	black medium-small square | geometric | square
+⚪	Symbols	geometric	circle | geometric | white circle
+⚫	Symbols	geometric	black circle | circle | geometric
+⬛	Symbols	geometric	black large square | geometric | square
+⬜	Symbols	geometric	geometric | square | white large square
+💠	Symbols	geometric	comic | diamond | diamond with a dot | geometric | inside
+🔘	Symbols	geometric	button | geometric | radio
+🔲	Symbols	geometric	black square button | button | geometric | square
+🔳	Symbols	geometric	button | geometric | outlined | square | white square button
+🔴	Symbols	geometric	circle | geometric | red
+🔵	Symbols	geometric	blue | circle | geometric
+🔶	Symbols	geometric	diamond | geometric | large orange diamond | orange
+🔷	Symbols	geometric	blue | diamond | geometric | large blue diamond
+🔸	Symbols	geometric	diamond | geometric | orange | small orange diamond
+🔹	Symbols	geometric	blue | diamond | geometric | small blue diamond
+🔺	Symbols	geometric	geometric | red | red triangle pointed up
+🔻	Symbols	geometric	down | geometric | red | red triangle pointed down
+🎌	Flags	flag	celebration | cross | crossed | crossed flags | Japanese
+🏁	Flags	flag	checkered flag | checkered | chequered | chequered flag | racing
+🏳	Flags	flag	waving | white flag
+🏴	Flags	flag	black flag | waving
+🚩	Flags	flag	post | triangular flag
+🏳️‍🌈	Flags	flag	pride | rainbow | rainbow flag
+🏴‍☠️	Flags	flag	Jolly Roger | pirate | pirate flag | plunder | treasure
+🇦🇨	Flags	country-flag	
+🇦🇩	Flags	country-flag	
+🇦🇪	Flags	country-flag	
+🇦🇫	Flags	country-flag	
+🇦🇬	Flags	country-flag	
+🇦🇮	Flags	country-flag	
+🇦🇱	Flags	country-flag	
+🇦🇲	Flags	country-flag	
+🇦🇴	Flags	country-flag	
+🇦🇶	Flags	country-flag	
+🇦🇷	Flags	country-flag	
+🇦🇸	Flags	country-flag	
+🇦🇹	Flags	country-flag	
+🇦🇺	Flags	country-flag	
+🇦🇼	Flags	country-flag	
+🇦🇽	Flags	country-flag	
+🇦🇿	Flags	country-flag	
+🇧🇦	Flags	country-flag	
+🇧🇧	Flags	country-flag	
+🇧🇩	Flags	country-flag	
+🇧🇪	Flags	country-flag	
+🇧🇫	Flags	country-flag	
+🇧🇬	Flags	country-flag	
+🇧🇭	Flags	country-flag	
+🇧🇮	Flags	country-flag	
+🇧🇯	Flags	country-flag	
+🇧🇱	Flags	country-flag	
+🇧🇲	Flags	country-flag	
+🇧🇳	Flags	country-flag	
+🇧🇴	Flags	country-flag	
+🇧🇶	Flags	country-flag	
+🇧🇷	Flags	country-flag	
+🇧🇸	Flags	country-flag	
+🇧🇹	Flags	country-flag	
+🇧🇻	Flags	country-flag	
+🇧🇼	Flags	country-flag	
+🇧🇾	Flags	country-flag	
+🇧🇿	Flags	country-flag	
+🇨🇦	Flags	country-flag	
+🇨🇨	Flags	country-flag	
+🇨🇩	Flags	country-flag	
+🇨🇫	Flags	country-flag	
+🇨🇬	Flags	country-flag	
+🇨🇭	Flags	country-flag	
+🇨🇮	Flags	country-flag	
+🇨🇰	Flags	country-flag	
+🇨🇱	Flags	country-flag	
+🇨🇲	Flags	country-flag	
+🇨🇳	Flags	country-flag	
+🇨🇴	Flags	country-flag	
+🇨🇵	Flags	country-flag	
+🇨🇷	Flags	country-flag	
+🇨🇺	Flags	country-flag	
+🇨🇻	Flags	country-flag	
+🇨🇼	Flags	country-flag	
+🇨🇽	Flags	country-flag	
+🇨🇾	Flags	country-flag	
+🇨🇿	Flags	country-flag	
+🇩🇪	Flags	country-flag	
+🇩🇬	Flags	country-flag	
+🇩🇯	Flags	country-flag	
+🇩🇰	Flags	country-flag	
+🇩🇲	Flags	country-flag	
+🇩🇴	Flags	country-flag	
+🇩🇿	Flags	country-flag	
+🇪🇦	Flags	country-flag	
+🇪🇨	Flags	country-flag	
+🇪🇪	Flags	country-flag	
+🇪🇬	Flags	country-flag	
+🇪🇭	Flags	country-flag	
+🇪🇷	Flags	country-flag	
+🇪🇸	Flags	country-flag	
+🇪🇹	Flags	country-flag	
+🇪🇺	Flags	country-flag	
+🇫🇮	Flags	country-flag	
+🇫🇯	Flags	country-flag	
+🇫🇰	Flags	country-flag	
+🇫🇲	Flags	country-flag	
+🇫🇴	Flags	country-flag	
+🇫🇷	Flags	country-flag	
+🇬🇦	Flags	country-flag	
+🇬🇧	Flags	country-flag	
+🇬🇩	Flags	country-flag	
+🇬🇪	Flags	country-flag	
+🇬🇫	Flags	country-flag	
+🇬🇬	Flags	country-flag	
+🇬🇭	Flags	country-flag	
+🇬🇮	Flags	country-flag	
+🇬🇱	Flags	country-flag	
+🇬🇲	Flags	country-flag	
+🇬🇳	Flags	country-flag	
+🇬🇵	Flags	country-flag	
+🇬🇶	Flags	country-flag	
+🇬🇷	Flags	country-flag	
+🇬🇸	Flags	country-flag	
+🇬🇹	Flags	country-flag	
+🇬🇺	Flags	country-flag	
+🇬🇼	Flags	country-flag	
+🇬🇾	Flags	country-flag	
+🇭🇰	Flags	country-flag	
+🇭🇲	Flags	country-flag	
+🇭🇳	Flags	country-flag	
+🇭🇷	Flags	country-flag	
+🇭🇹	Flags	country-flag	
+🇭🇺	Flags	country-flag	
+🇮🇨	Flags	country-flag	
+🇮🇩	Flags	country-flag	
+🇮🇪	Flags	country-flag	
+🇮🇱	Flags	country-flag	
+🇮🇲	Flags	country-flag	
+🇮🇳	Flags	country-flag	
+🇮🇴	Flags	country-flag	
+🇮🇶	Flags	country-flag	
+🇮🇷	Flags	country-flag	
+🇮🇸	Flags	country-flag	
+🇮🇹	Flags	country-flag	
+🇯🇪	Flags	country-flag	
+🇯🇲	Flags	country-flag	
+🇯🇴	Flags	country-flag	
+🇯🇵	Flags	country-flag	
+🇰🇪	Flags	country-flag	
+🇰🇬	Flags	country-flag	
+🇰🇭	Flags	country-flag	
+🇰🇮	Flags	country-flag	
+🇰🇲	Flags	country-flag	
+🇰🇳	Flags	country-flag	
+🇰🇵	Flags	country-flag	
+🇰🇷	Flags	country-flag	
+🇰🇼	Flags	country-flag	
+🇰🇾	Flags	country-flag	
+🇰🇿	Flags	country-flag	
+🇱🇦	Flags	country-flag	
+🇱🇧	Flags	country-flag	
+🇱🇨	Flags	country-flag	
+🇱🇮	Flags	country-flag	
+🇱🇰	Flags	country-flag	
+🇱🇷	Flags	country-flag	
+🇱🇸	Flags	country-flag	
+🇱🇹	Flags	country-flag	
+🇱🇺	Flags	country-flag	
+🇱🇻	Flags	country-flag	
+🇱🇾	Flags	country-flag	
+🇲🇦	Flags	country-flag	
+🇲🇨	Flags	country-flag	
+🇲🇩	Flags	country-flag	
+🇲🇪	Flags	country-flag	
+🇲🇫	Flags	country-flag	
+🇲🇬	Flags	country-flag	
+🇲🇭	Flags	country-flag	
+🇲🇰	Flags	country-flag	
+🇲🇱	Flags	country-flag	
+🇲🇲	Flags	country-flag	
+🇲🇳	Flags	country-flag	
+🇲🇴	Flags	country-flag	
+🇲🇵	Flags	country-flag	
+🇲🇶	Flags	country-flag	
+🇲🇷	Flags	country-flag	
+🇲🇸	Flags	country-flag	
+🇲🇹	Flags	country-flag	
+🇲🇺	Flags	country-flag	
+🇲🇻	Flags	country-flag	
+🇲🇼	Flags	country-flag	
+🇲🇽	Flags	country-flag	
+🇲🇾	Flags	country-flag	
+🇲🇿	Flags	country-flag	
+🇳🇦	Flags	country-flag	
+🇳🇨	Flags	country-flag	
+🇳🇪	Flags	country-flag	
+🇳🇫	Flags	country-flag	
+🇳🇬	Flags	country-flag	
+🇳🇮	Flags	country-flag	
+🇳🇱	Flags	country-flag	
+🇳🇴	Flags	country-flag	
+🇳🇵	Flags	country-flag	
+🇳🇷	Flags	country-flag	
+🇳🇺	Flags	country-flag	
+🇳🇿	Flags	country-flag	
+🇴🇲	Flags	country-flag	
+🇵🇦	Flags	country-flag	
+🇵🇪	Flags	country-flag	
+🇵🇫	Flags	country-flag	
+🇵🇬	Flags	country-flag	
+🇵🇭	Flags	country-flag	
+🇵🇰	Flags	country-flag	
+🇵🇱	Flags	country-flag	
+🇵🇲	Flags	country-flag	
+🇵🇳	Flags	country-flag	
+🇵🇷	Flags	country-flag	
+🇵🇸	Flags	country-flag	
+🇵🇹	Flags	country-flag	
+🇵🇼	Flags	country-flag	
+🇵🇾	Flags	country-flag	
+🇶🇦	Flags	country-flag	
+🇷🇪	Flags	country-flag	
+🇷🇴	Flags	country-flag	
+🇷🇸	Flags	country-flag	
+🇷🇺	Flags	country-flag	
+🇷🇼	Flags	country-flag	
+🇸🇦	Flags	country-flag	
+🇸🇧	Flags	country-flag	
+🇸🇨	Flags	country-flag	
+🇸🇩	Flags	country-flag	
+🇸🇪	Flags	country-flag	
+🇸🇬	Flags	country-flag	
+🇸🇭	Flags	country-flag	
+🇸🇮	Flags	country-flag	
+🇸🇯	Flags	country-flag	
+🇸🇰	Flags	country-flag	
+🇸🇱	Flags	country-flag	
+🇸🇲	Flags	country-flag	
+🇸🇳	Flags	country-flag	
+🇸🇴	Flags	country-flag	
+🇸🇷	Flags	country-flag	
+🇸🇸	Flags	country-flag	
+🇸🇹	Flags	country-flag	
+🇸🇻	Flags	country-flag	
+🇸🇽	Flags	country-flag	
+🇸🇾	Flags	country-flag	
+🇸🇿	Flags	country-flag	
+🇹🇦	Flags	country-flag	
+🇹🇨	Flags	country-flag	
+🇹🇩	Flags	country-flag	
+🇹🇫	Flags	country-flag	
+🇹🇬	Flags	country-flag	
+🇹🇭	Flags	country-flag	
+🇹🇯	Flags	country-flag	
+🇹🇰	Flags	country-flag	
+🇹🇱	Flags	country-flag	
+🇹🇲	Flags	country-flag	
+🇹🇳	Flags	country-flag	
+🇹🇴	Flags	country-flag	
+🇹🇷	Flags	country-flag	
+🇹🇹	Flags	country-flag	
+🇹🇻	Flags	country-flag	
+🇹🇼	Flags	country-flag	
+🇹🇿	Flags	country-flag	
+🇺🇦	Flags	country-flag	
+🇺🇬	Flags	country-flag	
+🇺🇲	Flags	country-flag	
+🇺🇳	Flags	country-flag	
+🇺🇸	Flags	country-flag	
+🇺🇾	Flags	country-flag	
+🇺🇿	Flags	country-flag	
+🇻🇦	Flags	country-flag	
+🇻🇨	Flags	country-flag	
+🇻🇪	Flags	country-flag	
+🇻🇬	Flags	country-flag	
+🇻🇮	Flags	country-flag	
+🇻🇳	Flags	country-flag	
+🇻🇺	Flags	country-flag	
+🇼🇫	Flags	country-flag	
+🇼🇸	Flags	country-flag	
+🇽🇰	Flags	country-flag	
+🇾🇪	Flags	country-flag	
+🇾🇹	Flags	country-flag	
+🇿🇦	Flags	country-flag	
+🇿🇲	Flags	country-flag	
+🇿🇼	Flags	country-flag	
+🏴󠁧󠁢󠁥󠁮󠁧󠁿	Flags	subdivision-flag	
+🏴󠁧󠁢󠁳󠁣󠁴󠁿	Flags	subdivision-flag	
+🏴󠁧󠁢󠁷󠁬󠁳󠁿	Flags	subdivision-flag	
+🥱	No category		bored | tired | yawn | yawning face
+🤎	No category		brown | heart
+🤍	No category		heart | white
+🤏	No category		pinching hand | small amount
+🦾	No category		accessibility | mechanical arm | prosthetic
+🦿	No category		accessibility | mechanical leg | prosthetic
+🦻	No category		accessibility | ear with hearing aid | hard of hearing
+🧏	No category		accessibility | deaf | deaf person | ear | hear
+🧏‍♂	No category		deaf | man
+🧏‍♀	No category		deaf | woman
+🧍	No category		person standing | stand | standing
+🧍‍♂	No category		man | standing
+🧍‍♀	No category		standing | woman
+🧎	No category		kneel | kneeling | person kneeling
+🧎‍♂	No category		kneeling | man
+🧎‍♀	No category		kneeling | woman
+👨‍🦯	No category		accessibility | blind | man | man with guide cane | man with probing cane
+👩‍🦯	No category		accessibility | blind | woman | woman with guide cane | woman with probing cane
+👨‍🦼	No category		man in motorised wheelchair | accessibility | man | man in powered wheelchair | wheelchair | man in motorized wheelchair
+👩‍🦼	No category		woman in motorised wheelchair | accessibility | wheelchair | woman | woman in powered wheelchair | woman in motorized wheelchair
+👨‍🦽	No category		accessibility | man | man in manual wheelchair | wheelchair
+👩‍🦽	No category		accessibility | wheelchair | woman | woman in manual wheelchair
+🧑‍🤝‍🧑	No category		couple | hand | hold | holding hands | people holding hands | person
+🦧	No category		ape | orangutan
+🦮	No category		accessibility | blind | guide | guide dog
+🐕‍🦺	No category		accessibility | assistance | dog | service
+🦥	No category		lazy | sloth | slow
+🦦	No category		fishing | otter | playful
+🦨	No category		skunk | stink
+🦩	No category		flamboyant | flamingo | tropical
+🧄	No category		flavouring | flavoring | garlic
+🧅	No category		flavouring | flavoring | onion
+🧇	No category		waffle with butter | indecisive | iron | waffle
+🧆	No category		chick pea | chickpea | meatball | falafel
+🧈	No category		butter | dairy
+🦪	No category		diving | oyster | pearl
+🧃	No category		drink carton | juice box | beverage box
+🧉	No category		drink | maté | mate
+🧊	No category		cold | ice | ice cube | iceberg
+🛕	No category		Hindu temple | hindu | temple
+🦽	No category		accessibility | manual wheelchair
+🦼	No category		mobility scooter | accessibility | powered wheelchair | motorized wheelchair
+🛺	No category		tuk tuk | tuk-tuk | tuktuk | auto rickshaw
+🪂	No category		hang-glide | parachute | parasail | parascend | skydive
+🪐	No category		ringed planet | saturn | saturnine
+🤿	No category		diving | scuba | snorkelling | diving mask | snorkeling
+🪀	No category		fluctuate | toy | yo-yo
+🪁	No category		fly | kite | soar
+🦺	No category		emergency | hi-vis | hi-viz | high-vis | high-viz | jacket | safety | vest
+🥻	No category		clothing | dress | sari
+🩱	No category		bathing suit | one-piece swimsuit
+🩲	No category		bathing suit | one-piece | pants | swimsuit | underwear | briefs
+🩳	No category		bathing suit | boardshorts | swim shorts | underwear | pants | shorts
+🩰	No category		ballet | ballet shoes | dance
+🪕	No category		banjo | music | stringed
+🪔	No category		diya | lamp | oil
+🪓	No category		axe | chop | hatchet | split | wood
+🦯	No category		guide cane | accessibility | blind | probing cane
+🩸	No category		bleed | blood donation | drop of blood | injury | medicine | menstruation
+🩹	No category		plaster | adhesive bandage | bandage
+🩺	No category		doctor | heart | medicine | stethoscope
+🪑	No category		chair | seat | sit
+🪒	No category		cut-throat razor | razor | sharp | shave
+🟠	No category		circle | orange
+🟡	No category		circle | yellow
+🟢	No category		circle | green
+🟣	No category		circle | purple
+🟤	No category		brown | circle
+🟥	No category		red | square
+🟧	No category		orange | square
+🟨	No category		square | yellow
+🟩	No category		green | square
+🟦	No category		blue | square
+🟪	No category		purple | square
+🟫	No category		brown | square
+🥲	No category		grateful | proud | relieved | slightly smiling | tear | touched
+🥷	No category		fighter | hidden | stealth
+🥸	No category		disguise | face | glasses | incognito | nose
+🤌	No category		fingers | hand gesture | interrogation | pinched | sarcastic
+🫀	No category		center | heartbeat | organ | pulse
+🫁	No category		breath | exhalation | inhalation | organ | respiration
+🧑‍⚕	No category		doctor | healthcare | nurse | therapist
+🧑‍🎓	No category		graduate | student
+🧑‍🏫	No category		instructor | professor | teacher
+🧑‍⚖	No category		judge | scales
+🧑‍🌾	No category		farmer | gardener | rancher
+🧑‍🍳	No category		chef | cook
+🧑‍🔧	No category		electrician | mechanic | plumber | tradesperson
+🧑‍🏭	No category		assembly | factory | industrial | worker
+🧑‍💼	No category		architect | business | manager | white-collar
+🧑‍🔬	No category		biologist | chemist | engineer | physicist | scientist
+🧑‍💻	No category		coder | developer | inventor | software | technologist
+🧑‍🎤	No category		actor | entertainer | rock | singer | star
+🧑‍🎨	No category		artist | palette
+🧑‍✈	No category		pilot | plane
+🧑‍🚀	No category		astronaut | rocket
+🧑‍🚒	No category		firefighter | firetruck
+🧑‍🦯	No category		accessibility | blind
+🧑‍🦼	No category		accessibility | wheelchair
+🧑‍🦽	No category		accessibility | wheelchair
+🫂	No category		goodbye | hello | hug | thanks
+🦬	No category		bison | buffalo | herd | wisent
+🦣	No category		extinction | large | tusk | woolly
+🦫	No category		beaver | dam
+🪶	No category		flight | light | plumage
+🦤	No category		Mauritius | extinction | large
+🦭	No category		sea Lion | seal
+🪲	No category		beetle | bug | insect
+🪳	No category		cockroach | insect | roach
+🪰	No category		disease | horsefly | housefly | maggot | rotting | tsetse
+🪱	No category		annelid | earthworm | parasite | worm
+🪴	No category		boring | grow | house | nurturing | plant | useless
+🫐	No category		berry | bilberry | blue | blueberry
+🫒	No category		food | olive
+🫑	No category		bell pepper | capsicum | pepper | vegetable
+🫓	No category		arepa | lavash | naan | pita
+🫔	No category		mexican | wrapped
+🫕	No category		Swiss | cheese | chocolate | melted | pot
+🫖	No category		drink | pot | tea | teapot
+🧋	No category		bubble | milk | pearl | tea
+🛖	No category		house | roundhouse | yurt
+🪵	No category		log | lumber | timber | wood
+🪨	No category		boulder | rock | stone
+🛻	No category		pick-up | pickup | truck
+🛼	No category		roller | skate
+🪄	No category		magic | witch | wizard
+🪅	No category		celebration | party
+🪆	No category		doll | nesting | russia
+🪡	No category		embroidery | needle | sewing | stitches | sutures | tailoring
+🪢	No category		rope | tie | twine | twist
+🩴	No category		beach sandals | sandals | thong sandals | thongs | zōri
+🪖	No category		helmet | military | soldier | warrior
+🪗	No category		accordian | concertina | squeeze box
+🪘	No category		beat | bongo | conga | drum | rhythm
+🪙	No category		gold | metal | money | silver | treasure
+🪚	No category		carpenter | lumber | saw | tool
+🪃	No category		australia | boomerang | opposite | rebound | repercussion
+🪛	No category		screw | tool
+🪜	No category		climb | ladder | rung | step
+🪝	No category		catch | crook | curve | ensnare | selling point
+🛗	No category		accessibility | elevator | hoist | lift
+🪞	No category		reflection | reflector | speculum
+🪟	No category		frame | opening | transparent | view
+🪠	No category		force cup | plumber | plumber’s helper | plunge | plunger
+🪤	No category		bait | mousetrap | snare | trap
+🪣	No category		bucket | cask | pail | vat
+🪥	No category		bathroom | brush | clean | dental | hygiene | teeth
+🪦	No category		grave | graveyard | headstone | rip | tombstone
+🪧	No category		picket | placard | protest | sign
+⚧	No category		transgender
+🏳‍⚧	No category		flag | transgender

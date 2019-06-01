@@ -70,24 +70,20 @@ ls -l "$(which rofi)"
 
 ## Emoji database
 
-When installing the emoji database (`emoji-test.txt` file) is installed in
+When installing the emoji database (`all_emojis.txt` file) is installed in
 `$PREFIX/share/rofi-emoji`. The plugin will search `$XDG_DATA_DIRS` for a
-directory where `share/rofi-emoji.txt` exists in. If the plugin cannot find the
-data, make sure `$XDG_DATA_DIRS` is set correctly.
+directory where `rofi-emoji/all_emojis.txt` exists in. If the plugin cannot
+find the data, make sure `$XDG_DATA_DIRS` is set correctly.
 
 If it is unset it should default to `/usr/local/share:/usr/share`, which works
 with the most common prefixes.
 
 ### Updating to a newer version
 
-The list was downloaded using
-
-```bash
-curl -o emoji-test.txt "https://www.unicode.org/Public/emoji/11.0/emoji-test.txt"
-```
-
-Try downloading it again. Maybe bumping the version in the URL first.
+The list is copied from the [Mange/emoji-data][emoji-data] repo.
 
 ## License
 
 This plugin is released under the MIT license.
+
+[emoji-data]: https://github.com/Mange/emoji-data
