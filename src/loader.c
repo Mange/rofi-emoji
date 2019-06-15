@@ -60,6 +60,7 @@ EmojiList *read_emojis_from_file(char *path) {
     char *bytes = NULL;
     char *group = NULL;
     char *subgroup = NULL;
+    char *name = NULL;
     char *keywords = NULL;
 
     // Each line in the file has this format:
@@ -80,15 +81,23 @@ EmojiList *read_emojis_from_file(char *path) {
       free(group);
       break;
     }
-    cursor = scan_until('\n', cursor, &keywords);
-    if (keywords == NULL) {
+    cursor = scan_until('\t', cursor, &name);
+    if (name == NULL) {
       free(bytes);
       free(group);
       free(subgroup);
       break;
     }
+    cursor = scan_until('\n', cursor, &keywords);
+    if (keywords == NULL) {
+      free(bytes);
+      free(group);
+      free(subgroup);
+      free(name);
+      break;
+    }
 
-    Emoji *emoji = emoji_new(bytes, keywords, group, subgroup); // freed by emoji_free_inside, in emoji_list_free
+    Emoji *emoji = emoji_new(bytes, name, keywords, group, subgroup); // freed by emoji_free_inside, in emoji_list_free
     emoji_list_push(list, emoji);
   }
 
