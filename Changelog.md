@@ -1,3 +1,18 @@
+# Version 1.2 (2019-06-16)
+
+This is a large upgrade to the emoji data, which restores a few things that
+went missing in version 1.1.
+
+## Fixed
+
+* Named country flags are back!
+* Emoji names are present again (from 1.0), together with all the keywords from
+  1.1.
+
+## Changes
+
+* Updated to [`emoji-data`][emoji-data] version 2.0.
+
 # Version 1.1 (2019-06-02)
 
 First new feature release! This release does a lot of improvements and adds
