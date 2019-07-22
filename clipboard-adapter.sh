@@ -3,10 +3,8 @@
 # Usage:
 #   clipboard-adapter.sh copy
 #     Set clipboard from STDIN
-#   clipboard-adapter.sh insert
-#     Try your best to insert this STDIN text into focused window
 #
-# Detects wayland and X and finds the appropriate tool for the current
+# Detects Wayland and X and finds the appropriate tool for the current
 # environment.
 #
 # If stderr is bound to /dev/null, then the caller won't display
@@ -49,45 +47,6 @@ handle_copy() {
   esac
 }
 
-paste() {
-  if [ "$XDG_SESSION_TYPE" = wayland ]; then
-    show_error "paste is not implemented for wayland currently"
-  else
-    if hash xdotool 2>/dev/null; then
-      # …Shift+Insert pastes primary selection
-      xdotool key Shift+Insert
-    else
-      notify "xdotool must be installed for direct insert. Emoji was copied instead."
-      handle_copy "$1"
-    fi
-  fi
-}
-
-handle_insert() {
-  case "$1" in
-    xsel)
-      # Set PRIMARY clipboard…
-      xsel --primary --input
-      # …and paste in focused window
-      paste xsel
-      ;;
-    xclip)
-      # Set PRIMARY clipboard…
-      xclip -selection primary -in
-      # …and paste in focused window
-      paste xclip
-      ;;
-    wl-copy)
-      # Currently does not support inserting directly. Copy instead!
-      notify "wl-copy does not allow for inserting text directly. Emoji is copied instead."
-      handle_copy wl-copy
-      ;;
-    *)
-      show_error "$1 has no implementation for inserting yet"
-      exit 1
-  esac
-}
-
 # Print out the first argument and return true if that argument is an installed
 # command. Prints nothing and returns false if the argument is not an installed
 # command.
@@ -121,9 +80,6 @@ fi
 case "$1" in
   copy)
     handle_copy "$tool"
-    ;;
-  insert)
-    handle_insert "$tool"
     ;;
   *)
     show_error "$0: Unknown command \"$1\""
