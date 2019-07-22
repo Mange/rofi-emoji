@@ -1,4 +1,4 @@
-# Version 2.0 (Unreleased)
+# Version 2.0 (2019-07-23)
 
 Due to a lot of issues with the "insert" action on many environments, and
 inconsistent support for the primary selection, this feature has now been
