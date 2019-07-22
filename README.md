@@ -1,7 +1,7 @@
 # Rofi emoji plugin
 
-An emoji selector plugin for Rofi that can either insert the emoji directly or
-copy it to the clipboard.
+An emoji selector plugin for Rofi that copies the selected emoji to the
+clipboard.
 
 ## Usage
 
@@ -11,13 +11,12 @@ Run rofi like:
 rofi -show emoji -modi emoji
 ```
 
-| Key                               | Effect                  |
-|-----------------------------------|-------------------------|
-| <kbd>Enter</kbd>                  | Insert emoji            |
-| <kbd>Shift</kbd>+<kbd>Enter</kbd> | Copy emoji to clipboard |
+| Key              | Effect                  |
+|------------------|-------------------------|
+| <kbd>Enter</kbd> | Copy emoji to clipboard |
 
-**Note:** If you change your keybinds for `kb-accept` or `kb-accept-alt`, then
-your changes will also apply here.
+**Note:** If you change your keybind for `kb-accept`, then your change will
+also apply here.
 
 ## Screenshot
 
@@ -34,17 +33,14 @@ emoji for "Unicorn face" being selected](screenshot.png)
 
 **Optional dependencies**
 
-In order to actually use rofi-emoji some "adapters" need to be installed. A
-"copy adapter" is needed for the "Copy" action
-(<kbd>Shift</kbd>+<kbd>Enter</kbd>) and an "insert adapter" is needed for the
-"Insert" action (<kbd>Enter</kbd>).
+In order to actually use rofi-emoji some "adapters" need to be installed, as
+appropriate for your environment.
 
-| Dependency   | Type           | Notes                                  |
-|--------------|----------------|----------------------------------------|
-| xsel         | Copy adapter   | For X11.                               |
-| xclip        | Copy adapter   | For X11.                               |
-| xdotool      | Insert adapter | For X11. Also a Copy adapter for X11.  |
-| wl-clipboard | Copy adapter   | For Wayland. (**Untested!**)           |
+| Dependency   | Notes                        |
+|--------------|------------------------------|
+| xsel         | For X11.                     |
+| xclip        | For X11.                     |
+| wl-clipboard | For Wayland. (**Untested!**) |
 
 ### Arch Linux
 

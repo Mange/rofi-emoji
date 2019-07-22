@@ -1,3 +1,15 @@
+# Version 2.0 (Unreleased)
+
+Due to a lot of issues with the "insert" action on many environments, and
+inconsistent support for the primary selection, this feature has now been
+dropped and the plugin is again only doing clipboard copying.
+
+## Removed
+
+* Direct insert via <kbd>Enter</kbd>; now this key also copies the emoji to the
+  clipboard to let you paste it manually.
+* `xdotool` as a supported adapter.
+
 # Version 1.2 (2019-06-16)
 
 This is a large upgrade to the emoji data, which restores a few things that

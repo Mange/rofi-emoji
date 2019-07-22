@@ -8,9 +8,6 @@
 #include "emoji_list.h"
 #include "loader.h"
 
-// From rofi
-void rofi_view_hide();
-
 G_MODULE_EXPORT Mode mode;
 
 typedef struct {
@@ -26,19 +23,6 @@ typedef struct {
 // error buffer to a user error message.
 int copy_emoji(Emoji *emoji, char **error) {
   return run_clipboard_adapter("copy", emoji, error, TRUE);
-}
-
-// Execute the clipboard adapter with the "insert" action to let the selected
-// emoji be inserted into the foreground window.
-// This requires Rofi to disappear/terminate so it's a terminal mode so void
-// is the used return type.
-void insert_emoji(Emoji *emoji, char **error) {
-  // Hide rofi window before triggering the insert action so the correct window
-  // get the emoji.
-  rofi_view_hide();
-
-  // Since rofi is hidden, we cannot show any errors so don't collect stderr.
-  run_clipboard_adapter("insert", emoji, error, FALSE);
 }
 
 char **generate_matcher_strings(EmojiList *list) {
@@ -135,20 +119,11 @@ static ModeMode emoji_mode_result(
   } else if ((mretv & MENU_OK) ) {
     Emoji *emoji = emoji_list_get(pd->emojis, selected_line);
 
-    if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
-      // Custom action (Shift+Enter) should copy to clipboard
-      if (copy_emoji(emoji, &(pd->message))) {
-        retv = MODE_EXIT;
-      } else {
-        // Copying failed, reload dialog to show error message in pd->message.
-        retv = RELOAD_DIALOG;
-      }
-    } else {
-      // Normal action (Enter) should insert directly
-      insert_emoji(emoji, &(pd->message));
-      // Always exit rofi after this action completes as the window is gone
-      // anyway.
+    if (copy_emoji(emoji, &(pd->message))) {
       retv = MODE_EXIT;
+    } else {
+      // Copying failed, reload dialog to show error message in pd->message.
+      retv = RELOAD_DIALOG;
     }
   } else if ((mretv & MENU_ENTRY_DELETE) == MENU_ENTRY_DELETE) {
     retv = RELOAD_DIALOG;
