@@ -1,14 +1,19 @@
 #!/bin/sh
 # Clipboard adapter for rofi-emoji.
+#
 # Usage:
-#   clipboard-adapter.sh copy
-#     Set clipboard from STDIN
+#   clipboard-adapter.sh copy "the text"
+#     Set clipboard to "the text"
 #
 # Detects Wayland and X and finds the appropriate tool for the current
 # environment.
 #
 # If stderr is bound to /dev/null, then the caller won't display
-# error messages. Do it manually in that case.
+# error messages. Do it manually in that case, for example by sending a
+# notification.
+#
+# When rofi is run from a terminal, the output both on stderr and stdout should
+# be visible to the user and makes it possible to do some debugging.
 
 stderr_is_null() {
   test /proc/self/fd/2 -ef /dev/null
@@ -33,13 +38,13 @@ show_error() {
 handle_copy() {
   case "$1" in
     xsel)
-      exec xsel --clipboard --input
+      xsel --clipboard --input
       ;;
     xclip)
-      exec xclip -selection clipboard -in
+      xclip -selection clipboard -in
       ;;
     wl-copy)
-      exec wl-copy
+      wl-copy
       ;;
     *)
       show_error "$1 has no implementation for copying yet"
@@ -79,7 +84,8 @@ fi
 
 case "$1" in
   copy)
-    handle_copy "$tool"
+    shift
+    printf "%s" "$*" | handle_copy "$tool"
     ;;
   *)
     show_error "$0: Unknown command \"$1\""

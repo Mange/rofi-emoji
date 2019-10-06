@@ -22,7 +22,7 @@ typedef struct {
 // Returns TRUE on success, or return FALSE on error after setting the provided
 // error buffer to a user error message.
 int copy_emoji(Emoji *emoji, char **error) {
-  return run_clipboard_adapter("copy", emoji, error, TRUE);
+  return run_clipboard_adapter("copy", emoji, error);
 }
 
 char **generate_matcher_strings(EmojiList *list) {
