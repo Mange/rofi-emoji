@@ -1,3 +1,14 @@
+# Version 2.1 (2019-10-06)
+
+Change clipboard adapter to use arguments instead of STDIN, which should
+prevent some issues from occurring regarding subprocesses getting stuck in a
+blocking read.
+
+## Changes
+
+* Clipboard adapter script now accepts emoji bytes as an argument instead of
+  standard input.
+
 # Version 2.0 (2019-07-23)
 
 Due to a lot of issues with the "insert" action on many environments, and
