@@ -66,7 +66,7 @@ try_tool() {
 
 # Find the best clipboard tool to use.
 determine_tool() {
-  if [ "$XDG_SESSION_TYPE" = wayland ]; then
+  if [ "$XDG_SESSION_TYPE" = wayland ] || [ -n "$WAYLAND_DISPLAY" ]; then
     try_tool wl-copy ||
       return 1
   else
