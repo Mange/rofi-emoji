@@ -1,4 +1,10 @@
-# Version 2.1 (2019-10-06)
+# Version 2.1.1 (2020-03-23)
+
+## Fixed
+
+* Wayland detection under Sway.
+
+# Version 2.1.0 (2019-10-06)
 
 Change clipboard adapter to use arguments instead of STDIN, which should
 prevent some issues from occurring regarding subprocesses getting stuck in a
