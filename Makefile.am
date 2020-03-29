@@ -12,6 +12,6 @@ emoji_la_SOURCES=\
 		 src/utils.c \
 		 src/plugin.c
 
-emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@
-emoji_la_LIBADD= @glib_LIBS@ @rofi_LIBS@
+emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
+emoji_la_LIBADD= @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@
 emoji_la_LDFLAGS= -module -avoid-version
