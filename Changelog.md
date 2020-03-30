@@ -1,5 +1,9 @@
 # `master` branch
 
+Nothing yet.
+
+# Version 2.1.2 (2020-03-30)
+
 ## Fixed
 
 * Build configuration now includes undocumented Cairo dependency.
