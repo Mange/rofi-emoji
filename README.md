@@ -80,6 +80,6 @@ The list is copied from the [Mange/emoji-data][emoji-data] repo.
 
 ## License
 
-This plugin is released under the MIT license.
+This plugin is released under the MIT license. See `LICENSE` for more details.
 
 [emoji-data]: https://github.com/Mange/emoji-data

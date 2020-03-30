@@ -1,6 +1,8 @@
 # `master` branch
 
-Nothing yet.
+## Added
+
+* Full `LICENSE` file, detailing the MIT license mentioned in the README.
 
 # Version 2.1.2 (2020-03-30)
 
