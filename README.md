@@ -25,6 +25,10 @@ emoji for "Unicorn face" being selected](screenshot.png)
 
 ## Installation
 
+<a href="https://repology.org/metapackage/rofi-emoji/versions">
+    <img src="https://repology.org/badge/vertical-allrepos/rofi-emoji.svg" alt="Packaging status" align="right">
+</a>
+
 **Dependencies**
 
 | Dependency | Version      |
