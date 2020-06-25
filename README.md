@@ -64,6 +64,11 @@ $ make
 $ sudo make install
 ```
 
+If you plan on developing the code and want to test the plugin, you can also
+run `./run-development.sh`, which will do all setup steps for you and then
+start Rofi using the locally compiled plugin and clipboard adapter script. This
+will not affect your system and does not require root.
+
 ## Emoji database
 
 When installing the emoji database (`all_emojis.txt` file) is installed in
