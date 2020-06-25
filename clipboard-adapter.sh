@@ -51,12 +51,24 @@ do_insert() {
       return 1
     fi
   else
+    # This is very unreliable on Xorg; some apps supports inserting Unicode
+    # directly while others do not (Firefox being one very notable example).
+    # For this reason, always copy the character too, and then try to insert.
+    # If the user doesn't see the character appear, they should be able to
+    # paste it manually instead.
+    #
+    # Note that since a copy happens here, returning 1 will always be reundant
+    # and so this function will now always return successfully to avoid that
+    # issue.
+    do_copy "$1"
+
     # Only xdotool is supported on Xorg for now.
     if has xdotool; then
       xdotool_insert "$2"
-    else
-      return 1
     fi
+
+    # Always return successfully as a copy fallback has already been made.
+    return 0
   fi
 }
 
