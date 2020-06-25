@@ -44,8 +44,12 @@ main() {
 do_insert() {
   # Determine environment
   if is_wayland; then
-    # No adapter available for this yet
-    return 1
+    # Only wtype is supported on Wayland for now.
+    if has wtype; then
+      wtype_insert "$1"
+    else
+      return 1
+    fi
   else
     # Only xdotool is supported on Xorg for now.
     if has xdotool; then
@@ -122,7 +126,12 @@ show_error() {
 
 # xdotool (insert only)
 xdotool_insert() {
-  xdotool key "$1" || false
+  xdotool key "$1"
+}
+
+# wtype (insert only)
+wtype_insert() {
+  wtype "$1"
 }
 
 # xsel (copy only)
