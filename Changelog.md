@@ -1,8 +1,16 @@
 # `master` branch
 
+Nothing yet.
+
+# Version 2.2.0 (2021-05-19)
+
 ## Added
 
 * Full `LICENSE` file, detailing the MIT license mentioned in the README.
+
+## Changes
+
+* Updated [`emoji-data`][emoji-data] to version 2.3, adding more emojis and better keywords.
 
 # Version 2.1.2 (2020-03-30)
 
