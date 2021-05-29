@@ -64,6 +64,8 @@ $ make
 $ sudo make install
 ```
 
+Note: On Ubuntu based systems you will need to install the `rofi-dev` package.
+
 ## Emoji database
 
 When installing the emoji database (`all_emojis.txt` file) is installed in
