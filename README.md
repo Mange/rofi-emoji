@@ -48,8 +48,27 @@ appropriate for your environment.
 
 ### Arch Linux
 
-`rofi-emoji` can be installed via [AUR](https://aur.archlinux.org/):
-[rofi-emoji](https://aur.archlinux.org/packages/rofi-emoji/)
+```bash
+pacman -S rofi-emoji
+```
+
+### Manjaro
+
+```bash
+pacman -S rofi-emoji
+```
+
+### Void Linux
+
+```bash
+xbps-install rofi-emoji
+```
+
+### NixOS
+
+```bash
+nix-env -e rofi-emoji
+```
 
 ### Compile from source
 
