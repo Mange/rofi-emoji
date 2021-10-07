@@ -61,7 +61,7 @@ pacman -S rofi-emoji
 ### Void Linux
 
 ```bash
-xbps-install rofi-emoji
+xbps-install -S rofi-emoji
 ```
 
 ### NixOS
