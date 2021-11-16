@@ -23,19 +23,13 @@ also apply here.
 ![Screenshot showing a Rofi window searching for emojis containing "uni", the
 emoji for "Unicorn face" being selected](screenshot.png)
 
-## Installation
-
-<a href="https://repology.org/metapackage/rofi-emoji/versions">
-    <img src="https://repology.org/badge/vertical-allrepos/rofi-emoji.svg" alt="Packaging status" align="right">
-</a>
-
-**Dependencies**
+## Dependencies
 
 | Dependency | Version      |
 |------------|--------------|
 | rofi       | 1.4 (or git) |
 
-**Optional dependencies**
+### Optional dependencies
 
 In order to actually use rofi-emoji some "adapters" need to be installed, as
 appropriate for your environment.
@@ -45,6 +39,12 @@ appropriate for your environment.
 | xsel         | For X11.                     |
 | xclip        | For X11.                     |
 | wl-clipboard | For Wayland. (**Untested!**) |
+
+## Installation
+
+<a href="https://repology.org/metapackage/rofi-emoji/versions">
+    <img src="https://repology.org/badge/vertical-allrepos/rofi-emoji.svg" alt="Packaging status" align="right">
+</a>
 
 ### Arch Linux
 
@@ -72,18 +72,24 @@ nix-env -e rofi-emoji
 
 ### Compile from source
 
-`rofi-emoji` uses autotools as build system. Download the source and run the following to install it:
+`rofi-emoji` uses autotools as build system. On Debian/Ubuntu based systems you
+will need to install the packages first:
+
+- `rofi-dev`
+- `autoconf`
+- `libtool`
+- `libtool-bin`
+
+Download the source and run the following to install it:
 
 ```bash
-$ autoreconf -i
-$ mkdir build
-$ cd build/
-$ ../configure
-$ make
-$ sudo make install
+autoreconf -i
+mkdir build
+cd build/
+../configure
+make
+sudo make install
 ```
-
-Note: On Ubuntu based systems you will need to install the `rofi-dev` package.
 
 ## Emoji database
 
