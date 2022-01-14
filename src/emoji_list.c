@@ -22,8 +22,7 @@ int emoji_list_grow(EmojiList *self) {
   return 1;
 }
 
-
-int emoji_list_push(EmojiList *self, Emoji* emoji) {
+int emoji_list_push(EmojiList *self, Emoji *emoji) {
   if (self->length == self->capacity) {
     int result = emoji_list_grow(self);
     if (!result) {
@@ -65,10 +64,12 @@ void debug_emoji_list(EmojiList *list) {
   if (list == NULL) {
     printf("debug_emoji_list: Passed NULL\n");
   } else if (list->length == 0) {
-    printf("debug_emoji_list: capacity=%5d, length=%5d\n", list->capacity, list->length);
+    printf("debug_emoji_list: capacity=%5d, length=%5d\n", list->capacity,
+           list->length);
   } else {
     Emoji first = list->emojis[0];
     Emoji last = list->emojis[list->length - 1];
-    printf("debug_emoji_list: capacity=%5d, length=%5d. First=%s, Last=%s\n", list->capacity, list->length, first.bytes, last.bytes);
+    printf("debug_emoji_list: capacity=%5d, length=%5d. First=%s, Last=%s\n",
+           list->capacity, list->length, first.bytes, last.bytes);
   }
 }

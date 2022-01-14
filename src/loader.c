@@ -97,7 +97,9 @@ EmojiList *read_emojis_from_file(char *path) {
       break;
     }
 
-    Emoji *emoji = emoji_new(bytes, name, keywords, group, subgroup); // freed by emoji_free_inside, in emoji_list_free
+    Emoji *emoji =
+        emoji_new(bytes, name, keywords, group,
+                  subgroup); // freed by emoji_free_inside, in emoji_list_free
     emoji_list_push(list, emoji);
   }
 

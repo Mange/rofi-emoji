@@ -11,7 +11,7 @@ typedef struct EmojiList {
 
 EmojiList *emoji_list_new(int capacity);
 int emoji_list_resize(EmojiList *self, int capacity);
-int emoji_list_push(EmojiList *self, Emoji* emoji);
+int emoji_list_push(EmojiList *self, Emoji *emoji);
 Emoji *emoji_list_get(EmojiList *self, unsigned int index);
 void emoji_list_free(EmojiList *self);
 

@@ -8,7 +8,7 @@
 #include "loader.h"
 
 FindDataFileResult find_data_file(char *basename, char **path) {
-  const char * const *data_dirs = g_get_system_data_dirs();
+  const char *const *data_dirs = g_get_system_data_dirs();
   if (data_dirs == NULL) {
     return CANNOT_DETERMINE_PATH;
   }
@@ -20,12 +20,14 @@ FindDataFileResult find_data_file(char *basename, char **path) {
   int index = 0;
   char const *data_dir = data_dirs[index];
   while (1) {
-    char *current_path = g_build_filename(data_dir, "rofi-emoji", basename, NULL);
+    char *current_path =
+        g_build_filename(data_dir, "rofi-emoji", basename, NULL);
     if (current_path == NULL) {
       return CANNOT_DETERMINE_PATH;
     }
 
-    if (g_file_test(current_path, (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
+    if (g_file_test(current_path,
+                    (G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR))) {
       *path = current_path;
       g_free(first_path);
       return SUCCESS;
@@ -54,15 +56,14 @@ int find_clipboard_adapter(char **adapter, char **error) {
   if (result == SUCCESS) {
     return TRUE;
   } else if (result == CANNOT_DETERMINE_PATH) {
-    *error = g_strdup(
-      "Failed to load clipboard-adapter file: The path could not be determined"
-    );
+    *error = g_strdup("Failed to load clipboard-adapter file: The path could "
+                      "not be determined");
   } else if (result == NOT_A_FILE) {
-    *error = g_markup_printf_escaped(
-      "Failed to load clipboard-adapter file: <tt>%s</tt> is not a file\nAlso "\
-      "searched in every path in $XDG_DATA_DIRS.",
-      *adapter
-    );
+    *error =
+        g_markup_printf_escaped("Failed to load clipboard-adapter file: "
+                                "<tt>%s</tt> is not a file\nAlso "
+                                "searched in every path in $XDG_DATA_DIRS.",
+                                *adapter);
   } else {
     *error = g_strdup("Unexpected error");
   }
@@ -70,11 +71,7 @@ int find_clipboard_adapter(char **adapter, char **error) {
   return FALSE;
 }
 
-int run_clipboard_adapter(
-  char *action,
-  Emoji *emoji,
-  char **error
-) {
+int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
   char *adapter;
   int ca_result = find_clipboard_adapter(&adapter, error);
   if (ca_result != TRUE) {
@@ -86,29 +83,25 @@ int run_clipboard_adapter(
 
   g_spawn_sync(
       /* working_directory */ NULL,
-      /* argv */ (char*[]){"/bin/sh", adapter, action, emoji->bytes, NULL},
+      /* argv */ (char *[]){"/bin/sh", adapter, action, emoji->bytes, NULL},
       /* envp */ NULL,
-      // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus code.
-      /* flags */ (
-        G_SPAWN_DEFAULT
-      ),
+      // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus
+      // code.
+      /* flags */ (G_SPAWN_DEFAULT),
       /* child_setup */ NULL,
       /* user_data */ NULL,
       /* standard_output */ NULL,
       /* standard_error */ NULL,
       /* exit_status */ &exit_status,
-      /* error */ &child_error
-  );
+      /* error */ &child_error);
 
   if (child_error == NULL) {
     g_spawn_check_exit_status(exit_status, &child_error);
   }
 
   if (child_error != NULL) {
-    *error = g_strdup_printf(
-      "Failed to run clipboard-adapter: %s",
-      child_error->message
-    );
+    *error = g_strdup_printf("Failed to run clipboard-adapter: %s",
+                             child_error->message);
     return FALSE;
   }
 

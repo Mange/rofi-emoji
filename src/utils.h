@@ -1,6 +1,8 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include "emoji.h"
+
 typedef enum {
   SUCCESS = 1,
   NOT_A_FILE = 0,
