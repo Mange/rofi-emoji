@@ -1,6 +1,9 @@
 # `master` branch
 
-Nothing yet.
+## Added
+
+* Support for `copyq` X11 clipboard adapter. ([Muhammad Mabrouk
+  (M-Mabrouk1)](https://github.com/M-Mabrouk1))
 
 # Version 2.2.0 (2021-05-19)
 
@@ -10,7 +13,8 @@ Nothing yet.
 
 ## Changes
 
-* Updated [`emoji-data`][emoji-data] to version 2.3, adding more emojis and better keywords.
+* Updated [`emoji-data`][emoji-data] to version 2.3, adding more emojis and
+  better keywords.
 
 # Version 2.1.2 (2020-03-30)
 

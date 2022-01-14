@@ -31,14 +31,17 @@ emoji for "Unicorn face" being selected](screenshot.png)
 
 ### Optional dependencies
 
-In order to actually use rofi-emoji some "adapters" need to be installed, as
+In order to actually use rofi-emoji an "adapter" need to be installed, as
 appropriate for your environment.
 
-| Dependency   | Notes                        |
-|--------------|------------------------------|
-| xsel         | For X11.                     |
-| xclip        | For X11.                     |
-| wl-clipboard | For Wayland. (**Untested!**) |
+| Dependency   | Environment             |
+|--------------|-------------------------|
+| xsel         | X11                     |
+| xclip        | X11                     |
+| copyq        | X11                     |
+| wl-clipboard | Wayland                 |
+
+You only need to install one of them for your environment.
 
 ## Installation
 
