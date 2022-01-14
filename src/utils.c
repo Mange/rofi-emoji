@@ -83,7 +83,7 @@ int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
 
   g_spawn_sync(
       /* working_directory */ NULL,
-      /* argv */ (char *[]){"/bin/sh", adapter, action, emoji->bytes, NULL},
+      /* argv */ (char *[]){adapter, action, emoji->bytes, NULL},
       /* envp */ NULL,
       // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus
       // code.

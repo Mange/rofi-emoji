@@ -5,6 +5,11 @@
 * Support for `copyq` X11 clipboard adapter. ([Muhammad Mabrouk
   (M-Mabrouk1)](https://github.com/M-Mabrouk1))
 
+## Changes
+
+* Allow clipboard-adapter.sh script to be replaced and run by a different
+  interpreter than `/bin/sh`.
+
 # Version 2.2.0 (2021-05-19)
 
 ## Added
