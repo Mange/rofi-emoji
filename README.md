@@ -80,8 +80,9 @@ will need to install the packages first:
 
 - `rofi-dev`
 - `autoconf`
-- `libtool`
+- `automake`
 - `libtool-bin`
+- `libtool`
 
 Download the source and run the following to install it:
 
