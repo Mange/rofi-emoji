@@ -43,6 +43,9 @@ handle_copy() {
     xclip)
       xclip -selection clipboard -in
       ;;
+    copyq)
+      copyq copy -
+      ;;
     wl-copy)
       wl-copy
       ;;
@@ -72,6 +75,7 @@ determine_tool() {
   else
     try_tool xsel ||
       try_tool xclip ||
+        try_tool copyq ||
       return 1
   fi
 }
