@@ -96,7 +96,7 @@ int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
       /* error */ &child_error);
 
   if (child_error == NULL) {
-    g_spawn_check_exit_status(exit_status, &child_error);
+    g_spawn_check_wait_status(exit_status, &child_error);
   }
 
   if (child_error != NULL) {
