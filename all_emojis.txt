@@ -345,6 +345,12 @@
 🤲🏽	People & Body	hands	palms up together: medium skin tone	medium skin tone | palms up together | prayer
 🤲🏾	People & Body	hands	palms up together: medium-dark skin tone	medium-dark skin tone | palms up together | prayer
 🤲🏿	People & Body	hands	palms up together: dark skin tone	dark skin tone | palms up together | prayer
+🫱  People & Body hands rightwards hand | prayer
+🫱🏻  People & Body hands rightwards hand: light skin tone  light skin tone | rightwards hand
+🫱🏼  People & Body hands rightwards hand: medium-light skin tone medium-light skin tone | rightwards hand
+🫱🏽  People & Body hands rightwards hand: medium skin tone medium skin tone | rightwards hand
+🫱🏾  People & Body hands rightwards hand: medium-dark skin tone medium-dark skin tone | rightwards hand
+🫱🏿  People & body hands rightwards hand: dark skin tone dark skin tone | rightwards hand
 🤝	People & Body	hands	handshake	agreement | hand | handshake | meeting | shake
 🙏	People & Body	hands	folded hands	ask | folded hands | hand | high 5 | high five | please | pray | thanks
 🙏🏻	People & Body	hands	folded hands: light skin tone	ask | folded hands | hand | high 5 | high five | light skin tone | please | pray | thanks
