@@ -1,5 +1,9 @@
 # `master` branch
 
+* Nothing yet
+
+# Version 2.3.0 (2022-02-02)
+
 ## Added
 
 * Support for `copyq` X11 clipboard adapter. ([Muhammad Mabrouk
