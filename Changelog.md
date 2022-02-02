@@ -4,6 +4,7 @@
 
 * Support for `copyq` X11 clipboard adapter. ([Muhammad Mabrouk
   (M-Mabrouk1)](https://github.com/M-Mabrouk1))
+* Emoji 14.0 emojis and latest keywords from CLDR
 
 ## Changes
 
