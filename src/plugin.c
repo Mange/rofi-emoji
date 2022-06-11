@@ -62,9 +62,9 @@ static void get_emoji(Mode *sw) {
 }
 
 /**
- * @param mode The mode to initialize
- *
  * Initialize mode
+ *
+ * @param mode The mode to initialize
  *
  * @returns FALSE if there was a failure, TRUE if successful
  */
@@ -78,9 +78,9 @@ static int emoji_mode_init(Mode *sw) {
 }
 
 /**
- * @param mode The mode to query
- *
  * Get the number of entries in the mode.
+ *
+ * @param sw The mode to query
  *
  * @returns an unsigned in with the number of entries.
  */
@@ -91,12 +91,12 @@ static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
 }
 
 /**
- * @param mode The mode to query
+ * Acts on the user interaction.
+ *
+ * @param sw The mode to query
  * @param menu_retv The menu return value.
  * @param input Pointer to the user input string. [in][out]
  * @param selected_line the line selected by the user.
- *
- * Acts on the user interaction.
  *
  * @returns the next #ModeMode.
  */
@@ -127,9 +127,10 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
 }
 
 /**
- * @param mode The mode to destroy
- *
  * Destroy the mode
+ *
+ * @param sw The mode to destroy
+ *
  */
 static void emoji_mode_destroy(Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
@@ -146,9 +147,9 @@ static void emoji_mode_destroy(Mode *sw) {
 }
 
 /**
- * @param mode The mode to query
- *
  * Query the mode for a user display.
+ *
+ * @param sw The mode to query
  *
  * @return a new allocated (valid pango markup) message to display (user should
  * free).
@@ -159,15 +160,14 @@ static char *emoji_get_message(const Mode *sw) {
 }
 
 /**
- * @param mode The mode to query
+ * Returns the string as it should be displayed for the entry and the state of
+ * how it should be displayed.
+ * @param sw The mode to query
  * @param selected_line The entry to query
  * @param state The state of the entry [out]
  * @param attribute_list List of extra (pango) attribute to apply when
  * displaying. [out][null]
  * @param get_entry If the should be returned.
- *
- * Returns the string as it should be displayed for the entry and the state of
- * how it should be displayed.
  *
  * @returns allocated new string and state when get_entry is TRUE otherwise just
  * the state.
