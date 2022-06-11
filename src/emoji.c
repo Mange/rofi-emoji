@@ -26,7 +26,7 @@ void emoji_free_inside(Emoji *emoji) {
   g_strfreev(emoji->aliases);
 }
 
-char *new_format_entry(char *text, int capitalize) {
+char *new_format_entry(const char *text, int capitalize) {
   if (text == NULL) {
     return NULL;
   }
@@ -43,8 +43,7 @@ char *new_format_entry(char *text, int capitalize) {
   return escaped;
 }
 
-char *emoji_format(Emoji *emoji, char *format) {
-
+char *emoji_format(const Emoji *emoji, const char *format) {
   char *bytes = new_format_entry(emoji->bytes, FALSE);
   char *name = new_format_entry(emoji->name, TRUE);
   char *group = new_format_entry(emoji->group, TRUE);
@@ -61,7 +60,7 @@ char *emoji_format(Emoji *emoji, char *format) {
 
   // clang-format off
   char *formatted = helper_string_replace_if_exists(
-    format,
+    (char *) format, // LOL C. "trust me bro"
     "{emoji}", bytes,
     "{name}", name,
     "{group}", group,

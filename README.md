@@ -30,9 +30,44 @@ additional options to the output of `rofi -help`.
 
 The plugin adds the following command line arguments to `rofi`:
 
-| Name          | Default | Description                      |
-|---------------|---------|----------------------------------|
-| `-emoji-file` |         | Alternative Emoji file database. |
+| Name            | Description                                              |
+|-----------------|----------------------------------------------------------|
+| `-emoji-file`   | Path to custom emoji database file.                      |
+| `-emoji-format` | Custom formatting string for rendering lines. See below. |
+
+#### Format
+
+The formatting string should be valid Pango markup with placeholders for the
+Emoji values found in the database.
+
+The logic of this follows the same rule as Rofi's `-ssh-command` option,
+quickly summarized as such:
+
+* Items between curly braces (`{}`) are replaced with Pango-escaped text.
+* Wrapping an item inside brackets (`[]`) will hide the entire section if the
+  value is empty.
+
+The default format string is this:
+
+```
+{emoji} <span weight='bold'>{name}</span>[ <span size='small'>({aliases})</span>]
+```
+
+This will render the emoji with its name next to it in bold, and if the emoji
+has any aliases they will be shown in a parenthesised list with a smaller font
+size.
+
+| Item       | Example                                                                 |
+|------------|-------------------------------------------------------------------------|
+| `emoji`    | 🤣                                                                      |
+| `name`     | Rolling on the floor laughing                                           |
+| `group`    | Smileys & Emotion                                                       |
+| `subgroup` | Face-smiling                                                            |
+| `aliases`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
+
+| | |
+|---|---|
+| ⚠️ **NOTE:** | Rofi does not have a way to escape brackets, so you may not use literal `[]` inside your output. |
 
 ## Dependencies
 
@@ -130,7 +165,7 @@ GROUP_NAME        - The name of the group, for example "Smileys & Emotion".
 \t                - Tab character
 SUBGROUP          - The name of the subgroup, for example "face-smiling".
 \t                - Tab character
-NAME              - Name of emoji, for example "rolling on the floor laughing face".
+NAME              - Name of emoji, for example "rolling on the floor laughing".
 \t                - Tab character
 ALIAS_1           - Alias of the emoji, for example "rofl".
 (" | " ALIAS_n)…  - Additional aliases are added with pipes and spaces between them.

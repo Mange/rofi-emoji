@@ -9,9 +9,9 @@ typedef enum {
   CANNOT_DETERMINE_PATH = -1
 } FindDataFileResult;
 
-FindDataFileResult find_data_file(char *basename, char **path);
+FindDataFileResult find_data_file(const char *basename, char **path);
 int find_clipboard_adapter(char **adapter, char **error);
-int run_clipboard_adapter(char *action, Emoji *emoji, char **error);
+int run_clipboard_adapter(char *action, const Emoji *emoji, char **error);
 void strip_strv(char **in);
 void capitalize(char *text);
 void capitalize_v(char **text);

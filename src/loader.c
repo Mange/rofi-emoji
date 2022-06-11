@@ -40,7 +40,7 @@ char *scan_until(const char until, char *input, char **result) {
   return index + 1;
 }
 
-EmojiList *read_emojis_from_file(char *path) {
+EmojiList *read_emojis_from_file(const char *path) {
   FILE *file = fopen(path, "r");
   if (!file) {
     return NULL;

@@ -3,7 +3,23 @@
 ## Added
 
 * The `-emoji-file` option to read custom emoji databases.
+* The `-emoji-format` option to set custom rendering of lines.
 * Documentation about the format of the Emoji database.
+* Documentation about format capabilities.
+
+## Changed
+
+* The default rendering of Emoji entries.
+
+  * No longer showing group and subgroup.
+  * No empty parenthesis for entries without keywords.
+  * Names are capitalized.
+
+  **Before:**
+  > ☺️ **smiling face** () [Smileys & Emotion / face-affection]
+
+  **After:**
+  > ☺️ **Smiling face**
 
 # Version 2.3.0 (2022-02-02)
 
@@ -13,7 +29,7 @@
   (M-Mabrouk1)](https://github.com/M-Mabrouk1))
 * Emoji 14.0 emojis and latest keywords from CLDR
 
-## Changes
+## Changed
 
 * Allow clipboard-adapter.sh script to be replaced and run by a different
   interpreter than `/bin/sh`.
@@ -24,7 +40,7 @@
 
 * Full `LICENSE` file, detailing the MIT license mentioned in the README.
 
-## Changes
+## Changed
 
 * Updated [`emoji-data`][emoji-data] to version 2.3, adding more emojis and
   better keywords.
@@ -47,7 +63,7 @@ Change clipboard adapter to use arguments instead of STDIN, which should
 prevent some issues from occurring regarding subprocesses getting stuck in a
 blocking read.
 
-## Changes
+## Changed
 
 * Clipboard adapter script now accepts emoji bytes as an argument instead of
   standard input.
@@ -75,7 +91,7 @@ went missing in version 1.1.
 * Emoji names are present again (from 1.0), together with all the keywords from
   1.1.
 
-## Changes
+## Changed
 
 * Updated to [`emoji-data`][emoji-data] version 2.0.
 

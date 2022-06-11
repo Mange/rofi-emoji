@@ -16,7 +16,11 @@ typedef struct {
   EmojiList *emojis;
   char **matcher_strings;
   char *message;
+  char *format;
 } EmojiModePrivateData;
+
+const char *DEFAULT_FORMAT = "{emoji} <span weight='bold'>{name}</span>"
+                             "[ <span size='small'>({aliases})</span>]";
 
 // Execute the clipboard adapter with the "copy" action so the selected emoji
 // is copied to the users' clipboard.
@@ -93,6 +97,21 @@ static void get_emoji(Mode *sw) {
 static int emoji_mode_init(Mode *sw) {
   if (mode_get_private_data(sw) == NULL) {
     EmojiModePrivateData *pd = g_malloc0(sizeof(*pd));
+
+    pd->emojis = NULL;
+    pd->matcher_strings = NULL;
+    pd->message = NULL;
+    pd->format = NULL;
+
+    if (find_arg("-emoji-format")) {
+      char *format;
+      if (find_arg_str("-emoji-format", &format)) {
+        // We want ownership of this data and not rely on a reference to global
+        // data.
+        pd->format = g_strdup(format);
+      }
+    }
+
     mode_set_private_data(sw, (void *)pd);
     get_emoji(sw);
   }
@@ -163,6 +182,7 @@ static void emoji_mode_destroy(Mode *sw) {
     }
     emoji_list_free(pd->emojis);
     g_free(pd->message);
+    g_free(pd->format);
     g_free(pd);
     mode_set_private_data(sw, NULL);
   }
@@ -214,8 +234,13 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
   if (emoji == NULL) {
     return g_strdup("n/a");
   } else {
-    return emoji_format(emoji, "{emoji} <span weight='bold'>{name}</span>"
-                               "[ <span size='small'>({aliases})</span>]");
+    const char *format = pd->format;
+
+    if (format == NULL || format[0] == '\0') {
+      format = DEFAULT_FORMAT;
+    }
+
+    return emoji_format(emoji, format);
   }
 }
 

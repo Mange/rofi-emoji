@@ -7,7 +7,7 @@
 
 #include "loader.h"
 
-FindDataFileResult find_data_file(char *basename, char **path) {
+FindDataFileResult find_data_file(const char *basename, char **path) {
   const char *const *data_dirs = g_get_system_data_dirs();
   if (data_dirs == NULL) {
     return CANNOT_DETERMINE_PATH;
@@ -71,7 +71,7 @@ int find_clipboard_adapter(char **adapter, char **error) {
   return FALSE;
 }
 
-int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
+int run_clipboard_adapter(char *action, const Emoji *emoji, char **error) {
   char *adapter;
   int ca_result = find_clipboard_adapter(&adapter, error);
   if (ca_result != TRUE) {
