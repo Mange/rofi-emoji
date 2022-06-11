@@ -113,3 +113,18 @@ int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
     return FALSE;
   }
 }
+
+/*
+ * Strips each string inside of a null-terminated list of char*.
+ *
+ * The list is modified in-place.
+ */
+void strip_strv(char **in) {
+  int i = 0;
+  char *str = in[i];
+
+  while (str != NULL) {
+    g_strstrip(str);
+    str = in[++i];
+  }
+}

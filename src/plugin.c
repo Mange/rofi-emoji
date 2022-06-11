@@ -31,9 +31,11 @@ char **generate_matcher_strings(EmojiList *list) {
   char **strings = g_new(char *, list->length);
   for (int i = 0; i < list->length; ++i) {
     Emoji *emoji = emoji_list_get(list, i);
-    strings[i] =
-        g_strdup_printf("%s %s %s %s / %s", emoji->bytes, emoji->name,
-                        emoji->keywords, emoji->group, emoji->subgroup);
+    char *aliases = g_strjoinv(", ", emoji->aliases);
+
+    strings[i] = g_strdup_printf("%s %s %s %s / %s", emoji->bytes, emoji->name,
+                                 aliases, emoji->group, emoji->subgroup);
+    g_free(aliases);
   }
   return strings;
 }
@@ -212,11 +214,13 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
   if (emoji == NULL) {
     return g_strdup("n/a");
   } else {
-    return g_markup_printf_escaped(
+    char *aliases = g_strjoinv(", ", emoji->aliases);
+    char *formatted = g_markup_printf_escaped(
         "%s <span weight='bold'>%s</span> <span size='small'>(%s)</span> <span "
         "size='x-small'>[%s / %s]</span>",
-        emoji->bytes, emoji->name, emoji->keywords, emoji->group,
-        emoji->subgroup);
+        emoji->bytes, emoji->name, aliases, emoji->group, emoji->subgroup);
+    g_free(aliases);
+    return formatted;
   }
 }
 
