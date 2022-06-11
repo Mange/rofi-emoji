@@ -128,3 +128,34 @@ void strip_strv(char **in) {
     str = in[++i];
   }
 }
+
+/*
+ * Makes the first ASCII character in the string uppercase by modifying it
+ * in-place.
+ *
+ * Does nothing on NULL values or empty strings.
+ */
+void capitalize(char *text) {
+  if (text == NULL || *text == '\0') {
+    return;
+  }
+
+  text[0] = g_ascii_toupper(text[0]);
+}
+
+/*
+ * Capitalizes each item in a list of strings.
+ */
+void capitalize_v(char **texts) {
+  if (texts == NULL) {
+    return;
+  }
+
+  int i = 0;
+  char *text = texts[i];
+
+  while (text != NULL) {
+    capitalize(text);
+    text = texts[++i];
+  }
+}

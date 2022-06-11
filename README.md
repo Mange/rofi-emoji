@@ -126,11 +126,11 @@ the following format:
 ```
 EMOJI_BYTES       - The bytes of the emoji, for example "🤣". This is what is acted on.
 \t                - Tab character
-CATEGORY_NAME     - The name of the category, for example "Smileys & Emotion".
+GROUP_NAME        - The name of the group, for example "Smileys & Emotion".
 \t                - Tab character
-SUBCATEGORY       - The name of the subcategory, for example "face-smiling".
+SUBGROUP          - The name of the subgroup, for example "face-smiling".
 \t                - Tab character
-DESCRIPTION       - Description like "rolling on the floor laughing face".
+NAME              - Name of emoji, for example "rolling on the floor laughing face".
 \t                - Tab character
 ALIAS_1           - Alias of the emoji, for example "rofl".
 (" | " ALIAS_n)…  - Additional aliases are added with pipes and spaces between them.

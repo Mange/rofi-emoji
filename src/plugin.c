@@ -214,13 +214,8 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
   if (emoji == NULL) {
     return g_strdup("n/a");
   } else {
-    char *aliases = g_strjoinv(", ", emoji->aliases);
-    char *formatted = g_markup_printf_escaped(
-        "%s <span weight='bold'>%s</span> <span size='small'>(%s)</span> <span "
-        "size='x-small'>[%s / %s]</span>",
-        emoji->bytes, emoji->name, aliases, emoji->group, emoji->subgroup);
-    g_free(aliases);
-    return formatted;
+    return emoji_format(emoji, "{emoji} <span weight='bold'>{name}</span>"
+                               "[ <span size='small'>({aliases})</span>]");
   }
 }
 
