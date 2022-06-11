@@ -57,10 +57,10 @@ EmojiList *read_emojis_from_file(const char *path) {
     char *group = NULL;
     char *subgroup = NULL;
     char *name = NULL;
-    char *aliases_str = NULL;
+    char *keywords_str = NULL;
 
     // Each line in the file has this format:
-    // [bytes]\t[group]\t[subgroup]\t[aliases_str]
+    // [bytes]\t[group]\t[subgroup]\t[keywords_str]
 
     cursor = scan_until('\t', cursor, &bytes);
     if (bytes == NULL) {
@@ -84,8 +84,8 @@ EmojiList *read_emojis_from_file(const char *path) {
       free(subgroup);
       break;
     }
-    cursor = scan_until('\n', cursor, &aliases_str);
-    if (aliases_str == NULL) {
+    cursor = scan_until('\n', cursor, &keywords_str);
+    if (keywords_str == NULL) {
       free(bytes);
       free(group);
       free(subgroup);
@@ -93,9 +93,9 @@ EmojiList *read_emojis_from_file(const char *path) {
       break;
     }
 
-    char **aliases = g_strsplit(aliases_str, "|", -1);
-    strip_strv(aliases);
-    Emoji *emoji = emoji_new(bytes, name, group, subgroup, aliases);
+    char **keywords = g_strsplit(keywords_str, "|", -1);
+    strip_strv(keywords);
+    Emoji *emoji = emoji_new(bytes, name, group, subgroup, keywords);
     emoji_list_push(list, emoji);
   }
 

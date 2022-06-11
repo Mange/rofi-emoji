@@ -20,7 +20,7 @@ typedef struct {
 } EmojiModePrivateData;
 
 const char *DEFAULT_FORMAT = "{emoji} <span weight='bold'>{name}</span>"
-                             "[ <span size='small'>({aliases})</span>]";
+                             "[ <span size='small'>({keywords})</span>]";
 
 // Execute the clipboard adapter with the "copy" action so the selected emoji
 // is copied to the users' clipboard.
@@ -36,7 +36,7 @@ char **generate_matcher_strings(EmojiList *list) {
   for (int i = 0; i < list->length; ++i) {
     Emoji *emoji = emoji_list_get(list, i);
     strings[i] =
-        emoji_format(emoji, "{emoji} {name} {aliases} {group} {subgroup}");
+        emoji_format(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
   }
   return strings;
 }

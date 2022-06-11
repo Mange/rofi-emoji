@@ -50,20 +50,20 @@ quickly summarized as such:
 The default format string is this:
 
 ```
-{emoji} <span weight='bold'>{name}</span>[ <span size='small'>({aliases})</span>]
+{emoji} <span weight='bold'>{name}</span>[ <span size='small'>({keywords})</span>]
 ```
 
 This will render the emoji with its name next to it in bold, and if the emoji
-has any aliases they will be shown in a parenthesised list with a smaller font
+has any keywords they will be shown in a parenthesised list with a smaller font
 size.
 
-| Item       | Example                                                                 |
-|------------|-------------------------------------------------------------------------|
-| `emoji`    | 🤣                                                                      |
-| `name`     | Rolling on the floor laughing                                           |
-| `group`    | Smileys & Emotion                                                       |
-| `subgroup` | Face-smiling                                                            |
-| `aliases`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
+| Item        | Example                                                                 |
+|-------------|-------------------------------------------------------------------------|
+| `emoji`     | 🤣                                                                      |
+| `name`      | Rolling on the floor laughing                                           |
+| `group`     | Smileys & Emotion                                                       |
+| `subgroup`  | Face-smiling                                                            |
+| `keywords`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
 
 | | |
 |---|---|
@@ -159,17 +159,17 @@ The emoji database is a plain-text file that lists one emoji per line. It has
 the following format:
 
 ```
-EMOJI_BYTES       - The bytes of the emoji, for example "🤣". This is what is acted on.
-\t                - Tab character
-GROUP_NAME        - The name of the group, for example "Smileys & Emotion".
-\t                - Tab character
-SUBGROUP          - The name of the subgroup, for example "face-smiling".
-\t                - Tab character
-NAME              - Name of emoji, for example "rolling on the floor laughing".
-\t                - Tab character
-ALIAS_1           - Alias of the emoji, for example "rofl".
-(" | " ALIAS_n)…  - Additional aliases are added with pipes and spaces between them.
-\n                - Newline ends the current record.
+EMOJI_BYTES        - The bytes of the emoji, for example "🤣". This is what is acted on.
+\t                 - Tab character
+GROUP_NAME         - The name of the group, for example "Smileys & Emotion".
+\t                 - Tab character
+SUBGROUP           - The name of the subgroup, for example "face-smiling".
+\t                 - Tab character
+NAME               - Name of emoji, for example "rolling on the floor laughing".
+\t                 - Tab character
+KEYWORD_1          - Keyword of the emoji, for example "rofl".
+(" | " KEYWORD_n)… - Additional keywords are added with pipes and spaces between them.
+\n                 - Newline ends the current record.
 ```
 
 **Example rows:**

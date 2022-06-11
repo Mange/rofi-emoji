@@ -8,13 +8,13 @@
 #include "utils.h"
 
 Emoji *emoji_new(char *bytes, char *name, char *group, char *subgroup,
-                 char **aliases) {
+                 char **keywords) {
   Emoji *emoji = g_new(Emoji, 1);
   emoji->bytes = bytes;
   emoji->name = name;
   emoji->group = group;
   emoji->subgroup = subgroup;
-  emoji->aliases = aliases;
+  emoji->keywords = keywords;
   return emoji;
 }
 
@@ -23,7 +23,7 @@ void emoji_free_inside(Emoji *emoji) {
   g_free(emoji->name);
   g_free(emoji->group);
   g_free(emoji->subgroup);
-  g_strfreev(emoji->aliases);
+  g_strfreev(emoji->keywords);
 }
 
 char *new_format_entry(const char *text, int capitalize) {
@@ -49,14 +49,14 @@ char *emoji_format(const Emoji *emoji, const char *format) {
   char *group = new_format_entry(emoji->group, TRUE);
   char *subgroup = new_format_entry(emoji->subgroup, TRUE);
 
-  char **aliases = g_strdupv(emoji->aliases);
-  capitalize_v(aliases);
+  char **keywords = g_strdupv(emoji->keywords);
+  capitalize_v(keywords);
 
-  char *aliases_str = g_strjoinv(", ", aliases);
-  g_free(aliases);
+  char *keywords_str = g_strjoinv(", ", keywords);
+  g_free(keywords);
 
-  char *aliases_entry = new_format_entry(aliases_str, FALSE);
-  g_free(aliases_str);
+  char *keywords_entry = new_format_entry(keywords_str, FALSE);
+  g_free(keywords_str);
 
   // clang-format off
   char *formatted = helper_string_replace_if_exists(
@@ -65,7 +65,7 @@ char *emoji_format(const Emoji *emoji, const char *format) {
     "{name}", name,
     "{group}", group,
     "{subgroup}", subgroup,
-    "{aliases}", aliases_entry,
+    "{keywords}", keywords_entry,
     NULL
   );
   // clang-format on
@@ -74,7 +74,7 @@ char *emoji_format(const Emoji *emoji, const char *format) {
   g_free(name);
   g_free(group);
   g_free(subgroup);
-  g_free(aliases_entry);
+  g_free(keywords_entry);
 
   return formatted;
 }

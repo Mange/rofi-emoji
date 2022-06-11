@@ -7,11 +7,11 @@ typedef struct Emoji {
   char *group;
   char *subgroup;
 
-  char **aliases;
+  char **keywords;
 } Emoji;
 
 Emoji *emoji_new(char *bytes, char *name, char *group, char *subgroup,
-                 char **aliases);
+                 char **keywords);
 void emoji_free_inside(Emoji *emoji);
 
 char *emoji_format(const Emoji *emoji, const char *format);
