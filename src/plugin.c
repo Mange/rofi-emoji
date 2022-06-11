@@ -35,11 +35,8 @@ char **generate_matcher_strings(EmojiList *list) {
   char **strings = g_new(char *, list->length);
   for (int i = 0; i < list->length; ++i) {
     Emoji *emoji = emoji_list_get(list, i);
-    char *aliases = g_strjoinv(", ", emoji->aliases);
-
-    strings[i] = g_strdup_printf("%s %s %s %s / %s", emoji->bytes, emoji->name,
-                                 aliases, emoji->group, emoji->subgroup);
-    g_free(aliases);
+    strings[i] =
+        emoji_format(emoji, "{emoji} {name} {aliases} {group} {subgroup}");
   }
   return strings;
 }
