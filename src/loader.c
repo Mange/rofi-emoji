@@ -40,10 +40,6 @@ char *scan_until(const char until, char *input, char **result) {
   return index + 1;
 }
 
-FindDataFileResult find_emoji_file(char **path) {
-  return find_data_file("all_emojis.txt", path);
-}
-
 EmojiList *read_emojis_from_file(char *path) {
   FILE *file = fopen(path, "r");
   if (!file) {

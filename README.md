@@ -3,6 +3,11 @@
 An emoji selector plugin for Rofi that copies the selected emoji to the
 clipboard.
 
+## Screenshot
+
+![Screenshot showing a Rofi window searching for emojis containing "uni", the
+emoji for "Unicorn face" being selected](screenshot.png)
+
 ## Usage
 
 Run rofi like:
@@ -18,10 +23,16 @@ rofi -show emoji -modi emoji
 **Note:** If you change your keybind for `kb-accept`, then your change will
 also apply here.
 
-## Screenshot
+### Command line arguments
 
-![Screenshot showing a Rofi window searching for emojis containing "uni", the
-emoji for "Unicorn face" being selected](screenshot.png)
+Due to a limitation in Rofi's plugin system, this plugin cannot append
+additional options to the output of `rofi -help`.
+
+The plugin adds the following command line arguments to `rofi`:
+
+| Name          | Default | Description                      |
+|---------------|---------|----------------------------------|
+| `-emoji-file` |         | Alternative Emoji file database. |
 
 ## Dependencies
 
@@ -97,15 +108,45 @@ sudo make install
 
 ## Emoji database
 
-When installing the emoji database (`all_emojis.txt` file) is installed in
-`$PREFIX/share/rofi-emoji`. The plugin will search `$XDG_DATA_DIRS` for a
-directory where `rofi-emoji/all_emojis.txt` exists in. If the plugin cannot
-find the data, make sure `$XDG_DATA_DIRS` is set correctly.
+When installing, the emoji database is installed in
+`$PREFIX/share/rofi-emoji/all_emojis.txt`.
 
-If it is unset it should default to `/usr/local/share:/usr/share`, which works
-with the most common prefixes.
+The plugin will search `$XDG_DATA_DIRS` for a directory where
+`rofi-emoji/all_emojis.txt` exists in if no `-emoji-file` option is set.
 
-### Updating to a newer version
+If the plugin cannot find the file, make sure `$XDG_DATA_DIRS` is set
+correctly. If it is unset it should default to `/usr/local/share:/usr/share`,
+which works with the most common prefixes.
+
+### Custom database
+
+The emoji database is a plain-text file that lists one emoji per line. It has
+the following format:
+
+```
+EMOJI_BYTES       - The bytes of the emoji, for example "🤣". This is what is acted on.
+\t                - Tab character
+CATEGORY_NAME     - The name of the category, for example "Smileys & Emotion".
+\t                - Tab character
+SUBCATEGORY       - The name of the subcategory, for example "face-smiling".
+\t                - Tab character
+DESCRIPTION       - Description like "rolling on the floor laughing face".
+\t                - Tab character
+ALIAS_1           - Alias of the emoji, for example "rofl".
+(" | " ALIAS_n)…  - Additional aliases are added with pipes and spaces between them.
+\n                - Newline ends the current record.
+```
+
+**Example rows:**
+
+```
+🤣	Smileys & Emotion	face-smiling	rolling on the floor laughing	face | floor | laugh | rofl | rolling | rolling on the floor laughing | rotfl
+😂	Smileys & Emotion	face-smiling	face with tears of joy	face | face with tears of joy | joy | laugh | tear
+🙂	Smileys & Emotion	face-smiling	slightly smiling face	face | slightly smiling face | smile
+🙃	Smileys & Emotion	face-smiling	upside-down face	face | upside-down | upside down | upside-down face
+```
+
+### Updating default database to a newer version
 
 The list is copied from the [Mange/emoji-data][emoji-data] repo.
 

@@ -1,6 +1,9 @@
 # `master` branch
 
-* Nothing yet
+## Added
+
+* The `-emoji-file` option to read custom emoji databases.
+* Documentation about the format of the Emoji database.
 
 # Version 2.3.0 (2022-02-02)
 

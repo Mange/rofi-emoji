@@ -38,6 +38,28 @@ char **generate_matcher_strings(EmojiList *list) {
   return strings;
 }
 
+/*
+ * Try to find the location of the emoji file by looking at command line
+ * arguments and then falling back to the default filename in the XDG data
+ * directories.
+ */
+FindDataFileResult find_emoji_file(char **path) {
+  if (find_arg("-emoji-file") >= 0) {
+    if (find_arg_str("-emoji-file", path)) {
+      if (g_file_test(*path, G_FILE_TEST_EXISTS | G_FILE_TEST_IS_REGULAR)) {
+        return SUCCESS;
+      } else {
+        return NOT_A_FILE;
+      }
+    } else {
+      (*path) = NULL;
+      return CANNOT_DETERMINE_PATH;
+    }
+  } else {
+    return find_data_file("all_emojis.txt", path);
+  }
+}
+
 static void get_emoji(Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
   char *path;
@@ -52,9 +74,7 @@ static void get_emoji(Mode *sw) {
           "Failed to load emoji file: The path could not be determined");
     } else if (result == NOT_A_FILE) {
       pd->message = g_markup_printf_escaped(
-          "Failed to load emoji file: <tt>%s</tt> is not a file\nAlso searched "
-          "in every path in $XDG_DATA_DIRS.",
-          path);
+          "Failed to load emoji file: <tt>%s</tt> is not a file", path);
     }
     pd->emojis = emoji_list_new(0);
     pd->matcher_strings = NULL;
