@@ -8,7 +8,6 @@ dist_pkgdata_SCRIPTS = clipboard-adapter.sh
 
 emoji_la_SOURCES=\
 		 src/emoji.c \
-		 src/emoji_list.c \
 		 src/utils.c \
 		 src/loader.c \
 		 src/formatter.c \

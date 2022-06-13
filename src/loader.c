@@ -40,7 +40,7 @@ char *scan_until(const char until, char *input, char **result) {
   return index + 1;
 }
 
-EmojiList *read_emojis_from_file(const char *path) {
+GPtrArray *read_emojis_from_file(const char *path) {
   FILE *file = fopen(path, "r");
   if (!file) {
     return NULL;
@@ -48,7 +48,7 @@ EmojiList *read_emojis_from_file(const char *path) {
 
   char line[MAX_LINE_LENGTH];
 
-  EmojiList *list = emoji_list_new(512);
+  GPtrArray *list = g_ptr_array_sized_new(512);
 
   while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
     char *cursor = line;
@@ -96,7 +96,7 @@ EmojiList *read_emojis_from_file(const char *path) {
     char **keywords = g_strsplit(keywords_str, "|", -1);
     strip_strv(keywords);
     Emoji *emoji = emoji_new(bytes, name, group, subgroup, keywords);
-    emoji_list_push(list, emoji);
+    g_ptr_array_add(list, emoji);
   }
 
   fclose(file);

@@ -7,14 +7,14 @@
 #include <rofi/mode-private.h>
 
 #include "emoji.h"
-#include "emoji_list.h"
 #include "formatter.h"
 #include "loader.h"
+#include "utils.h"
 
 G_MODULE_EXPORT Mode mode;
 
 typedef struct {
-  EmojiList *emojis;
+  GPtrArray *emojis;
   char **matcher_strings;
   char *message;
   char *format;
@@ -32,13 +32,15 @@ int copy_emoji(Emoji *emoji, char **error) {
   return run_clipboard_adapter("copy", emoji, error);
 }
 
-char **generate_matcher_strings(EmojiList *list) {
-  char **strings = g_new(char *, list->length);
-  for (int i = 0; i < list->length; ++i) {
-    Emoji *emoji = emoji_list_get(list, i);
+char **generate_matcher_strings(GPtrArray *list) {
+  char **strings = g_new(char *, list->len + 1);
+  for (int i = 0; i < list->len; ++i) {
+    Emoji *emoji = g_ptr_array_index(list, i);
+
     strings[i] =
         format_emoji(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
   }
+  strings[list->len] = NULL;
   return strings;
 }
 
@@ -80,7 +82,7 @@ static void get_emoji(Mode *sw) {
       pd->message = g_markup_printf_escaped(
           "Failed to load emoji file: <tt>%s</tt> is not a file", path);
     }
-    pd->emojis = emoji_list_new(0);
+    pd->emojis = NULL;
     pd->matcher_strings = NULL;
   }
 }
@@ -126,7 +128,7 @@ static int emoji_mode_init(Mode *sw) {
 static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
   const EmojiModePrivateData *pd =
       (const EmojiModePrivateData *)mode_get_private_data(sw);
-  return pd->emojis->length;
+  return pd->emojis->len;
 }
 
 /**
@@ -151,7 +153,7 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
   } else if (mretv & MENU_QUICK_SWITCH) {
     retv = (mretv & MENU_LOWER_MASK);
   } else if ((mretv & MENU_OK)) {
-    Emoji *emoji = emoji_list_get(pd->emojis, selected_line);
+    Emoji *emoji = g_ptr_array_index(pd->emojis, selected_line);
 
     if (copy_emoji(emoji, &(pd->message))) {
       retv = MODE_EXIT;
@@ -175,10 +177,10 @@ static void emoji_mode_destroy(Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
   if (pd != NULL) {
     // Free all generated matcher strings before freeing the list.
-    for (int i = 0; i < pd->emojis->length; ++i) {
+    for (int i = 0; i < pd->emojis->len; ++i) {
       g_free(pd->matcher_strings[i]);
     }
-    emoji_list_free(pd->emojis);
+    g_ptr_array_free(pd->emojis, TRUE);
     g_free(pd->message);
     g_free(pd->format);
     g_free(pd);
@@ -227,7 +229,7 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
     return NULL;
   }
 
-  Emoji *emoji = emoji_list_get(pd->emojis, selected_line);
+  Emoji *emoji = g_ptr_array_index(pd->emojis, selected_line);
 
   if (emoji == NULL) {
     return g_strdup("n/a");
@@ -254,7 +256,7 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
 static int emoji_token_match(const Mode *sw, rofi_int_matcher **tokens,
                              unsigned int index) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
-  return index < pd->emojis->length &&
+  return index < pd->emojis->len &&
          helper_token_match(tokens, pd->matcher_strings[index]);
 }
 
