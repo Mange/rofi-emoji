@@ -26,7 +26,7 @@ START_TEST(test_new_and_free) {
   ck_assert_str_eq(emoji->keywords[1], "kw2 - electric buggaloo");
   ck_assert_ptr_eq(emoji->keywords[2], NULL);
 
-  emoji_free_inside(emoji);
+  emoji_free(emoji);
 }
 END_TEST
 

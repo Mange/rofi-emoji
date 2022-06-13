@@ -13,10 +13,11 @@ Emoji *emoji_new(char *bytes, char *name, char *group, char *subgroup,
   return emoji;
 }
 
-void emoji_free_inside(Emoji *emoji) {
+void emoji_free(Emoji *emoji) {
   g_free(emoji->bytes);
   g_free(emoji->name);
   g_free(emoji->group);
   g_free(emoji->subgroup);
   g_strfreev(emoji->keywords);
+  g_free(emoji);
 }

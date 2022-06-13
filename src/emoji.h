@@ -12,6 +12,6 @@ typedef struct Emoji {
 
 Emoji *emoji_new(char *bytes, char *name, char *group, char *subgroup,
                  char **keywords);
-void emoji_free_inside(Emoji *emoji);
+void emoji_free(Emoji *emoji);
 
 #endif // EMOJI_H

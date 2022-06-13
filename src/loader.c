@@ -40,6 +40,8 @@ char *scan_until(const char until, char *input, char **result) {
   return index + 1;
 }
 
+void array_emoji_free_item(gpointer item) { emoji_free(item); }
+
 GPtrArray *read_emojis_from_file(const char *path) {
   FILE *file = fopen(path, "r");
   if (!file) {
@@ -49,6 +51,7 @@ GPtrArray *read_emojis_from_file(const char *path) {
   char line[MAX_LINE_LENGTH];
 
   GPtrArray *list = g_ptr_array_sized_new(512);
+  g_ptr_array_set_free_func(list, array_emoji_free_item);
 
   while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
     char *cursor = line;
