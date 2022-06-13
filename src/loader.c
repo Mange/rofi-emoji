@@ -16,7 +16,7 @@
 //
 // If `until` could not be found in `string`, it will not advance and `result`
 // will be set to `NULL`.
-char *scan_until(const char until, char *input, char **result) {
+const char *scan_until(const char until, const char *input, char **result) {
   char *index = strchr(input, until);
 
   if (index == NULL) {
@@ -54,55 +54,63 @@ GPtrArray *read_emojis_from_file(const char *path) {
   g_ptr_array_set_free_func(list, array_emoji_free_item);
 
   while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
-    char *cursor = line;
-
-    char *bytes = NULL;
-    char *group = NULL;
-    char *subgroup = NULL;
-    char *name = NULL;
-    char *keywords_str = NULL;
-
-    // Each line in the file has this format:
-    // [bytes]\t[group]\t[subgroup]\t[keywords_str]
-
-    cursor = scan_until('\t', cursor, &bytes);
-    if (bytes == NULL) {
+    Emoji *emoji = parse_emoji_from_line(line);
+    if (emoji == NULL) {
       break;
     }
-    cursor = scan_until('\t', cursor, &group);
-    if (group == NULL) {
-      free(bytes);
-      break;
-    }
-    cursor = scan_until('\t', cursor, &subgroup);
-    if (subgroup == NULL) {
-      free(bytes);
-      free(group);
-      break;
-    }
-    cursor = scan_until('\t', cursor, &name);
-    if (name == NULL) {
-      free(bytes);
-      free(group);
-      free(subgroup);
-      break;
-    }
-    cursor = scan_until('\n', cursor, &keywords_str);
-    if (keywords_str == NULL) {
-      free(bytes);
-      free(group);
-      free(subgroup);
-      free(name);
-      break;
-    }
-
-    char **keywords = g_strsplit(keywords_str, "|", -1);
-    strip_strv(keywords);
-    Emoji *emoji = emoji_new(bytes, name, group, subgroup, keywords);
     g_ptr_array_add(list, emoji);
   }
 
   fclose(file);
 
   return list;
+}
+
+Emoji *parse_emoji_from_line(const char *line) {
+  const char *cursor = line;
+
+  char *bytes = NULL;
+  char *group = NULL;
+  char *subgroup = NULL;
+  char *name = NULL;
+  char *keywords_str = NULL;
+
+  // Each line in the file has this format:
+  // [bytes]\t[group]\t[subgroup]\t[keywords_str]
+
+  cursor = scan_until('\t', cursor, &bytes);
+  if (bytes == NULL) {
+    return NULL;
+  }
+  cursor = scan_until('\t', cursor, &group);
+  if (group == NULL) {
+    free(bytes);
+    return NULL;
+  }
+  cursor = scan_until('\t', cursor, &subgroup);
+  if (subgroup == NULL) {
+    free(bytes);
+    free(group);
+    return NULL;
+  }
+  cursor = scan_until('\t', cursor, &name);
+  if (name == NULL) {
+    free(bytes);
+    free(group);
+    free(subgroup);
+    return NULL;
+  }
+  cursor = scan_until('\n', cursor, &keywords_str);
+  if (keywords_str == NULL) {
+    free(bytes);
+    free(group);
+    free(subgroup);
+    free(name);
+    return NULL;
+  }
+
+  char **keywords = g_strsplit(keywords_str, "|", -1);
+  strip_strv(keywords);
+  Emoji *emoji = emoji_new(bytes, name, group, subgroup, keywords);
+  return emoji;
 }

@@ -6,6 +6,7 @@
 #include <unistd.h>
 
 #include "loader.h"
+#include "utils.h"
 
 FindDataFileResult find_data_file(const char *basename, char **path) {
   const char *const *data_dirs = g_get_system_data_dirs();

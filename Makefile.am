@@ -17,8 +17,8 @@ emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
 emoji_la_LIBADD= @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@
 emoji_la_LDFLAGS= -module -avoid-version
 
-noinst_PROGRAMS = tests/check_utils tests/check_emoji
-TESTS = tests/check_utils tests/check_emoji
+noinst_PROGRAMS = tests/check_utils tests/check_emoji tests/check_loader
+TESTS = tests/check_utils tests/check_emoji tests/check_loader
 
 tests_check_utils_SOURCES = tests/check_utils.c src/utils.c
 tests_check_utils_CFLAGS = $(CFLAGS) $(CHECK_CFLAGS) @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
@@ -27,3 +27,7 @@ tests_check_utils_LDADD = $(LDFLAGS) $(CHECK_LIBS) @glib_LIBS@ @rofi_LIBS@ @cair
 tests_check_emoji_SOURCES = tests/check_emoji.c src/emoji.c
 tests_check_emoji_CFLAGS = $(CFLAGS) $(CHECK_CFLAGS) @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
 tests_check_emoji_LDADD = $(LDFLAGS) $(CHECK_LIBS) @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@
+
+tests_check_loader_SOURCES = tests/check_loader.c src/loader.c src/emoji.c src/utils.c
+tests_check_loader_CFLAGS = $(CFLAGS) $(CHECK_CFLAGS) @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
+tests_check_loader_LDADD = $(LDFLAGS) $(CHECK_LIBS) @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@
