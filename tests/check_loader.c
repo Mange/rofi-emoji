@@ -34,16 +34,16 @@ START_TEST(test_scan_until) {
 END_TEST
 
 START_TEST(test_emoji_parse_line) {
-  const char *line = "😀	Smileys & Emotion	face-smiling	grinning face	face | grin | grinning face\n";
+  const char *line = "😀	 Smileys & Emotion 	face-smiling     	grinning face 	face    | grin|grinning face    \n";
   Emoji *emoji = parse_emoji_from_line(line);
 
   ck_assert_str_eq(emoji->bytes, "😀");
   ck_assert_str_eq(emoji->group, "Smileys & Emotion");
-  ck_assert_str_eq(emoji->subgroup, "face-smiling");
-  ck_assert_str_eq(emoji->name, "grinning face");
-  ck_assert_str_eq(emoji->keywords[0], "face");
-  ck_assert_str_eq(emoji->keywords[1], "grin");
-  ck_assert_str_eq(emoji->keywords[2], "grinning face");
+  ck_assert_str_eq(emoji->subgroup, "Face-smiling");
+  ck_assert_str_eq(emoji->name, "Grinning face");
+  ck_assert_str_eq(emoji->keywords[0], "Face");
+  ck_assert_str_eq(emoji->keywords[1], "Grin");
+  ck_assert_str_eq(emoji->keywords[2], "Grinning face");
   ck_assert_ptr_eq(emoji->keywords[3], NULL);
 
   emoji_free(emoji);

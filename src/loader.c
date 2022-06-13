@@ -57,6 +57,11 @@ GPtrArray *read_emojis_from_file(const char *path) {
   return list;
 }
 
+void cleanup(char *str) {
+  g_strstrip(str);
+  capitalize(str);
+}
+
 Emoji *parse_emoji_from_line(const char *line) {
   const char *cursor = line;
 
@@ -101,7 +106,14 @@ Emoji *parse_emoji_from_line(const char *line) {
   }
 
   char **keywords = g_strsplit(keywords_str, "|", -1);
+
+  g_strstrip(bytes);
+  cleanup(name);
+  cleanup(group);
+  cleanup(subgroup);
   strip_strv(keywords);
+  capitalize_v(keywords);
+
   Emoji *emoji = emoji_new(bytes, name, group, subgroup, keywords);
   return emoji;
 }

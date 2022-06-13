@@ -4,7 +4,7 @@
 #include "emoji.h"
 #include "utils.h"
 
-char *new_format_entry(const char *text, int capitalize) {
+char *new_format_entry(const char *text) {
   if (text == NULL) {
     return NULL;
   }
@@ -14,26 +14,22 @@ char *new_format_entry(const char *text, int capitalize) {
   }
 
   char *escaped = g_markup_escape_text(text, -1);
-  if (capitalize) {
-    escaped[0] = g_ascii_toupper(escaped[0]);
-  }
 
   return escaped;
 }
 
 char *format_emoji(const Emoji *emoji, const char *format) {
-  char *bytes = new_format_entry(emoji->bytes, FALSE);
-  char *name = new_format_entry(emoji->name, TRUE);
-  char *group = new_format_entry(emoji->group, TRUE);
-  char *subgroup = new_format_entry(emoji->subgroup, TRUE);
+  char *bytes = new_format_entry(emoji->bytes);
+  char *name = new_format_entry(emoji->name);
+  char *group = new_format_entry(emoji->group);
+  char *subgroup = new_format_entry(emoji->subgroup);
 
   char **keywords = g_strdupv(emoji->keywords);
-  capitalize_v(keywords);
 
   char *keywords_str = g_strjoinv(", ", keywords);
   g_free(keywords);
 
-  char *keywords_entry = new_format_entry(keywords_str, FALSE);
+  char *keywords_entry = new_format_entry(keywords_str);
   g_free(keywords_str);
 
   // clang-format off
