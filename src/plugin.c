@@ -8,6 +8,7 @@
 
 #include "emoji.h"
 #include "emoji_list.h"
+#include "formatter.h"
 #include "loader.h"
 
 G_MODULE_EXPORT Mode mode;
@@ -36,7 +37,7 @@ char **generate_matcher_strings(EmojiList *list) {
   for (int i = 0; i < list->length; ++i) {
     Emoji *emoji = emoji_list_get(list, i);
     strings[i] =
-        emoji_format(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
+        format_emoji(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
   }
   return strings;
 }
@@ -237,7 +238,7 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
       format = DEFAULT_FORMAT;
     }
 
-    return emoji_format(emoji, format);
+    return format_emoji(emoji, format);
   }
 }
 
