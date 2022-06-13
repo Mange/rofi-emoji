@@ -24,17 +24,8 @@ const char *scan_until(const char until, const char *input, char **result) {
     return input;
   }
 
-  // Allocate result buffer. They need to equal the length of the matching
-  // input, plus 1 for the NUL byte.
   int length = (index - input);
-  *result = malloc(length + 1);
-  if (result == NULL) {
-    return input;
-  }
-
-  // Copy input into result
-  strncpy(*result, input, length);
-  (*result)[length] = '\0';
+  *result = g_strndup(input, length);
 
   // Advance input to character after the `until` character.
   return index + 1;
@@ -84,28 +75,28 @@ Emoji *parse_emoji_from_line(const char *line) {
   }
   cursor = scan_until('\t', cursor, &group);
   if (group == NULL) {
-    free(bytes);
+    g_free(bytes);
     return NULL;
   }
   cursor = scan_until('\t', cursor, &subgroup);
   if (subgroup == NULL) {
-    free(bytes);
-    free(group);
+    g_free(bytes);
+    g_free(group);
     return NULL;
   }
   cursor = scan_until('\t', cursor, &name);
   if (name == NULL) {
-    free(bytes);
-    free(group);
-    free(subgroup);
+    g_free(bytes);
+    g_free(group);
+    g_free(subgroup);
     return NULL;
   }
   cursor = scan_until('\n', cursor, &keywords_str);
   if (keywords_str == NULL) {
-    free(bytes);
-    free(group);
-    free(subgroup);
-    free(name);
+    g_free(bytes);
+    g_free(group);
+    g_free(subgroup);
+    g_free(name);
     return NULL;
   }
 
