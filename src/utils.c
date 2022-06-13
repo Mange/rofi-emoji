@@ -120,6 +120,10 @@ int run_clipboard_adapter(char *action, const Emoji *emoji, char **error) {
  * The list is modified in-place.
  */
 void strip_strv(char **in) {
+  if (in == NULL) {
+    return;
+  }
+
   int i = 0;
   char *str = in[i];
 

@@ -16,3 +16,10 @@ emoji_la_SOURCES=\
 emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
 emoji_la_LIBADD= @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@
 emoji_la_LDFLAGS= -module -avoid-version
+
+noinst_PROGRAMS = tests/check_utils
+TESTS = tests/check_utils
+
+tests_check_utils_SOURCES = tests/check_utils.c src/utils.c
+tests_check_utils_CFLAGS = $(CFLAGS) $(CHECK_CFLAGS) @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@
+tests_check_utils_LDADD = $(LDFLAGS) $(CHECK_LIBS) @glib_LIBS@ @rofi_LIBS@ @cairo_LIBS@

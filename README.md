@@ -141,6 +141,23 @@ make
 sudo make install
 ```
 
+### Running tests
+
+Also install `check` and run the following commands after doing the **Compile
+from source** steps above.
+
+```bash
+# In project root
+automake -a
+cd build
+make check VERBOSE=true
+```
+
+There is not a lot of things to test here since Rofi doesn't expose any of its
+internal methods as a library to link the test binaries against, which means
+it's not possible to compile and link any tests for any files where a Rofi
+dependency is used.
+
 ## Emoji database
 
 When installing, the emoji database is installed in
