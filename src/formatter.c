@@ -24,11 +24,7 @@ char *format_emoji(const Emoji *emoji, const char *format) {
   char *group = new_format_entry(emoji->group);
   char *subgroup = new_format_entry(emoji->subgroup);
 
-  char **keywords = g_strdupv(emoji->keywords);
-
-  char *keywords_str = g_strjoinv(", ", keywords);
-  g_free(keywords);
-
+  char *keywords_str = g_strjoinv(", ", emoji->keywords);
   char *keywords_entry = new_format_entry(keywords_str);
   g_free(keywords_str);
 
