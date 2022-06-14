@@ -147,3 +147,113 @@ void capitalize(char *text) {
 
   text[0] = g_ascii_toupper(text[0]);
 }
+
+void append(char **dest, const char *addition) {
+  char *tmp;
+  if (*dest == NULL) {
+    tmp = g_strdup(addition);
+  } else {
+    tmp = g_strconcat(*dest, addition, NULL);
+  }
+  g_free(*dest);
+  *dest = tmp;
+}
+
+void appendn(char **dest, const char *addition, int n) {
+  char *tmp;
+  if (*dest == NULL) {
+    tmp = g_strndup(addition, n);
+  } else {
+    char *copy = g_strndup(addition, n);
+    tmp = g_strconcat(*dest, copy, NULL);
+    g_free(copy);
+  }
+  g_free(*dest);
+  *dest = tmp;
+}
+
+void replace(char **dest, const char *replacement) {
+  g_free(*dest);
+  if (replacement != NULL) {
+    *dest = g_strdup(replacement);
+  } else {
+    *dest = NULL;
+  }
+}
+
+void replacen(char **dest, const char *replacement, int n) {
+  g_free(*dest);
+  if (replacement != NULL) {
+    *dest = g_strndup(replacement, n);
+  } else {
+    *dest = NULL;
+  }
+}
+
+void tokenize_search(const char *input, char **query, char **group_query,
+                     char **subgroup_query) {
+  *query = NULL;
+  *group_query = NULL;
+  *subgroup_query = NULL;
+
+  const char *current = input;
+
+  while (*current != '\0') {
+    char *index = strchr(current, ' ');
+
+    if (index == NULL) {
+      // No more spaces, so rest of input is a single word.
+      switch (current[0]) {
+      case '@':
+        if (strlen(current) > 1) {
+          replace(group_query, current + 1);
+        } else {
+          replace(group_query, NULL);
+        }
+        break;
+      case '#':
+        if (strlen(current) > 1) {
+          replace(subgroup_query, current + 1);
+        } else {
+          replace(subgroup_query, NULL);
+        }
+        break;
+      default:
+        append(query, current);
+      }
+      break;
+    }
+
+    int length = (index - current);
+
+    switch (current[0]) {
+    case '@':
+      if (length > 1) {
+        replacen(group_query, current + 1, length - 1);
+      } else {
+        replace(group_query, NULL);
+      }
+      break;
+    case '#':
+      if (length > 1) {
+        replacen(subgroup_query, current + 1, length - 1);
+      } else {
+        replace(subgroup_query, NULL);
+      }
+      break;
+    default:
+      // Add one extra length for the space
+      appendn(query, current, length + 1);
+    }
+
+    // Skip ahead to after the space
+    current = index + 1;
+  }
+
+  // Query must always be something
+  if (*query == NULL) {
+    *query = g_strdup("");
+  }
+
+  g_strstrip(*query);
+}

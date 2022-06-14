@@ -14,4 +14,7 @@ int find_clipboard_adapter(char **adapter, char **error);
 int run_clipboard_adapter(char *action, const Emoji *emoji, char **error);
 void capitalize(char *text);
 
+void tokenize_search(const char *input, char **query, char **group_query,
+                     char **subgroup_query);
+
 #endif // UTILS_H

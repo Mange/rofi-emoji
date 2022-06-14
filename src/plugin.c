@@ -18,6 +18,8 @@ typedef struct {
   char **matcher_strings;
   char *message;
   char *format;
+  rofi_int_matcher **group_matchers;
+  rofi_int_matcher **subgroup_matchers;
 } EmojiModePrivateData;
 
 const char *DEFAULT_FORMAT = "{emoji} <span weight='bold'>{name}</span>"
@@ -103,6 +105,9 @@ static int emoji_mode_init(Mode *sw) {
     pd->message = NULL;
     pd->format = NULL;
 
+    pd->group_matchers = NULL;
+    pd->subgroup_matchers = NULL;
+
     if (find_arg("-emoji-format")) {
       char *format;
       if (find_arg_str("-emoji-format", &format)) {
@@ -183,6 +188,8 @@ static void emoji_mode_destroy(Mode *sw) {
     g_ptr_array_free(pd->emojis, TRUE);
     g_free(pd->message);
     g_free(pd->format);
+    helper_tokenize_free(pd->group_matchers);
+    helper_tokenize_free(pd->subgroup_matchers);
     g_free(pd);
     mode_set_private_data(sw, NULL);
   }
@@ -256,8 +263,57 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
 static int emoji_token_match(const Mode *sw, rofi_int_matcher **tokens,
                              unsigned int index) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
+
+  if (index >= pd->emojis->len) {
+    return FALSE;
+  }
+
+  if (pd->group_matchers != NULL || pd->subgroup_matchers != NULL) {
+    Emoji *emoji = g_ptr_array_index(pd->emojis, index);
+
+    if (pd->group_matchers != NULL) {
+      if (!helper_token_match(pd->group_matchers, emoji->group)) {
+        return FALSE;
+      }
+    }
+
+    if (pd->subgroup_matchers != NULL) {
+      if (!helper_token_match(pd->subgroup_matchers, emoji->subgroup)) {
+        return FALSE;
+      }
+    }
+  }
+
   return index < pd->emojis->len &&
          helper_token_match(tokens, pd->matcher_strings[index]);
+}
+
+static char *emoji_preprocess_input(Mode *sw, const char *input) {
+  EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
+  char *query;
+  char *group_query;
+  char *subgroup_query;
+
+  if (pd->group_matchers != NULL) {
+    helper_tokenize_free(pd->group_matchers);
+    pd->group_matchers = NULL;
+  }
+  if (pd->subgroup_matchers != NULL) {
+    helper_tokenize_free(pd->subgroup_matchers);
+    pd->subgroup_matchers = NULL;
+  }
+
+  tokenize_search(input, &query, &group_query, &subgroup_query);
+
+  if (group_query != NULL) {
+    pd->group_matchers = helper_tokenize(group_query, FALSE);
+  }
+
+  if (subgroup_query != NULL) {
+    pd->subgroup_matchers = helper_tokenize(subgroup_query, FALSE);
+  }
+
+  return query;
 }
 
 Mode mode = {
@@ -272,7 +328,7 @@ Mode mode = {
     ._get_display_value = get_display_value,
     ._get_message = emoji_get_message,
     ._get_completion = NULL,
-    ._preprocess_input = NULL,
+    ._preprocess_input = emoji_preprocess_input,
     .private_data = NULL,
     .free = NULL,
 };
