@@ -34,17 +34,34 @@ START_TEST(test_scan_until) {
 END_TEST
 
 START_TEST(test_emoji_parse_line) {
-  const char *line = "😀	 Smileys & Emotion 	face-smiling     	grinning face 	face    | grin|grinning face    \n";
+  const char *line = "😀	 Smileys & Emotion 	face-smiling     "
+                     "	grinning face 	face    | grin   \n";
   Emoji *emoji = parse_emoji_from_line(line);
 
   ck_assert_str_eq(emoji->bytes, "😀");
   ck_assert_str_eq(emoji->group, "Smileys & Emotion");
   ck_assert_str_eq(emoji->subgroup, "Face-smiling");
   ck_assert_str_eq(emoji->name, "Grinning face");
+  ck_assert_int_eq(g_strv_length(emoji->keywords), 2);
   ck_assert_str_eq(emoji->keywords[0], "Face");
   ck_assert_str_eq(emoji->keywords[1], "Grin");
-  ck_assert_str_eq(emoji->keywords[2], "Grinning face");
-  ck_assert_ptr_eq(emoji->keywords[3], NULL);
+  ck_assert_ptr_eq(emoji->keywords[2], NULL);
+
+  emoji_free(emoji);
+}
+END_TEST
+
+START_TEST(test_emoji_parse_skip_redundant_keywords) {
+  const char *line =
+      "😀	X	X	grinning face 	face|grinning face  |grin  \n";
+  Emoji *emoji = parse_emoji_from_line(line);
+
+  // The "grinning face" keyword is removed since its the same
+  // as the name.
+  ck_assert_int_eq(g_strv_length(emoji->keywords), 2);
+  ck_assert_str_eq(emoji->keywords[0], "Face");
+  ck_assert_str_eq(emoji->keywords[1], "Grin");
+  ck_assert_ptr_eq(emoji->keywords[2], NULL);
 
   emoji_free(emoji);
 }
@@ -59,6 +76,7 @@ Suite *loader_suite(void) {
 
   tcase_add_test(tc_core, test_scan_until);
   tcase_add_test(tc_core, test_emoji_parse_line);
+  tcase_add_test(tc_core, test_emoji_parse_skip_redundant_keywords);
   suite_add_tcase(s, tc_core);
 
   return s;
