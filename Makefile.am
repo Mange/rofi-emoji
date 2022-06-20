@@ -11,6 +11,9 @@ emoji_la_SOURCES=\
 		 src/utils.c \
 		 src/loader.c \
 		 src/formatter.c \
+		 src/menu.c \
+		 src/search.c \
+		 src/actions.c \
 		 src/plugin.c
 
 emoji_la_CFLAGS= @glib_CFLAGS@ @rofi_CFLAGS@ @cairo_CFLAGS@

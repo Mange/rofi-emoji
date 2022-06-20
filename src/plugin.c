@@ -6,45 +6,16 @@
 #include <rofi/helper.h>
 #include <rofi/mode-private.h>
 
+#include "actions.h"
 #include "emoji.h"
 #include "formatter.h"
 #include "loader.h"
+#include "menu.h"
+#include "plugin.h"
+#include "search.h"
 #include "utils.h"
 
 G_MODULE_EXPORT Mode mode;
-
-typedef struct {
-  GPtrArray *emojis;
-  char **matcher_strings;
-  char *message;
-  char *format;
-  rofi_int_matcher **group_matchers;
-  rofi_int_matcher **subgroup_matchers;
-} EmojiModePrivateData;
-
-const char *DEFAULT_FORMAT = "{emoji} <span weight='bold'>{name}</span>"
-                             "[ <span size='small'>({keywords})</span>]";
-
-// Execute the clipboard adapter with the "copy" action so the selected emoji
-// is copied to the users' clipboard.
-//
-// Returns TRUE on success, or return FALSE on error after setting the provided
-// error buffer to a user error message.
-int copy_emoji(Emoji *emoji, char **error) {
-  return run_clipboard_adapter("copy", emoji, error);
-}
-
-char **generate_matcher_strings(GPtrArray *list) {
-  char **strings = g_new(char *, list->len + 1);
-  for (int i = 0; i < list->len; ++i) {
-    Emoji *emoji = g_ptr_array_index(list, i);
-
-    strings[i] =
-        format_emoji(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
-  }
-  strings[list->len] = NULL;
-  return strings;
-}
 
 /*
  * Try to find the location of the emoji file by looking at command line
@@ -68,14 +39,12 @@ FindDataFileResult find_emoji_file(char **path) {
   }
 }
 
-static void get_emoji(Mode *sw) {
-  EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
+static void get_emoji(EmojiModePrivateData *pd) {
   char *path;
 
   FindDataFileResult result = find_emoji_file(&path);
   if (result == SUCCESS) {
     pd->emojis = read_emojis_from_file(path);
-    pd->matcher_strings = generate_matcher_strings(pd->emojis);
   } else {
     if (result == CANNOT_DETERMINE_PATH) {
       pd->message = g_strdup(
@@ -85,7 +54,6 @@ static void get_emoji(Mode *sw) {
           "Failed to load emoji file: <tt>%s</tt> is not a file", path);
     }
     pd->emojis = NULL;
-    pd->matcher_strings = NULL;
   }
 }
 
@@ -101,12 +69,17 @@ static int emoji_mode_init(Mode *sw) {
     EmojiModePrivateData *pd = g_malloc0(sizeof(*pd));
 
     pd->emojis = NULL;
-    pd->matcher_strings = NULL;
+    pd->selected_emoji = NULL;
     pd->message = NULL;
-    pd->format = NULL;
 
+    // Search
+    pd->search_matcher_strings = NULL;
+    pd->format = NULL;
     pd->group_matchers = NULL;
     pd->subgroup_matchers = NULL;
+
+    // Menu
+    pd->menu_matcher_strings = NULL;
 
     if (find_arg("-emoji-format")) {
       char *format;
@@ -117,8 +90,14 @@ static int emoji_mode_init(Mode *sw) {
       }
     }
 
+    get_emoji(pd);
+    if (pd->emojis == NULL) {
+      return FALSE;
+    }
+
+    emoji_search_init(pd);
+    emoji_menu_init(pd);
     mode_set_private_data(sw, (void *)pd);
-    get_emoji(sw);
   }
   return TRUE;
 }
@@ -133,7 +112,11 @@ static int emoji_mode_init(Mode *sw) {
 static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
   const EmojiModePrivateData *pd =
       (const EmojiModePrivateData *)mode_get_private_data(sw);
-  return pd->emojis->len;
+  if (pd->selected_emoji == NULL) {
+    return emoji_search_get_num_entries(pd);
+  } else {
+    return emoji_menu_get_num_entries(pd);
+  }
 }
 
 /**
@@ -148,28 +131,35 @@ static unsigned int emoji_mode_get_num_entries(const Mode *sw) {
  */
 static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
                                   unsigned int selected_line) {
-  ModeMode retv = MODE_EXIT;
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
+  Event event = EXIT;
 
   if (mretv & MENU_NEXT) {
-    retv = NEXT_DIALOG;
+    return NEXT_DIALOG;
   } else if (mretv & MENU_PREVIOUS) {
-    retv = PREVIOUS_DIALOG;
+    return PREVIOUS_DIALOG;
   } else if (mretv & MENU_QUICK_SWITCH) {
-    retv = (mretv & MENU_LOWER_MASK);
-  } else if ((mretv & MENU_OK)) {
-    Emoji *emoji = g_ptr_array_index(pd->emojis, selected_line);
-
-    if (copy_emoji(emoji, &(pd->message))) {
-      retv = MODE_EXIT;
-    } else {
-      // Copying failed, reload dialog to show error message in pd->message.
-      retv = RELOAD_DIALOG;
-    }
+    return (mretv & MENU_LOWER_MASK);
   } else if ((mretv & MENU_ENTRY_DELETE) == MENU_ENTRY_DELETE) {
-    retv = RELOAD_DIALOG;
+    return RESET_DIALOG;
+  } else if (mretv & MENU_CANCEL) {
+    event = EXIT;
+  } else if ((mretv & MENU_OK)) {
+    if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
+      event = CUSTOM_ACTION;
+    } else {
+      event = SELECT;
+    }
   }
-  return retv;
+
+  Action action = EXIT_SEARCH;
+  if (pd->selected_emoji == NULL) {
+    action = emoji_search_on_event(pd, event, selected_line);
+  } else {
+    action = emoji_menu_on_event(pd, event, selected_line);
+  }
+
+  return perform_action(pd, action, selected_line);
 }
 
 /**
@@ -181,15 +171,14 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
 static void emoji_mode_destroy(Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
   if (pd != NULL) {
-    // Free all generated matcher strings before freeing the list.
-    for (int i = 0; i < pd->emojis->len; ++i) {
-      g_free(pd->matcher_strings[i]);
-    }
+    emoji_search_destroy(pd);
+    emoji_menu_destroy(pd);
+
+    pd->selected_emoji = NULL; // Freed via the emojis list
     g_ptr_array_free(pd->emojis, TRUE);
+
     g_free(pd->message);
     g_free(pd->format);
-    helper_tokenize_free(pd->group_matchers);
-    helper_tokenize_free(pd->subgroup_matchers);
     g_free(pd);
     mode_set_private_data(sw, NULL);
   }
@@ -205,7 +194,16 @@ static void emoji_mode_destroy(Mode *sw) {
  */
 static char *emoji_get_message(const Mode *sw) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
-  return g_strdup(pd->message);
+
+  if (pd->message != NULL) {
+    return g_strdup(pd->message);
+  }
+
+  if (pd->selected_emoji == NULL) {
+    return emoji_search_get_message(pd);
+  } else {
+    return emoji_menu_get_message(pd);
+  }
 }
 
 /**
@@ -221,9 +219,10 @@ static char *emoji_get_message(const Mode *sw) {
  * @returns allocated new string and state when get_entry is TRUE otherwise just
  * the state.
  */
-static char *get_display_value(const Mode *sw, unsigned int selected_line,
-                               G_GNUC_UNUSED int *state,
-                               G_GNUC_UNUSED GList **attr_list, int get_entry) {
+static char *emoji_get_display_value(const Mode *sw, unsigned int selected_line,
+                                     G_GNUC_UNUSED int *state,
+                                     G_GNUC_UNUSED GList **attr_list,
+                                     int get_entry) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
 
   // Rofi is not yet exporting these constants in their headers
@@ -236,18 +235,10 @@ static char *get_display_value(const Mode *sw, unsigned int selected_line,
     return NULL;
   }
 
-  Emoji *emoji = g_ptr_array_index(pd->emojis, selected_line);
-
-  if (emoji == NULL) {
-    return g_strdup("n/a");
+  if (pd->selected_emoji == NULL) {
+    return emoji_search_get_display_value(pd, selected_line);
   } else {
-    const char *format = pd->format;
-
-    if (format == NULL || format[0] == '\0') {
-      format = DEFAULT_FORMAT;
-    }
-
-    return format_emoji(emoji, format);
+    return emoji_menu_get_display_value(pd, selected_line);
   }
 }
 
@@ -264,56 +255,20 @@ static int emoji_token_match(const Mode *sw, rofi_int_matcher **tokens,
                              unsigned int index) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
 
-  if (index >= pd->emojis->len) {
-    return FALSE;
+  if (pd->selected_emoji == NULL) {
+    return emoji_search_token_match(pd, tokens, index);
+  } else {
+    return emoji_menu_token_match(pd, tokens, index);
   }
-
-  if (pd->group_matchers != NULL || pd->subgroup_matchers != NULL) {
-    Emoji *emoji = g_ptr_array_index(pd->emojis, index);
-
-    if (pd->group_matchers != NULL) {
-      if (!helper_token_match(pd->group_matchers, emoji->group)) {
-        return FALSE;
-      }
-    }
-
-    if (pd->subgroup_matchers != NULL) {
-      if (!helper_token_match(pd->subgroup_matchers, emoji->subgroup)) {
-        return FALSE;
-      }
-    }
-  }
-
-  return index < pd->emojis->len &&
-         helper_token_match(tokens, pd->matcher_strings[index]);
 }
 
 static char *emoji_preprocess_input(Mode *sw, const char *input) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
-  char *query;
-  char *group_query;
-  char *subgroup_query;
-
-  if (pd->group_matchers != NULL) {
-    helper_tokenize_free(pd->group_matchers);
-    pd->group_matchers = NULL;
+  if (pd->selected_emoji == NULL) {
+    return emoji_search_preprocess_input(pd, input);
+  } else {
+    return emoji_menu_preprocess_input(pd, input);
   }
-  if (pd->subgroup_matchers != NULL) {
-    helper_tokenize_free(pd->subgroup_matchers);
-    pd->subgroup_matchers = NULL;
-  }
-
-  tokenize_search(input, &query, &group_query, &subgroup_query);
-
-  if (group_query != NULL) {
-    pd->group_matchers = helper_tokenize(group_query, FALSE);
-  }
-
-  if (subgroup_query != NULL) {
-    pd->subgroup_matchers = helper_tokenize(subgroup_query, FALSE);
-  }
-
-  return query;
 }
 
 Mode mode = {
@@ -325,7 +280,7 @@ Mode mode = {
     ._result = emoji_mode_result,
     ._destroy = emoji_mode_destroy,
     ._token_match = emoji_token_match,
-    ._get_display_value = get_display_value,
+    ._get_display_value = emoji_get_display_value,
     ._get_message = emoji_get_message,
     ._get_completion = NULL,
     ._preprocess_input = emoji_preprocess_input,
