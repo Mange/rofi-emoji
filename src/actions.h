@@ -8,6 +8,7 @@
 typedef enum {
   NOOP,
   COPY_EMOJI,
+  COPY_CODEPOINT,
   OPEN_MENU,
   EXIT_MENU,
   EXIT_SEARCH,

@@ -189,10 +189,18 @@ START_TEST(test_tokenize_search_repeated_filters) {
 }
 END_TEST
 
+START_TEST(test_codepoint) {
+  ck_assert_str_eq(codepoint("A"), "U+0041");
+  ck_assert_str_eq(codepoint("🙃"), "U+1F643");
+  ck_assert_str_eq(codepoint("🇸🇪"), "U+1F1F8 U+1F1EA");
+}
+END_TEST
+
 Suite *utils_suite(void) {
   Suite *s;
   TCase *tc_core;
   TCase *tc_tokenize;
+  TCase *tc_codepoint;
 
   s = suite_create("Utils");
 
@@ -209,8 +217,12 @@ Suite *utils_suite(void) {
   tcase_add_test(tc_tokenize, test_tokenize_search_only_group);
   tcase_add_test(tc_tokenize, test_tokenize_search_repeated_filters);
 
+  tc_codepoint = tcase_create("Codepoint");
+  tcase_add_test(tc_codepoint, test_codepoint);
+
   suite_add_tcase(s, tc_core);
   suite_add_tcase(s, tc_tokenize);
+  suite_add_tcase(s, tc_codepoint);
 
   return s;
 }

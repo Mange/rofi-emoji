@@ -72,7 +72,7 @@ int find_clipboard_adapter(char **adapter, char **error) {
   return FALSE;
 }
 
-int run_clipboard_adapter(char *action, const Emoji *emoji, char **error) {
+int run_clipboard_adapter(char *action, const char *text, char **error) {
   char *adapter;
   int ca_result = find_clipboard_adapter(&adapter, error);
   if (ca_result != TRUE) {
@@ -84,7 +84,7 @@ int run_clipboard_adapter(char *action, const Emoji *emoji, char **error) {
 
   g_spawn_sync(
       /* working_directory */ NULL,
-      /* argv */ (char *[]){adapter, action, emoji->bytes, NULL},
+      /* argv */ (char *[]){adapter, action, (char *)text, NULL},
       /* envp */ NULL,
       // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus
       // code.
@@ -256,4 +256,30 @@ void tokenize_search(const char *input, char **query, char **group_query,
   }
 
   g_strstrip(*query);
+}
+
+char *codepoint(char *bytes) {
+  int added = 0;
+  GString *str = g_string_new("");
+
+  while (bytes[0] != '\0') {
+    if (added > 0) {
+      g_string_append(str, " ");
+    }
+
+    gunichar c = g_utf8_get_char_validated(bytes, -1);
+    if (c == -1) { // Not valid
+      g_string_append(str, "U+INVALID");
+    } else if (c == -2) { // Incomplete
+      g_string_append(str, "U+INCOMPLETE");
+    } else {
+      char *formatted = g_strdup_printf("U+%04X", c);
+      g_string_append(str, formatted);
+      g_free(formatted);
+    }
+    added++;
+    bytes = g_utf8_find_next_char(bytes, NULL);
+  }
+
+  return g_string_free(str, FALSE);
 }

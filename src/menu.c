@@ -3,10 +3,11 @@
 #include "formatter.h"
 #include "menu.h"
 
-const int NUM_MENU_ITEMS = 2;
+const int NUM_MENU_ITEMS = 3;
 typedef enum {
   EMOJI_MENU_BACK = 0,
   EMOJI_MENU_COPY = 1,
+  EMOJI_MENU_CODEPOINT = 2,
 } MenuItem;
 
 char *emoji_menu_get_display_value(const EmojiModePrivateData *pd,
@@ -15,7 +16,9 @@ char *emoji_menu_get_display_value(const EmojiModePrivateData *pd,
   case EMOJI_MENU_BACK:
     return g_strdup("1. Back to search");
   case EMOJI_MENU_COPY:
-    return format_emoji(pd->selected_emoji, "2. Copy {emoji} to clipboard");
+    return format_emoji(pd->selected_emoji, "2. Copy {emoji}");
+  case EMOJI_MENU_CODEPOINT:
+    return format_emoji(pd->selected_emoji, "3. Copy <tt>{codepoint}</tt>");
   default:
     return g_strdup("<invalid menu entry>");
   }
@@ -80,6 +83,8 @@ Action emoji_menu_select_item(EmojiModePrivateData *pd, unsigned int line) {
     return EXIT_MENU;
   case EMOJI_MENU_COPY:
     return COPY_EMOJI;
+  case EMOJI_MENU_CODEPOINT:
+    return COPY_CODEPOINT;
   default:
     g_assert_not_reached();
   }

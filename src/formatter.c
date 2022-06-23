@@ -28,6 +28,8 @@ char *format_emoji(const Emoji *emoji, const char *format) {
   char *keywords_entry = new_format_entry(keywords_str);
   g_free(keywords_str);
 
+  char *cp = codepoint(emoji->bytes);
+
   // clang-format off
   char *formatted = helper_string_replace_if_exists(
     (char *) format, // LOL C. "trust me bro"
@@ -36,6 +38,7 @@ char *format_emoji(const Emoji *emoji, const char *format) {
     "{group}", group,
     "{subgroup}", subgroup,
     "{keywords}", keywords_entry,
+    "{codepoint}", cp,
     NULL
   );
   // clang-format on
@@ -45,6 +48,7 @@ char *format_emoji(const Emoji *emoji, const char *format) {
   g_free(group);
   g_free(subgroup);
   g_free(keywords_entry);
+  g_free(cp);
 
   return formatted;
 }

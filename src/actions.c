@@ -14,18 +14,31 @@ Emoji *get_selected_emoji(EmojiModePrivateData *pd, unsigned int line) {
   return g_ptr_array_index(pd->emojis, line);
 }
 
-ModeMode copy_emoji(EmojiModePrivateData *pd, unsigned int line) {
-  Emoji *emoji = get_selected_emoji(pd, line);
-  if (emoji == NULL) {
-    return MODE_EXIT;
-  }
-
-  if (run_clipboard_adapter("copy", emoji, &(pd->message))) {
+ModeMode copy_text(EmojiModePrivateData *pd, const char *text) {
+  if (run_clipboard_adapter("copy", text, &(pd->message))) {
     return MODE_EXIT;
   } else {
     // Copying failed, reload dialog to show error message in pd->message.
     return RELOAD_DIALOG;
   }
+}
+
+ModeMode copy_emoji(EmojiModePrivateData *pd, unsigned int line) {
+  const Emoji *emoji = get_selected_emoji(pd, line);
+  if (emoji == NULL) {
+    return MODE_EXIT;
+  }
+
+  return copy_text(pd, emoji->bytes);
+}
+
+ModeMode copy_codepoint(EmojiModePrivateData *pd, unsigned int line) {
+  const Emoji *emoji = get_selected_emoji(pd, line);
+  if (emoji == NULL) {
+    return MODE_EXIT;
+  }
+
+  return copy_text(pd, codepoint(emoji->bytes));
 }
 
 ModeMode open_menu(EmojiModePrivateData *pd, unsigned int line) {
@@ -61,6 +74,8 @@ ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
     return RELOAD_DIALOG;
   case COPY_EMOJI:
     return copy_emoji(pd, line);
+  case COPY_CODEPOINT:
+    return copy_codepoint(pd, line);
   case OPEN_MENU:
     return open_menu(pd, line);
   case EXIT_MENU:
