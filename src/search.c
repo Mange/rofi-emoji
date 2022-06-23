@@ -120,8 +120,7 @@ char **generate_matcher_strings(GPtrArray *list) {
   for (int i = 0; i < list->len; ++i) {
     Emoji *emoji = g_ptr_array_index(list, i);
 
-    strings[i] =
-        format_emoji(emoji, "{emoji} {name} {keywords} {group} {subgroup}");
+    strings[i] = format_emoji(emoji, "{emoji} {name} {keywords}");
   }
   strings[list->len] = NULL;
   return strings;
