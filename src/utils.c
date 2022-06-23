@@ -79,25 +79,45 @@ int run_clipboard_adapter(char *action, const char *text, char **error) {
     return FALSE;
   }
 
+  GPid child_pid;
+  gint child_stdin;
+  int exit_status = -1;
   g_autoptr(GError) child_error = NULL;
-  int exit_status;
 
-  g_spawn_sync(
+  g_spawn_async_with_pipes(
       /* working_directory */ NULL,
-      /* argv */ (char *[]){adapter, action, (char *)text, NULL},
+      /* argv */ (char *[]){adapter, action, NULL},
       /* envp */ NULL,
+
       // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus
       // code.
-      /* flags */ (G_SPAWN_DEFAULT),
+      /* flags */ (G_SPAWN_DEFAULT | G_SPAWN_DO_NOT_REAP_CHILD),
+
       /* child_setup */ NULL,
       /* user_data */ NULL,
+      /* child_pid */ &child_pid,
+      /* standard_input */ &child_stdin,
       /* standard_output */ NULL,
       /* standard_error */ NULL,
-      /* exit_status */ &exit_status,
       /* error */ &child_error);
 
   if (child_error == NULL) {
-    g_spawn_check_wait_status(exit_status, &child_error);
+    FILE *stdin;
+    if (!(stdin = fdopen(child_stdin, "ab"))) {
+      *error = g_strdup_printf("Failed to open child's stdin");
+      return FALSE;
+    }
+    fprintf(stdin, "%s", text);
+    fclose(stdin);
+
+    pid_t res = waitpid(child_pid, &exit_status, WUNTRACED);
+    if (res < 0) {
+      *error = g_strdup_printf(
+          "Could not wait for child process (PID %i) to close", child_pid);
+      g_spawn_close_pid(child_pid);
+      return FALSE;
+    }
+    g_spawn_close_pid(child_pid);
   }
 
   if (child_error != NULL) {
