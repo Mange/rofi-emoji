@@ -57,6 +57,15 @@ ModeMode copy_codepoint(EmojiModePrivateData *pd, unsigned int line) {
   return text_adapter_action("copy", pd, codepoint(emoji->bytes));
 }
 
+ModeMode copy_name(EmojiModePrivateData *pd, unsigned int line) {
+  const Emoji *emoji = get_selected_emoji(pd, line);
+  if (emoji == NULL) {
+    return MODE_EXIT;
+  }
+
+  return text_adapter_action("copy", pd, emoji->name);
+}
+
 ModeMode open_menu(EmojiModePrivateData *pd, unsigned int line) {
   if (line >= pd->emojis->len) {
     return MODE_EXIT;
@@ -92,6 +101,8 @@ ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
     return insert_emoji(pd, line);
   case COPY_EMOJI:
     return copy_emoji(pd, line);
+  case COPY_NAME:
+    return copy_name(pd, line);
   case COPY_CODEPOINT:
     return copy_codepoint(pd, line);
   case OPEN_MENU:
