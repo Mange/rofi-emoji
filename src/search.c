@@ -101,14 +101,16 @@ int emoji_search_token_match(const EmojiModePrivateData *pd,
 
 Action emoji_search_on_event(EmojiModePrivateData *pd, const Event event,
                              unsigned int line) {
-  if (event != EXIT && line >= pd->emojis->len) {
-    return NOOP;
-  }
-
   switch (event) {
   case SELECT_DEFAULT:
+    if (line >= pd->emojis->len) {
+      return NOOP;
+    }
     return pd->search_default_action;
   case SELECT_ALTERNATIVE:
+    if (line >= pd->emojis->len) {
+      return NOOP;
+    }
     return OPEN_MENU;
   case SELECT_CUSTOM_1:
     return COPY_EMOJI;
