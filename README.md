@@ -13,15 +13,47 @@ emoji for "Unicorn face" being selected](screenshot.png)
 Run rofi like:
 
 ```bash
-rofi -show emoji -modi emoji
+rofi -modi emoji -show emoji
 ```
 
-| Key              | Effect                  |
-|------------------|-------------------------|
-| <kbd>Enter</kbd> | Copy emoji to clipboard |
+### Keybindings
 
-**Note:** If you change your keybind for `kb-accept`, then your change will
-also apply here.
+| Keymap            | Default key in Rofi               | Effect                                         |
+|-------------------|-----------------------------------|------------------------------------------------|
+| `kb-accept-entry` | <kbd>Enter</kbd>                  | Select emoji (see **Mode** below).             |
+| `kb-custom-1`     | <kbd>Alt</kbd>+<kbd>1</kbd>       | Copy emoji.                                    |
+| `kb-accept-alt`   | <kbd>Shift</kbd>+<kbd>Enter</kbd> | Opens a menu for the Emoji with other actions. |
+
+> **Tip:** Change your `kb-custom-1` to <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+>
+> ```
+> rofi -modi emoji -show emoji -kb-custom-1 Ctrl+C
+> ```
+
+### Search patterns
+
+You can type parts of the Emojis name or keywords to find it. If you want to
+limit your search to particular groups or subgroups you can use prefix
+searches:
+
+* `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
+* `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
+  `Animals & Nature » Animal-mammal`.
+
+You can only use one instance inside of each prefix. The latest one wins:
+
+* `@foo bar @baz` - Searches for `bar` on all emojis in a group including `baz`.
+
+If you want to know which group and subgroup a particular emoji has, you can
+open the menu on it. See **Menu** below.
+
+### Menu
+
+By pressing the `kb-accept-alt` binding on an emoji the plugin will open a menu
+for that particular emoji. The menu will provide you with alternative actions,
+like copying the Emojis name or codepoint. Metadata about the emoji will also
+be shown inside the menu in case you want to know what group it belongs to in
+order to find it faster in the future.
 
 ### Command line arguments
 
@@ -32,8 +64,30 @@ The plugin adds the following command line arguments to `rofi`:
 
 | Name            | Description                                              |
 |-----------------|----------------------------------------------------------|
+| `-emoji-mode`   | Default action when selecting an emoji in the search.    |
 | `-emoji-file`   | Path to custom emoji database file.                      |
 | `-emoji-format` | Custom formatting string for rendering lines. See below. |
+
+#### Mode
+
+The plugin supports three modes:
+
+1. `insert` (default) - Copies the selected emoji, and then tries to insert it
+   directly in the focused window.
+2. `copy` - Only copies the selected emoji to your clipboard without trying to
+   insert anything.
+3. `menu` - Open the menu. Useful if you prefer to always get options when just
+   pressing <kbd>Enter</kbd>.
+
+Inserting is not very reliable under X11 since different toolkits respond
+differently to the X11 events that are emitted when trying to write unicode
+characters. If inserting does not work for you, you can still paste the emoji
+as before.
+
+In case you have any issues with insertion mode, you can override the default
+mode using a `-emoji-mode copy` command line argument to Rofi.
+
+The `copy` mode is also always available on `kb-custom-1`.
 
 #### Format
 
@@ -80,14 +134,19 @@ size.
 In order to actually use rofi-emoji an "adapter" need to be installed, as
 appropriate for your environment.
 
-| Dependency   | Environment             |
-|--------------|-------------------------|
-| xsel         | X11                     |
-| xclip        | X11                     |
-| copyq        | X11                     |
-| wl-clipboard | Wayland                 |
+| Kind   | Dependency   | Environment             |
+|--------|--------------|-------------------------|
+| Copy   | xsel         | X11                     |
+| Copy   | xclip        | X11                     |
+| Copy   | copyq        | X11                     |
+| Copy   | wl-clipboard | Wayland                 |
+|        |              |                         |
+| Insert | xdotool      | X11                     |
+| Insert | wtype        | Wayland                 |
 
-You only need to install one of them for your environment.
+You only need to install the ones required for your environment and usage. Note
+that in order to use `insert` mode you must also install a copy adapter as
+copying is also happening on `insert` as a fallback.
 
 ## Installation
 

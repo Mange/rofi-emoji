@@ -1,5 +1,6 @@
 #include <rofi/helper.h>
 
+#include "actions.h"
 #include "formatter.h"
 #include "search.h"
 #include "utils.h"
@@ -106,9 +107,11 @@ Action emoji_search_on_event(EmojiModePrivateData *pd, const Event event,
 
   switch (event) {
   case SELECT_DEFAULT:
-    return INSERT_EMOJI;
+    return pd->search_default_action;
   case SELECT_ALTERNATIVE:
     return OPEN_MENU;
+  case SELECT_CUSTOM_1:
+    return COPY_EMOJI;
   case EXIT:
     return EXIT_SEARCH;
   default:

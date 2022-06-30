@@ -3,8 +3,6 @@
 
 #include <rofi/helper.h>
 
-#include "plugin.h"
-
 typedef enum {
   NOOP,
   INSERT_EMOJI,
@@ -14,6 +12,8 @@ typedef enum {
   EXIT_MENU,
   EXIT_SEARCH,
 } Action;
+
+#include "plugin.h"
 
 ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
                         unsigned int line);

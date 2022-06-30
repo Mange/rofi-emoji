@@ -73,6 +73,7 @@ static int emoji_mode_init(Mode *sw) {
     pd->message = NULL;
 
     // Search
+    pd->search_default_action = INSERT_EMOJI;
     pd->search_matcher_strings = NULL;
     pd->format = NULL;
     pd->group_matchers = NULL;
@@ -87,6 +88,22 @@ static int emoji_mode_init(Mode *sw) {
         // We want ownership of this data and not rely on a reference to global
         // data.
         pd->format = g_strdup(format);
+      }
+    }
+
+    if (find_arg("-emoji-mode")) {
+      char *format;
+      if (find_arg_str("-emoji-mode", &format)) {
+        if (strcmp(format, "insert") == 0) {
+          pd->search_default_action = INSERT_EMOJI;
+        } else if (strcmp(format, "copy") == 0) {
+          pd->search_default_action = COPY_EMOJI;
+        } else if (strcmp(format, "menu") == 0) {
+          pd->search_default_action = OPEN_MENU;
+        } else {
+          g_critical("Invalid emoji-mode: %s. Falling back to insert.", format);
+          pd->search_default_action = INSERT_EMOJI;
+        }
       }
     }
 
@@ -144,6 +161,12 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
     return RESET_DIALOG;
   } else if (mretv & MENU_CANCEL) {
     event = EXIT;
+  } else if (mretv & MENU_CUSTOM_COMMAND) {
+    if ((mretv & MENU_LOWER_MASK) == 0) {
+      event = SELECT_CUSTOM_1;
+    } else {
+      return RELOAD_DIALOG;
+    }
   } else if ((mretv & MENU_OK)) {
     if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
       event = SELECT_ALTERNATIVE;
