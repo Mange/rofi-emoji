@@ -70,7 +70,7 @@ The plugin adds the following command line arguments to `rofi`:
 
 #### Mode
 
-The plugin supports three modes:
+The plugin supports four modes:
 
 1. `insert` (default) - Copies the selected emoji, and then tries to insert it
    directly in the focused window.
@@ -78,6 +78,10 @@ The plugin supports three modes:
    insert anything.
 3. `menu` - Open the menu. Useful if you prefer to always get options when just
    pressing <kbd>Enter</kbd>.
+4. `stdout` - Write selected emoji to standard output. This is useful if you
+   want to use the emoji selector inside of a shell pipeline, like Rofi's
+   `-dmenu` mode. It will use the `-format` argument to customize the outputted
+   text, just like `-dmenu`.
 
 Inserting is not very reliable under X11 since different toolkits respond
 differently to the X11 events that are emitted when trying to write unicode

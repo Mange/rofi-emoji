@@ -48,6 +48,20 @@ ModeMode insert_emoji(EmojiModePrivateData *pd, unsigned int line) {
   return MODE_EXIT;
 }
 
+ModeMode output_emoji(EmojiModePrivateData *pd, unsigned int line) {
+  const Emoji *emoji = get_selected_emoji(pd, line);
+  if (emoji == NULL) {
+    return MODE_EXIT;
+  }
+
+  // Reuse Rofi's dmenu format settings and semantics.
+  char *format = "s";
+  find_arg_str("-format", &format);
+  rofi_output_formatted_line(format, emoji->bytes, line, "");
+
+  return MODE_EXIT;
+}
+
 ModeMode copy_codepoint(EmojiModePrivateData *pd, unsigned int line) {
   const Emoji *emoji = get_selected_emoji(pd, line);
   if (emoji == NULL) {
@@ -101,6 +115,8 @@ ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
     return insert_emoji(pd, line);
   case COPY_EMOJI:
     return copy_emoji(pd, line);
+  case OUTPUT_EMOJI:
+    return output_emoji(pd, line);
   case COPY_NAME:
     return copy_name(pd, line);
   case COPY_CODEPOINT:

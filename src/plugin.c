@@ -100,6 +100,8 @@ static int emoji_mode_init(Mode *sw) {
           pd->search_default_action = COPY_EMOJI;
         } else if (strcmp(format, "menu") == 0) {
           pd->search_default_action = OPEN_MENU;
+        } else if (strcmp(format, "stdout") == 0) {
+          pd->search_default_action = OUTPUT_EMOJI;
         } else {
           g_critical("Invalid emoji-mode: %s. Falling back to insert.", format);
           pd->search_default_action = INSERT_EMOJI;
