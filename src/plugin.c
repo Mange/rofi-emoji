@@ -146,9 +146,9 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
     event = EXIT;
   } else if ((mretv & MENU_OK)) {
     if ((mretv & MENU_CUSTOM_ACTION) == MENU_CUSTOM_ACTION) {
-      event = CUSTOM_ACTION;
+      event = SELECT_ALTERNATIVE;
     } else {
-      event = SELECT;
+      event = SELECT_DEFAULT;
     }
   }
 
@@ -225,10 +225,7 @@ static char *emoji_get_display_value(const Mode *sw, unsigned int selected_line,
                                      int get_entry) {
   EmojiModePrivateData *pd = (EmojiModePrivateData *)mode_get_private_data(sw);
 
-  // Rofi is not yet exporting these constants in their headers
-  // *state |= MARKUP;
-  // https://github.com/DaveDavenport/rofi/blob/79adae77d72be3de96d1c4e6d53b6bae4cb7e00e/include/widgets/textbox.h#L104
-  *state |= 8;
+  *state |= STATE_MARKUP;
 
   // Only return the string if requested, otherwise only set state.
   if (!get_entry) {

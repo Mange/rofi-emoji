@@ -7,6 +7,7 @@
 
 typedef enum {
   NOOP,
+  INSERT_EMOJI,
   COPY_EMOJI,
   COPY_CODEPOINT,
   OPEN_MENU,

@@ -24,8 +24,8 @@ typedef struct {
 } EmojiModePrivateData;
 
 typedef enum {
-  SELECT,
-  CUSTOM_ACTION,
+  SELECT_DEFAULT,
+  SELECT_ALTERNATIVE,
   EXIT,
 } Event;
 

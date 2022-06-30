@@ -93,7 +93,7 @@ Action emoji_menu_select_item(EmojiModePrivateData *pd, unsigned int line) {
 Action emoji_menu_on_event(EmojiModePrivateData *pd, const Event event,
                            unsigned int line) {
   switch (event) {
-  case SELECT:
+  case SELECT_DEFAULT:
     return emoji_menu_select_item(pd, line);
   case EXIT:
     return EXIT_MENU;

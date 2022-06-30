@@ -72,7 +72,7 @@ int find_clipboard_adapter(char **adapter, char **error) {
   return FALSE;
 }
 
-int run_clipboard_adapter(char *action, const char *text, char **error) {
+int run_clipboard_adapter(const char *action, const char *text, char **error) {
   char *adapter;
   int ca_result = find_clipboard_adapter(&adapter, error);
   if (ca_result != TRUE) {
@@ -86,7 +86,7 @@ int run_clipboard_adapter(char *action, const char *text, char **error) {
 
   g_spawn_async_with_pipes(
       /* working_directory */ NULL,
-      /* argv */ (char *[]){adapter, action, NULL},
+      /* argv */ (char *[]){adapter, (char *)action, NULL},
       /* envp */ NULL,
 
       // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus

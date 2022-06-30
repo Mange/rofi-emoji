@@ -59,8 +59,12 @@ main() {
     # Also copy when doing insert to give users a fallback in case automatic
     # insertion didn't work. Inserting unicode characters in X windows is a
     # very erratic process that works only in some UI toolkits.
-    perform_copy
-    perform_insert
+    #
+    # Since stdin should be sent to two different processes, read it first and
+    # replicate manually.
+    input="$(cat -)"
+    printf "%s" "$input" | perform_copy
+    printf "%s" "$input" | perform_insert
     ;;
   *)
     usage >&2

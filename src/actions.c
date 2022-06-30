@@ -14,8 +14,9 @@ Emoji *get_selected_emoji(EmojiModePrivateData *pd, unsigned int line) {
   return g_ptr_array_index(pd->emojis, line);
 }
 
-ModeMode copy_text(EmojiModePrivateData *pd, const char *text) {
-  if (run_clipboard_adapter("copy", text, &(pd->message))) {
+ModeMode text_adapter_action(const char *action, EmojiModePrivateData *pd,
+                             const char *text) {
+  if (run_clipboard_adapter(action, text, &(pd->message))) {
     return MODE_EXIT;
   } else {
     // Copying failed, reload dialog to show error message in pd->message.
@@ -29,7 +30,22 @@ ModeMode copy_emoji(EmojiModePrivateData *pd, unsigned int line) {
     return MODE_EXIT;
   }
 
-  return copy_text(pd, emoji->bytes);
+  return text_adapter_action("copy", pd, emoji->bytes);
+}
+
+ModeMode insert_emoji(EmojiModePrivateData *pd, unsigned int line) {
+  const Emoji *emoji = get_selected_emoji(pd, line);
+  if (emoji == NULL) {
+    return MODE_EXIT;
+  }
+
+  // Must hide window and give back focus to whatever app should receive the
+  // insert action.
+  rofi_view_hide();
+  text_adapter_action("insert", pd, emoji->bytes);
+
+  // View is hidden and we cannot get it back again. We must exit at this point.
+  return MODE_EXIT;
 }
 
 ModeMode copy_codepoint(EmojiModePrivateData *pd, unsigned int line) {
@@ -38,7 +54,7 @@ ModeMode copy_codepoint(EmojiModePrivateData *pd, unsigned int line) {
     return MODE_EXIT;
   }
 
-  return copy_text(pd, codepoint(emoji->bytes));
+  return text_adapter_action("copy", pd, codepoint(emoji->bytes));
 }
 
 ModeMode open_menu(EmojiModePrivateData *pd, unsigned int line) {
@@ -72,6 +88,8 @@ ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
   switch (action) {
   case NOOP:
     return RELOAD_DIALOG;
+  case INSERT_EMOJI:
+    return insert_emoji(pd, line);
   case COPY_EMOJI:
     return copy_emoji(pd, line);
   case COPY_CODEPOINT:
