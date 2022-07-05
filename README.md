@@ -235,6 +235,7 @@ from source** steps above.
 # In project root
 automake -a
 cd build
+../configure --with-check
 make check VERBOSE=true
 ```
 
