@@ -6,8 +6,9 @@
 #include <unistd.h>
 
 #include "loader.h"
+#include "utils.h"
 
-FindDataFileResult find_data_file(char *basename, char **path) {
+FindDataFileResult find_data_file(const char *basename, char **path) {
   const char *const *data_dirs = g_get_system_data_dirs();
   if (data_dirs == NULL) {
     return CANNOT_DETERMINE_PATH;
@@ -71,32 +72,52 @@ int find_clipboard_adapter(char **adapter, char **error) {
   return FALSE;
 }
 
-int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
+int run_clipboard_adapter(const char *action, const char *text, char **error) {
   char *adapter;
   int ca_result = find_clipboard_adapter(&adapter, error);
   if (ca_result != TRUE) {
     return FALSE;
   }
 
+  GPid child_pid;
+  gint child_stdin;
+  int exit_status = -1;
   g_autoptr(GError) child_error = NULL;
-  int exit_status;
 
-  g_spawn_sync(
+  g_spawn_async_with_pipes(
       /* working_directory */ NULL,
-      /* argv */ (char *[]){adapter, action, emoji->bytes, NULL},
+      /* argv */ (char *[]){adapter, (char *)action, NULL},
       /* envp */ NULL,
+
       // G_SPAWN_DO_NOT_REAP_CHILD allows us to call waitpid and get the staus
       // code.
-      /* flags */ (G_SPAWN_DEFAULT),
+      /* flags */ (G_SPAWN_DEFAULT | G_SPAWN_DO_NOT_REAP_CHILD),
+
       /* child_setup */ NULL,
       /* user_data */ NULL,
+      /* child_pid */ &child_pid,
+      /* standard_input */ &child_stdin,
       /* standard_output */ NULL,
       /* standard_error */ NULL,
-      /* exit_status */ &exit_status,
       /* error */ &child_error);
 
   if (child_error == NULL) {
-    g_spawn_check_wait_status(exit_status, &child_error);
+    FILE *stdin;
+    if (!(stdin = fdopen(child_stdin, "ab"))) {
+      *error = g_strdup_printf("Failed to open child's stdin");
+      return FALSE;
+    }
+    fprintf(stdin, "%s", text);
+    fclose(stdin);
+
+    pid_t res = waitpid(child_pid, &exit_status, WUNTRACED);
+    if (res < 0) {
+      *error = g_strdup_printf(
+          "Could not wait for child process (PID %i) to close", child_pid);
+      g_spawn_close_pid(child_pid);
+      return FALSE;
+    }
+    g_spawn_close_pid(child_pid);
   }
 
   if (child_error != NULL) {
@@ -112,4 +133,173 @@ int run_clipboard_adapter(char *action, Emoji *emoji, char **error) {
     *error = g_strdup_printf("clipboard-adapter exited with %d", exit_status);
     return FALSE;
   }
+}
+
+/*
+ * Strips each string inside of a null-terminated list of char*.
+ *
+ * The list is modified in-place.
+ */
+void strip_strv(char **in) {
+  if (in == NULL) {
+    return;
+  }
+
+  int i = 0;
+  char *str = in[i];
+
+  while (str != NULL) {
+    g_strstrip(str);
+    str = in[++i];
+  }
+}
+
+/*
+ * Makes the first ASCII character in the string uppercase by modifying it
+ * in-place.
+ *
+ * Does nothing on NULL values or empty strings.
+ */
+void capitalize(char *text) {
+  if (text == NULL || *text == '\0') {
+    return;
+  }
+
+  text[0] = g_ascii_toupper(text[0]);
+}
+
+void append(char **dest, const char *addition) {
+  char *tmp;
+  if (*dest == NULL) {
+    tmp = g_strdup(addition);
+  } else {
+    tmp = g_strconcat(*dest, addition, NULL);
+  }
+  g_free(*dest);
+  *dest = tmp;
+}
+
+void appendn(char **dest, const char *addition, int n) {
+  char *tmp;
+  if (*dest == NULL) {
+    tmp = g_strndup(addition, n);
+  } else {
+    char *copy = g_strndup(addition, n);
+    tmp = g_strconcat(*dest, copy, NULL);
+    g_free(copy);
+  }
+  g_free(*dest);
+  *dest = tmp;
+}
+
+void replace(char **dest, const char *replacement) {
+  g_free(*dest);
+  if (replacement != NULL) {
+    *dest = g_strdup(replacement);
+  } else {
+    *dest = NULL;
+  }
+}
+
+void replacen(char **dest, const char *replacement, int n) {
+  g_free(*dest);
+  if (replacement != NULL) {
+    *dest = g_strndup(replacement, n);
+  } else {
+    *dest = NULL;
+  }
+}
+
+void tokenize_search(const char *input, char **query, char **group_query,
+                     char **subgroup_query) {
+  *query = NULL;
+  *group_query = NULL;
+  *subgroup_query = NULL;
+
+  const char *current = input;
+
+  while (*current != '\0') {
+    char *index = strchr(current, ' ');
+
+    if (index == NULL) {
+      // No more spaces, so rest of input is a single word.
+      switch (current[0]) {
+      case '@':
+        if (strlen(current) > 1) {
+          replace(group_query, current + 1);
+        } else {
+          replace(group_query, NULL);
+        }
+        break;
+      case '#':
+        if (strlen(current) > 1) {
+          replace(subgroup_query, current + 1);
+        } else {
+          replace(subgroup_query, NULL);
+        }
+        break;
+      default:
+        append(query, current);
+      }
+      break;
+    }
+
+    int length = (index - current);
+
+    switch (current[0]) {
+    case '@':
+      if (length > 1) {
+        replacen(group_query, current + 1, length - 1);
+      } else {
+        replace(group_query, NULL);
+      }
+      break;
+    case '#':
+      if (length > 1) {
+        replacen(subgroup_query, current + 1, length - 1);
+      } else {
+        replace(subgroup_query, NULL);
+      }
+      break;
+    default:
+      // Add one extra length for the space
+      appendn(query, current, length + 1);
+    }
+
+    // Skip ahead to after the space
+    current = index + 1;
+  }
+
+  // Query must always be something
+  if (*query == NULL) {
+    *query = g_strdup("");
+  }
+
+  g_strstrip(*query);
+}
+
+char *codepoint(char *bytes) {
+  int added = 0;
+  GString *str = g_string_new("");
+
+  while (bytes[0] != '\0') {
+    if (added > 0) {
+      g_string_append(str, " ");
+    }
+
+    gunichar c = g_utf8_get_char_validated(bytes, -1);
+    if (c == -1) { // Not valid
+      g_string_append(str, "U+INVALID");
+    } else if (c == -2) { // Incomplete
+      g_string_append(str, "U+INCOMPLETE");
+    } else {
+      char *formatted = g_strdup_printf("U+%04X", c);
+      g_string_append(str, formatted);
+      g_free(formatted);
+    }
+    added++;
+    bytes = g_utf8_find_next_char(bytes, NULL);
+  }
+
+  return g_string_free(str, FALSE);
 }

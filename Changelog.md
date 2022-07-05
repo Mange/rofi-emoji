@@ -1,6 +1,35 @@
-# `master` branch
+# Unreleased
 
-* Nothing yet
+## Breaking changes
+
+* Adapter script has a new call signature. Read the `--help` output to see it.
+
+## Added
+
+* Insert mode (that tries) to insert emoji directly into foreground app.
+* Menu mode with options on what to do with the emoji.
+* Stdout mode that emits the selected emoji to stdout.
+* Group and subgroup filter for searches using `@groupname` or `#subgroup`.
+* The `-emoji-mode` option to set default selection mode.
+* Quick shortcut to open menu, no matter what the default mode is.
+* Quick shortcut to copy emoji, no matter what the default mode is.
+* The `-emoji-file` option to read custom emoji databases.
+* Documentation about the format of the Emoji database.
+* The `-emoji-format` option to set custom rendering of lines.
+
+## Changed
+
+* New default selection mode: Insert.
+* The default rendering of Emoji entries.
+  * No longer showing group and subgroup.
+  * No empty parenthesis for entries without keywords.
+  * Names are capitalized.
+
+  **Before:**
+  > ☺️ **smiling face** () [Smileys & Emotion / face-affection]
+
+  **After:**
+  > ☺️ **Smiling face**
 
 # Version 2.3.0 (2022-02-02)
 
@@ -10,7 +39,7 @@
   (M-Mabrouk1)](https://github.com/M-Mabrouk1))
 * Emoji 14.0 emojis and latest keywords from CLDR
 
-## Changes
+## Changed
 
 * Allow clipboard-adapter.sh script to be replaced and run by a different
   interpreter than `/bin/sh`.
@@ -21,7 +50,7 @@
 
 * Full `LICENSE` file, detailing the MIT license mentioned in the README.
 
-## Changes
+## Changed
 
 * Updated [`emoji-data`][emoji-data] to version 2.3, adding more emojis and
   better keywords.
@@ -44,7 +73,7 @@ Change clipboard adapter to use arguments instead of STDIN, which should
 prevent some issues from occurring regarding subprocesses getting stuck in a
 blocking read.
 
-## Changes
+## Changed
 
 * Clipboard adapter script now accepts emoji bytes as an argument instead of
   standard input.
@@ -72,7 +101,7 @@ went missing in version 1.1.
 * Emoji names are present again (from 1.0), together with all the keywords from
   1.1.
 
-## Changes
+## Changed
 
 * Updated to [`emoji-data`][emoji-data] version 2.0.
 

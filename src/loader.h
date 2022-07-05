@@ -1,10 +1,13 @@
 #ifndef LOADER_H
 #define LOADER_H
 
-#include "emoji_list.h"
-#include "utils.h"
+#include <glib.h>
 
-FindDataFileResult find_emoji_file(char **path);
-EmojiList *read_emojis_from_file(char *path);
+#include "emoji.h"
+
+GPtrArray *read_emojis_from_file(const char *path);
+Emoji *parse_emoji_from_line(const char *line);
+
+const char *scan_until(const char until, const char *input, char **result);
 
 #endif // LOADER_H
