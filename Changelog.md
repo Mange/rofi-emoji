@@ -1,16 +1,26 @@
-# `master` branch
+# Unreleased
+
+## Breaking changes
+
+* Adapter script has a new call signature. Read the `--help` output to see it.
 
 ## Added
 
+* Insert mode (that tries) to insert emoji directly into foreground app.
+* Menu mode with options on what to do with the emoji.
+* Stdout mode that emits the selected emoji to stdout.
+* Group and subgroup filter for searches using `@groupname` or `#subgroup`.
+* The `-emoji-mode` option to set default selection mode.
+* Quick shortcut to open menu, no matter what the default mode is.
+* Quick shortcut to copy emoji, no matter what the default mode is.
 * The `-emoji-file` option to read custom emoji databases.
-* The `-emoji-format` option to set custom rendering of lines.
 * Documentation about the format of the Emoji database.
-* Documentation about format capabilities.
+* The `-emoji-format` option to set custom rendering of lines.
 
 ## Changed
 
+* New default selection mode: Insert.
 * The default rendering of Emoji entries.
-
   * No longer showing group and subgroup.
   * No empty parenthesis for entries without keywords.
   * Names are capitalized.
