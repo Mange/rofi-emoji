@@ -1,12 +1,14 @@
 # Rofi emoji plugin
 
 An emoji selector plugin for Rofi that copies the selected emoji to the
-clipboard.
+clipboard, among other things.
 
-## Screenshot
+## Screenshots
 
 ![Screenshot showing a Rofi window searching for emojis containing "uni", the
-emoji for "Unicorn face" being selected](screenshot.png)
+emoji for "Unicorn face" being selected](screenshots/1_main.png)
+
+![Screenshot of the Emoji menu for the Unicorn emoji](screenshots/2_menu.png)
 
 ## Usage
 
@@ -21,10 +23,10 @@ rofi -modi emoji -show emoji
 | Keymap            | Default key in Rofi               | Effect                                         |
 |-------------------|-----------------------------------|------------------------------------------------|
 | `kb-accept-entry` | <kbd>Enter</kbd>                  | Select emoji (see **Mode** below).             |
-| `kb-custom-1`     | <kbd>Alt</kbd>+<kbd>1</kbd>       | Copy emoji.                                    |
 | `kb-accept-alt`   | <kbd>Shift</kbd>+<kbd>Enter</kbd> | Opens a menu for the Emoji with other actions. |
+| `kb-custom-1`     | <kbd>Alt</kbd>+<kbd>1</kbd>       | Copy emoji.                                    |
 
-> **Tip:** Change your `kb-custom-1` to <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+> 💡 **Tip:** Change your `kb-custom-1` to <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 >
 > ```
 > rofi -modi emoji -show emoji -kb-custom-1 Ctrl+C
@@ -37,8 +39,13 @@ limit your search to particular groups or subgroups you can use prefix
 searches:
 
 * `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
+
+  ![](screenshots/group_search.png)
 * `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
   `Animals & Nature » Animal-mammal`.
+
+  ![](screenshots/subgroup_search_1.png)
+  ![](screenshots/subgroup_search_2.png)
 
 You can only use one instance inside of each prefix. The latest one wins:
 
@@ -46,6 +53,7 @@ You can only use one instance inside of each prefix. The latest one wins:
 
 If you want to know which group and subgroup a particular emoji has, you can
 open the menu on it. See **Menu** below.
+
 
 ### Menu
 
@@ -95,19 +103,19 @@ The `copy` mode is also always available on `kb-custom-1`.
 
 #### Format
 
-The formatting string should be valid Pango markup with placeholders for the
-Emoji values found in the database.
+The formatting string should be valid [Pango markup][pango] with placeholders
+for the Emoji values found in the database.
 
 The logic of this follows the same rule as Rofi's `-ssh-command` option,
 quickly summarized as such:
 
-* Items between curly braces (`{}`) are replaced with Pango-escaped text.
+* Items between curly braces (`{}`) are replaced with [Pango][pango]-escaped text.
 * Wrapping an item inside brackets (`[]`) will hide the entire section if the
   value is empty.
 
 The default format string is this:
 
-```
+```html
 {emoji} <span weight='bold'>{name}</span>[ <span size='small'>({keywords})</span>]
 ```
 
@@ -122,16 +130,25 @@ size.
 | `group`     | Smileys & Emotion                                                       |
 | `subgroup`  | Face-smiling                                                            |
 | `keywords`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
+| `codepoint` | U+1F923                                                                 |
 
-| | |
-|---|---|
+|             |                                                                                                  |
+|-------------|--------------------------------------------------------------------------------------------------|
 | ⚠️ **NOTE:** | Rofi does not have a way to escape brackets, so you may not use literal `[]` inside your output. |
+
+##### Example
+
+![](screenshots/custom_format.png)
+
+```bash
+rofi -modi emoji -show emoji -emoji-format '{emoji}'
+```
 
 ## Dependencies
 
 | Dependency | Version      |
 |------------|--------------|
-| rofi       | 1.4 (or git) |
+| rofi       | 1.7 (or git) |
 
 ### Optional dependencies
 
@@ -149,8 +166,8 @@ appropriate for your environment.
 | Insert | wtype        | Wayland                 |
 
 You only need to install the ones required for your environment and usage. Note
-that in order to use `insert` mode you must also install a copy adapter as
-copying is also happening on `insert` as a fallback.
+that in order to use `insert` mode you must also install a `copy` adapter as
+`insert` also copies as a fallback.
 
 ## Installation
 
@@ -275,3 +292,4 @@ The list is copied from the [Mange/emoji-data][emoji-data] repo.
 This plugin is released under the MIT license. See `LICENSE` for more details.
 
 [emoji-data]: https://github.com/Mange/emoji-data
+[pango]: https://docs.gtk.org/Pango/pango_markup.html
