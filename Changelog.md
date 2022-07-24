@@ -1,3 +1,10 @@
+# Version 3.0.1 (2022-07-24)
+
+## Fixed
+
+* Make project build without `pkgconf` dependency; only `pkg-config` binary
+  and other listed dependencies should be required.
+
 # Version 3.0.0 (2022-07-05)
 
 ## Breaking changes
