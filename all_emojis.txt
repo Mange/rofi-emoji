@@ -4700,3 +4700,6 @@
 🏴󠁧󠁢󠁥󠁮󠁧󠁿	Flags	subdivision-flag	flag: England	flag
 🏴󠁧󠁢󠁳󠁣󠁴󠁿	Flags	subdivision-flag	flag: Scotland	flag
 🏴󠁧󠁢󠁷󠁬󠁳󠁿	Flags	subdivision-flag	flag: Wales	flag
+¯\_(ツ)_/¯󠁧󠁢󠁷󠁬󠁳󠁿	Text	subdivision-text	text: Shrug	text
+(╯°□°)╯︵ ┻━┻󠁧󠁢󠁷󠁬󠁳󠁿	Text	subdivision-text	text: Table flip	text
+( ͡° ͜ʖ ͡°)󠁧󠁢󠁷󠁬󠁳󠁿	Text	subdivision-text	text: Lenny face	text
