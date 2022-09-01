@@ -5,8 +5,8 @@
 
 const int NUM_MENU_ITEMS = 5;
 typedef enum {
-  EMOJI_MENU_INSERT = 0,
-  EMOJI_MENU_COPY = 1,
+  EMOJI_MENU_PRIMARY = 0,
+  EMOJI_MENU_SECONDARY = 1,
   EMOJI_MENU_NAME = 2,
   EMOJI_MENU_CODEPOINT = 3,
   EMOJI_MENU_BACK = 4,
@@ -17,10 +17,14 @@ char *emoji_menu_get_display_value(const EmojiModePrivateData *pd,
   switch (line) {
   case EMOJI_MENU_BACK:
     return g_strdup("⬅ Back to search");
-  case EMOJI_MENU_INSERT:
-    return format_emoji(pd->selected_emoji, "Insert emoji ({emoji})");
-  case EMOJI_MENU_COPY:
-    return format_emoji(pd->selected_emoji, "Copy emoji ({emoji})");
+  case EMOJI_MENU_PRIMARY:
+    return format_emoji(pd->selected_emoji,
+                        pd->search_default_action == INSERT_EMOJI ?
+                          "Copy emoji ({emoji})" : "Insert emoji ({emoji})");
+  case EMOJI_MENU_SECONDARY:
+    return format_emoji(pd->selected_emoji,
+                        pd->search_default_action == INSERT_EMOJI ?
+                          "Insert emoji ({emoji})" : "Copy emoji ({emoji})");
   case EMOJI_MENU_NAME:
     return format_emoji(pd->selected_emoji, "Copy name (<tt>{name}</tt>)");
   case EMOJI_MENU_CODEPOINT:
@@ -88,10 +92,10 @@ Action emoji_menu_select_item(EmojiModePrivateData *pd, unsigned int line) {
   switch (line) {
   case EMOJI_MENU_BACK:
     return EXIT_MENU;
-  case EMOJI_MENU_INSERT:
-    return INSERT_EMOJI;
-  case EMOJI_MENU_COPY:
-    return COPY_EMOJI;
+  case EMOJI_MENU_PRIMARY:
+    return pd->search_default_action == INSERT_EMOJI ? COPY_EMOJI : INSERT_EMOJI;
+  case EMOJI_MENU_SECONDARY:
+    return pd->search_default_action == INSERT_EMOJI ? INSERT_EMOJI : COPY_EMOJI;
   case EMOJI_MENU_NAME:
     return COPY_NAME;
   case EMOJI_MENU_CODEPOINT:
