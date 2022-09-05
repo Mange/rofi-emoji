@@ -1,3 +1,10 @@
+# `master` branch
+
+## Added
+
+* Insert option to menu mode. ([Alexander Schulz
+  (hlfbt)](https://github.com/hlfbt))
+
 # Version 3.0.1 (2022-07-24)
 
 ## Fixed
