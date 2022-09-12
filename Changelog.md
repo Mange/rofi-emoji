@@ -1,8 +1,11 @@
-# `master` branch
+# Version 3.1.0 (2022-09-12)
 
 ## Added
 
-* Insert option to menu mode. ([Alexander Schulz
+* Added menu option to insert emoji no matter which mode is currently active.
+  ([Alexander Schulz (hlfbt)](https://github.com/hlfbt))
+* Change default menu item between Copy and Insert based on the current mode
+  such that the default is the opposite of the mode. ([Alexander Schulz
   (hlfbt)](https://github.com/hlfbt))
 
 # Version 3.0.1 (2022-07-24)
