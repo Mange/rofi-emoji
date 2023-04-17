@@ -1,3 +1,10 @@
+# Version 3.2.0 (2023-04-17)
+
+## Changed
+
+* Updated [`emoji-data`][emoji-data] to [version 2.5][emoji-data-2.5], adding
+  more emojis (Emoji 15) and better keywords.
+
 # Version 3.1.0 (2022-09-12)
 
 ## Added
@@ -149,8 +156,9 @@ some new features.
 * Country flags are no longer searchable via country names. See
   [Mange/emoji-data][emoji-data].
 
-[emoji-data]: https://github.com/Mange/emoji-data
-
 # Version 1.0 (2018-05-11)
 
 Initial release with Unicode 11.0.
+
+[emoji-data]: https://github.com/Mange/emoji-data
+[emoji-data-2.5]: https://github.com/Mange/emoji-data/releases/tag/v2.5

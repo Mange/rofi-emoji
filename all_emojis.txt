@@ -29,7 +29,7 @@
 😝	Smileys & Emotion	face-tongue	squinting face with tongue	eye | face | horrible | squinting face with tongue | taste | tongue
 🤑	Smileys & Emotion	face-tongue	money-mouth face	face | money | money-mouth face | mouth
 🤗	Smileys & Emotion	face-hand	smiling face with open hands	face | hug | hugging | open hands | smiling face | smiling face with open hands
-🤭	Smileys & Emotion	face-hand	face with hand over mouth	face with hand over mouth | whoops | oops | embarrassed
+🤭	Smileys & Emotion	face-hand	face with hand over mouth	face with hand over mouth | whoops | embarrassed | oops
 🫢	Smileys & Emotion	face-hand	face with open eyes and hand over mouth	amazement | awe | disbelief | embarrass | face with open eyes and hand over mouth | scared | surprise
 🫣	Smileys & Emotion	face-hand	face with peeking eye	captivated | face with peeking eye | peep | stare
 🤫	Smileys & Emotion	face-hand	shushing face	quiet | shush | shushing face | shooshing face
@@ -40,7 +40,7 @@
 😐	Smileys & Emotion	face-neutral-skeptical	neutral face	deadpan | face | meh | neutral
 😑	Smileys & Emotion	face-neutral-skeptical	expressionless face	expressionless | face | inexpressive | meh | unexpressive
 😶	Smileys & Emotion	face-neutral-skeptical	face without mouth	face | face without mouth | mouth | quiet | silent
-🫥	Smileys & Emotion	face-neutral-skeptical	dotted line face	depressed | disappear | dotted line face | hide | introvert | invisible
+🫥	Smileys & Emotion	face-neutral-skeptical	dotted line face	depressed | disappear | dotted line face | hide | introvert | invisible | dotted-line face
 😶‍🌫️	Smileys & Emotion	face-neutral-skeptical	face in clouds	
 😶‍🌫	Smileys & Emotion	face-neutral-skeptical	face in clouds	absentminded | face in clouds | face in the fog | head in clouds | absent-minded
 😏	Smileys & Emotion	face-neutral-skeptical	smirking face	face | smirk | smirking face
@@ -48,7 +48,8 @@
 🙄	Smileys & Emotion	face-neutral-skeptical	face with rolling eyes	eyeroll | eyes | face | face with rolling eyes | rolling
 😬	Smileys & Emotion	face-neutral-skeptical	grimacing face	face | grimace | grimacing face
 😮‍💨	Smileys & Emotion	face-neutral-skeptical	face exhaling	exhale | face exhaling | gasp | groan | relief | whisper | whistle
-🤥	Smileys & Emotion	face-neutral-skeptical	lying face	face | lie | lying face | pinocchio
+🤥	Smileys & Emotion	face-neutral-skeptical	lying face	face | lie | lying face | pinocchio | Pinocchio
+🫨	Smileys & Emotion	face-neutral-skeptical	shaking face	earthquake | face | shaking | shock | vibrate
 😌	Smileys & Emotion	face-sleepy	relieved face	face | relieved
 😔	Smileys & Emotion	face-sleepy	pensive face	dejected | face | pensive
 😪	Smileys & Emotion	face-sleepy	sleepy face	face | good night | sleep | sleepy face
@@ -66,7 +67,7 @@
 😵	Smileys & Emotion	face-unwell	face with crossed-out eyes	crossed-out eyes | dead | face | face with crossed-out eyes | knocked out
 😵‍💫	Smileys & Emotion	face-unwell	face with spiral eyes	dizzy | face with spiral eyes | hypnotized | spiral | trouble | whoa | hypnotised
 🤯	Smileys & Emotion	face-unwell	exploding head	exploding head | mind blown | shocked
-🤠	Smileys & Emotion	face-hat	cowboy hat face	cowboy | cowgirl | face | hat
+🤠	Smileys & Emotion	face-hat	cowboy hat face	cowboy | cowgirl | face | hat | cowboy-hat face
 🥳	Smileys & Emotion	face-hat	partying face	celebration | hat | horn | party | partying face
 🥸	Smileys & Emotion	face-hat	disguised face	disguise | disguised face | face | glasses | incognito | nose
 😎	Smileys & Emotion	face-glasses	smiling face with sunglasses	bright | cool | face | smiling face with sunglasses | sun | sunglasses
@@ -113,13 +114,13 @@
 👹	Smileys & Emotion	face-costume	ogre	creature | face | fairy tale | fantasy | monster | ogre
 👺	Smileys & Emotion	face-costume	goblin	creature | face | fairy tale | fantasy | goblin | monster
 👻	Smileys & Emotion	face-costume	ghost	creature | face | fairy tale | fantasy | ghost | monster
-👽	Smileys & Emotion	face-costume	alien	alien | creature | extraterrestrial | face | fantasy | ufo
-👾	Smileys & Emotion	face-costume	alien monster	alien | creature | extraterrestrial | face | monster | ufo
+👽	Smileys & Emotion	face-costume	alien	alien | creature | extraterrestrial | face | fantasy | ufo | ET | UFO
+👾	Smileys & Emotion	face-costume	alien monster	alien | creature | extraterrestrial | face | monster | ufo | ET | UFO
 🤖	Smileys & Emotion	face-costume	robot	face | monster | robot
 😺	Smileys & Emotion	cat-face	grinning cat	cat | face | grinning | mouth | open | smile
 😸	Smileys & Emotion	cat-face	grinning cat with smiling eyes	cat | eye | face | grin | grinning cat with smiling eyes | smile
 😹	Smileys & Emotion	cat-face	cat with tears of joy	cat | cat with tears of joy | face | joy | tear
-😻	Smileys & Emotion	cat-face	smiling cat with heart-eyes	cat | eye | face | heart | love | smile | smiling cat with heart-eyes | smiling cat face with heart eyes | smiling cat face with heart-eyes
+😻	Smileys & Emotion	cat-face	smiling cat with heart-eyes	cat | eye | face | heart | love | smile | smiling cat with heart-eyes | smiling cat face with heart eyes
 😼	Smileys & Emotion	cat-face	cat with wry smile	cat | cat with wry smile | face | ironic | smile | wry
 😽	Smileys & Emotion	cat-face	kissing cat	cat | eye | face | kiss | kissing cat
 🙀	Smileys & Emotion	cat-face	weary cat	cat | face | oh | surprised | weary
@@ -128,34 +129,37 @@
 🙈	Smileys & Emotion	monkey-face	see-no-evil monkey	evil | face | forbidden | monkey | see | see-no-evil monkey
 🙉	Smileys & Emotion	monkey-face	hear-no-evil monkey	evil | face | forbidden | hear | hear-no-evil monkey | monkey
 🙊	Smileys & Emotion	monkey-face	speak-no-evil monkey	evil | face | forbidden | monkey | speak | speak-no-evil monkey
+💌	Smileys & Emotion	heart	love letter	heart | letter | love | mail
+💘	Smileys & Emotion	heart	heart with arrow	arrow | cupid | heart with arrow
+💝	Smileys & Emotion	heart	heart with ribbon	heart with ribbon | ribbon | valentine
+💖	Smileys & Emotion	heart	sparkling heart	excited | sparkle | sparkling heart
+💗	Smileys & Emotion	heart	growing heart	excited | growing | growing heart | nervous | pulse
+💓	Smileys & Emotion	heart	beating heart	beating | beating heart | heartbeat | pulsating
+💞	Smileys & Emotion	heart	revolving hearts	revolving | revolving hearts
+💕	Smileys & Emotion	heart	two hearts	love | two hearts
+💟	Smileys & Emotion	heart	heart decoration	heart | heart decoration
+❣️	Smileys & Emotion	heart	heart exclamation	
+❣	Smileys & Emotion	heart	heart exclamation	exclamation | heart exclamation | mark | punctuation
+💔	Smileys & Emotion	heart	broken heart	break | broken | broken heart
+❤️‍🔥	Smileys & Emotion	heart	heart on fire	
+❤‍🔥	Smileys & Emotion	heart	heart on fire	burn | heart | heart on fire | love | lust | sacred heart
+❤️‍🩹	Smileys & Emotion	heart	mending heart	
+❤‍🩹	Smileys & Emotion	heart	mending heart	healthier | improving | mending | mending heart | recovering | recuperating | well
+❤️	Smileys & Emotion	heart	red heart	
+❤	Smileys & Emotion	heart	red heart	heart | red heart
+🩷	Smileys & Emotion	heart	pink heart	cute | heart | like | love | pink
+🧡	Smileys & Emotion	heart	orange heart	orange | orange heart
+💛	Smileys & Emotion	heart	yellow heart	yellow | yellow heart
+💚	Smileys & Emotion	heart	green heart	green | green heart
+💙	Smileys & Emotion	heart	blue heart	blue | blue heart
+🩵	Smileys & Emotion	heart	light blue heart	cyan | heart | light blue | light blue heart | teal
+💜	Smileys & Emotion	heart	purple heart	purple | purple heart
+🤎	Smileys & Emotion	heart	brown heart	brown | heart
+🖤	Smileys & Emotion	heart	black heart	black | black heart | evil | wicked
+🩶	Smileys & Emotion	heart	grey heart	gray | grey heart | heart | silver | slate | grey
+🤍	Smileys & Emotion	heart	white heart	heart | white
 💋	Smileys & Emotion	emotion	kiss mark	kiss | kiss mark | lips
-💌	Smileys & Emotion	emotion	love letter	heart | letter | love | mail
-💘	Smileys & Emotion	emotion	heart with arrow	arrow | cupid | heart with arrow
-💝	Smileys & Emotion	emotion	heart with ribbon	heart with ribbon | ribbon | valentine
-💖	Smileys & Emotion	emotion	sparkling heart	excited | sparkle | sparkling heart
-💗	Smileys & Emotion	emotion	growing heart	excited | growing | growing heart | nervous | pulse
-💓	Smileys & Emotion	emotion	beating heart	beating | beating heart | heartbeat | pulsating
-💞	Smileys & Emotion	emotion	revolving hearts	revolving | revolving hearts
-💕	Smileys & Emotion	emotion	two hearts	love | two hearts
-💟	Smileys & Emotion	emotion	heart decoration	heart | heart decoration
-❣️	Smileys & Emotion	emotion	heart exclamation	
-❣	Smileys & Emotion	emotion	heart exclamation	exclamation | heart exclamation | mark | punctuation
-💔	Smileys & Emotion	emotion	broken heart	break | broken | broken heart
-❤️‍🔥	Smileys & Emotion	emotion	heart on fire	
-❤‍🔥	Smileys & Emotion	emotion	heart on fire	burn | heart | heart on fire | love | lust | sacred heart
-❤️‍🩹	Smileys & Emotion	emotion	mending heart	
-❤‍🩹	Smileys & Emotion	emotion	mending heart	healthier | improving | mending | mending heart | recovering | recuperating | well
-❤️	Smileys & Emotion	emotion	red heart	
-❤	Smileys & Emotion	emotion	red heart	heart | red heart
-🧡	Smileys & Emotion	emotion	orange heart	orange | orange heart
-💛	Smileys & Emotion	emotion	yellow heart	yellow | yellow heart
-💚	Smileys & Emotion	emotion	green heart	green | green heart
-💙	Smileys & Emotion	emotion	blue heart	blue | blue heart
-💜	Smileys & Emotion	emotion	purple heart	purple | purple heart
-🤎	Smileys & Emotion	emotion	brown heart	brown | heart
-🖤	Smileys & Emotion	emotion	black heart	black | black heart | evil | wicked
-🤍	Smileys & Emotion	emotion	white heart	heart | white
-💯	Smileys & Emotion	emotion	hundred points	100 | full | hundred | hundred points | score
+💯	Smileys & Emotion	emotion	hundred points	100 | full | hundred | hundred points | score | hundred percent | one hundred
 💢	Smileys & Emotion	emotion	anger symbol	anger symbol | angry | comic | mad
 💥	Smileys & Emotion	emotion	collision	boom | collision | comic
 💫	Smileys & Emotion	emotion	dizzy	comic | dizzy | star
@@ -163,8 +167,7 @@
 💨	Smileys & Emotion	emotion	dashing away	comic | dash | dashing away | running
 🕳️	Smileys & Emotion	emotion	hole	
 🕳	Smileys & Emotion	emotion	hole	hole
-💣	Smileys & Emotion	emotion	bomb	bomb | comic
-💬	Smileys & Emotion	emotion	speech balloon	balloon | bubble | comic | dialog | speech
+💬	Smileys & Emotion	emotion	speech balloon	balloon | bubble | comic | dialog | speech | dialogue
 👁️‍🗨️	Smileys & Emotion	emotion	eye in speech bubble	
 👁‍🗨️	Smileys & Emotion	emotion	eye in speech bubble	
 👁️‍🗨	Smileys & Emotion	emotion	eye in speech bubble	
@@ -200,12 +203,12 @@
 ✋🏽	People & Body	hand-fingers-open	raised hand: medium skin tone	hand | high 5 | high five | medium skin tone | raised hand
 ✋🏾	People & Body	hand-fingers-open	raised hand: medium-dark skin tone	hand | high 5 | high five | medium-dark skin tone | raised hand
 ✋🏿	People & Body	hand-fingers-open	raised hand: dark skin tone	dark skin tone | hand | high 5 | high five | raised hand
-🖖	People & Body	hand-fingers-open	vulcan salute	finger | hand | spock | vulcan | vulcan salute | Vulcan salute
-🖖🏻	People & Body	hand-fingers-open	vulcan salute: light skin tone	finger | hand | light skin tone | spock | vulcan | vulcan salute | Vulcan salute
-🖖🏼	People & Body	hand-fingers-open	vulcan salute: medium-light skin tone	finger | hand | medium-light skin tone | spock | vulcan | vulcan salute | Vulcan salute
-🖖🏽	People & Body	hand-fingers-open	vulcan salute: medium skin tone	finger | hand | medium skin tone | spock | vulcan | vulcan salute | Vulcan salute
-🖖🏾	People & Body	hand-fingers-open	vulcan salute: medium-dark skin tone	finger | hand | medium-dark skin tone | spock | vulcan | vulcan salute | Vulcan salute
-🖖🏿	People & Body	hand-fingers-open	vulcan salute: dark skin tone	dark skin tone | finger | hand | spock | vulcan | vulcan salute | Vulcan salute
+🖖	People & Body	hand-fingers-open	vulcan salute	finger | hand | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
+🖖🏻	People & Body	hand-fingers-open	vulcan salute: light skin tone	finger | hand | light skin tone | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
+🖖🏼	People & Body	hand-fingers-open	vulcan salute: medium-light skin tone	finger | hand | medium-light skin tone | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
+🖖🏽	People & Body	hand-fingers-open	vulcan salute: medium skin tone	finger | hand | medium skin tone | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
+🖖🏾	People & Body	hand-fingers-open	vulcan salute: medium-dark skin tone	finger | hand | medium-dark skin tone | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
+🖖🏿	People & Body	hand-fingers-open	vulcan salute: dark skin tone	dark skin tone | finger | hand | spock | vulcan | vulcan salute | Vulcan salute | Spock | Vulcan
 🫱	People & Body	hand-fingers-open	rightwards hand	hand | right | rightward | rightwards hand | rightwards
 🫱🏻	People & Body	hand-fingers-open	rightwards hand: light skin tone	hand | light skin tone | right | rightward | rightwards hand | rightwards
 🫱🏼	People & Body	hand-fingers-open	rightwards hand: medium-light skin tone	hand | medium-light skin tone | right | rightward | rightwards hand | rightwards
@@ -218,18 +221,30 @@
 🫲🏽	People & Body	hand-fingers-open	leftwards hand: medium skin tone	hand | left | leftward | leftwards hand | medium skin tone | leftwards
 🫲🏾	People & Body	hand-fingers-open	leftwards hand: medium-dark skin tone	hand | left | leftward | leftwards hand | medium-dark skin tone | leftwards
 🫲🏿	People & Body	hand-fingers-open	leftwards hand: dark skin tone	dark skin tone | hand | left | leftward | leftwards hand | leftwards
-🫳	People & Body	hand-fingers-open	palm down hand	dismiss | drop | palm down hand | shoo
-🫳🏻	People & Body	hand-fingers-open	palm down hand: light skin tone	dismiss | drop | light skin tone | palm down hand | shoo
-🫳🏼	People & Body	hand-fingers-open	palm down hand: medium-light skin tone	dismiss | drop | medium-light skin tone | palm down hand | shoo
-🫳🏽	People & Body	hand-fingers-open	palm down hand: medium skin tone	dismiss | drop | medium skin tone | palm down hand | shoo
-🫳🏾	People & Body	hand-fingers-open	palm down hand: medium-dark skin tone	dismiss | drop | medium-dark skin tone | palm down hand | shoo
-🫳🏿	People & Body	hand-fingers-open	palm down hand: dark skin tone	dark skin tone | dismiss | drop | palm down hand | shoo
-🫴	People & Body	hand-fingers-open	palm up hand	beckon | catch | come | offer | palm up hand
-🫴🏻	People & Body	hand-fingers-open	palm up hand: light skin tone	beckon | catch | come | light skin tone | offer | palm up hand
-🫴🏼	People & Body	hand-fingers-open	palm up hand: medium-light skin tone	beckon | catch | come | medium-light skin tone | offer | palm up hand
-🫴🏽	People & Body	hand-fingers-open	palm up hand: medium skin tone	beckon | catch | come | medium skin tone | offer | palm up hand
-🫴🏾	People & Body	hand-fingers-open	palm up hand: medium-dark skin tone	beckon | catch | come | medium-dark skin tone | offer | palm up hand
-🫴🏿	People & Body	hand-fingers-open	palm up hand: dark skin tone	beckon | catch | come | dark skin tone | offer | palm up hand
+🫳	People & Body	hand-fingers-open	palm down hand	dismiss | drop | palm down hand | shoo | palm-down hand
+🫳🏻	People & Body	hand-fingers-open	palm down hand: light skin tone	dismiss | drop | light skin tone | palm down hand | shoo | palm-down hand
+🫳🏼	People & Body	hand-fingers-open	palm down hand: medium-light skin tone	dismiss | drop | medium-light skin tone | palm down hand | shoo | palm-down hand
+🫳🏽	People & Body	hand-fingers-open	palm down hand: medium skin tone	dismiss | drop | medium skin tone | palm down hand | shoo | palm-down hand
+🫳🏾	People & Body	hand-fingers-open	palm down hand: medium-dark skin tone	dismiss | drop | medium-dark skin tone | palm down hand | shoo | palm-down hand
+🫳🏿	People & Body	hand-fingers-open	palm down hand: dark skin tone	dark skin tone | dismiss | drop | palm down hand | shoo | palm-down hand
+🫴	People & Body	hand-fingers-open	palm up hand	beckon | catch | come | offer | palm up hand | palm-up hand
+🫴🏻	People & Body	hand-fingers-open	palm up hand: light skin tone	beckon | catch | come | light skin tone | offer | palm up hand | palm-up hand
+🫴🏼	People & Body	hand-fingers-open	palm up hand: medium-light skin tone	beckon | catch | come | medium-light skin tone | offer | palm up hand | palm-up hand
+🫴🏽	People & Body	hand-fingers-open	palm up hand: medium skin tone	beckon | catch | come | medium skin tone | offer | palm up hand | palm-up hand
+🫴🏾	People & Body	hand-fingers-open	palm up hand: medium-dark skin tone	beckon | catch | come | medium-dark skin tone | offer | palm up hand | palm-up hand
+🫴🏿	People & Body	hand-fingers-open	palm up hand: dark skin tone	beckon | catch | come | dark skin tone | offer | palm up hand | palm-up hand
+🫷	People & Body	hand-fingers-open	leftwards pushing hand	high five | leftward | leftwards pushing hand | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫷🏻	People & Body	hand-fingers-open	leftwards pushing hand: light skin tone	high five | leftward | leftwards pushing hand | light skin tone | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫷🏼	People & Body	hand-fingers-open	leftwards pushing hand: medium-light skin tone	high five | leftward | leftwards pushing hand | medium-light skin tone | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫷🏽	People & Body	hand-fingers-open	leftwards pushing hand: medium skin tone	high five | leftward | leftwards pushing hand | medium skin tone | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫷🏾	People & Body	hand-fingers-open	leftwards pushing hand: medium-dark skin tone	high five | leftward | leftwards pushing hand | medium-dark skin tone | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫷🏿	People & Body	hand-fingers-open	leftwards pushing hand: dark skin tone	dark skin tone | high five | leftward | leftwards pushing hand | push | refuse | stop | wait | leftward pushing hand | leftward-pushing hand
+🫸	People & Body	hand-fingers-open	rightwards pushing hand	high five | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
+🫸🏻	People & Body	hand-fingers-open	rightwards pushing hand: light skin tone	high five | light skin tone | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
+🫸🏼	People & Body	hand-fingers-open	rightwards pushing hand: medium-light skin tone	high five | medium-light skin tone | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
+🫸🏽	People & Body	hand-fingers-open	rightwards pushing hand: medium skin tone	high five | medium skin tone | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
+🫸🏾	People & Body	hand-fingers-open	rightwards pushing hand: medium-dark skin tone	high five | medium-dark skin tone | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
+🫸🏿	People & Body	hand-fingers-open	rightwards pushing hand: dark skin tone	dark skin tone | high five | push | refuse | rightward | rightwards pushing hand | stop | wait | rightward pushing hand | rightward-pushing hand
 👌	People & Body	hand-fingers-partial	OK hand	hand | OK | perfect
 👌🏻	People & Body	hand-fingers-partial	OK hand: light skin tone	hand | light skin tone | OK | perfect
 👌🏼	People & Body	hand-fingers-partial	OK hand: medium-light skin tone	hand | medium-light skin tone | OK | perfect
@@ -445,12 +460,12 @@
 🤳🏽	People & Body	hand-prop	selfie: medium skin tone	camera | medium skin tone | phone | selfie
 🤳🏾	People & Body	hand-prop	selfie: medium-dark skin tone	camera | medium-dark skin tone | phone | selfie
 🤳🏿	People & Body	hand-prop	selfie: dark skin tone	camera | dark skin tone | phone | selfie
-💪	People & Body	body-parts	flexed biceps	biceps | comic | flex | flexed biceps | muscle
-💪🏻	People & Body	body-parts	flexed biceps: light skin tone	biceps | comic | flex | flexed biceps | light skin tone | muscle
-💪🏼	People & Body	body-parts	flexed biceps: medium-light skin tone	biceps | comic | flex | flexed biceps | medium-light skin tone | muscle
-💪🏽	People & Body	body-parts	flexed biceps: medium skin tone	biceps | comic | flex | flexed biceps | medium skin tone | muscle
-💪🏾	People & Body	body-parts	flexed biceps: medium-dark skin tone	biceps | comic | flex | flexed biceps | medium-dark skin tone | muscle
-💪🏿	People & Body	body-parts	flexed biceps: dark skin tone	biceps | comic | dark skin tone | flex | flexed biceps | muscle
+💪	People & Body	body-parts	flexed biceps	biceps | comic | flex | flexed biceps | muscle | flexed bicep
+💪🏻	People & Body	body-parts	flexed biceps: light skin tone	biceps | comic | flex | flexed biceps | light skin tone | muscle | flexed bicep
+💪🏼	People & Body	body-parts	flexed biceps: medium-light skin tone	biceps | comic | flex | flexed biceps | medium-light skin tone | muscle | flexed bicep
+💪🏽	People & Body	body-parts	flexed biceps: medium skin tone	biceps | comic | flex | flexed biceps | medium skin tone | muscle | flexed bicep
+💪🏾	People & Body	body-parts	flexed biceps: medium-dark skin tone	biceps | comic | flex | flexed biceps | medium-dark skin tone | muscle | flexed bicep
+💪🏿	People & Body	body-parts	flexed biceps: dark skin tone	biceps | comic | dark skin tone | flex | flexed biceps | muscle | flexed bicep
 🦾	People & Body	body-parts	mechanical arm	accessibility | mechanical arm | prosthetic
 🦿	People & Body	body-parts	mechanical leg	accessibility | mechanical leg | prosthetic
 🦵	People & Body	body-parts	leg	kick | leg | limb
@@ -1310,12 +1325,12 @@
 👩🏽‍🚀	People & Body	person-role	woman astronaut: medium skin tone	astronaut | medium skin tone | rocket | woman
 👩🏾‍🚀	People & Body	person-role	woman astronaut: medium-dark skin tone	astronaut | medium-dark skin tone | rocket | woman
 👩🏿‍🚀	People & Body	person-role	woman astronaut: dark skin tone	astronaut | dark skin tone | rocket | woman
-🧑‍🚒	People & Body	person-role	firefighter	firefighter | firetruck | engine | fire | truck | fire engine | fire truck
-🧑🏻‍🚒	People & Body	person-role	firefighter: light skin tone	firefighter | firetruck | light skin tone | engine | fire | truck | fire engine | fire truck
-🧑🏼‍🚒	People & Body	person-role	firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | engine | fire | truck | fire engine | fire truck
-🧑🏽‍🚒	People & Body	person-role	firefighter: medium skin tone	firefighter | firetruck | medium skin tone | engine | fire | truck | fire engine | fire truck
-🧑🏾‍🚒	People & Body	person-role	firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | engine | fire | truck | fire engine | fire truck
-🧑🏿‍🚒	People & Body	person-role	firefighter: dark skin tone	dark skin tone | firefighter | firetruck | engine | fire | truck | fire engine | fire truck
+🧑‍🚒	People & Body	person-role	firefighter	firefighter | firetruck | fire engine | fire truck | engine | fire | truck
+🧑🏻‍🚒	People & Body	person-role	firefighter: light skin tone	firefighter | firetruck | light skin tone | fire engine | fire truck | engine | fire | truck
+🧑🏼‍🚒	People & Body	person-role	firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | fire engine | fire truck | engine | fire | truck
+🧑🏽‍🚒	People & Body	person-role	firefighter: medium skin tone	firefighter | firetruck | medium skin tone | fire engine | fire truck | engine | fire | truck
+🧑🏾‍🚒	People & Body	person-role	firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | fire engine | fire truck | engine | fire | truck
+🧑🏿‍🚒	People & Body	person-role	firefighter: dark skin tone	dark skin tone | firefighter | firetruck | fire engine | fire truck | engine | fire | truck
 👨‍🚒	People & Body	person-role	man firefighter	firefighter | firetruck | man | fire truck | fireman
 👨🏻‍🚒	People & Body	person-role	man firefighter: light skin tone	firefighter | firetruck | light skin tone | man | fire truck | fireman
 👨🏼‍🚒	People & Body	person-role	man firefighter: medium-light skin tone	firefighter | firetruck | man | medium-light skin tone | fire truck | fireman
@@ -1465,12 +1480,12 @@
 🫅🏽	People & Body	person-role	person with crown: medium skin tone	medium skin tone | monarch | noble | person with crown | regal | royalty
 🫅🏾	People & Body	person-role	person with crown: medium-dark skin tone	medium-dark skin tone | monarch | noble | person with crown | regal | royalty
 🫅🏿	People & Body	person-role	person with crown: dark skin tone	dark skin tone | monarch | noble | person with crown | regal | royalty
-🤴	People & Body	person-role	prince	prince
-🤴🏻	People & Body	person-role	prince: light skin tone	light skin tone | prince
-🤴🏼	People & Body	person-role	prince: medium-light skin tone	medium-light skin tone | prince
-🤴🏽	People & Body	person-role	prince: medium skin tone	medium skin tone | prince
-🤴🏾	People & Body	person-role	prince: medium-dark skin tone	medium-dark skin tone | prince
-🤴🏿	People & Body	person-role	prince: dark skin tone	dark skin tone | prince
+🤴	People & Body	person-role	prince	prince | fairy tale | fantasy
+🤴🏻	People & Body	person-role	prince: light skin tone	light skin tone | prince | fairy tale | fantasy
+🤴🏼	People & Body	person-role	prince: medium-light skin tone	medium-light skin tone | prince | fairy tale | fantasy
+🤴🏽	People & Body	person-role	prince: medium skin tone	medium skin tone | prince | fairy tale | fantasy
+🤴🏾	People & Body	person-role	prince: medium-dark skin tone	medium-dark skin tone | prince | fairy tale | fantasy
+🤴🏿	People & Body	person-role	prince: dark skin tone	dark skin tone | prince | fairy tale | fantasy
 👸	People & Body	person-role	princess	fairy tale | fantasy | princess
 👸🏻	People & Body	person-role	princess: light skin tone	fairy tale | fantasy | light skin tone | princess
 👸🏼	People & Body	person-role	princess: medium-light skin tone	fairy tale | fantasy | medium-light skin tone | princess
@@ -1896,12 +1911,12 @@
 💆🏾‍♀	People & Body	person-activity	woman getting massage: medium-dark skin tone	face | massage | medium-dark skin tone | woman | woman getting massage
 💆🏿‍♀️	People & Body	person-activity	woman getting massage: dark skin tone	
 💆🏿‍♀	People & Body	person-activity	woman getting massage: dark skin tone	dark skin tone | face | massage | woman | woman getting massage
-💇	People & Body	person-activity	person getting haircut	barber | beauty | haircut | parlor | person getting haircut | parlour
-💇🏻	People & Body	person-activity	person getting haircut: light skin tone	barber | beauty | haircut | light skin tone | parlor | person getting haircut | parlour
-💇🏼	People & Body	person-activity	person getting haircut: medium-light skin tone	barber | beauty | haircut | medium-light skin tone | parlor | person getting haircut | parlour
-💇🏽	People & Body	person-activity	person getting haircut: medium skin tone	barber | beauty | haircut | medium skin tone | parlor | person getting haircut | parlour
-💇🏾	People & Body	person-activity	person getting haircut: medium-dark skin tone	barber | beauty | haircut | medium-dark skin tone | parlor | person getting haircut | parlour
-💇🏿	People & Body	person-activity	person getting haircut: dark skin tone	barber | beauty | dark skin tone | haircut | parlor | person getting haircut | parlour
+💇	People & Body	person-activity	person getting haircut	barber | beauty | haircut | parlor | person getting haircut | parlour | salon
+💇🏻	People & Body	person-activity	person getting haircut: light skin tone	barber | beauty | haircut | light skin tone | parlor | person getting haircut | parlour | salon
+💇🏼	People & Body	person-activity	person getting haircut: medium-light skin tone	barber | beauty | haircut | medium-light skin tone | parlor | person getting haircut | parlour | salon
+💇🏽	People & Body	person-activity	person getting haircut: medium skin tone	barber | beauty | haircut | medium skin tone | parlor | person getting haircut | parlour | salon
+💇🏾	People & Body	person-activity	person getting haircut: medium-dark skin tone	barber | beauty | haircut | medium-dark skin tone | parlor | person getting haircut | parlour | salon
+💇🏿	People & Body	person-activity	person getting haircut: dark skin tone	barber | beauty | dark skin tone | haircut | parlor | person getting haircut | parlour | salon
 💇‍♂️	People & Body	person-activity	man getting haircut	
 💇‍♂	People & Body	person-activity	man getting haircut	haircut | man | man getting haircut | hairdresser
 💇🏻‍♂️	People & Body	person-activity	man getting haircut: light skin tone	
@@ -2034,24 +2049,24 @@
 👩🏽‍🦯	People & Body	person-activity	woman with white cane: medium skin tone	accessibility | blind | medium skin tone | woman | woman with white cane | woman with guide cane
 👩🏾‍🦯	People & Body	person-activity	woman with white cane: medium-dark skin tone	accessibility | blind | medium-dark skin tone | woman | woman with white cane | woman with guide cane
 👩🏿‍🦯	People & Body	person-activity	woman with white cane: dark skin tone	accessibility | blind | dark skin tone | woman | woman with white cane | woman with guide cane
-🧑‍🦼	People & Body	person-activity	person in motorized wheelchair	accessibility | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-🧑🏻‍🦼	People & Body	person-activity	person in motorized wheelchair: light skin tone	accessibility | light skin tone | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-🧑🏼‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-🧑🏽‍🦼	People & Body	person-activity	person in motorized wheelchair: medium skin tone	accessibility | medium skin tone | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-🧑🏾‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-🧑🏿‍🦼	People & Body	person-activity	person in motorized wheelchair: dark skin tone	accessibility | dark skin tone | person in motorized wheelchair | wheelchair | person in motorised wheelchair | person in powered wheelchair
-👨‍🦼	People & Body	person-activity	man in motorized wheelchair	accessibility | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👨🏻‍🦼	People & Body	person-activity	man in motorized wheelchair: light skin tone	accessibility | light skin tone | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👨🏼‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-light skin tone	accessibility | man | man in motorized wheelchair | medium-light skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👨🏽‍🦼	People & Body	person-activity	man in motorized wheelchair: medium skin tone	accessibility | man | man in motorized wheelchair | medium skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👨🏾‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-dark skin tone	accessibility | man | man in motorized wheelchair | medium-dark skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👨🏿‍🦼	People & Body	person-activity	man in motorized wheelchair: dark skin tone	accessibility | dark skin tone | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
-👩‍🦼	People & Body	person-activity	woman in motorized wheelchair	accessibility | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
-👩🏻‍🦼	People & Body	person-activity	woman in motorized wheelchair: light skin tone	accessibility | light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
-👩🏼‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
-👩🏽‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium skin tone	accessibility | medium skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
-👩🏾‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
-👩🏿‍🦼	People & Body	person-activity	woman in motorized wheelchair: dark skin tone	accessibility | dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
+🧑‍🦼	People & Body	person-activity	person in motorized wheelchair	accessibility | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+🧑🏻‍🦼	People & Body	person-activity	person in motorized wheelchair: light skin tone	accessibility | light skin tone | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+🧑🏼‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+🧑🏽‍🦼	People & Body	person-activity	person in motorized wheelchair: medium skin tone	accessibility | medium skin tone | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+🧑🏾‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+🧑🏿‍🦼	People & Body	person-activity	person in motorized wheelchair: dark skin tone	accessibility | dark skin tone | person in motorized wheelchair | wheelchair | person in powered wheelchair | person in motorised wheelchair
+👨‍🦼	People & Body	person-activity	man in motorized wheelchair	accessibility | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👨🏻‍🦼	People & Body	person-activity	man in motorized wheelchair: light skin tone	accessibility | light skin tone | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👨🏼‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-light skin tone	accessibility | man | man in motorized wheelchair | medium-light skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👨🏽‍🦼	People & Body	person-activity	man in motorized wheelchair: medium skin tone	accessibility | man | man in motorized wheelchair | medium skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👨🏾‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-dark skin tone	accessibility | man | man in motorized wheelchair | medium-dark skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👨🏿‍🦼	People & Body	person-activity	man in motorized wheelchair: dark skin tone	accessibility | dark skin tone | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
+👩‍🦼	People & Body	person-activity	woman in motorized wheelchair	accessibility | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏻‍🦼	People & Body	person-activity	woman in motorized wheelchair: light skin tone	accessibility | light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏼‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏽‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium skin tone	accessibility | medium skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏾‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏿‍🦼	People & Body	person-activity	woman in motorized wheelchair: dark skin tone	accessibility | dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
 🧑‍🦽	People & Body	person-activity	person in manual wheelchair	accessibility | person in manual wheelchair | wheelchair
 🧑🏻‍🦽	People & Body	person-activity	person in manual wheelchair: light skin tone	accessibility | light skin tone | person in manual wheelchair | wheelchair
 🧑🏼‍🦽	People & Body	person-activity	person in manual wheelchair: medium-light skin tone	accessibility | medium-light skin tone | person in manual wheelchair | wheelchair
@@ -3190,6 +3205,8 @@
 🐅	Animals & Nature	animal-mammal	tiger	tiger
 🐆	Animals & Nature	animal-mammal	leopard	leopard
 🐴	Animals & Nature	animal-mammal	horse face	face | horse
+🫎	Animals & Nature	animal-mammal	moose	animal | antlers | elk | mammal | moose
+🫏	Animals & Nature	animal-mammal	donkey	animal | ass | burro | donkey | mammal | mule | stubborn
 🐎	Animals & Nature	animal-mammal	horse	equestrian | horse | racehorse | racing
 🦄	Animals & Nature	animal-mammal	unicorn	face | unicorn
 🦓	Animals & Nature	animal-mammal	zebra	stripe | zebra
@@ -3211,7 +3228,7 @@
 🦙	Animals & Nature	animal-mammal	llama	alpaca | guanaco | llama | vicuña | wool
 🦒	Animals & Nature	animal-mammal	giraffe	giraffe | spots
 🐘	Animals & Nature	animal-mammal	elephant	elephant
-🦣	Animals & Nature	animal-mammal	mammoth	extinction | large | mammoth | tusk | woolly
+🦣	Animals & Nature	animal-mammal	mammoth	extinction | large | mammoth | tusk | woolly | extinct
 🦏	Animals & Nature	animal-mammal	rhinoceros	rhinoceros | rhino
 🦛	Animals & Nature	animal-mammal	hippopotamus	hippo | hippopotamus
 🐭	Animals & Nature	animal-mammal	mouse face	face | mouse | pet
@@ -3233,7 +3250,7 @@
 🦥	Animals & Nature	animal-mammal	sloth	lazy | sloth | slow
 🦦	Animals & Nature	animal-mammal	otter	fishing | otter | playful
 🦨	Animals & Nature	animal-mammal	skunk	skunk | stink
-🦘	Animals & Nature	animal-mammal	kangaroo	Australia | joey | jump | kangaroo | marsupial
+🦘	Animals & Nature	animal-mammal	kangaroo	joey | jump | kangaroo | marsupial
 🦡	Animals & Nature	animal-mammal	badger	badger | honey badger | pester
 🐾	Animals & Nature	animal-mammal	paw prints	feet | paw | paw prints | print
 🦃	Animals & Nature	animal-bird	turkey	bird | turkey | poultry
@@ -3255,6 +3272,9 @@
 🦩	Animals & Nature	animal-bird	flamingo	flamboyant | flamingo | tropical
 🦚	Animals & Nature	animal-bird	peacock	bird | ostentatious | peacock | peahen | proud
 🦜	Animals & Nature	animal-bird	parrot	bird | parrot | pirate | talk
+🪽	Animals & Nature	animal-bird	wing	angelic | aviation | bird | flying | mythology | wing
+🐦‍⬛	Animals & Nature	animal-bird	black bird	bird | black | crow | raven | rook
+🪿	Animals & Nature	animal-bird	goose	bird | fowl | goose | honk | silly
 🐸	Animals & Nature	animal-amphibian	frog	face | frog
 🐊	Animals & Nature	animal-reptile	crocodile	crocodile
 🐢	Animals & Nature	animal-reptile	turtle	terrapin | tortoise | turtle
@@ -3275,6 +3295,7 @@
 🐙	Animals & Nature	animal-marine	octopus	octopus
 🐚	Animals & Nature	animal-marine	spiral shell	shell | spiral
 🪸	Animals & Nature	animal-marine	coral	coral | ocean | reef
+🪼	Animals & Nature	animal-marine	jellyfish	burn | invertebrate | jelly | jellyfish | marine | ouch | stinger
 🐌	Animals & Nature	animal-bug	snail	snail | mollusc
 🦋	Animals & Nature	animal-bug	butterfly	butterfly | insect | pretty | moth
 🐛	Animals & Nature	animal-bug	bug	bug | insect | caterpillar | worm
@@ -3296,7 +3317,7 @@
 💐	Animals & Nature	plant-flower	bouquet	bouquet | flower
 🌸	Animals & Nature	plant-flower	cherry blossom	blossom | cherry | flower
 💮	Animals & Nature	plant-flower	white flower	flower | white flower
-🪷	Animals & Nature	plant-flower	lotus	Buddhism | flower | Hinduism | India | lotus | purity | Vietnam
+🪷	Animals & Nature	plant-flower	lotus	Buddhism | flower | Hinduism | lotus | purity
 🏵️	Animals & Nature	plant-flower	rosette	
 🏵	Animals & Nature	plant-flower	rosette	plant | rosette
 🌹	Animals & Nature	plant-flower	rose	flower | rose
@@ -3305,6 +3326,7 @@
 🌻	Animals & Nature	plant-flower	sunflower	flower | sun | sunflower
 🌼	Animals & Nature	plant-flower	blossom	blossom | flower
 🌷	Animals & Nature	plant-flower	tulip	flower | tulip
+🪻	Animals & Nature	plant-flower	hyacinth	bluebonnet | flower | hyacinth | lavender | lupine | snapdragon
 🌱	Animals & Nature	plant-other	seedling	seedling | young
 🪴	Animals & Nature	plant-other	potted plant	boring | grow | house | nurturing | plant | potted plant | useless | pot plant
 🌲	Animals & Nature	plant-other	evergreen tree	evergreen tree | tree
@@ -3321,6 +3343,7 @@
 🍃	Animals & Nature	plant-other	leaf fluttering in wind	blow | flutter | leaf | leaf fluttering in wind | wind
 🪹	Animals & Nature	plant-other	empty nest	empty nest | nesting
 🪺	Animals & Nature	plant-other	nest with eggs	nest with eggs | nesting
+🍄	Animals & Nature	plant-other	mushroom	mushroom | toadstool
 🍇	Food & Drink	food-fruit	grapes	fruit | grape | grapes
 🍈	Food & Drink	food-fruit	melon	fruit | melon
 🍉	Food & Drink	food-fruit	watermelon	fruit | watermelon
@@ -3353,17 +3376,18 @@
 🥦	Food & Drink	food-vegetable	broccoli	broccoli | wild cabbage
 🧄	Food & Drink	food-vegetable	garlic	flavoring | garlic | flavouring
 🧅	Food & Drink	food-vegetable	onion	flavoring | onion | flavouring
-🍄	Food & Drink	food-vegetable	mushroom	mushroom | toadstool
 🥜	Food & Drink	food-vegetable	peanuts	food | nut | peanut | peanuts | vegetable | nuts
 🫘	Food & Drink	food-vegetable	beans	beans | food | kidney | legume | kidney bean | kidney beans
 🌰	Food & Drink	food-vegetable	chestnut	chestnut | plant | nut
+🫚	Food & Drink	food-vegetable	ginger root	beer | ginger root | root | spice | ginger
+🫛	Food & Drink	food-vegetable	pea pod	beans | edamame | legume | pea | pod | vegetable
 🍞	Food & Drink	food-prepared	bread	bread | loaf
-🥐	Food & Drink	food-prepared	croissant	bread | breakfast | croissant | food | french | roll | crescent roll | French
+🥐	Food & Drink	food-prepared	croissant	bread | breakfast | croissant | food | french | roll | crescent | French
 🥖	Food & Drink	food-prepared	baguette bread	baguette | bread | food | french | French stick | French
 🫓	Food & Drink	food-prepared	flatbread	arepa | flatbread | lavash | naan | pita
 🥨	Food & Drink	food-prepared	pretzel	pretzel | twisted
 🥯	Food & Drink	food-prepared	bagel	bagel | bakery | breakfast | schmear
-🥞	Food & Drink	food-prepared	pancakes	breakfast | crêpe | food | hotcake | pancake | pancakes
+🥞	Food & Drink	food-prepared	pancakes	breakfast | crêpe | food | hotcake | pancake | pancakes | crepe
 🧇	Food & Drink	food-prepared	waffle	breakfast | indecisive | iron | waffle | unclear | vague | waffle with butter
 🧀	Food & Drink	food-prepared	cheese wedge	cheese | cheese wedge
 🍖	Food & Drink	food-prepared	meat on bone	bone | meat | meat on bone
@@ -3373,11 +3397,11 @@
 🍔	Food & Drink	food-prepared	hamburger	burger | hamburger | beefburger
 🍟	Food & Drink	food-prepared	french fries	french | fries | chips | french fries | French
 🍕	Food & Drink	food-prepared	pizza	cheese | pizza | slice
-🌭	Food & Drink	food-prepared	hot dog	frankfurter | hot dog | hotdog | sausage
+🌭	Food & Drink	food-prepared	hot dog	frankfurter | hot dog | hotdog | sausage | frank
 🥪	Food & Drink	food-prepared	sandwich	bread | sandwich
 🌮	Food & Drink	food-prepared	taco	mexican | taco | Mexican
 🌯	Food & Drink	food-prepared	burrito	burrito | mexican | wrap | Mexican
-🫔	Food & Drink	food-prepared	tamale	mexican | tamale | wrapped
+🫔	Food & Drink	food-prepared	tamale	mexican | tamale | wrapped | Mexican
 🥙	Food & Drink	food-prepared	stuffed flatbread	falafel | flatbread | food | gyro | kebab | stuffed | pita | pita roll
 🧆	Food & Drink	food-prepared	falafel	chickpea | falafel | meatball | chick pea
 🥚	Food & Drink	food-prepared	egg	breakfast | egg | food
@@ -3407,13 +3431,13 @@
 🍡	Food & Drink	food-asian	dango	dango | dessert | Japanese | skewer | stick | sweet
 🥟	Food & Drink	food-asian	dumpling	dumpling | empanada | gyōza | jiaozi | pierogi | potsticker | pastie | samosa
 🥠	Food & Drink	food-asian	fortune cookie	fortune cookie | prophecy
-🥡	Food & Drink	food-asian	takeout box	oyster pail | takeout box | takeaway container | takeout | takeaway box
+🥡	Food & Drink	food-asian	takeout box	oyster pail | takeout box | takeaway box | takeaway container | takeout
 🦀	Food & Drink	food-marine	crab	Cancer | crab | zodiac | crustacean | seafood | shellfish
 🦞	Food & Drink	food-marine	lobster	bisque | claws | lobster | seafood | shellfish
 🦐	Food & Drink	food-marine	shrimp	food | shellfish | shrimp | small | prawn | seafood
 🦑	Food & Drink	food-marine	squid	food | molusc | squid | decapod | seafood
 🦪	Food & Drink	food-marine	oyster	diving | oyster | pearl
-🍦	Food & Drink	food-sweet	soft ice cream	cream | dessert | ice | icecream | soft | sweet | ice cream | soft serve
+🍦	Food & Drink	food-sweet	soft ice cream	cream | dessert | ice | icecream | soft | sweet | ice cream | soft serve | soft-serve ice cream
 🍧	Food & Drink	food-sweet	shaved ice	dessert | ice | shaved | sweet | granita
 🍨	Food & Drink	food-sweet	ice cream	cream | dessert | ice | sweet | ice cream
 🍩	Food & Drink	food-sweet	doughnut	breakfast | dessert | donut | doughnut | sweet
@@ -3433,17 +3457,17 @@
 🫖	Food & Drink	drink	teapot	drink | pot | tea | teapot
 🍵	Food & Drink	drink	teacup without handle	beverage | cup | drink | tea | teacup | teacup without handle
 🍶	Food & Drink	drink	sake	bar | beverage | bottle | cup | drink | sake | saké
-🍾	Food & Drink	drink	bottle with popping cork	bar | bottle | bottle with popping cork | cork | drink | popping
+🍾	Food & Drink	drink	bottle with popping cork	bar | bottle | bottle with popping cork | cork | drink | popping | bubbly
 🍷	Food & Drink	drink	wine glass	bar | beverage | drink | glass | wine
 🍸	Food & Drink	drink	cocktail glass	bar | cocktail | drink | glass
 🍹	Food & Drink	drink	tropical drink	bar | drink | tropical
 🍺	Food & Drink	drink	beer mug	bar | beer | drink | mug
-🍻	Food & Drink	drink	clinking beer mugs	bar | beer | clink | clinking beer mugs | drink | mug
-🥂	Food & Drink	drink	clinking glasses	celebrate | clink | clinking glasses | drink | glass
-🥃	Food & Drink	drink	tumbler glass	glass | liquor | shot | tumbler | whisky
+🍻	Food & Drink	drink	clinking beer mugs	bar | beer | clink | clinking beer mugs | drink | mug | cheers
+🥂	Food & Drink	drink	clinking glasses	celebrate | clink | clinking glasses | drink | glass | cheers
+🥃	Food & Drink	drink	tumbler glass	glass | liquor | shot | tumbler | whisky | whiskey
 🫗	Food & Drink	drink	pouring liquid	drink | empty | glass | pouring liquid | spill
 🥤	Food & Drink	drink	cup with straw	cup with straw | juice | soda
-🧋	Food & Drink	drink	bubble tea	bubble | milk | pearl | tea
+🧋	Food & Drink	drink	bubble tea	bubble | milk | pearl | tea | boba
 🧃	Food & Drink	drink	beverage box	beverage | box | juice | straw | sweet | drink carton | juice box | popper
 🧉	Food & Drink	drink	mate	drink | mate | maté
 🧊	Food & Drink	drink	ice	cold | ice | ice cube | iceberg
@@ -3521,12 +3545,12 @@
 ⛲	Travel & Places	place-other	fountain	fountain
 ⛺	Travel & Places	place-other	tent	camping | tent
 🌁	Travel & Places	place-other	foggy	fog | foggy
-🌃	Travel & Places	place-other	night with stars	night | night with stars | star
+🌃	Travel & Places	place-other	night with stars	night | night with stars | star | starry night
 🏙️	Travel & Places	place-other	cityscape	
-🏙	Travel & Places	place-other	cityscape	city | cityscape
+🏙	Travel & Places	place-other	cityscape	city | cityscape | skyline
 🌄	Travel & Places	place-other	sunrise over mountains	morning | mountain | sun | sunrise | sunrise over mountains
 🌅	Travel & Places	place-other	sunrise	morning | sun | sunrise
-🌆	Travel & Places	place-other	cityscape at dusk	city | cityscape at dusk | dusk | evening | landscape | sunset
+🌆	Travel & Places	place-other	cityscape at dusk	city | cityscape at dusk | dusk | evening | landscape | sunset | skyline at dusk
 🌇	Travel & Places	place-other	sunset	dusk | sun | sunset
 🌉	Travel & Places	place-other	bridge at night	bridge | bridge at night | night
 ♨️	Travel & Places	place-other	hot springs	
@@ -3538,11 +3562,11 @@
 💈	Travel & Places	place-other	barber pole	barber | haircut | pole
 🎪	Travel & Places	place-other	circus tent	circus | tent | big top
 🚂	Travel & Places	transport-ground	locomotive	engine | locomotive | railway | steam | train
-🚃	Travel & Places	transport-ground	railway car	car | electric | railway | train | tram | trolleybus | trolley bus | railway carriage
+🚃	Travel & Places	transport-ground	railway car	car | electric | railway | train | tram | trolleybus | railway carriage | train carriage | trolley bus
 🚄	Travel & Places	transport-ground	high-speed train	high-speed train | railway | shinkansen | speed | train | Shinkansen
 🚅	Travel & Places	transport-ground	bullet train	bullet | railway | shinkansen | speed | train | Shinkansen
 🚆	Travel & Places	transport-ground	train	railway | train
-🚇	Travel & Places	transport-ground	metro	metro | subway
+🚇	Travel & Places	transport-ground	metro	metro | subway | tube | underground
 🚈	Travel & Places	transport-ground	light rail	light rail | railway
 🚉	Travel & Places	transport-ground	station	railway | station | train
 🚊	Travel & Places	transport-ground	tram	tram | trolleybus | light rail | oncoming | oncoming light rail | car | streetcar | tramcar | trolley | trolley bus
@@ -3572,7 +3596,7 @@
 🏍	Travel & Places	transport-ground	motorcycle	motorcycle | racing
 🛵	Travel & Places	transport-ground	motor scooter	motor | scooter
 🦽	Travel & Places	transport-ground	manual wheelchair	accessibility | manual wheelchair
-🦼	Travel & Places	transport-ground	motorized wheelchair	accessibility | motorized wheelchair | mobility scooter | powered wheelchair
+🦼	Travel & Places	transport-ground	motorized wheelchair	accessibility | motorized wheelchair | powered wheelchair | mobility scooter
 🛺	Travel & Places	transport-ground	auto rickshaw	auto rickshaw | tuk tuk | tuk-tuk | tuktuk
 🚲	Travel & Places	transport-ground	bicycle	bicycle | bike
 🛴	Travel & Places	transport-ground	kick scooter	kick | scooter
@@ -3605,11 +3629,11 @@
 🛥	Travel & Places	transport-water	motor boat	boat | motor boat | motorboat
 🚢	Travel & Places	transport-water	ship	boat | passenger | ship
 ✈️	Travel & Places	transport-air	airplane	
-✈	Travel & Places	transport-air	airplane	aeroplane | airplane
+✈	Travel & Places	transport-air	airplane	aeroplane | airplane | flight
 🛩️	Travel & Places	transport-air	small airplane	
-🛩	Travel & Places	transport-air	small airplane	aeroplane | airplane | small airplane
-🛫	Travel & Places	transport-air	airplane departure	aeroplane | airplane | check-in | departure | departures | take-off
-🛬	Travel & Places	transport-air	airplane arrival	aeroplane | airplane | airplane arrival | arrivals | arriving | landing
+🛩	Travel & Places	transport-air	small airplane	aeroplane | airplane | small airplane | small plane
+🛫	Travel & Places	transport-air	airplane departure	aeroplane | airplane | check-in | departure | departures | take-off | flight departure | plane departure
+🛬	Travel & Places	transport-air	airplane arrival	aeroplane | airplane | airplane arrival | arrivals | arriving | landing | flight arrival | plan arrival
 🪂	Travel & Places	transport-air	parachute	hang-glide | parachute | parasail | skydive | parascend
 💺	Travel & Places	transport-air	seat	chair | seat
 🚁	Travel & Places	transport-air	helicopter	helicopter | vehicle
@@ -3619,7 +3643,7 @@
 🛰️	Travel & Places	transport-air	satellite	
 🛰	Travel & Places	transport-air	satellite	satellite | space
 🚀	Travel & Places	transport-air	rocket	rocket | space
-🛸	Travel & Places	transport-air	flying saucer	flying saucer | UFO
+🛸	Travel & Places	transport-air	flying saucer	flying saucer | UFO | spaceship
 🛎️	Travel & Places	hotel	bellhop bell	
 🛎	Travel & Places	hotel	bellhop bell	bell | bellhop | hotel | porter
 🧳	Travel & Places	hotel	luggage	luggage | packing | travel
@@ -3634,29 +3658,29 @@
 🕰️	Travel & Places	time	mantelpiece clock	
 🕰	Travel & Places	time	mantelpiece clock	clock | mantelpiece clock
 🕛	Travel & Places	time	twelve o’clock	00 | 12 | 12:00 | clock | o’clock | twelve
-🕧	Travel & Places	time	twelve-thirty	12 | 12:30 | clock | thirty | twelve | twelve-thirty | half past twelve | 12.30
+🕧	Travel & Places	time	twelve-thirty	12 | 12:30 | clock | thirty | twelve | twelve-thirty | 12.30 | half past twelve
 🕐	Travel & Places	time	one o’clock	00 | 1 | 1:00 | clock | o’clock | one
-🕜	Travel & Places	time	one-thirty	1 | 1:30 | clock | one | one-thirty | thirty | half past one | 1.30
+🕜	Travel & Places	time	one-thirty	1 | 1:30 | clock | one | one-thirty | thirty | 1.30 | half past one
 🕑	Travel & Places	time	two o’clock	00 | 2 | 2:00 | clock | o’clock | two
-🕝	Travel & Places	time	two-thirty	2 | 2:30 | clock | thirty | two | two-thirty | half past two | 2.30
+🕝	Travel & Places	time	two-thirty	2 | 2:30 | clock | thirty | two | two-thirty | 2.30 | half past two
 🕒	Travel & Places	time	three o’clock	00 | 3 | 3:00 | clock | o’clock | three
-🕞	Travel & Places	time	three-thirty	3 | 3:30 | clock | thirty | three | three-thirty | half past three | 3.30
+🕞	Travel & Places	time	three-thirty	3 | 3:30 | clock | thirty | three | three-thirty | 3.30 | half past three
 🕓	Travel & Places	time	four o’clock	00 | 4 | 4:00 | clock | four | o’clock
-🕟	Travel & Places	time	four-thirty	4 | 4:30 | clock | four | four-thirty | thirty | half past four | 4.30
+🕟	Travel & Places	time	four-thirty	4 | 4:30 | clock | four | four-thirty | thirty | 4.30 | half past four
 🕔	Travel & Places	time	five o’clock	00 | 5 | 5:00 | clock | five | o’clock
-🕠	Travel & Places	time	five-thirty	5 | 5:30 | clock | five | five-thirty | thirty | half past five | 5.30
+🕠	Travel & Places	time	five-thirty	5 | 5:30 | clock | five | five-thirty | thirty | 5.30 | half past five
 🕕	Travel & Places	time	six o’clock	00 | 6 | 6:00 | clock | o’clock | six
-🕡	Travel & Places	time	six-thirty	6 | 6:30 | clock | six | six-thirty | thirty | half past six | 6.30
+🕡	Travel & Places	time	six-thirty	6 | 6:30 | clock | six | six-thirty | thirty | 6.30 | half past six
 🕖	Travel & Places	time	seven o’clock	00 | 7 | 7:00 | clock | o’clock | seven
-🕢	Travel & Places	time	seven-thirty	7 | 7:30 | clock | seven | seven-thirty | thirty | half past seven | 7.30
+🕢	Travel & Places	time	seven-thirty	7 | 7:30 | clock | seven | seven-thirty | thirty | 7.30 | half past seven
 🕗	Travel & Places	time	eight o’clock	00 | 8 | 8:00 | clock | eight | o’clock
-🕣	Travel & Places	time	eight-thirty	8 | 8:30 | clock | eight | eight-thirty | thirty | half past eight | 8.30
+🕣	Travel & Places	time	eight-thirty	8 | 8:30 | clock | eight | eight-thirty | thirty | 8.30 | half past eight
 🕘	Travel & Places	time	nine o’clock	00 | 9 | 9:00 | clock | nine | o’clock
-🕤	Travel & Places	time	nine-thirty	9 | 9:30 | clock | nine | nine-thirty | thirty | half past nine | 9.30
+🕤	Travel & Places	time	nine-thirty	9 | 9:30 | clock | nine | nine-thirty | thirty | 9.30 | half past nine
 🕙	Travel & Places	time	ten o’clock	00 | 10 | 10:00 | clock | o’clock | ten
-🕥	Travel & Places	time	ten-thirty	10 | 10:30 | clock | ten | ten-thirty | thirty | half past ten | 10.30
+🕥	Travel & Places	time	ten-thirty	10 | 10:30 | clock | ten | ten-thirty | thirty | 10.30 | half past ten
 🕚	Travel & Places	time	eleven o’clock	00 | 11 | 11:00 | clock | eleven | o’clock
-🕦	Travel & Places	time	eleven-thirty	11 | 11:30 | clock | eleven | eleven-thirty | thirty | half past eleven | 11.30
+🕦	Travel & Places	time	eleven-thirty	11 | 11:30 | clock | eleven | eleven-thirty | thirty | 11.30 | half past eleven
 🌑	Travel & Places	sky & weather	new moon	dark | moon | new moon
 🌒	Travel & Places	sky & weather	waxing crescent moon	crescent | moon | waxing
 🌓	Travel & Places	sky & weather	first quarter moon	first quarter moon | moon | quarter
@@ -3766,28 +3790,27 @@
 🏑	Activities	sport	field hockey	ball | field | game | hockey | stick
 🏒	Activities	sport	ice hockey	game | hockey | ice | puck | stick
 🥍	Activities	sport	lacrosse	ball | goal | lacrosse | stick
-🏓	Activities	sport	ping pong	ball | bat | game | paddle | ping pong | table tennis
+🏓	Activities	sport	ping pong	ball | bat | game | paddle | ping pong | table tennis | ping-pong
 🏸	Activities	sport	badminton	badminton | birdie | game | racquet | shuttlecock
 🥊	Activities	sport	boxing glove	boxing | glove
-🥋	Activities	sport	martial arts uniform	judo | karate | martial arts | martial arts uniform | taekwondo | uniform
+🥋	Activities	sport	martial arts uniform	judo | karate | martial arts | martial arts uniform | taekwondo | uniform | MMA
 🥅	Activities	sport	goal net	goal | net | goal cage
 ⛳	Activities	sport	flag in hole	flag in hole | golf | hole | flag
 ⛸️	Activities	sport	ice skate	
 ⛸	Activities	sport	ice skate	ice | skate | ice skating
-🎣	Activities	sport	fishing pole	fish | fishing pole | pole | fishing | rod
+🎣	Activities	sport	fishing pole	fish | fishing pole | pole | fishing | rod | fishing rod
 🤿	Activities	sport	diving mask	diving | diving mask | scuba | snorkeling | snorkelling
 🎽	Activities	sport	running shirt	athletics | running | sash | shirt
 🎿	Activities	sport	skis	ski | skis | snow | skiing
 🛷	Activities	sport	sled	sled | sledge | sleigh
 🥌	Activities	sport	curling stone	curling stone | game | rock | curling | stone | curling rock
-🎯	Activities	game	bullseye	bullseye | dart | direct hit | game | hit | target
+🎯	Activities	game	bullseye	bullseye | dart | direct hit | game | hit | target | bull’s-eye
 🪀	Activities	game	yo-yo	fluctuate | toy | yo-yo
 🪁	Activities	game	kite	fly | kite | soar
-🎱	Activities	game	pool 8 ball	8 | ball | billiard | eight | game | pool 8 ball
+🔫	Activities	game	water pistol	gun | handgun | pistol | revolver | tool | water | weapon | toy | water pistol
+🎱	Activities	game	pool 8 ball	8 | ball | billiard | eight | game | pool 8 ball | magic 8 ball
 🔮	Activities	game	crystal ball	ball | crystal | fairy tale | fantasy | fortune | tool
 🪄	Activities	game	magic wand	magic | magic wand | witch | wizard
-🧿	Activities	game	nazar amulet	bead | charm | evil-eye | nazar | nazar amulet | talisman | amulet | evil eye
-🪬	Activities	game	hamsa	amulet | Fatima | hamsa | hand | Mary | Miriam | protection
 🎮	Activities	game	video game	controller | game | video game
 🕹️	Activities	game	joystick	
 🕹	Activities	game	joystick	game | joystick | video game
@@ -3797,7 +3820,7 @@
 🧸	Activities	game	teddy bear	plaything | plush | stuffed | teddy bear | toy
 🪅	Activities	game	piñata	celebration | party | piñata
 🪩	Activities	game	mirror ball	dance | disco | glitter | mirror ball | party
-🪆	Activities	game	nesting dolls	doll | nesting | nesting dolls | russia | babushka | matryoshka | Russian dolls
+🪆	Activities	game	nesting dolls	doll | nesting | nesting dolls | russia | babushka | matryoshka | Russian dolls | Russia
 ♠️	Activities	game	spade suit	
 ♠	Activities	game	spade suit	card | game | spade suit
 ♥️	Activities	game	heart suit	
@@ -3836,25 +3859,27 @@
 👘	Objects	clothing	kimono	clothing | kimono
 🥻	Objects	clothing	sari	clothing | dress | sari
 🩱	Objects	clothing	one-piece swimsuit	bathing suit | one-piece swimsuit | swimming costume
-🩲	Objects	clothing	briefs	bathing suit | briefs | one-piece | swimsuit | underwear | bathers | speedos | pants
-🩳	Objects	clothing	shorts	bathing suit | pants | shorts | underwear | boardies | boardshorts | swim shorts
+🩲	Objects	clothing	briefs	bathing suit | briefs | one-piece | swimsuit | underwear | pants | bathers | speedos
+🩳	Objects	clothing	shorts	bathing suit | pants | shorts | underwear | boardshorts | swim shorts | boardies
 👙	Objects	clothing	bikini	bikini | clothing | swim | swim suit | two-piece
 👚	Objects	clothing	woman’s clothes	clothing | woman | woman’s clothes | blouse | top
+🪭	Objects	clothing	folding hand fan	cooling | dance | fan | flutter | folding hand fan | hot | shy
 👛	Objects	clothing	purse	clothing | coin | purse | accessories
 👜	Objects	clothing	handbag	bag | clothing | handbag | purse | accessories | tote
 👝	Objects	clothing	clutch bag	bag | clothing | clutch bag | pouch | accessories
 🛍️	Objects	clothing	shopping bags	
 🛍	Objects	clothing	shopping bags	bag | hotel | shopping | shopping bags
 🎒	Objects	clothing	backpack	backpack | bag | rucksack | satchel | school
-🩴	Objects	clothing	thong sandal	beach sandals | sandals | thong sandal | thong sandals | thongs | zōri | beach sandal | flip-flop | sandal | thong | flipflop | zori
+🩴	Objects	clothing	thong sandal	beach sandals | sandals | thong sandal | thong sandals | thongs | zōri | flip-flop | flipflop | zori | beach sandal | sandal | thong
 👞	Objects	clothing	man’s shoe	clothing | man | man’s shoe | shoe
 👟	Objects	clothing	running shoe	athletic | clothing | running shoe | shoe | sneaker | runners | trainer
 🥾	Objects	clothing	hiking boot	backpacking | boot | camping | hiking
 🥿	Objects	clothing	flat shoe	ballet flat | flat shoe | slip-on | slipper | pump
-👠	Objects	clothing	high-heeled shoe	clothing | heel | high-heeled shoe | shoe | woman
+👠	Objects	clothing	high-heeled shoe	clothing | heel | high-heeled shoe | shoe | woman | stiletto
 👡	Objects	clothing	woman’s sandal	clothing | sandal | shoe | woman | woman’s sandal
 🩰	Objects	clothing	ballet shoes	ballet | ballet shoes | dance
 👢	Objects	clothing	woman’s boot	boot | clothing | shoe | woman | woman’s boot
+🪮	Objects	clothing	hair pick	Afro | comb | hair | pick
 👑	Objects	clothing	crown	clothing | crown | king | queen
 👒	Objects	clothing	woman’s hat	clothing | hat | woman | woman’s hat
 🎩	Objects	clothing	top hat	clothing | hat | top | tophat
@@ -3897,6 +3922,8 @@
 🪕	Objects	musical-instrument	banjo	banjo | music | stringed
 🥁	Objects	musical-instrument	drum	drum | drumsticks | music | percussions
 🪘	Objects	musical-instrument	long drum	beat | conga | drum | long drum | rhythm
+🪇	Objects	musical-instrument	maracas	instrument | maracas | music | percussion | rattle | shake
+🪈	Objects	musical-instrument	flute	fife | flute | music | pipe | recorder | woodwind
 📱	Objects	phone	mobile phone	cell | mobile | phone | telephone
 📲	Objects	phone	mobile phone with arrow	arrow | cell | mobile | mobile phone with arrow | phone | receive
 ☎️	Objects	phone	telephone	
@@ -3933,7 +3960,7 @@
 📷	Objects	light & video	camera	camera | video
 📸	Objects	light & video	camera with flash	camera | camera with flash | flash | video
 📹	Objects	light & video	video camera	camera | video
-📼	Objects	light & video	videocassette	tape | vhs | video | videocassette | VHS
+📼	Objects	light & video	videocassette	tape | vhs | video | videocassette | VHS | videotape
 🔍	Objects	light & video	magnifying glass tilted left	glass | magnifying | magnifying glass tilted left | search | tool
 🔎	Objects	light & video	magnifying glass tilted right	glass | magnifying | magnifying glass tilted right | search | tool
 🕯️	Objects	light & video	candle	
@@ -3960,7 +3987,7 @@
 📑	Objects	book-paper	bookmark tabs	bookmark | mark | marker | tabs
 🔖	Objects	book-paper	bookmark	bookmark | mark
 🏷️	Objects	book-paper	label	
-🏷	Objects	book-paper	label	label
+🏷	Objects	book-paper	label	label | tag
 💰	Objects	money	money bag	bag | dollar | money | moneybag
 🪙	Objects	money	coin	coin | gold | metal | money | silver | treasure
 💴	Objects	money	yen banknote	banknote | bill | currency | money | note | yen
@@ -4029,7 +4056,7 @@
 🗄️	Objects	office	file cabinet	
 🗄	Objects	office	file cabinet	cabinet | file | filing
 🗑️	Objects	office	wastebasket	
-🗑	Objects	office	wastebasket	wastebasket
+🗑	Objects	office	wastebasket	wastebasket | rubbish bin | trash | waste paper basket
 🔒	Objects	lock	locked	closed | locked | padlock
 🔓	Objects	lock	unlocked	lock | open | unlock | unlocked | padlock
 🔏	Objects	lock	locked with pen	ink | lock | locked with pen | nib | pen | privacy
@@ -4049,8 +4076,8 @@
 🗡	Objects	tool	dagger	dagger | knife | weapon
 ⚔️	Objects	tool	crossed swords	
 ⚔	Objects	tool	crossed swords	crossed | swords | weapon
-🔫	Objects	tool	water pistol	gun | handgun | pistol | revolver | tool | water | weapon | toy | water pistol
-🪃	Objects	tool	boomerang	australia | boomerang | rebound | repercussion
+💣	Objects	tool	bomb	bomb | comic
+🪃	Objects	tool	boomerang	boomerang | rebound | repercussion
 🏹	Objects	tool	bow and arrow	archer | arrow | bow | bow and arrow | Sagittarius | zodiac
 🛡️	Objects	tool	shield	
 🛡	Objects	tool	shield	shield | weapon
@@ -4082,11 +4109,11 @@
 📡	Objects	science	satellite antenna	antenna | dish | satellite
 💉	Objects	medical	syringe	medicine | needle | shot | sick | syringe | ill | injection
 🩸	Objects	medical	drop of blood	bleed | blood donation | drop of blood | injury | medicine | menstruation
-💊	Objects	medical	pill	doctor | medicine | pill | sick
+💊	Objects	medical	pill	doctor | medicine | pill | sick | capsule
 🩹	Objects	medical	adhesive bandage	adhesive bandage | bandage | injury | plaster | sticking plaster | bandaid | dressing
 🩼	Objects	medical	crutch	cane | crutch | disability | hurt | mobility aid | stick
 🩺	Objects	medical	stethoscope	doctor | heart | medicine | stethoscope
-🩻	Objects	medical	x-ray	bones | doctor | medical | skeleton | x-ray
+🩻	Objects	medical	x-ray	bones | doctor | medical | skeleton | x-ray | X-ray
 🚪	Objects	household	door	door
 🛗	Objects	household	elevator	accessibility | elevator | hoist | lift
 🪞	Objects	household	mirror	mirror | reflection | reflector | speculum | looking glass
@@ -4116,10 +4143,12 @@
 🛒	Objects	household	shopping cart	cart | shopping | trolley | basket
 🚬	Objects	other-object	cigarette	cigarette | smoking
 ⚰️	Objects	other-object	coffin	
-⚰	Objects	other-object	coffin	coffin | death
+⚰	Objects	other-object	coffin	coffin | death | casket
 🪦	Objects	other-object	headstone	cemetery | grave | graveyard | headstone | tombstone
 ⚱️	Objects	other-object	funeral urn	
 ⚱	Objects	other-object	funeral urn	ashes | death | funeral | urn
+🧿	Objects	other-object	nazar amulet	bead | charm | evil-eye | nazar | nazar amulet | talisman | amulet | evil eye
+🪬	Objects	other-object	hamsa	amulet | Fatima | hamsa | hand | Mary | Miriam | protection
 🗿	Objects	other-object	moai	face | moai | moyai | statue
 🪧	Objects	other-object	placard	demonstration | picket | placard | protest | sign
 🪪	Objects	other-object	identification card	credentials | ID | identification card | license | security | driving | licence
@@ -4208,6 +4237,7 @@
 ☮	Symbols	religion	peace symbol	peace | peace symbol
 🕎	Symbols	religion	menorah	candelabrum | candlestick | menorah | religion
 🔯	Symbols	religion	dotted six-pointed star	dotted six-pointed star | fortune | star
+🪯	Symbols	religion	khanda	khanda | religion | Sikh
 ♈	Symbols	zodiac	Aries	Aries | ram | zodiac
 ♉	Symbols	zodiac	Taurus	bull | ox | Taurus | zodiac
 ♊	Symbols	zodiac	Gemini	Gemini | twins | zodiac
@@ -4236,9 +4266,9 @@
 ⏪	Symbols	av-symbol	fast reverse button	arrow | double | fast reverse button | rewind
 ⏮️	Symbols	av-symbol	last track button	
 ⏮	Symbols	av-symbol	last track button	arrow | last track button | previous scene | previous track | triangle
-🔼	Symbols	av-symbol	upwards button	arrow | button | red | upwards button | upward button
+🔼	Symbols	av-symbol	upwards button	arrow | button | upwards button | red | upward button
 ⏫	Symbols	av-symbol	fast up button	arrow | double | fast up button
-🔽	Symbols	av-symbol	downwards button	arrow | button | down | downwards button | red | downward button
+🔽	Symbols	av-symbol	downwards button	arrow | button | down | downwards button | downward button | red
 ⏬	Symbols	av-symbol	fast down button	arrow | double | down | fast down button
 ⏸️	Symbols	av-symbol	pause button	
 ⏸	Symbols	av-symbol	pause button	bar | double | pause | pause button | vertical
@@ -4252,6 +4282,7 @@
 🔅	Symbols	av-symbol	dim button	brightness | dim | dim button | low
 🔆	Symbols	av-symbol	bright button	bright | bright button | brightness | brightness button
 📶	Symbols	av-symbol	antenna bars	antenna | antenna bars | bar | cell | mobile | phone
+🛜	Symbols	av-symbol	wireless	computer | internet | network | wireless | Wi-Fi | wifi
 📳	Symbols	av-symbol	vibration mode	cell | mobile | mode | phone | telephone | vibration | vibrate
 📴	Symbols	av-symbol	mobile phone off	cell | mobile | off | phone | telephone
 ♀️	Symbols	gender	female sign	
@@ -4262,7 +4293,7 @@
 ⚧	Symbols	gender	transgender symbol	transgender | transgender symbol | trans
 ✖️	Symbols	math	multiply	
 ✖	Symbols	math	multiply	× | cancel | multiplication | multiply | sign | x | heavy multiplication sign
-➕	Symbols	math	plus	+ | math | plus | sign | add | addition | maths
+➕	Symbols	math	plus	+ | math | plus | sign | maths | add | addition
 ➖	Symbols	math	minus	- | − | math | minus | sign | heavy minus sign | maths | – | subtraction
 ➗	Symbols	math	divide	÷ | divide | division | math | sign
 🟰	Symbols	math	heavy equals sign	equality | heavy equals sign | math | maths
@@ -4292,9 +4323,9 @@
 ⭕	Symbols	other-symbol	hollow red circle	circle | hollow red circle | large | o | red
 ✅	Symbols	other-symbol	check mark button	✓ | button | check | mark | tick
 ☑️	Symbols	other-symbol	check box with check	
-☑	Symbols	other-symbol	check box with check	✓ | box | check | check box with check | ballot | tick | tick box with tick
+☑	Symbols	other-symbol	check box with check	✓ | box | check | check box with check | tick | tick box with tick | ballot
 ✔️	Symbols	other-symbol	check mark	
-✔	Symbols	other-symbol	check mark	✓ | check | mark | check mark | heavy tick mark | tick
+✔	Symbols	other-symbol	check mark	✓ | check | mark | tick | check mark | heavy tick mark
 ❌	Symbols	other-symbol	cross mark	× | cancel | cross | mark | multiplication | multiply | x
 ❎	Symbols	other-symbol	cross mark button	× | cross mark button | mark | square | x
 ➰	Symbols	other-symbol	curly loop	curl | curly loop | loop
@@ -4362,7 +4393,7 @@
 🅾	Symbols	alphanum	O button (blood type)	blood type | O | O button (blood type)
 🆗	Symbols	alphanum	OK button	OK | OK button
 🅿️	Symbols	alphanum	P button	
-🅿	Symbols	alphanum	P button	P | P button | parking
+🅿	Symbols	alphanum	P button	P | P button | parking | car park | carpark
 🆘	Symbols	alphanum	SOS button	help | SOS | SOS button
 🆙	Symbols	alphanum	UP! button	mark | UP | UP! | UP! button
 🆚	Symbols	alphanum	VS button	versus | VS | VS button
