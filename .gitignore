@@ -11,6 +11,7 @@ install-sh
 ltmain.sh
 missing
 test-driver
+.deps
 
 compile_commands.json
 .ccls-cache/
