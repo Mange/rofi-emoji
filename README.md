@@ -193,10 +193,31 @@ pacman -S rofi-emoji
 xbps-install -S rofi-emoji
 ```
 
-### NixOS
+### NixOS or Home Manager
 
-```bash
-nix-env -e rofi-emoji
+If you are using `home-manager` you should set up this as a plugin to your Rofi install:
+
+```nix
+programs.rofi = {
+  enable = true;
+  plugins = [pkgs.rofi-emoji];
+  # ...
+}
+```
+
+If you are using plain NixOS, then you might need to set up your own plugin
+path to the command.
+
+```nix
+environment.systemPackages = [
+    # ...
+    (
+        pkgs.rofi.override (old: {
+            plugins = old.plugins ++ [pkgs.rofi-emoji];
+        })
+    )
+    # ...
+];
 ```
 
 ### Compile from source
