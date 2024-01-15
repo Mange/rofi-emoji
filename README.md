@@ -12,7 +12,7 @@ emoji for "Unicorn face" being selected](screenshots/1_main.png)
 
 ## Usage
 
-Run rofi like:
+Run Rofi like:
 
 ```bash
 rofi -modi emoji -show emoji
@@ -222,8 +222,8 @@ environment.systemPackages = [
 
 ### Compile from source
 
-`rofi-emoji` uses autotools as build system. On Debian/Ubuntu based systems you
-will need to install the packages first:
+`rofi-emoji` uses autotools as its build system. On Debian/Ubuntu based systems
+you will need to install the packages first:
 
 - `rofi-dev`
 - `autoconf`
@@ -246,6 +246,10 @@ If you plan on developing the code and want to test the plugin, you can also
 run `./run-development.sh`, which will do all setup steps for you and then
 start Rofi using the locally compiled plugin and clipboard adapter script. This
 will not affect your system and does not require root.
+
+> [!Note]
+> Don't forget to also install the appropriate [optional
+> dependencies](#optional-dependencies) in order for the plugin to work.
 
 ### Running tests
 
