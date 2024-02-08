@@ -21,7 +21,7 @@ rofi -modi emoji -show emoji
 ### Keybindings
 
 | Keymap            | Default key in Rofi               | Effect                                         |
-|-------------------|-----------------------------------|------------------------------------------------|
+| ----------------- | --------------------------------- | ---------------------------------------------- |
 | `kb-accept-entry` | <kbd>Enter</kbd>                  | Select emoji (see **Mode** below).             |
 | `kb-accept-alt`   | <kbd>Shift</kbd>+<kbd>Enter</kbd> | Opens a menu for the Emoji with other actions. |
 | `kb-custom-1`     | <kbd>Alt</kbd>+<kbd>1</kbd>       | Copy emoji.                                    |
@@ -38,10 +38,11 @@ You can type parts of the Emojis name or keywords to find it. If you want to
 limit your search to particular groups or subgroups you can use prefix
 searches:
 
-* `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
+- `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
 
   ![](screenshots/group_search.png)
-* `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
+
+- `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
   `Animals & Nature » Animal-mammal`.
 
   ![](screenshots/subgroup_search_1.png)
@@ -49,11 +50,10 @@ searches:
 
 You can only use one instance inside of each prefix. The latest one wins:
 
-* `@foo bar @baz` - Searches for `bar` on all emojis in a group including `baz`.
+- `@foo bar @baz` - Searches for `bar` on all emojis in a group including `baz`.
 
 If you want to know which group and subgroup a particular emoji has, you can
 open the menu on it. See **Menu** below.
-
 
 ### Menu
 
@@ -71,7 +71,7 @@ additional options to the output of `rofi -help`.
 The plugin adds the following command line arguments to `rofi`:
 
 | Name            | Description                                              |
-|-----------------|----------------------------------------------------------|
+| --------------- | -------------------------------------------------------- |
 | `-emoji-mode`   | Default action when selecting an emoji in the search.    |
 | `-emoji-file`   | Path to custom emoji database file.                      |
 | `-emoji-format` | Custom formatting string for rendering lines. See below. |
@@ -109,14 +109,15 @@ for the Emoji values found in the database.
 The logic of this follows the same rule as Rofi's `-ssh-command` option,
 quickly summarized as such:
 
-* Items between curly braces (`{}`) are replaced with [Pango][pango]-escaped text.
-* Wrapping an item inside brackets (`[]`) will hide the entire section if the
+- Items between curly braces (`{}`) are replaced with [Pango][pango]-escaped text.
+- Wrapping an item inside brackets (`[]`) will hide the entire section if the
   value is empty.
 
 The default format string is this:
 
 ```html
-{emoji} <span weight='bold'>{name}</span>[ <span size='small'>({keywords})</span>]
+{emoji} <span weight="bold">{name}</span>[
+<span size="small">({keywords})</span>]
 ```
 
 This will render the emoji with its name next to it in bold, and if the emoji
@@ -124,7 +125,7 @@ has any keywords they will be shown in a parenthesised list with a smaller font
 size.
 
 | Item        | Example                                                                 |
-|-------------|-------------------------------------------------------------------------|
+| ----------- | ----------------------------------------------------------------------- |
 | `emoji`     | 🤣                                                                      |
 | `name`      | Rolling on the floor laughing                                           |
 | `group`     | Smileys & Emotion                                                       |
@@ -132,8 +133,8 @@ size.
 | `keywords`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
 | `codepoint` | U+1F923                                                                 |
 
-|             |                                                                                                  |
-|-------------|--------------------------------------------------------------------------------------------------|
+|              |                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------ |
 | ⚠️ **NOTE:** | Rofi does not have a way to escape brackets, so you may not use literal `[]` inside your output. |
 
 ##### Example
@@ -147,7 +148,7 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 ## Dependencies
 
 | Dependency | Version      |
-|------------|--------------|
+| ---------- | ------------ |
 | rofi       | 1.7 (or git) |
 
 ### Optional dependencies
@@ -155,15 +156,15 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 In order to actually use rofi-emoji an "adapter" need to be installed, as
 appropriate for your environment.
 
-| Kind   | Dependency   | Environment             |
-|--------|--------------|-------------------------|
-| Copy   | xsel         | X11                     |
-| Copy   | xclip        | X11                     |
-| Copy   | copyq        | X11                     |
-| Copy   | wl-clipboard | Wayland                 |
-|        |              |                         |
-| Insert | xdotool      | X11                     |
-| Insert | wtype        | Wayland                 |
+| Kind   | Dependency   | Environment |
+| ------ | ------------ | ----------- |
+| Copy   | xsel         | X11         |
+| Copy   | xclip        | X11         |
+| Copy   | copyq        | X11         |
+| Copy   | wl-clipboard | Wayland     |
+|        |              |             |
+| Insert | xdotool      | X11         |
+| Insert | wtype        | Wayland     |
 
 You only need to install the ones required for your environment and usage. Note
 that in order to use `insert` mode you must also install a `copy` adapter as
