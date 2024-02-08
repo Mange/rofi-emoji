@@ -147,9 +147,15 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 
 ## Dependencies
 
-| Dependency | Version      |
-| ---------- | ------------ |
-| rofi       | 1.7 (or git) |
+> [!Warning]
+> The `master` branch of this repo tracks Rofi `next`. If you use a stable
+> release of Rofi, then you should use the latest stable release of this
+> package as well.
+
+| rofi-emoji version | Rofi version |
+| -----------------: | -----------: |
+|              3.2.0 |        1.7.5 |
+|    Latest `master` |       `next` |
 
 ### Optional dependencies
 
