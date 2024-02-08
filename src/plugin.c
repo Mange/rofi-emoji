@@ -297,6 +297,7 @@ Mode mode = {
     .abi_version = ABI_VERSION,
     .name = "emoji",
     .cfg_name_key = "emoji",
+    .type = MODE_TYPE_SWITCHER,
     ._init = emoji_mode_init,
     ._get_num_entries = emoji_mode_get_num_entries,
     ._result = emoji_mode_result,
@@ -306,6 +307,7 @@ Mode mode = {
     ._get_message = emoji_get_message,
     ._get_completion = NULL,
     ._preprocess_input = emoji_preprocess_input,
+    ._completer_result = NULL,
     .private_data = NULL,
     .free = NULL,
 };
