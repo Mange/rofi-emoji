@@ -188,6 +188,12 @@ that in order to use `insert` mode you must also install a `copy` adapter as
 pacman -S rofi-emoji
 ```
 
+There's also a community-managed AUR package called [`rofi-emoji-git`](https://aur.archlinux.org/packages/rofi-emoji-git).
+
+```bash
+paru -S rofi-emoji-git
+```
+
 ### Manjaro
 
 ```bash
