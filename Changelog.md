@@ -5,6 +5,11 @@
 - Support + require unreleased version of Rofi in order to compile.
 - Using new Plugin interface in Rofi `next`. ([LordMZTE](https://mzte.de/))
 
+## Added
+
+- Updated [`emoji-data`][emoji-data] to [version 2.6][emoji-data-2.6], adding
+  more emojis (Emoji 15.1) and better keywords.
+
 # Version 3.2.0 (2023-04-17)
 
 ## Changed
@@ -172,3 +177,4 @@ Initial release with Unicode 11.0.
 
 [emoji-data]: https://github.com/Mange/emoji-data
 [emoji-data-2.5]: https://github.com/Mange/emoji-data/releases/tag/v2.5
+[emoji-data-2.6]: https://github.com/Mange/emoji-data/releases/tag/v2.6
