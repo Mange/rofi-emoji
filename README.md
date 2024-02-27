@@ -3,6 +3,14 @@
 An emoji selector plugin for Rofi that copies the selected emoji to the
 clipboard, among other things.
 
+> [!Note]
+> The [`master` branch][master-branch] of this repo tracks Rofi `next`. If you
+> use a stable release of Rofi, then you should use the latest stable release
+> of this package as well.
+>
+> See the [`3-x-stable` branch][stable-branch] for documentation of the latest
+> stable release.
+
 ## Screenshots
 
 ![Screenshot showing a Rofi window searching for emojis containing "uni", the
@@ -147,15 +155,10 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 
 ## Dependencies
 
-> [!Warning]
-> The `master` branch of this repo tracks Rofi `next`. If you use a stable
-> release of Rofi, then you should use the latest stable release of this
-> package as well.
-
-| rofi-emoji version | Rofi version |
-| -----------------: | -----------: |
-|              3.2.0 |        1.7.5 |
-|    Latest `master` |       `next` |
+|        rofi-emoji version | Rofi version |
+| ------------------------: | -----------: |
+|      [3.x][stable-branch] |        1.7.5 |
+| [`master`][master-branch] |       `next` |
 
 ### Optional dependencies
 
@@ -332,3 +335,5 @@ This plugin is released under the MIT license. See `LICENSE` for more details.
 
 [emoji-data]: https://github.com/Mange/emoji-data
 [pango]: https://docs.gtk.org/Pango/pango_markup.html
+[master-branch]: https://github.com/Mange/rofi-emoji/tree/master
+[stable-branch]: https://github.com/Mange/rofi-emoji/tree/3-x-stable
