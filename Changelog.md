@@ -1,3 +1,10 @@
+# Version 3.4.0 (2024-07-18)
+
+## Added
+
+- `copy_no_insert` mode for inserting without using the clipboard. May not work
+  everywhere. ([jones-josh](https://github.com/jones-josh))
+
 # Version 3.3.0 (2024-02-27)
 
 ## Changed

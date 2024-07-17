@@ -2,6 +2,8 @@
 #include "menu.h"
 #include "utils.h"
 
+#include <stdbool.h>
+
 Emoji *get_selected_emoji(EmojiModePrivateData *pd, unsigned int line) {
   if (pd->selected_emoji != NULL) {
     return pd->selected_emoji;
@@ -33,7 +35,7 @@ ModeMode copy_emoji(EmojiModePrivateData *pd, unsigned int line) {
   return text_adapter_action("copy", pd, emoji->bytes);
 }
 
-ModeMode insert_emoji(EmojiModePrivateData *pd, unsigned int line) {
+ModeMode insert_emoji(EmojiModePrivateData *pd, unsigned int line, bool copy) {
   const Emoji *emoji = get_selected_emoji(pd, line);
   if (emoji == NULL) {
     return MODE_EXIT;
@@ -42,7 +44,8 @@ ModeMode insert_emoji(EmojiModePrivateData *pd, unsigned int line) {
   // Must hide window and give back focus to whatever app should receive the
   // insert action.
   rofi_view_hide();
-  text_adapter_action("insert", pd, emoji->bytes);
+  const char *action = copy ? "insert" : "insert_no_copy";
+  text_adapter_action(action, pd, emoji->bytes);
 
   // View is hidden and we cannot get it back again. We must exit at this point.
   return MODE_EXIT;
@@ -112,7 +115,9 @@ ModeMode perform_action(EmojiModePrivateData *pd, const Action action,
   case NOOP:
     return RELOAD_DIALOG;
   case INSERT_EMOJI:
-    return insert_emoji(pd, line);
+    return insert_emoji(pd, line, true);
+  case INSERT_NO_COPY_EMOJI:
+    return insert_emoji(pd, line, false);
   case COPY_EMOJI:
     return copy_emoji(pd, line);
   case OUTPUT_EMOJI:
