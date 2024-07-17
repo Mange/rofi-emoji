@@ -32,7 +32,7 @@ main() {
       command=help
       break
       ;;
-    copy | insert | help)
+    copy | insert | insert_no_copy | help)
       command="$1"
       shift
       ;;
@@ -65,6 +65,10 @@ main() {
     input="$(cat -)"
     printf "%s" "$input" | perform_copy
     printf "%s" "$input" | perform_insert
+    ;;
+  insert_no_copy)
+    # Same as 'insert' but without the copying fallback.
+    perform_insert
     ;;
   *)
     usage >&2
