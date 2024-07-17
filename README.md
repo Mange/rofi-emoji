@@ -92,7 +92,7 @@ The plugin supports five modes:
    directly in the focused window.
 2. `copy` - Only copies the selected emoji to your clipboard without trying to
    insert anything.
-3. `insert_no_copy` - Tries to insert the emoji in the focuse window, but
+3. `insert_no_copy` - Tries to insert the emoji in the focused window, but
    without copyiing anything.
 4. `menu` - Open the menu. Useful if you prefer to always get options when just
    pressing <kbd>Enter</kbd>.
