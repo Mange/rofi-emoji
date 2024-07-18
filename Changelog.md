@@ -10,6 +10,9 @@
 - Updated [`emoji-data`][emoji-data] to [version 2.6][emoji-data-2.6], adding
   more emojis (Emoji 15.1) and better keywords.
 
+- `copy_no_insert` mode for inserting without using the clipboard. May not work
+  everywhere. ([jones-josh](https://github.com/jones-josh))
+
 # Version 3.2.0 (2023-04-17)
 
 ## Changed
