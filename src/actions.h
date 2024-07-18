@@ -6,6 +6,7 @@
 typedef enum {
   NOOP,
   INSERT_EMOJI,
+  INSERT_NO_COPY_EMOJI,
   COPY_EMOJI,
   OUTPUT_EMOJI,
   COPY_NAME,

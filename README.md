@@ -86,15 +86,17 @@ The plugin adds the following command line arguments to `rofi`:
 
 #### Mode
 
-The plugin supports four modes:
+The plugin supports five modes:
 
 1. `insert` (default) - Copies the selected emoji, and then tries to insert it
    directly in the focused window.
 2. `copy` - Only copies the selected emoji to your clipboard without trying to
    insert anything.
-3. `menu` - Open the menu. Useful if you prefer to always get options when just
+3. `insert_no_copy` - Tries to insert the emoji in the focused window, but
+   without copyiing anything.
+4. `menu` - Open the menu. Useful if you prefer to always get options when just
    pressing <kbd>Enter</kbd>.
-4. `stdout` - Write selected emoji to standard output. This is useful if you
+5. `stdout` - Write selected emoji to standard output. This is useful if you
    want to use the emoji selector inside of a shell pipeline, like Rofi's
    `-dmenu` mode. It will use the `-format` argument to customize the outputted
    text, just like `-dmenu`.
