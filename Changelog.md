@@ -1,9 +1,15 @@
+# Version 3.4.1 (2024-07-23)
+
+## Fixed
+
+- Support `copy_no_insert` mode through CLI flags. ([jones-josh][jones-josh])
+
 # Version 3.4.0 (2024-07-18)
 
 ## Added
 
 - `copy_no_insert` mode for inserting without using the clipboard. May not work
-  everywhere. ([jones-josh](https://github.com/jones-josh))
+  everywhere. ([jones-josh][jones-josh])
 
 # Version 3.3.0 (2024-02-27)
 
@@ -180,3 +186,4 @@ Initial release with Unicode 11.0.
 [emoji-data]: https://github.com/Mange/emoji-data
 [emoji-data-2.5]: https://github.com/Mange/emoji-data/releases/tag/v2.5
 [emoji-data-2.6]: https://github.com/Mange/emoji-data/releases/tag/v2.6
+[jones-josh]: https://github.com/jones-josh

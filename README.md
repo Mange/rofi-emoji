@@ -21,7 +21,7 @@ rofi -modi emoji -show emoji
 ### Keybindings
 
 | Keymap            | Default key in Rofi               | Effect                                         |
-|-------------------|-----------------------------------|------------------------------------------------|
+| ----------------- | --------------------------------- | ---------------------------------------------- |
 | `kb-accept-entry` | <kbd>Enter</kbd>                  | Select emoji (see **Mode** below).             |
 | `kb-accept-alt`   | <kbd>Shift</kbd>+<kbd>Enter</kbd> | Opens a menu for the Emoji with other actions. |
 | `kb-custom-1`     | <kbd>Alt</kbd>+<kbd>1</kbd>       | Copy emoji.                                    |
@@ -49,11 +49,10 @@ searches:
 
 You can only use one instance inside of each prefix. The latest one wins:
 
-* `@foo bar @baz` - Searches for `bar` on all emojis in a group including `baz`.
+- `@foo bar @baz` - Searches for `bar` on all emojis in a group including `baz`.
 
 If you want to know which group and subgroup a particular emoji has, you can
 open the menu on it. See **Menu** below.
-
 
 ### Menu
 
@@ -71,7 +70,7 @@ additional options to the output of `rofi -help`.
 The plugin adds the following command line arguments to `rofi`:
 
 | Name            | Description                                              |
-|-----------------|----------------------------------------------------------|
+| --------------- | -------------------------------------------------------- |
 | `-emoji-mode`   | Default action when selecting an emoji in the search.    |
 | `-emoji-file`   | Path to custom emoji database file.                      |
 | `-emoji-format` | Custom formatting string for rendering lines. See below. |
@@ -85,7 +84,7 @@ The plugin supports five modes:
 2. `copy` - Only copies the selected emoji to your clipboard without trying to
    insert anything.
 3. `insert_no_copy` - Tries to insert the emoji in the focused window, but
-   without copyiing anything.
+   without copying anything.
 4. `menu` - Open the menu. Useful if you prefer to always get options when just
    pressing <kbd>Enter</kbd>.
 5. `stdout` - Write selected emoji to standard output. This is useful if you
@@ -126,7 +125,7 @@ has any keywords they will be shown in a parenthesised list with a smaller font
 size.
 
 | Item        | Example                                                                 |
-|-------------|-------------------------------------------------------------------------|
+| ----------- | ----------------------------------------------------------------------- |
 | `emoji`     | 🤣                                                                      |
 | `name`      | Rolling on the floor laughing                                           |
 | `group`     | Smileys & Emotion                                                       |
@@ -149,7 +148,7 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 ## Dependencies
 
 | Dependency | Version      |
-|------------|--------------|
+| ---------- | ------------ |
 | rofi       | 1.7 (or git) |
 
 ### Optional dependencies
@@ -157,15 +156,15 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 In order to actually use rofi-emoji an "adapter" need to be installed, as
 appropriate for your environment.
 
-| Kind   | Dependency   | Environment             |
-|--------|--------------|-------------------------|
-| Copy   | xsel         | X11                     |
-| Copy   | xclip        | X11                     |
-| Copy   | copyq        | X11                     |
-| Copy   | wl-clipboard | Wayland                 |
-|        |              |                         |
-| Insert | xdotool      | X11                     |
-| Insert | wtype        | Wayland                 |
+| Kind   | Dependency   | Environment |
+| ------ | ------------ | ----------- |
+| Copy   | xsel         | X11         |
+| Copy   | xclip        | X11         |
+| Copy   | copyq        | X11         |
+| Copy   | wl-clipboard | Wayland     |
+|        |              |             |
+| Insert | xdotool      | X11         |
+| Insert | wtype        | Wayland     |
 
 You only need to install the ones required for your environment and usage. Note
 that in order to use `insert` mode you must also install a `copy` adapter as
