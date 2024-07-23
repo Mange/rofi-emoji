@@ -1,5 +1,16 @@
 # Development Version
 
+- Nothing yet.
+
+# Version 4.0.0 (2024-07-23)
+
+This version breaks away from Rofi 1.7 and starts to work against the as of yet
+unreleased Rofi 1.8. This is because this version of Rofi contains breaking
+changes to the Plugin ABI, and a lot of Rofi forks have started to appear that
+are based on the 1.8 branch.
+
+If you want to use Rofi 1.7, stick to the 3.x branch.
+
 ## Breaking changes
 
 - Support + require unreleased version of Rofi in order to compile.
@@ -12,6 +23,33 @@
 
 - `copy_no_insert` mode for inserting without using the clipboard. May not work
   everywhere. ([jones-josh](https://github.com/jones-josh))
+
+# Version 3.4.1 (2024-07-23)
+
+## Fixed
+
+- Support `copy_no_insert` mode through CLI flags. ([jones-josh][jones-josh])
+
+# Version 3.4.0 (2024-07-18)
+
+## Added
+
+- `copy_no_insert` mode for inserting without using the clipboard. May not work
+  everywhere. ([jones-josh][jones-josh])
+
+# Version 3.3.0 (2024-02-27)
+
+## Changed
+
+- Updated [`emoji-data`][emoji-data] to [version 2.6][emoji-data-2.6], adding
+  more emojis (Emoji 15.1) and better keywords.
+
+# Version 3.2.0 (2023-04-17)
+
+## Changed
+
+- Updated [`emoji-data`][emoji-data] to [version 2.5][emoji-data-2.5], adding
+  more emojis (Emoji 15) and better keywords.
 
 # Version 3.2.0 (2023-04-17)
 
@@ -181,3 +219,4 @@ Initial release with Unicode 11.0.
 [emoji-data]: https://github.com/Mange/emoji-data
 [emoji-data-2.5]: https://github.com/Mange/emoji-data/releases/tag/v2.5
 [emoji-data-2.6]: https://github.com/Mange/emoji-data/releases/tag/v2.6
+[jones-josh]: https://github.com/jones-josh

@@ -1,4 +1,4 @@
-AC_INIT([rofi-emoji], [3.2.0], [https://github.com/Mange/rofi-emoji],[],[https://github.com/Mange/rofi-emoji/issues])
+AC_INIT([rofi-emoji], [4.0.0], [https://github.com/Mange/rofi-emoji],[],[https://github.com/Mange/rofi-emoji/issues])
 
 AC_CONFIG_HEADERS([config.h])
 
