@@ -33,7 +33,7 @@ rofi -modi emoji -show emoji
 > 💡 **Tip:** Change your `kb-custom-1` to <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 >
 > ```
-> rofi -modi emoji -show emoji -kb-custom-1 Ctrl+c
+> rofi -modi emoji -show emoji -kb-secondary-copy "" -kb-custom-1 Ctrl+c
 > ```
 
 ### Search patterns
