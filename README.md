@@ -5,7 +5,7 @@ clipboard, among other things.
 
 > [!Note]
 > See the [`3-x-stable` branch][stable-branch] for documentation of 3.x branch,
-> which is the version that is meant for Rofi 1.7.x.
+> which is the version that is meant for Rofi ≤ 1.7.5.
 
 ## Screenshots
 
@@ -153,10 +153,10 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 
 ## Dependencies
 
-|   rofi-emoji version |   Rofi version |
-| -------------------: | -------------: |
-| [3.x][stable-branch] |          1.7.5 |
-| [4.x][master-branch] | `next` / 1.8.x |
+|   rofi-emoji version | Rofi version |
+| -------------------: | -----------: |
+| [3.x][stable-branch] |      ≤ 1.7.5 |
+| [4.x][master-branch] |      ≥ 1.7.6 |
 
 ### Optional dependencies
 

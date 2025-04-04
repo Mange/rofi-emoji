@@ -1,5 +1,9 @@
 # Development Version
 
+- Nothing yet.
+
+# Version 4.1.0 (2005-04-04)
+
 ## Changed
 
 - Updated [`emoji-data`][emoji-data] to [version 2.7][emoji-data-2.7], adding more emojis (Emoji 16.0) and better keywords.
