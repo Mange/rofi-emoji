@@ -1,6 +1,8 @@
 # Development Version
 
-- Nothing yet.
+## Changed
+
+- Updated [`emoji-data`][emoji-data] to [version 2.7][emoji-data-2.7], adding more emojis (Emoji 16.0) and better keywords.
 
 # Version 4.0.0 (2024-07-23)
 
@@ -219,4 +221,5 @@ Initial release with Unicode 11.0.
 [emoji-data]: https://github.com/Mange/emoji-data
 [emoji-data-2.5]: https://github.com/Mange/emoji-data/releases/tag/v2.5
 [emoji-data-2.6]: https://github.com/Mange/emoji-data/releases/tag/v2.6
+[emoji-data-2.7]: https://github.com/Mange/emoji-data/releases/tag/v2.7
 [jones-josh]: https://github.com/jones-josh
