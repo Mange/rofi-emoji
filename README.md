@@ -3,6 +3,9 @@
 An emoji selector plugin for Rofi that copies the selected emoji to the
 clipboard, among other things.
 
+> [!Note]
+> See the [`master` branch][master-branch] for Rofi ≥ 1.7.6.
+
 ## Screenshots
 
 ![Screenshot showing a Rofi window searching for emojis containing "uni", the
@@ -38,10 +41,11 @@ You can type parts of the Emojis name or keywords to find it. If you want to
 limit your search to particular groups or subgroups you can use prefix
 searches:
 
-* `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
+- `@sym` - Limit to emojis that have `sym` inside of its Group, like `Symbols`.
 
   ![](screenshots/group_search.png)
-* `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
+
+- `#mammal` - Limit to emojis that have `mammal` inside of its Subgroup, e.g.
   `Animals & Nature » Animal-mammal`.
 
   ![](screenshots/subgroup_search_1.png)
@@ -110,14 +114,15 @@ for the Emoji values found in the database.
 The logic of this follows the same rule as Rofi's `-ssh-command` option,
 quickly summarized as such:
 
-* Items between curly braces (`{}`) are replaced with [Pango][pango]-escaped text.
-* Wrapping an item inside brackets (`[]`) will hide the entire section if the
+- Items between curly braces (`{}`) are replaced with [Pango][pango]-escaped text.
+- Wrapping an item inside brackets (`[]`) will hide the entire section if the
   value is empty.
 
 The default format string is this:
 
 ```html
-{emoji} <span weight='bold'>{name}</span>[ <span size='small'>({keywords})</span>]
+{emoji} <span weight="bold">{name}</span>[
+<span size="small">({keywords})</span>]
 ```
 
 This will render the emoji with its name next to it in bold, and if the emoji
@@ -133,8 +138,8 @@ size.
 | `keywords`  | Face, Floor, Laugh, Rofl, Rolling, Rolling on the floor laughing, Rotfl |
 | `codepoint` | U+1F923                                                                 |
 
-|             |                                                                                                  |
-|-------------|--------------------------------------------------------------------------------------------------|
+|              |                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------ |
 | ⚠️ **NOTE:** | Rofi does not have a way to escape brackets, so you may not use literal `[]` inside your output. |
 
 ##### Example
@@ -147,9 +152,9 @@ rofi -modi emoji -show emoji -emoji-format '{emoji}'
 
 ## Dependencies
 
-| Dependency | Version      |
-| ---------- | ------------ |
-| rofi       | 1.7 (or git) |
+| Dependency | Version        |
+| ---------- | -------------- |
+| rofi       | 1.7.5 or older |
 
 ### Optional dependencies
 
@@ -293,5 +298,6 @@ The list is copied from the [Mange/emoji-data][emoji-data] repo.
 
 This plugin is released under the MIT license. See `LICENSE` for more details.
 
+[master-branch]: https://github.com/Mange/rofi-emoji/tree/master
 [emoji-data]: https://github.com/Mange/emoji-data
 [pango]: https://docs.gtk.org/Pango/pango_markup.html
